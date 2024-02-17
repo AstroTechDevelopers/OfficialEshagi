@@ -1,0 +1,5 @@
+[17-May-2023 12:31:24 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/credroot/public_html/config/laravel-logger.php on line 30
+[17-May-2023 12:36:18 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/credroot/public_html/config/laravel-logger.php on line 30
+[17-May-2023 12:36:22 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/credroot/public_html/config/laravel-logger.php on line 30
+[17-May-2023 12:37:14 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/credroot/public_html/config/laravel-logger.php on line 30
+[17-May-2023 12:49:40 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home/credroot/public_html/config/laravel-logger.php on line 30

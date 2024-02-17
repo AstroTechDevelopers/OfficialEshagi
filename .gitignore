@@ -1,0 +1,80 @@
+### OSX Vendor Configs ###
+.DS_Store
+*._DS_Store
+._.DS_Store
+*._
+._*
+._.*
+
+### Windows Vendor Configs ###
+Thumbs.db
+
+### Sass ###
+#bower_components/*
+/.sass-cache/*
+.sass-cache
+
+### Editor Configs ###
+*.sublime-workspace
+.idea/*
+/.idea/*
+.phpintel/*
+/.phpintel/*
+/.vscode
+
+### Vagrant/Homestead Vendor Configs ###
+/.vagrant
+Homestead.yaml
+Homestead.json
+
+### Master Configs ###
+.env
+composer.lock
+package-lock.json
+yarn.lock
+
+### Assets ###
+/node_modules
+/public/hot
+/public/storage
+/public/agentids
+/public/agentssign
+/public/backup
+/public/documents
+/public/nationalids
+/public/offerletters
+/public/partnersign
+/public/bus_licence_pics
+/public/cr6_pics
+/public/cr14_pics
+/public/merch_natids
+/public/merch_pphotos
+/public/merchant_certs
+/public/merchspor_pics
+/public/payslips
+/public/pphotos
+/public/signatures
+/public/other_pics
+/public/client_poincome
+/public/client_por
+/public/zam_crb_reports
+/public/zam_nrcs
+/public/zam_payslips
+/public/zam_pors
+/public/zam_pphotos
+/public/zam_signs
+/public/uploads
+/storage/*.key
+/vendor
+/storage/debugbar
+/storage/framework
+/storage/logs
+/storage/users
+packages/
+.phpunit.result.cache
+.env.backup
+
+# Debug Files
+npm-debug.log
+yarn-error.log
+
