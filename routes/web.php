@@ -288,7 +288,7 @@ Route::group(['middleware' => ['auth', 'activated','activity',  'checkblocked']]
     Route::get('/agents','App\Http\Controllers\PartnerController@fetchAllAgents')->name('get.agents');
     Route::get('/merchants','App\Http\Controllers\PartnerController@fetchAllMerchants')->name('get.merchants');
     Route::get('/approve-merchants','App\Http\Controllers\PartnerController@getMerchantsToAprove')->name('get.merchants');
-    
+
     Route::post('/update-business-kyc', [PartnerController::class,'updateBusinessKyc'])->name('update.business.kyc')->middleware('activity');
     Route::post('/update-kyc-director-one', [PartnerController::class,'updateDirectorOneKyc'])->name('update.kyc.director.one')->middleware('activity');
     Route::post('/update-kyc-director-two', [PartnerController::class,'updateDirectorTwoKyc'])->name('update.kyc.director.two')->middleware('activity');
@@ -348,7 +348,7 @@ Route::group(['middleware' => ['auth', 'activated','activity',  'checkblocked']]
     Route::get('/salary-test','App\Http\Controllers\LoanController@getForm');
     Route::get('/loan-calculator','App\Http\Controllers\LoanController@loanCalculator');
     Route::post('/getProducts', 'App\Http\Controllers\LoanController@getProductsByMerchant')->name('getProducts');
-    
+
     Route::get('/loan-amortization','App\Http\Controllers\LoanController@getLoanAmortizationSchedule');
     Route::get('/getloaninfo/{id}','App\Http\Controllers\LoanController@loanInfoSignature');
     Route::get('/unsigned-loans','App\Http\Controllers\LoanController@unSignedLoans');
@@ -753,7 +753,7 @@ Route::group(['middleware' => ['auth', 'activated', 'activity',  'checkblocked']
 
     Route::get('/product-performance',[ReportsController::class,'partnerProduct'])->middleware(['backend']);
     Route::post('/product-performance',[ReportsController::class,'fetchMyPartnerProducts'])->name('products.report')->middleware(['backend']);
-    
+
 
     Route::get('/loans-by-type',[ReportsController::class,'getLoansByType'])->middleware(['backend']);
     Route::post('/loans-by-type',[ReportsController::class,'fetchLoansByType'])->name('loantypes.report')->middleware(['backend']);

@@ -3464,7 +3464,7 @@ button{
     --grid-base-width:1440px;
     --color-primary-lightest:#e6e6fc;
     --color-primary-light:#a8a9fc;
-    --color-primary-base:#4a4af4;
+    --color-primary-base#4cb6c0;
     --color-primary-dark:#2f2fc1;
     --color-primary-darkest:#212189;
     --color-warning-lightest:#fcf9e8;
@@ -3652,7 +3652,7 @@ button{
     --grid-base-width:1440px;
     --color-primary-lightest:#e6e6fc;
     --color-primary-light:#a8a9fc;
-    --color-primary-base:#4a4af4;
+    --color-primary-base:#4cb6c0;
     --color-primary-dark:#2f2fc1;
     --color-primary-darkest:#212189;
     --swiper-theme-color:var(--color-greyscale-black-100);
@@ -3779,7 +3779,7 @@ button{
     --input-height:48px;
     --font-size-ll:22px;
     --outline-offset:4px;
-    --outline:2px solid var(--color-primary-base);
+    --outline:2px solid #4cb6c0;
     --transition-delay-base:200ms;
     --component-spacing-xs:8px;
     --component-spacing-sm:16px;
@@ -4005,7 +4005,7 @@ body[class*=branch-banner-is-active][style*=margin-top] .headerIntersecting{
     line-height:var(--line-height-sm)
 }
 .linkText{
-    color:var(--color-primary-base);
+    color:#4cb6c0;
     cursor:pointer;
     text-decoration:underline
 }
@@ -4908,7 +4908,7 @@ body[class*=branch-banner-is-active][style*=margin-top] .headerIntersecting{
     outline:none
 }
 .Dropdown-prependLabel--2p4O3{
-    color:var(--color-primary-base);
+    color:#4cb6c0;
     font-size:var(--font-size-xxxs);
     font-weight:var(--font-weight-600);
     line-height:var(--line-height-xxs);
@@ -4976,7 +4976,7 @@ body[class*=branch-banner-is-active][style*=margin-top] .headerIntersecting{
     outline:none
 }
 .Dropdown-optionInner--29GWT:after{
-    background:var(--color-primary-base);
+    background:#4cb6c0;
     bottom:0;
     content:"";
     height:2px;
@@ -5306,7 +5306,7 @@ body[class*=branch-banner-is-active][style*=margin-top] .headerIntersecting{
         width:100%!important
     }
     .HeroSolid-dropdownFixed--4RkrO .HeroSolid-dropdown--2lvEs{
-        background-color:var(--color-primary-base);
+        background-color:#4cb6c0;
         border:none;
         border-radius:0;
         width:100vw
@@ -6203,7 +6203,7 @@ body[class*=branch-banner-is-active][style*=margin-top] .headerIntersecting{
     transition:all .6s cubic-bezier(.19,1,.22,1)
 }
 .Carousel-arrowsContainer--BrI5T .Carousel-arrow--5LzcN svg{
-    fill:var(--color-primary-base);
+    fill:#4cb6c0;
     transition:fill .3s ease
 }
 .Carousel-arrowsContainer--BrI5T .Carousel-arrow--5LzcN svg circle{

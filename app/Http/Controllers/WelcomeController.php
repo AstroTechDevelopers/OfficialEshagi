@@ -21,19 +21,24 @@ class WelcomeController extends Controller
     {
         $country = $this->getCountry();
 
-        switch ($country->country)
-        {
-            case "ZM" :
-                config('COUNTRY','ZAMBIA');
-                return view("welcome_zim");
-            case "ZW":
-                config('COUNTRY','ZIMBABWE');
-                return view('welcome_zim');
-
-            default:
+        if ($country !== null) {
+            if (property_exists($country, 'country')) {
+                switch ($country->country) {
+                    case "ZM":
+                        config('COUNTRY', 'ZAMBIA');
+                        return view("welcome_zim");
+                    case "ZW":
+                        config('COUNTRY', 'ZIMBABWE');
+                        return view('welcome_zim');
+                    default:
+                        return view('errors.401');
+                }
+            } else {
                 return view('errors.401');
+            }
+        } else {
+            return view('errors.401');
         }
-
     }
 
     public function faq()
