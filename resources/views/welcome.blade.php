@@ -3,10 +3,11 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <!-- Bootstrap CSS --> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {{-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> --}}
+        <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="{{ asset('front_css/bootstrap.min.css') }}">
-        <!-- Animate CSS --> 
+        <!-- Animate CSS -->
         <link rel="stylesheet" href="{{ asset('front_css/animate.min.css') }}">
         <!-- Meanmenu CSS -->
         <link rel="stylesheet" href="{{ asset('front_css/meanmenu.css') }}">
@@ -30,14 +31,14 @@
         <link rel="stylesheet" href="{{ asset('front_css/dark.css') }}">
         <!-- Responsive CSS -->
 		<link rel="stylesheet" href="{{ asset('front_css/responsive.css') }}">
-		
+
 		<title>AstroCred | Africa's Leading Loans & Store Credit Provider</title>
 
         <link rel="icon" type="image/png" href="{{ asset('front_img/favicon.png') }}">
     </head>
 
     <body>
-        
+
         <!-- Start Navbar Area -->
         <div class="navbar-area">
             <div class="main-responsive-nav">
@@ -65,7 +66,7 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a href="#home" class="nav-link active">
-                                        Home 
+                                        Home
                                     </a>
                                 </li>
 
@@ -80,7 +81,7 @@
                                         Benefits
                                     </a>
                                 </li>
-                               
+
                                 <li class="nav-item">
                                     <a href="#how-it-works" class="nav-link">
                                         How it works
@@ -95,7 +96,7 @@
 
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">
-                                        Merchants 
+                                        Merchants
                                         <i class='bx bx-chevron-down'></i>
                                     </a>
                                     <ul class="dropdown-menu">
@@ -144,7 +145,7 @@
                             <span>Here for you</span>
                             <h1>We make credit purchases simple & affordable!</h1>
                             <p>With AstroCred, you can get an instant loan or shop at any of your favourite stores across Zambia and pay in affordable monthly installments.</p>
-                            
+
                             <div class="banner-btn">
                                 <a href="{{route('quick.register')}}" class="default-btn">
                                     Apply now
@@ -158,7 +159,7 @@
                                 <li>
                                     <span>Follow us</span>
                                 </li>
-            
+
                                 <li>
                                     <a href="https://web.facebook.com/astrotechZM" target="_blank">
                                         <i class="flaticon-facebook"></i>
@@ -203,9 +204,9 @@
         </section>
         <!-- End About Area Area -->
 
-  
 
-        
+
+
         <!-- Start Services Area -->
         <section id="benefits" class="services-area pt-100 pb-70">
             <div class="container">
@@ -313,7 +314,7 @@
                                 <h4>Disbursement</h4>
                                 <p>Voila! Your funds are ready. You can now request a fund payout to your designated bank account, get a shopping card and grab that new TV from your favourite store.</p>
                             </div>
-                            
+
                             <div class="deserve-content">
                                 <span>4</span>
                                 <h4>Repayments</h4>
@@ -333,7 +334,7 @@
                                 <span>How much do you need?</span>
                                 <h3>Loan Affordability Calculator</h3>
                             </div>
-                                
+
     <form id="loanForm">
 
         <div class="form-group">
@@ -350,7 +351,7 @@
         <label>Number of Months:</label>
         <input  class="form-control" type="number" id="months" placeholder="Enter number of months" required>
        </div>
-        
+
        <div class="form-group" >
         <label>Amount to Borrow:</label>
         <input  class="form-control" type="number" id="amountToBorrow" placeholder="Enter amount to borrow" required>
@@ -367,15 +368,15 @@
             </button>
         </div>
     </form>
-                              
 
-                            
 
-                               
+
+
+
                                 <br>
                                 <div class="form-group">
                                      <h6>Results:</h6>
-                                       
+
     <div id="qualificationStatus"></div>
     <div id="loanDetails" style="display: none;">
         <div id="affordabilityAmount"></div>
@@ -402,10 +403,10 @@
                     <p>Whatever your borrowing needs, we have an affordable credit product for you.</p>
                 </div>
 
-                <div class="best-services-slider"> 
-                  
+                <div class="best-services-slider">
+
                     <div id="thumbs" class="tab-home owl-carousel owl-theme">
-                    
+
                         <div class="tabs-item">
                             <a href="#">
                                 <i class="flaticon-loan-3"></i>
@@ -426,7 +427,7 @@
                                 <span>Shopping Card</span>
                             </a>
                         </div>
-                        
+
                         <div class="tabs-item">
                             <a href="#">
                                 <i class="flaticon-car"></i>
@@ -445,7 +446,7 @@
                                 <span>Business Loan</span>
                             </a>
                         </div>
-                    
+
                     </div>
 
                     <div id="best-services" class="owl-carousel owl-theme">
@@ -463,7 +464,7 @@
                                         <br>
                                         <h5>Term: 1 - 60 Months | Maximum Loan Amount: K500,000</h5>
                                     </div>
-                                   
+
                                     <ul class="list">
                                         <h3>Eligibility</h3>
                                         <li>Over 18 years old and a resident of the residing country.</li>
@@ -494,7 +495,7 @@
                                         <br>
                                         <h5>Term: 1 - 36 Months | Minimum Loan Amount: K3,000 | Maximum Loan Amount: K100,000</h5>
                                     </div>
-                                   
+
                                     <ul class="list">
                                         <h3>Eligibility</h3>
                                         <li>Over 18 years old and a resident of the residing country.</li>
@@ -525,7 +526,7 @@
                                         <br>
                                         <h5>Upto: 6 Months | Minimum Loan Amount: K5000 | Maximum Loan Amount: K50,000</h5>
                                     </div>
-                                   
+
                                     <ul class="list">
                                         <h3>Eligibility</h3>
                                         <li>Over 18 years old and a resident of the residing country.</li>
@@ -556,7 +557,7 @@
                                         <br>
                                         <h5>Upto: 24 months | Minimum Loan Amount: K2,500 | Maximum Loan Amount: K20,000</h5>
                                     </div>
-                                   
+
                                     <ul class="list">
                                         <h3>Eligibility</h3>
                                         <li>Over 18 years old and a resident of the residing country.</li>
@@ -587,7 +588,7 @@
                                         <br>
                                         <h5>Term: 1 - 60 Months | Maximum Loan Amount: K500,000</h5>
                                     </div>
-                                   
+
                                     <ul class="list">
                                         <h3>Eligibility</h3>
                                         <li>Over 18 years old and a resident of the residing country.</li>
@@ -618,7 +619,7 @@
                                         <br>
                                         <h5>Term: 1 - 60 Months | Maximum Loan Amount: K500,000</h5>
                                     </div>
-                                   
+
                                     <ul class="list">
                                         <h3>Eligibility</h3>
                                         <li>Over 18 years old and a resident of the residing country.</li>
@@ -635,7 +636,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
 
                     </div>
                 </div>
@@ -662,7 +663,7 @@
                                     <span>Kitwe, Zambia</span>
                                 </div>
                             </div>
-                            
+
                             <div class="col-lg-6">
                                 <div class="clients-image">
                                     <img src="{{ asset('front_img/clients/lumbwe.jpg') }}" alt="image">
@@ -683,7 +684,7 @@
                                     <span>Ndola, Zambia</span>
                                 </div>
                             </div>
-                            
+
                             <div class="col-lg-6">
                                 <div class="clients-image">
                                     <img src="{{ asset('front_img/clients/sibongile.jpg') }}" alt="image">
@@ -704,7 +705,7 @@
                                     <span>Lusaka, Zambia</span>
                                 </div>
                             </div>
-                            
+
                             <div class="col-lg-6">
                                 <div class="clients-image">
                                     <img src="{{ asset('front_img/clients/bruce.jpg') }}" alt="image">
@@ -720,7 +721,7 @@
         </section>
         <!-- End Clients Area -->
 
-       
+
 
               <!-- Start Projects Area -->
               <section class="projects-area ptb-100">
@@ -741,7 +742,7 @@
                                 </h3>
                             </div>
                         </div>
-    
+
                         <div class="projects-item">
                             <a >
                                 <img src="{{ asset('front_img/projects/home-appliances.jpg') }}" alt="image">
@@ -752,7 +753,7 @@
                                 </h3>
                             </div>
                         </div>
-    
+
                         <div class="projects-item">
                             <a >
                                 <img src="{{ asset('front_img/projects/furniture.jpg') }}" alt="image">
@@ -763,7 +764,7 @@
                                 </h3>
                             </div>
                         </div>
-    
+
                         <div class="projects-item">
                             <a >
                                 <img src="{{ asset('front_img/projects/hardware-tools.jpg') }}" alt="image">
@@ -774,7 +775,7 @@
                                 </h3>
                             </div>
                         </div>
-    
+
                         <div class="projects-item">
                             <a >
                                 <img src="{{ asset('front_img/projects/fashion.jpg') }}" alt="image">
@@ -797,19 +798,19 @@
                         <div class="partner-item">
                             <img src="{{ asset('front_img/partner/1.png') }}" alt="image">
                         </div>
-    
+
                         <div class="partner-item">
                             <img src="{{ asset('front_img/partner/2.png') }}" alt="image">
                         </div>
-    
+
                         <div class="partner-item">
                             <img src="{{ asset('front_img/partner/3.png') }}" alt="image">
                         </div>
-    
+
                         <div class="partner-item">
                             <img src="{{ asset('front_img/partner/4.png') }}" alt="image">
                         </div>
-    
+
                         <div class="partner-item">
                             <img src="{{ asset('front_img/partner/5.png') }}" alt="image">
                         </div>
@@ -867,7 +868,7 @@
                                     <a href="/terms_and_conditions">Terms of Service</a>
                                 </li>
                             </ul>
-                        </div>    
+                        </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6">
@@ -899,17 +900,17 @@
                                 <li>
                                     <b>Follow us:</b>
                                 </li>
-            
+
                                 <li>
                                     <a href="https://web.facebook.com/astrotechZM" target="_blank">
                                         <i class="flaticon-facebook"></i>
                                     </a>
                                 </li>
-                                
+
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="col-lg-3 col-md-6">
                         <div class="single-footer-widget">
                             <h3>Download Our App</h3>
@@ -923,7 +924,7 @@
                                     <img src="{{ asset('front_img/apple_icon.png') }}" alt="image">
                                 </a>
                             </div>
-        
+
                         </div>
                     </div>
                 </div>
@@ -997,15 +998,15 @@
                 var netSalary = parseFloat(document.getElementById('netSalary').value);
                 var months = parseInt(document.getElementById('months').value);
                 var amountToBorrow = parseFloat(document.getElementById('amountToBorrow').value);
-                
+
                 // Calculate monthly repayment
                 var interestRate = 0.15;
                 var monthlyInterest = amountToBorrow * interestRate / months;
                 var monthlyRepayment = amountToBorrow / months + monthlyInterest;
-                
+
                 // Check if monthly repayment exceeds 40% of net salary
                 var maxRepayment = netSalary * 0.4;
-                
+
                 if (monthlyRepayment > maxRepayment) {
                     // Display message if person doesn't qualify
                     document.getElementById('qualificationStatus').innerHTML = "You do not qualify for the loan. <br> Your Affordability is: K" + maxRepayment.toFixed(2);
@@ -1014,7 +1015,7 @@
                 } else {
                     // Calculate maximum amount that can be borrowed
                     var maxBorrowAmount = maxRepayment * months;
-                    
+
                     // Display results
                     document.getElementById('qualificationStatus').innerHTML = "Congratulations! You qualify for the loan.";
                     document.getElementById('affordabilityAmount').innerHTML = "Your Affordability is: K" + maxRepayment.toFixed(2);
@@ -1023,7 +1024,7 @@
                     document.getElementById('loanDetails').style.display = "block";
                 }
             }
-            
+
             function resetForm() {
                 document.getElementById('loanForm').reset();
                 document.getElementById('qualificationStatus').innerHTML = "";

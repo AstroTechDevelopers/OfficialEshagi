@@ -3109,11 +3109,11 @@
     transition:opacity .5s
 }
 .Layout-transitionEntering--2uXRa{
-    opacity:0
+    opacity:1
 }
 .Layout-transitionExiting--3vNtz{
     left:0;
-    opacity:0;
+    opacity:1;
     pointer-events:none;
     position:absolute;
     top:0;

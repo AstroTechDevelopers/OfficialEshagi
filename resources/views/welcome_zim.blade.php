@@ -12,18 +12,18 @@
     <link data-chunk="sections-Hero-HeroCarousel" rel="stylesheet" href="custom.css">
 
     <meta name="generator" content="Gatsby 4.25.4"/>
-    <meta data-react-helmet="true" name="description" content="With Affirm, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
-    <meta data-react-helmet="true" property="og:title" content="Affirm | Buy now, pay later with no late fees or surprises"/>
+    <meta data-react-helmet="true" name="description" content="With Eshagi, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
+    <meta data-react-helmet="true" property="og:title" content="Eshagi | Buy now, pay later with no late fees or surprises"/>
     <meta data-react-helmet="true" property="og:description" content="With Affirm, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
     <meta data-react-helmet="true" property="og:type" content="website"/>
     <meta data-react-helmet="true" property="og:image" content="https://images.ctfassets.net/4rc1asww3mw7/4TE1b1MHPlEvYHkby7Oii9/0227997a3c0b49fde1121e489d6bdc73/com_Preview_v3.jpg"/>
     <meta data-react-helmet="true" property="og:image:alt" content="Person looking at Affirm on phone while shopping"/>
     <meta data-react-helmet="true" name="twitter:card" content="summary"/>
-    <meta data-react-helmet="true" name="twitter:creator" content="Affirm"/>
-    <meta data-react-helmet="true" name="twitter:title" content="Affirm | Buy now, pay later with no late fees or surprises"/>
-    <meta data-react-helmet="true" name="twitter:description" content="With Affirm, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
+    <meta data-react-helmet="true" name="twitter:creator" content="Eshagi"/>
+    <meta data-react-helmet="true" name="twitter:title" content="Eshagi | Buy now, pay later with no late fees or surprises"/>
+    <meta data-react-helmet="true" name="twitter:description" content="With Eshagi, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
     <meta data-react-helmet="true" name="twitter:image" content="https://images.ctfassets.net/4rc1asww3mw7/4TE1b1MHPlEvYHkby7Oii9/0227997a3c0b49fde1121e489d6bdc73/com_Preview_v3.jpg"/>
-    <meta data-react-helmet="true" name="twitter:image:alt" content="Person looking at Affirm on phone while shopping"/>
+    <meta data-react-helmet="true" name="twitter:image:alt" content="Person looking at Eshagi on phone while shopping"/>
     <link type="text/css" href="custom.css">
     <style data-styled="" data-styled-version="6.0.8">.csBuiC{color:var(--color-ui-text-light);}/*!sc*/
         data-styled.g27[id="styled__ContentTwoColumnRoot-sc-2253dy-0"]{content:"csBuiC,"}/*!sc*/
@@ -131,9 +131,9 @@
         @media (min-width: calc(920px + 1px)){.bRGQCm{gap:5vw;}}/*!sc*/
         data-styled.g53[id="styled__StyledContainer-sc-f6u918-10"]{content:"bRGQCm,"}/*!sc*/
         .gzlcJ{--inline-gap:2vw;opacity:1;transition:opacity ease-in-out 0.3s;}/*!sc*/
-        .gzlcJ:not([disabled]){opacity:0;animation:0.8s ease-in-out 0s forwards lbWRkT;}/*!sc*/
+        .gzlcJ:not([enabled]){opacity:1;animation:0.8s ease-in-out 0s forwards lbWRkT;}/*!sc*/
         .gzlcJ.gzlcJ.gzlcJ{right:var(--inline-gap);display:block;position:absolute;top:calc(50% - 18px);z-index:10;}/*!sc*/
-        .gzlcJ.gzlcJ.gzlcJ[disabled]{opacity:0;}/*!sc*/
+        .gzlcJ.gzlcJ.gzlcJ[enabled]{opacity:1;}/*!sc*/
         @media (max-width: 920px){.gzlcJ.gzlcJ.gzlcJ{--inline-gap:30vw;top:calc(100% - var(--component-spacing-lg));}}/*!sc*/
         @media (min-width: 1600px){.gzlcJ{--inline-gap:10vw;}}/*!sc*/
         data-styled.g54[id="styled__StyledNextButtonArrow-sc-f6u918-11"]{content:"gzlcJ,"}/*!sc*/
@@ -141,7 +141,7 @@
         data-styled.g55[id="styled__StyledPrevButtonArrow-sc-f6u918-12"]{content:"dSDsDk,"}/*!sc*/
         .enzwUd [class*='qrCode'] img{width:96px;border:0;border-radius:var(--border-radius-sm);}/*!sc*/
         data-styled.g56[id="styled__StyledDownloadApp-sc-f6u918-13"]{content:"enzwUd,"}/*!sc*/
-        @keyframes lbWRkT{0%{opacity:0;}100%{opacity:1;}}/*!sc*/
+        @keyframes lbWRkT{0%{opacity:1;}100%{opacity:1;}}/*!sc*/
         data-styled.g57[id="sc-keyframes-lbWRkT"]{content:"lbWRkT,"}/*!sc*/
         .hNBiAT.hNBiAT.hNBiAT{margin-top:var(--section-spacing-xs);margin-bottom:var(--section-spacing-md);}/*!sc*/
         @media (max-width: 920px){.hNBiAT{padding-inline:var(--component-spacing-sm);}}/*!sc*/
@@ -335,7 +335,7 @@
                                         <div class="">
                                             <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
                                                 <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
-                                                    <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">Meet the  Affirm Card™</h2>
+                                                    <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">Meet the  E-Shagi Card™</h2>
                                                     <div class="styled__StyledRichText-sc-f6u918-3 bKjtOs RichText-richText--1L77z">
                                                         <div>
                                                             <h3 class="imports-h3--3yLlm imports-h4--1GRDI"><strong class="imports-bold--1wLam">One card. Two ways to pay.</strong></h3>
@@ -348,9 +348,9 @@
                                                     <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
                                                         <div style="max-width:600px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;544&#x27; width=&#x27;600&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
                                                         <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
-                                                        <img src="images/phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                        <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
                                                         <noscript>
-                                                            <img src="images/phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                            <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
                                                         </noscript>
                                                         <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
                                                     </div>
@@ -442,9 +442,11 @@
                         </div>
                     </section>
 
+
+
                     <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopXSmall--6G7Be styles-spacingBottomStandard--2DrRP">
                         <div class="Container-container--DIXxP IllustrationWithText-container--5EV1Y IllustrationWithText-darkText--1vq6E">
-                            <h2 class="IllustrationWithText-title--3zRaK imports-bodyTitleLarge--3TNN9">How to use Affirm</h2>
+                            <h2 class="IllustrationWithText-title--3zRaK imports-bodyTitleLarge--3TNN9">How to use Eshagi</h2>
                             <div class="IllustrationWithText-elementsContainer--6M0QY IllustrationWithText-hasHeadingText--6dH4Z">
                                 <div class="IllustrationWithText-container--1OPwm IllustrationWithText-container-rowDirection--6OnJr IllustrationWithText-width_33--75qaK">
                                     <img src="https://images.ctfassets.net/4rc1asww3mw7/2s3c6cmoTXKipgIDi1S1Xn/41af32c83294d3b8cbf9cf6ac9c4712f/Step1_svg.svg" alt="how to use Affirm - At checkout" class="IllustrationWithText-image--345By IllustrationWithText-leftAlignedImage--7djnZ" loading="lazy"/>
@@ -483,6 +485,7 @@
                             <div class="IllustrationWithText-button--6hQrh"><a href="how-it-works.html" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Learn more</span></a></div>
                         </div>
                     </section>
+
 
                     <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopNone--1Hwd4 styles-spacingBottomNone--2ubZt">
                         <div class="styled__SectionBgColor-sc-1y2kxlw-0 ioAcIJ">
