@@ -3105,9 +3105,9 @@
 .AnnouncementBanner-textLight--2HxM0 path{
     fill:var(--color-ui-colors-background)
 }
-.Layout-transition--32GY7{
+/* .Layout-transition--32GY7{
     transition:opacity .5s
-}
+} */
 .Layout-transitionEntering--2uXRa{
     opacity:1
 }
@@ -7052,7 +7052,7 @@ body[class*=branch-banner-is-active][style*=margin-top] .headerIntersecting{
 }
 @keyframes SuccessModal-bgImageScale--2jD8A{
     0%{
-        opacity:0;
+        opacity:1;
         transform:scale(1.5)
     }
     80%{

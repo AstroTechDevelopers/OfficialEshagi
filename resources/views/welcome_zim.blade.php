@@ -321,7 +321,7 @@
                                                     <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
                                                         <div style="max-width:600px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;544&#x27; width=&#x27;600&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
                                                         <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
-                                                        <img src="phone2.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                        <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
                                                         <noscript>
                                                             <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
                                                         </noscript>
