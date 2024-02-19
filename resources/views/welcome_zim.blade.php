@@ -288,11 +288,11 @@
                     </div>
 
                     <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopXSmall--6G7Be styles-spacingBottomNone--2ubZt">
-                        <div class="styled__StyledNextButtonArrow-sc-f6u918-11 styled__StyledPrevButtonArrow-sc-f6u918-12 gzlcJ dSDsDk ButtonArrow-wrapper--6vQnV ButtonArrow-left--7nmna" tabindex="-1" role="button" aria-label="Previous" disabled="" readonly="">
+                        <a class="styled__StyledNextButtonArrow-sc-f6u918-11 styled__StyledPrevButtonArrow-sc-f6u918-12 gzlcJ dSDsDk ButtonArrow-wrapper--6vQnV ButtonArrow-left--7nmna" tabindex="-1" role="button" aria-label="Previous" disabled="" readonly="" href="#myCarousel" role="button" data-bs-slide="prev">
                             <svg width="9" height="16" viewBox="0 0 9 16" fill="#747677" xmlns="http://www.w3.org/2000/svg">
                                 <path d="m1 1 7 7-7 7"></path>
                             </svg>
-                        </div>
+                        </a>
                             <div class="carousel slide" id="myCarousel" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -438,11 +438,11 @@
                                     </div>
                                 </div>
                             </div>
-                        <div class="styled__StyledNextButtonArrow-sc-f6u918-11 gzlcJ ButtonArrow-wrapper--6vQnV" tabindex="0" role="button" aria-label="Next">
+                        <a class="styled__StyledNextButtonArrow-sc-f6u918-11 gzlcJ ButtonArrow-wrapper--6vQnV" tabindex="0" role="button" aria-label="Next" href="#myCarousel" role="button" data-bs-slide="next">
                             <svg width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg">
                                 <path d="m1 1 7 7-7 7"></path>
                             </svg>
-                        </div>
+                        </a>
                     </section>
 
 
