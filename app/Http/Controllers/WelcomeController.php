@@ -19,8 +19,8 @@ class WelcomeController extends Controller
      */
     public function welcome()
     {
-        $country = $this->getCountry();
-
+        //$country = $this->getCountry();
+        $country = null;
         if ($country !== null) {
             if (property_exists($country, 'country')) {
                 switch ($country->country) {
@@ -37,7 +37,7 @@ class WelcomeController extends Controller
                 return view('errors.401');
             }
         } else {
-            return view('errors.401');
+            return view('welcome_zim');
         }
     }
 
