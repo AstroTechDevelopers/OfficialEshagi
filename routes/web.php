@@ -56,6 +56,8 @@ Route::post('/save-kyc-director-two', [PartnerController::class,'uploadDirectorT
 
 Route::group(['middleware' => ['web', 'checkblocked','activity']], function () {
     Route::get('/', 'App\Http\Controllers\WelcomeController@welcome')->name('welcome');
+    Route::get('/business', 'App\Http\Controllers\WelcomeController@business')->name('business');
+
     Route::get('/terms', 'App\Http\Controllers\TermsController@terms')->name('terms');
     Route::get('/register-options', [WelcomeController::class, 'regOptions'])->name('reg.options');
     Route::get('/register-locale', [WelcomeController::class, 'chooseLocale'])->name('choice.locale');

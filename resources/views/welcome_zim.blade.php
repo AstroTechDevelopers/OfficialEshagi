@@ -173,7 +173,7 @@
         <style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:1!important}</style>
     </noscript>
     <script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script>
-    <title data-react-helmet="true">Affirm | Buy now, pay later with no late fees or surprises</title>
+    <title data-react-helmet="true">Eshagi - Anytime Anywhere </title>
     <link data-react-helmet="true" rel="canonical"/>
     <link data-react-helmet="true" rel="alternate" hreflang="x-default" href="index.html"/>
     <link data-react-helmet="true" rel="alternate" hreflang="en-us" href="index.html"/>
@@ -198,8 +198,8 @@
                     <div class="Container-container--DIXxP">
                         <nav class="Header-topNav--6Ks8m">
                             <ul>
-                                <li class="Header-topNav-item--2ixeW"><a href="index.html" class="Header-topNav-itemLink--37M0c Header-topNav-itemSelected--1GqcZ">For shoppers</a></li>
-                                <li class="Header-topNav-item--2ixeW"><a href="business.html" class="Header-topNav-itemLink--37M0c">For businesses</a></li>
+                                <li class="Header-topNav-item--2ixeW"><a href="/" class="Header-topNav-itemLink--37M0c Header-topNav-itemSelected--1GqcZ">For shoppers</a></li>
+                                <li class="Header-topNav-item--2ixeW"><a href="/business" class="Header-topNav-itemLink--37M0c">For businesses</a></li>
                             </ul>
                         </nav>
                     </div>

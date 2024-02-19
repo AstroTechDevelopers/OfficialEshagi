@@ -41,6 +41,11 @@ class WelcomeController extends Controller
         }
     }
 
+    public function business()
+    {
+        return view('welcome.business');
+    }
+
     public function faq()
     {
         return view('faq');
