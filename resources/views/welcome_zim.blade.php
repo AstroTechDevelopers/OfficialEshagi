@@ -323,7 +323,7 @@
                                                         <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
                                                         <img src="phone2.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
                                                         <noscript>
-                                                            <img src="phone2.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                            <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
                                                         </noscript>
                                                         <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
                                                     </div>
@@ -378,9 +378,9 @@
                                                                             <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained AppStoreBadges-badge--7gr2N">
                                                                                 <div style="max-width:288px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;97&#x27; width=&#x27;288&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
                                                                                 <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
-                                                                                <img src="images/phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                                                <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
                                                                                 <noscript>
-                                                                                    <img src="images/phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                                                    <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
                                                                                 </noscript>
                                                                                 <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
                                                                             </div>
@@ -391,9 +391,9 @@
                                                                             <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained AppStoreBadges-badge--7gr2N">
                                                                                 <div style="max-width:324px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;97&#x27; width=&#x27;324&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
                                                                                 <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
-                                                                                <img src="images/phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                                                <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
                                                                                 <noscript>
-                                                                                    <img src="images/phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                                                    <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
                                                                                 </noscript>
                                                                                 <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
                                                                             </div>
@@ -454,7 +454,7 @@
                                         <h3 class="IllustrationWithText-title--5nnfC IllustrationWithText-leftAlignedText--48mGd imports-h3--3yLlm imports-h4--1GRDI">At checkout</h3>
                                         <div class="RichText-richText--1L77z IllustrationWithText-description--5431d IllustrationWithText-leftAlignedText--48mGd">
                                             <div>
-                                                <p>Look for the Affirm logo when completing your purchase, or pay with your <a href="card.html" class="imports-linkText--2pLgL">Affirm Card.</a> </p>
+                                                <p>Look for the Affirm logo when completing your purchase, or pay with your <a href="card.html" class="imports-linkText--2pLgL">Eshagi Card.</a> </p>
                                             </div>
                                         </div>
                                     </div>
@@ -462,7 +462,7 @@
                                 <div class="IllustrationWithText-container--1OPwm IllustrationWithText-container-rowDirection--6OnJr IllustrationWithText-width_33--75qaK">
                                     <img src="https://images.ctfassets.net/4rc1asww3mw7/5ZuiRR7Y0ALavfyfHCAki3/e5bdffa2fbc46c734368a7ff72840468/Step2_svg.svg" alt="how to use Affirm - Affirm app" class="IllustrationWithText-image--345By IllustrationWithText-leftAlignedImage--7djnZ" loading="lazy"/>
                                     <div class="IllustrationWithText-dataContainer--2sdsx">
-                                        <h3 class="IllustrationWithText-title--5nnfC IllustrationWithText-leftAlignedText--48mGd imports-h3--3yLlm imports-h4--1GRDI">Affirm app</h3>
+                                        <h3 class="IllustrationWithText-title--5nnfC IllustrationWithText-leftAlignedText--48mGd imports-h3--3yLlm imports-h4--1GRDI">Eshagi app</h3>
                                         <div class="RichText-richText--1L77z IllustrationWithText-description--5431d IllustrationWithText-leftAlignedText--48mGd">
                                             <div>
                                                 <p>Check your purchasing power and see your payment options from the palm of your hand.</p>
@@ -473,7 +473,7 @@
                                 <div class="IllustrationWithText-container--1OPwm IllustrationWithText-container-rowDirection--6OnJr IllustrationWithText-width_33--75qaK">
                                     <img src="https://images.ctfassets.net/4rc1asww3mw7/2fg800WX69eI6rkxhs2Tu/6ea325b318b1e71ab84cefce77be2f0d/Step3_svg.svg" alt="how to use Affirm - The Affirm Card™" class="IllustrationWithText-image--345By IllustrationWithText-leftAlignedImage--7djnZ" loading="lazy"/>
                                     <div class="IllustrationWithText-dataContainer--2sdsx">
-                                        <h3 class="IllustrationWithText-title--5nnfC IllustrationWithText-leftAlignedText--48mGd imports-h3--3yLlm imports-h4--1GRDI">The Affirm Card™</h3>
+                                        <h3 class="IllustrationWithText-title--5nnfC IllustrationWithText-leftAlignedText--48mGd imports-h3--3yLlm imports-h4--1GRDI">The Eshagi Card™</h3>
                                         <div class="RichText-richText--1L77z IllustrationWithText-description--5431d IllustrationWithText-leftAlignedText--48mGd">
                                             <div>
                                                 <p>Request to pay over time for the big stuff, or just pay in full for the smaller things.</p>
