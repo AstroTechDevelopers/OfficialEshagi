@@ -10,7 +10,8 @@
     <link rel="preload" href="static/CalibreWeb-Semibold-191c32431eb5d1ebd758787617309f6e.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link rel="preload" href="static/Axiforma-Light-a36136010aebd665262360957f4a05bb.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link data-chunk="sections-Hero-HeroCarousel" rel="stylesheet" href="custom.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="generator" content="Gatsby 4.25.4"/>
     <meta data-react-helmet="true" name="description" content="With Eshagi, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
     <meta data-react-helmet="true" property="og:title" content="Eshagi | Buy now, pay later with no late fees or surprises"/>
@@ -292,10 +293,9 @@
                                 <path d="m1 1 7 7-7 7"></path>
                             </svg>
                         </div>
-                        <div>
-                            <div class="swiper styled__StyledSwiper-sc-f6u918-1 dmtePt">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
+                            <div class="carousel slide" id="myCarousel" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
                                         <div class="">
                                             <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
                                                 <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
@@ -336,7 +336,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="carousel-item">
                                         <div class="">
                                             <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
                                                 <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
@@ -363,7 +363,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
+                                    <div class="carousel-item">
                                         <div class="">
                                             <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
                                                 <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
@@ -438,8 +438,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="styled__DotsPagination-sc-f6u918-2 cuJycO swiper-pagination"></div>
-                        </div>
                         <div class="styled__StyledNextButtonArrow-sc-f6u918-11 gzlcJ ButtonArrow-wrapper--6vQnV" tabindex="0" role="button" aria-label="Next">
                             <svg width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg">
                                 <path d="m1 1 7 7-7 7"></path>
@@ -1202,6 +1200,14 @@
 <script src="sections-Questions-40fa10ce83f9b4e7f6c5.js"></script>
 <script src="sections-Reviews-362fb9c832c958312019.js"></script>
 <script src="sections-SplitContent-2e78625fa09fb39edb21.js"></script>
+<script>
+    var myCarousel = document.getElementById('myCarousel')
+    var carousel = new bootstrap.Carousel(myCarousel, {
+        interval: 2000, // Set the interval between slide transitions (in milliseconds)
+        wrap: true, // Enable continuous looping of the carousel
+        keyboard: true // Enable keyboard navigation
+    })
+</script>
 
 </body>
 </html>
