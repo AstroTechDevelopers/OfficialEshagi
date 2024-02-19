@@ -4029,10 +4029,10 @@
                         <nav class="Header-topNav--6Ks8m">
                             <ul>
                                 <li class="Header-topNav-item--2ixeW">
-                                    <a href="index.html" class="Header-topNav-itemLink--37M0c">For shoppers</a>
+                                    <a href="/" class="Header-topNav-itemLink--37M0c">For shoppers</a>
                                 </li>
                                 <li class="Header-topNav-item--2ixeW">
-                                    <a href="business.html" class="Header-topNav-itemLink--37M0c Header-topNav-itemSelected--1GqcZ">For businesses</a>
+                                    <a href="/business" class="Header-topNav-itemLink--37M0c Header-topNav-itemSelected--1GqcZ">For businesses</a>
                                 </li>
                             </ul>
                         </nav>
@@ -6034,7 +6034,7 @@
                                 </div>
                                 <div class="Footer-navColumn--2aJRL" role="menu" aria-label="For businesses">
                                     <span role="presentation" class="Footer-navColumnTitle--OOh0B imports-tag--7t9J0">For businesses</span>
-                                    <a href="business.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Get started</a>
+                                    <a href="/business" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Get started</a>
                                     <a href="business/solutions.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Solutions</a>
                                     <a href="business/partners/directory/index.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Partner directory</a>
                                     <a href="docs.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">For developers</a>
