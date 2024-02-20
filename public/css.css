@@ -19,6 +19,7 @@
     display: inline;
   }
 
+
   .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
@@ -66,6 +67,18 @@
 
   .nav > #nav-check {
     display: none;
+  }
+
+  .logo-e {
+    margin-left: -185px;
+
+  }
+
+  @media (max-width: 767px) {
+    .logo-e {
+      margin-left: 0;
+
+    }
   }
 
   .nav .nav-links ul a.icon {

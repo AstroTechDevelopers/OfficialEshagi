@@ -290,7 +290,11 @@
                         <div class="nav">
                             <div class="nav-header">
                                 <!-- Add the image tag with the image source and any necessary attributes -->
-                            <img src="eshago_logo.png" style="margin-left: -185px; margin-bottom: 20px" alt="Eshagi Logo" class="Header-logo--7o3IK">
+
+                                <div class="logo-e">
+                                    <img src="eshago_logo.png" style="margin-left: -185px; margin-top: 15px" alt="Eshagi Logo" class="Header-logo--7o3IK">
+                                </div>
+
                               </div>
                             <input type="checkbox" id="nav-check">
 
