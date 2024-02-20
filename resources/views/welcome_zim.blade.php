@@ -4,6 +4,7 @@
     <meta charSet="UTF-8"/>
     <link href="data:image/png;base64,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" rel="icon" type="image/png"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <link rel="preload" href="static/CalibreWeb-Regular-4dd57d9179e958e4824e104f9d1feb4c.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link rel="preload" href="static/CalibreWeb-Bold-c0a295d928388222864fd66ea681f189.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
@@ -11,6 +12,7 @@
     <link rel="preload" href="static/Axiforma-Light-a36136010aebd665262360957f4a05bb.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link data-chunk="sections-Hero-HeroCarousel" rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="generator" content="Gatsby 4.25.4"/>
     <meta data-react-helmet="true" name="description" content="With Eshagi, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
@@ -210,15 +212,17 @@
                         </nav>
                     </div>
                 </div>
+
                 <div class="Header-header--5qK1l">
                     <a href="#maincontent" class="Header-skipLink--2hrII">Skip to main content</a>
                     <div class="Header-wideBreakpoint--ZKKub">
-                        <div class="Container-container--DIXxP Header-wrapper--38o1w Header-hideOnTablet--1zfyU">
-                            <a href="#" aria-label="Eshagi">
+
+                            {{-- <a href="#" aria-label="Eshagi">
 
                                 <img src="eshago_logo.png" alt="Eshagi Logo" class="Header-logo--7o3IK">
-                            </a>
-                            <nav class="Header-mainNav--4dBEy" aria-label="Main">
+                            </a> --}}
+
+                            {{-- <nav class="Header-mainNav--4dBEy" aria-label="Main">
                                 <ul>
                                     <li class="Header-subNav--JYaGg"><a href="how-it-works/why-affirm.html" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN"><span class="Header-linkText--xgKfN">What is Eshagi</span></a></li>
                                     <li class="Header-subNav--JYaGg"><a href="how-it-works.html" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN"><span class="Header-linkText--xgKfN">How to use</span></a></li>
@@ -240,30 +244,32 @@
                                     </a>
                                     <a href="https://www.affirm.com/user/signup" class="ButtonPrimary-buttonPrimary--1qZwZ ButtonPrimary-buttonTertiary--1WjyY"><span>Sign up</span></a><a href="https://www.affirm.com/help/" class="Header-linkHelp--3N03b">Help</a>
                                 </div>
-                            </nav>
-                        </div>
-                        <div class="Header-hideAboveTablet--6hCsq">
-                            <div class="Header-wrapper--38o1w">
-                                <a href="#" aria-label="Eshagi">
+                            </nav> --}}
 
-                                    <img src="eshago_logo.png" alt="Eshagi Logo" class="Header-logo--7o3IK">
-                                </a>
-                                <div class="Header-mobileMenuOverlay--wp2il"></div>
-                                <a href="user/signin.html" class="ButtonPrimary-buttonPrimary--1qZwZ Header-mobileSignInButton--QugOV ButtonPrimary-buttonTransparent--4cp67">
-                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path clip-rule="evenodd" d="M8.999 1.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm-4 2.5a4 4 0 1 1 8 0 4 4 0 0 1-8 0ZM9 10.5c-4.294 0-7.5 2.807-7.5 5.963 0 .27.181.555.519.7 1.968.848 4.268 1.337 6.731 1.337 2.8 0 5.387-.632 7.517-1.703.161-.08.233-.219.233-.334 0-3.156-3.206-5.963-7.5-5.963Zm-9 5.963C0 12.205 4.181 9 9 9s9 3.205 9 7.463c0 .746-.452 1.37-1.06 1.675C14.591 19.318 11.772 20 8.75 20c-2.66 0-5.162-.528-7.324-1.459C.63 18.199 0 17.427 0 16.463Z"></path>
-                                    </svg>
-                                    <span>Log in</span>
-                                </a>
-                                <div role="button" aria-haspopup="true" aria-expanded="false" aria-label="Open site navigation menu" tabindex="0" class="Header-hamburgerButton--42eFF">
-                                    <svg viewBox="0 0 28 19" xmlns="http://www.w3.org/2000/svg" class="Header-hamburger--C2ISI">
-                                        <g fill="none" stroke="#05080a" stroke-linecap="square" stroke-width="2">
-                                            <path d="M27.6 1.5H1M27.6 17.5H1M27.6 9.5H1"></path>
-                                        </g>
-                                    </svg>
-                                </div>
+                        <div class="nav">
+                            <div class="nav-header">
+                                <!-- Add the image tag with the image source and any necessary attributes -->
+                                <img src="eshago_logo.png" style="margin-left: -185px; margin-top: 12px" alt="Eshagi Logo" class="Header-logo--7o3IK">
+                              </div>
+                            <input type="checkbox" id="nav-check">
+
+                            <div class="nav-btn">
+                              <label for="nav-check">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </label>
                             </div>
-                        </div>
+                            <div class="nav-links" style="color: black;">
+                              <ul>
+                                <li><a href="#" target="_blank">What is Eshagi</a></li>
+                                <li><a href="#" target="_blank">How to use</a></li>
+                                <li><a href="#" target="_blank">Shop</a></li>
+                                <li><a href="#" target="_blank">Eshagi Card</a></li>
+                              </ul>
+                            </div>
+                          </div>
+
                     </div>
                 </div>
             </header>

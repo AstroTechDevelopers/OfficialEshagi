@@ -3372,7 +3372,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     border:0;
     font:inherit;
     font-size:100%;
-    margin:0;
+    margin:1;
     padding:0;
     vertical-align:baseline
 }
