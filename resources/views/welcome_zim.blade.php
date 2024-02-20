@@ -372,8 +372,8 @@
                                                         <div class="styled__StyledDownloadApp-sc-f6u918-13 enzwUd">
                                                             <div class="DownloadApp-ctaWrap--4t74H DownloadApp-mobileOnly--1LTLG">
                                                                 <div class="AppStoreBadges-container--2aUGZ">
-                                                                    <div class="AppStoreBadges-item--3TirS">
-                                                                        <a href="https://bnc.lt/mnGl/bP433iKXvw" rel="noopener noreferrer">
+                                                                    {{-- <div class="AppStoreBadges-item--3TirS">
+                                                                        <a href="#" rel="noopener noreferrer">
                                                                             <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained AppStoreBadges-badge--7gr2N">
                                                                                 <div style="max-width:288px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;97&#x27; width=&#x27;288&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
                                                                                 <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
@@ -384,7 +384,7 @@
                                                                                 <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
                                                                             </div>
                                                                         </a>
-                                                                    </div>
+                                                                    </div> --}}
                                                                     <div class="AppStoreBadges-item--3TirS">
                                                                         <a href="https://bnc.lt/mnGl/XLGlcMVXvw" rel="noopener noreferrer">
                                                                             <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained AppStoreBadges-badge--7gr2N">
