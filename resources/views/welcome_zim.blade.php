@@ -11,6 +11,7 @@
     <link rel="preload" href="static/Axiforma-Light-a36136010aebd665262360957f4a05bb.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
     <link data-chunk="sections-Hero-HeroCarousel" rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <meta name="generator" content="Gatsby 4.25.4"/>
     <meta data-react-helmet="true" name="description" content="With Eshagi, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
@@ -26,6 +27,7 @@
     <meta data-react-helmet="true" name="twitter:image" content="https://images.ctfassets.net/4rc1asww3mw7/4TE1b1MHPlEvYHkby7Oii9/0227997a3c0b49fde1121e489d6bdc73/com_Preview_v3.jpg"/>
     <meta data-react-helmet="true" name="twitter:image:alt" content="Person looking at Eshagi on phone while shopping"/>
     <link type="text/css" href="custom.css">
+    <link rel="stylesheet" href="css.css">
     <style data-styled="" data-styled-version="6.0.8">.csBuiC{color:var(--color-ui-text-light);}/*!sc*/
         data-styled.g27[id="styled__ContentTwoColumnRoot-sc-2253dy-0"]{content:"csBuiC,"}/*!sc*/
         .ewZIHq{background:linear-gradient(to left top, rgb(27 22 92), rgb(12 8 49), rgb(4 2 25), rgb(0, 0, 0));border-radius:var(--border-radius-lg);display:flex;overflow:hidden;}/*!sc*/
@@ -218,11 +220,8 @@
                 <div class="Header-header--5qK1l">
                     <a href="#maincontent" class="Header-skipLink--2hrII">Skip to main content</a>
                     <div class="Header-wideBreakpoint--ZKKub">
-                        <div class="Container-container--DIXxP Header-wrapper--38o1w Header-hideOnTablet--1zfyU">
-                            <a href="#" aria-label="Eshagi">
-                                <img src="eshago_logo.png" alt="Eshagi Logo" class="Header-logo--7o3IK">
-                            </a>
-                            <nav class="Header-mainNav--4dBEy" aria-label="Main">
+
+                            {{-- <nav class="Header-mainNav--4dBEy" aria-label="Main">
                                 <ul>
                                     <li class="Header-subNav--JYaGg"><a href="how-it-works/why-affirm.html" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN"><span class="Header-linkText--xgKfN">What is Eshagi</span></a></li>
                                     <li class="Header-subNav--JYaGg"><a href="how-it-works.html" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN"><span class="Header-linkText--xgKfN">How to use</span></a></li>
@@ -241,34 +240,12 @@
                                     </a>
                                     <a href="https://www.affirm.com/user/signup" class="ButtonPrimary-buttonPrimary--1qZwZ ButtonPrimary-buttonTertiary--1WjyY"><span>Sign up</span></a><a href="https://www.affirm.com/help/" class="Header-linkHelp--3N03b">Help</a>
                                 </div>
-                            </nav>
-                        </div>
-                        <div class="Header-hideAboveTablet--6hCsq">
-                            <div class="Header-wrapper--38o1w">
-                                <a href="index.html" aria-label="Eshagi">
-                                    <svg viewBox="0 0 420 167" xmlns="phone.png" class="Header-logo--7o3IK">
-                                        <g clip-rule="evenodd" fill-rule="evenodd">
-                                            <g fill="var(--color-greyscale-black-100)" class="svg-fill">
-                                                <img src="eshago_logo.png" alt="Eshagi Logo" class="Header-logo--7o3IK">
-                                            </g>
-                                            <path d="M297.7 0c-53.2 0-100.6 36.9-114 84.4H203C214.2 49 252.3 18 297.7 18c55.2 0 102.8 42 102.8 107.4 0 14.7-1.9 27.9-5.5 39.6h18.7l.2-.6c3.1-12.1 4.6-25.2 4.6-39C418.5 52.5 365.4 0 297.7 0" fill="var(--color-primary-base)" class="svg-fill rainbow"></path>
-                                        </g>
-                                    </svg>
-                                </a>
-                                <div class="Header-mobileMenuOverlay--wp2il"></div>
-                                <a href="user/signin.html" class="ButtonPrimary-buttonPrimary--1qZwZ Header-mobileSignInButton--QugOV ButtonPrimary-buttonTransparent--4cp67">
-                                    <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path clip-rule="evenodd" d="M8.999 1.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm-4 2.5a4 4 0 1 1 8 0 4 4 0 0 1-8 0ZM9 10.5c-4.294 0-7.5 2.807-7.5 5.963 0 .27.181.555.519.7 1.968.848 4.268 1.337 6.731 1.337 2.8 0 5.387-.632 7.517-1.703.161-.08.233-.219.233-.334 0-3.156-3.206-5.963-7.5-5.963Zm-9 5.963C0 12.205 4.181 9 9 9s9 3.205 9 7.463c0 .746-.452 1.37-1.06 1.675C14.591 19.318 11.772 20 8.75 20c-2.66 0-5.162-.528-7.324-1.459C.63 18.199 0 17.427 0 16.463Z"></path>
-                                    </svg>
-                                    <span>Log in</span>
-                                </a>
-                                <div role="button" aria-haspopup="true" aria-expanded="false" aria-label="Open site navigation menu" tabindex="0" class="Header-hamburgerButton--42eFF">
-                                    <svg viewBox="0 0 28 19" xmlns="http://www.w3.org/2000/svg" class="Header-hamburger--C2ISI">
-                                        <g fill="none" stroke="#05080a" stroke-linecap="square" stroke-width="2">
-                                            <path d="M27.6 1.5H1M27.6 17.5H1M27.6 9.5H1"></path>
-                                        </g>
-                                    </svg>
-                                </div>
+                            </nav> --}}
+
+
+
+
+
 {{--                                <nav class="Header-mobileMenu--1y0x8 Header-mobileMenuOpen--4ozmz" id="mobileMenu">--}}
 {{--                                    <div class="Header-mobileMenu-Container--6vKHd">--}}
 {{--                                        <button class="Header-crossButton--12GY0" type="button" aria-label="Close site navigation menu" tabindex="0">--}}
@@ -308,8 +285,31 @@
 {{--                                        <a href="/help/" class="Header-linkHelp--3N03b">Help</a>--}}
 {{--                                    </div>--}}
 {{--                                </nav>--}}
+
+
+                        <div class="nav">
+                            <div class="nav-header">
+                                <!-- Add the image tag with the image source and any necessary attributes -->
+                            <img src="eshago_logo.png" style="margin-left: -185px; margin-bottom: 20px" alt="Eshagi Logo" class="Header-logo--7o3IK">
+                              </div>
+                            <input type="checkbox" id="nav-check">
+
+                            <div class="nav-btn">
+                              <label for="nav-check">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </label>
                             </div>
-                        </div>
+                            <div class="nav-links" style="color: black;">
+                              <ul>
+                                <li><a href="#" target="_blank">What is Eshagi</a></li>
+                                <li><a href="#" target="_blank">How to use</a></li>
+                                <li><a href="#" target="_blank">Shop</a></li>
+                                <li><a href="#" target="_blank">Eshagi Card</a></li>
+                              </ul>
+                            </div>
+                          </div>
                     </div>
                 </div>
             </header>
