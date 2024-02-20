@@ -23,8 +23,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="AstroCred is Zambia's leading online provider of affordable loans & store credit.">
     <meta name="author" content="Kauma Mbewe">
-    <title>AstroCred| Zambia's Leading Loans & Store Credit Provider</title>
-
+    <title>Eshagi|</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/animate.css')}}">
     <link rel="stylesheet" href="{{asset('css/slick.css')}}">
@@ -73,11 +73,14 @@
                             <h1 id="loginToStart">Hello Partner!</h1>
                             <p id="loginToStart2"></p>
                             <div class="col-lg-8 col-md-6">
-                                <form class="login-form" method="POST" action="{{ route('login') }}">
+                                <form class="login-form" method="POST" action="/partner-login">
                                     @csrf
                                     <div class="row" id="whole">
                                         <div class="col-lg-6">
                                             <div class="form-group" id="myid">
+                                                @error('error')
+                                                <span style="color: red ">{{ $message }}</span>
+                                                @enderror
                                                 <label>Email Address or Company Reg Number</label>
                                                 <input class="form-control{{ $errors->has('natid') || $errors->has('email') ? ' is-invalid' : '' }}" type="text" name="natid" id="natid" value="{{ old('natid') ?: old('email') }}" required autofocus placeholder="Enter your email address or Company Reg Number...">
                                                 @if ($errors->has('natid') || $errors->has('email'))
