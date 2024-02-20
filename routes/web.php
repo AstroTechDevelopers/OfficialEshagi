@@ -307,7 +307,7 @@ Route::group(['middleware' => ['auth','activity','checkblocked']], function () {
 });
 
 Route::get('partner-login', 'App\Http\Controllers\PartnerController@partnerLogin')->name('partner-login')->middleware('activity');
-//Route::post('partner-logon', 'App\Http\Controllers\PartnerController@verifyPartnerUyu')->name('logger-in-tione');
+Route::post('/partner-login', 'App\Http\Controllers\PartnerController@authenticatePartner')->name('partner-login');
 
 Route::get('register-partner', [PartnerController::class,'regPartner'])->name('regista-patina')->middleware('activity');
 Route::post('reg-partner', [PartnerController::class,'authenticatePatina'])->name('kupinda-kwepatina')->middleware('activity');
@@ -933,7 +933,6 @@ Route::group(['middleware' => ['activity', 'checkblocked']], function () {
 });
 
 Route::group(['middleware' => ['auth', 'activated','activity',  'checkblocked']], function () {
-
     Route::resource('/leads/deleted', 'App\Http\Controllers\SoftDeleteLead', [
         'only' => [
             'index', 'show', 'update', 'destroy',

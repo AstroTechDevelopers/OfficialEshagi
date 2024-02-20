@@ -14,6 +14,7 @@ use App\Models\User;
 use App\Models\Bank;
 use App\Traits\CaptureIpTrait;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Hash;
@@ -22,8 +23,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
 use jeremykenedy\LaravelLogger\App\Http\Traits\ActivityLogger;
 use jeremykenedy\LaravelRoles\Models\Role;
-use Auth;
-use Mail;
+use Illuminate\Support\Facades\Mail;
 
 use function Ramsey\Uuid\v1;
 
@@ -296,49 +296,236 @@ class PartnerController extends Controller
     }
 
     public function authenticatePatina(Request $request){
-
         $username = convertToSlug($_POST['partner_name']);
-
         $locale = Localel::where('id',$request['country'])->firstOrFail();
 
-        if ($request->input('business_type') == 'Sole Trader') {
-            $validator = Validator::make(
-                $request->all(),
-                [
+        $validationArrays = $this->validateInput($request->input('business_type'), (bool)$request->input('newUi'), $request);
+        $rules = $validationArrays[0];
+        $messages= $validationArrays[1];
+        $validator = Validator::make($request->all(), $rules, $messages);
+
+        if ($validator->fails()) {
+            return back()->withErrors($validator)->withInput();
+        }
+
+
+        $users = DB::table('users')
+                ->select('name', 'email as user_email')
+                ->where('email',$request->cemail)
+                ->first();
+
+        if(!empty($users)){
+			if($users->user_email==$request['cemail']){
+				return back()->withErrors(['cemail'=>'This email is already registered with AstroCred.'])->withInput();
+			}
+		}
+
+        $role = Role::where('slug', '=', 'partner')->first();
+
+        if ($request['regNumber'] == null) {
+            $tletter = chr(64+rand(0,14));
+            $pin = mt_rand(1000000, 9999999).mt_rand(1000000, 9999999);
+            $voucher = $tletter.$pin;
+            $i = 0;
+            do {
+                $voucherNum = Partner::where('regNumber', '=', $voucher)->exists();
+                if($voucherNum) {
+                    $i++;
+                    $tletter = chr(64+rand(0,14));
+                    $pin = mt_rand(1000000, 9999999).mt_rand(1000000, 9999999);
+
+                    $voucher = $tletter.$pin;
+                }
+            }while($voucherNum);
+
+            $request->merge([
+                'regNumber' => $voucher,
+                'bpNumber' => $voucher,
+            ]);
+        }
+
+        $partner = Partner::create([
+            'partner_name'        => strip_tags($request['partner_name']),
+            'partner_type'        => strip_tags($request['partner_type']),
+            'merchantname'        => strip_tags($request['merchantname']),
+            'business_type'       => $request['business_type'],
+            'partnerDesc'         => $request['partnerDesc'],
+            'yearsTrading'        => $request['yearsTrading'],
+            'regNumber'           => $request['regNumber'],
+            'bpNumber'            => $request['bpNumber'],
+            'is_vat_registered'   => $request['vatRegNumber'],
+            'propNumber'          => $request['propNumber'],
+            'street'              => $request['street'],
+            'suburb'              => $request['suburb'],
+            'city'                => $request['city'],
+            'province'            => $request['province'],
+            'country'             => $locale->country,
+            'cfullname'           => $request['cfullname'],
+            'cdesignation'        => $request['cdesignation'],
+            'telephoneNo'         => $request['telephoneNo'],
+            'locale_id'           => $locale->id,
+            'cemail'              => $request['cemail'],
+            'bank'                => $request['bank'],
+            'branch'              => $request['branch'],
+            'branch_code'         => $request['branch_code'],
+            'acc_number'          => $request['acc_number'],
+            'password'            => Hash::make($request['password']),
+            'status'              => 0,
+        ]);
+        if ($partner->save()) {
+            $user = User::create([
+                'name'              => $username,
+                'first_name'        => $request['partner_name'],
+                'last_name'         => $request['partner_type'],
+                'email'             => $request['cemail'],
+                'natid'             => $request['regNumber'],
+                'mobile'             => $request['telephoneNo'],
+                'utype'             => 'Partner',
+                'password'          => Hash::make($request['password']),
+                'token'             => str_random(64),
+                'signup_ip_address' => $request->ip(),
+                'activated'         => false,
+                'locale'            => $locale->id,
+                'status'            => 0,
+            ]);
+
+            $user->attachRole($role);
+
+            $profile = new Profile();
+
+            $user->profile()->save($profile);
+
+            $merchantKyc = MerchantKyc::create([
+                'partner_id' => $partner->id,
+                'natid' => $user->natid,
+            ]);
+            $merchantKyc->save();
+            return redirect('partner-login');
+        }
+        else{
+            return back()->withErrors(['cemail'=>'Something went wrong'])->withInput();
+        }
+    }
+
+    private function validateInput(string $businessType, bool $isNewUI,  Request $request)
+    {
+        $returnArray = array();
+        if($businessType == 'Sole Trader') {
+            if($isNewUI)
+            {
+                $returnArray[] =
+                       [
+                        'partner_name'         => 'required|max:255|unique:partners',
+                        'partner_type'         => 'required',
+                        'business_type'        => 'required|max:255',
+                        'yearsTrading'         => 'required',
+                        'country'              => 'required',
+                        'cfullname'            => 'required',
+                        'cdesignation'         => 'required',
+                        'telephoneNo'          => 'required',
+                        'cemail'               => 'required|email|unique:partners',
+                        'password'             => 'required|min:6|max:50|confirmed',
+                        'password_confirmation' => 'required|same:password',
+                    ];
+
+                $returnArray[] =
+                    [
+                        'partner_name.required'           => 'What is your Partner name?',
+                        'partner_type.required'           => 'What is your relationship to AstroCred like?',
+                        'business_type.required'          => 'What is the nature of your company?',
+                        'yearsTrading.required'           => 'How many years have you been trading?',
+                        'country.required' => 'In which country is this province in?',
+                        'cfullname.required' => 'Who will be your contact person?',
+                        'cdesignation.required' => 'What is the designation for the contact person?',
+                        'telephoneNo.required' => 'What the contactable phone number for the contact person ',
+                        'cemail.required'                   => 'The email address for the contact person is mandatory.',
+                        'cemail.email'                   => trans('auth.emailInvalid'),
+                        'cemail.unique'                   => 'This email is already registered with AstroCred.',
+                        'password.required'             => trans('auth.passwordRequired'),
+                        'password.min'                  => trans('auth.PasswordMin'),
+                        'password.max'                  => trans('auth.PasswordMax'),
+                    ];
+            }
+            else {
+                $returnArray[] =
+                    [
+                        'partner_name' => 'required|max:255|unique:partners',
+                        'partner_type' => 'required',
+                        'business_type' => 'required|max:255',
+                        'partnerDesc' => 'required|max:255',
+                        'yearsTrading' => 'required',
+                        'propNumber' => 'required',
+                        'street' => 'required',
+                        'suburb' => 'required',
+                        'city' => 'required',
+                        'province' => 'required',
+                        'country' => 'required',
+                        'cfullname' => 'required',
+                        'cdesignation' => 'required',
+                        'telephoneNo' => 'required',
+                        'cemail' => 'required|email|unique:partners',
+                        'bank' => 'required',
+                        'branch' => 'required',
+                        'branch_code' => 'required',
+                        'acc_number' => 'required',
+                        'password' => 'required|min:6|max:50|confirmed',
+                        'password_confirmation' => 'required|same:password',
+                        'vatRegNumber' => 'required',
+                    ];
+
+                $returnArray[] =
+                    [
+                        'partner_name.required' => 'What is your Partner name?',
+                        'partner_type.required' => 'What is your relationship to AstroCred like?',
+                        'business_type.required' => 'What is the nature of your company?',
+                        'partnerDesc.required' => 'What is the nature of your business?',
+                        'yearsTrading.required' => 'How many years have you been trading?',
+                        'propNumber.required' => 'What is the address number for your business premises?',
+                        'street.required' => 'What is the street address for your business premises?',
+                        'suburb.required' => 'What is the area you conduct business from?',
+                        'city.required' => 'In what city, do you operate from?',
+                        'province.required' => 'In which province do you operate in?',
+                        'country.required' => 'In which country is this province in?',
+                        'cfullname.required' => 'Who will be your contact person?',
+                        'cdesignation.required' => 'What is the designation for the contact person?',
+                        'telephoneNo.required' => 'What the contactable phone number for the contact person ',
+                        'cemail.required' => 'The email address for the contact person is mandatory.',
+                        'cemail.email' => trans('auth.emailInvalid'),
+                        'cemail.unique' => 'This email is already registered with AstroCred.',
+                        'bank.required' => 'What is your primary bank?',
+                        'branch.required' => 'Bank branch is required.',
+                        'branch_code.required' => 'What is your branch code?',
+                        'acc_number.required' => 'What is your account number with this bank?',
+                        'password.required' => trans('auth.passwordRequired'),
+                        'password.min' => trans('auth.PasswordMin'),
+                        'password.max' => trans('auth.PasswordMax'),
+                        'vatRegNumber.required' => 'Is your company / business VAT registered?',
+                    ];
+            }
+        } else {
+
+            if($isNewUI)
+            {
+               $returnArray[] = [
                     'partner_name'                  => 'required|max:255|unique:partners',
                     'partner_type'            => 'required',
                     'business_type'                 => 'required|max:255',
-                    'partnerDesc'                 => 'required|max:255',
                     'yearsTrading'                 => 'required',
-                    'propNumber'        => 'required',
-                    'street'        => 'required',
-                    'suburb'        => 'required',
-                    'city'        => 'required',
-                    'province'        => 'required',
                     'country'        => 'required',
                     'cfullname'        => 'required',
                     'cdesignation'        => 'required',
                     'telephoneNo'        => 'required',
                     'cemail'        => 'required|email|unique:partners',
-                    'bank'        => 'required',
-                    'branch'        => 'required',
-                    'branch_code'        => 'required',
-                    'acc_number'        => 'required',
                     'password'              => 'required|min:6|max:50|confirmed',
                     'password_confirmation' => 'required|same:password',
-                    'vatRegNumber'        => 'required',
-                ],
-                [
+                ];
+                $returnArray[] = [
                     'partner_name.required'           => 'What is your Partner name?',
                     'partner_type.required'           => 'What is your relationship to AstroCred like?',
                     'business_type.required'          => 'What is the nature of your company?',
-                    'partnerDesc.required'            => 'What is the nature of your business?',
+
                     'yearsTrading.required'           => 'How many years have you been trading?',
-                    'propNumber.required' => 'What is the address number for your business premises?',
-                    'street.required' => 'What is the street address for your business premises?',
-                    'suburb.required' => 'What is the area you conduct business from?',
-                    'city.required' => 'In what city, do you operate from?',
-                    'province.required' => 'In which province do you operate in?',
+
                     'country.required' => 'In which country is this province in?',
                     'cfullname.required' => 'Who will be your contact person?',
                     'cdesignation.required' => 'What is the designation for the contact person?',
@@ -346,21 +533,12 @@ class PartnerController extends Controller
                     'cemail.required'                   => 'The email address for the contact person is mandatory.',
                     'cemail.email'                   => trans('auth.emailInvalid'),
                     'cemail.unique'                   => 'This email is already registered with AstroCred.',
-                    'bank.required' => 'What is your primary bank?',
-                    'branch.required' => 'Bank branch is required.',
-                    'branch_code.required' => 'What is your branch code?',
-                    'acc_number.required' => 'What is your account number with this bank?',
                     'password.required'             => trans('auth.passwordRequired'),
                     'password.min'                  => trans('auth.PasswordMin'),
                     'password.max'                  => trans('auth.PasswordMax'),
-                    'vatRegNumber.required' => 'Is your company / business VAT registered?',
-                ]
-            );
-        }
-        else{
-            $validator = Validator::make(
-                $request->all(),
-                [
+                ];
+            }else{
+                $returnArray[] = [
                     'partner_name'                  => 'required|max:255|unique:partners',
                     'partner_type'            => 'required',
                     'business_type'                 => 'required|max:255',
@@ -385,8 +563,9 @@ class PartnerController extends Controller
                     'acc_number'        => 'required',
                     'password'              => 'required|min:6|max:50|confirmed',
                     'password_confirmation' => 'required|same:password',
-                ],
-                [
+                ];
+
+                $returnArray[] = [
                     'partner_name.required'           => 'What is your Partner name?',
                     'partner_type.required'           => 'What is your relationship to AstroCred like?',
                     'business_type.required'          => 'What is the nature of your company?',
@@ -414,128 +593,11 @@ class PartnerController extends Controller
                     'password.required'             => trans('auth.passwordRequired'),
                     'password.min'                  => trans('auth.PasswordMin'),
                     'password.max'                  => trans('auth.PasswordMax'),
-                ]
-            );
+                ];
+            }
         }
 
-        if ($validator->fails()) {
-            return back()->withErrors($validator)->withInput();
-        }
-
-        $users = DB::table('users')
-            ->select('name', 'email as user_email')
-            ->where('email',$request->cemail)
-            ->first();
-
-        $data = [
-           'message' => ''
-        ];
-
-        if(!empty($users)){
-			if($users->user_email==$request['cemail']){
-				//return redirect('register-partner')->with('message', 'This email is already registered with AstroCred.')->withInput();
-				return back()->withErrors(['cemail'=>'This email is already registered with AstroCred.'])->withInput();
-			}
-		}
-
-        $ipAddress = new CaptureIpTrait();
-
-        $role = Role::where('slug', '=', 'partner')->first();
-
-        if ($request['regNumber'] == null) {
-            $tletter = chr(64+rand(0,14));
-            $pin = mt_rand(1000000, 9999999).mt_rand(1000000, 9999999);
-
-            $voucher = $tletter.$pin;
-
-            $i = 0;
-            do {
-                $voucherNum = Partner::where('regNumber', '=', $voucher)->exists();
-                if($voucherNum) {
-                    $i++;
-                    $tletter = chr(64+rand(0,14));
-                    $pin = mt_rand(1000000, 9999999).mt_rand(1000000, 9999999);
-
-                    $voucher = $tletter.$pin;
-                }
-            }while($voucherNum);
-
-            $request->merge([
-                'regNumber' => $voucher,
-                'bpNumber' => $voucher,
-            ]);
-        }
-
-        $partner = Partner::create([
-            'partner_name'      => strip_tags($request['partner_name']),
-            'partner_type'        => strip_tags($request['partner_type']),
-            'merchantname'         => strip_tags($request['merchantname']),
-            'business_type'             => $request['business_type'],
-            'partnerDesc'             => $request['partnerDesc'],
-            'yearsTrading'             => $request['yearsTrading'],
-            'regNumber'             => $request['regNumber'],
-            'bpNumber'             => $request['bpNumber'],
-            'is_vat_registered' => $request['vatRegNumber'],
-            'propNumber'             => $request['propNumber'],
-            'street'             => $request['street'],
-            'suburb'             => $request['suburb'],
-            'city'             => $request['city'],
-            'province'             => $request['province'],
-            'country'             => $locale->country,
-            'cfullname'             => $request['cfullname'],
-            'cdesignation'             => $request['cdesignation'],
-            'telephoneNo'             => $request['telephoneNo'],
-            'locale_id'             => $locale->id,
-            'cemail'             => $request['cemail'],
-            'bank'             => $request['bank'],
-            'branch'             => $request['branch'],
-            'branch_code'             => $request['branch_code'],
-            'acc_number'             => $request['acc_number'],
-            'password'          => Hash::make($request['password']),
-            'status'            => 0,
-        ]);
-        $partner->save();
-
-        if ($partner->save()) {
-            $user = User::create([
-                'name'              => $username,
-                'first_name'        => $request['partner_name'],
-                'last_name'         => $request['partner_type'],
-                'email'             => $request['cemail'],
-                'natid'             => $request['regNumber'],
-                'mobile'             => $request['telephoneNo'],
-                'utype'             => 'Partner',
-                'password'          => Hash::make($request['password']),
-                'token'             => str_random(64),
-                'signup_ip_address' => $ipAddress->getClientIp(),
-                'activated'         => false,
-                'locale'            => $locale->id,
-                'status'            => 0,
-            ]);
-
-            $user->attachRole($role);
-            //$this->initiateEmailActivation($user);
-            //event(new MerchantSignedUp($partner));
-            $profile = new Profile();
-            $user->profile()->save($profile);
-
-            $merchantKyc = MerchantKyc::create([
-                'partner_id' => $partner->id,
-                'natid' => $user->natid,
-            ]);
-            $merchantKyc->save();
-
-            $yuser = MerchantKyc::findOrFail($merchantKyc->id);
-
-            $uid = $user->id;
-            $partnerid = $merchantKyc->id;
-            $natid = $user->natid;
-            $yuser = $yuser;
-
-            return view('partners.merchant-add-business-kyc', compact('partnerid'));
-        }
-
-        //return redirect('merchant-agreement');
+        return $returnArray;
     }
 
     public function uploadBusinessKyc(Request $request){
@@ -1348,4 +1410,19 @@ class PartnerController extends Controller
         $branch->deleted_at = now();
         $branch->save();
     }
+
+    public function authenticatePartner(Request $request)
+    {
+        $credentials = $request->only('natid', 'password');
+
+        $field = filter_var($credentials['natid'], FILTER_VALIDATE_EMAIL) ? 'email' : 'regNumber';
+        if (Auth::attempt([$field => $credentials['natid'], 'password' => $credentials['password']])) {
+            // Authentication passed
+            return redirect()->intended('/partner/dashboard');
+        } else {
+            // Authentication failed
+            return redirect()->back()->withErrors(['error'=>'Invalid email/registration number or password']);
+        }
+    }
+
 }

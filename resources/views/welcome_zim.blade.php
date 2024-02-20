@@ -15,10 +15,10 @@
     <meta name="generator" content="Gatsby 4.25.4"/>
     <meta data-react-helmet="true" name="description" content="With Eshagi, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
     <meta data-react-helmet="true" property="og:title" content="Eshagi | Buy now, pay later with no late fees or surprises"/>
-    <meta data-react-helmet="true" property="og:description" content="With Affirm, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
+    <meta data-react-helmet="true" property="og:description" content="With Eshagi, you can pay over time at your favorite brands. No late fees or compounding interest—just a more responsible way to say yes to the things you love."/>
     <meta data-react-helmet="true" property="og:type" content="website"/>
     <meta data-react-helmet="true" property="og:image" content="https://images.ctfassets.net/4rc1asww3mw7/4TE1b1MHPlEvYHkby7Oii9/0227997a3c0b49fde1121e489d6bdc73/com_Preview_v3.jpg"/>
-    <meta data-react-helmet="true" property="og:image:alt" content="Person looking at Affirm on phone while shopping"/>
+    <meta data-react-helmet="true" property="og:image:alt" content="Person looking at Eshagi on phone while shopping"/>
     <meta data-react-helmet="true" name="twitter:card" content="summary"/>
     <meta data-react-helmet="true" name="twitter:creator" content="Eshagi"/>
     <meta data-react-helmet="true" name="twitter:title" content="Eshagi | Buy now, pay later with no late fees or surprises"/>
@@ -169,15 +169,20 @@
         .bnmTUf::before{content:'';width:var(--component-spacing-md);height:1px;background-color:currentColor;position:absolute;left:0;top:50%;}/*!sc*/
         data-styled.g66[id="styled__HeadingTestimonial-sc-11yqsob-5"]{content:"bnmTUf,"}/*!sc*/
     </style>
-
-
     <style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:1;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style>
+   <style>
+       .Header-mobileMenu--1y0x8 {
+           display: none;
+       }
+       @media (max-width: 768px) {
+           .Header-mobileMenu--1y0x8 {
+               display: block;
+           }
+       }
+   </style>
     <noscript>
         <style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:1!important}</style>
     </noscript>
-
-
-
     <script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script>
     <title data-react-helmet="true">Eshagi - Anytime Anywhere </title>
     <link data-react-helmet="true" rel="canonical"/>
@@ -186,7 +191,6 @@
     <link data-react-helmet="true" rel="alternate" hreflang="en-ca" href="en-ca/index.html"/>
     <link data-react-helmet="true" rel="alternate" hreflang="en-au" href="en-au/index.html"/>
     <link data-react-helmet="true" rel="alternate" hreflang="fr-ca" href="fr-ca/index.html"/>
-
     <link data-chunk="sections-Hero-HeroCarousel" rel="preload" as="style" href="styles.40c6f2bd237316bb4c91.css"/>
     <link data-chunk="sections-Hero-HeroCarousel" rel="preload" as="script" href="commons-e98977bd3e6a4a61f428.js" integrity="sha512-KcyMEPDm/svrfha5h+hdxg8Z0KUu0ga8NA13wjPtXUJB2jtGjAciDhDDNYEYS8KeAfortVOvpXh6pyI9iScHbA=="/>
     <link data-chunk="sections-Hero-HeroCarousel" rel="preload" as="script" href="sections-Hero-HeroCarousel-79ff0d3932109038ee70.js" integrity="sha512-A27RGoKl1GG6V2DstiEXR8SvBejgBovIqy1jBCSkXzMkQ6qiIVSAOdE6v8+ovyqXCM7MAjpMNL3ZeHiHdoHlKg=="/>
@@ -194,6 +198,7 @@
     <link data-chunk="sections-SectionBackgroundColor" rel="preload" as="script" href="59d922eadb83546d23896818e7a29397ae4b4f10-833286d1035a04d31463.js" integrity="sha512-QxZk4H3NaBkck2CvWdQoU5ZqVD6JiKAhH5VKVsDlK42eWDfxO3sXJzYpMYkvwQGlYv4YO8+R+/iyJ8cLR7wLUg=="/>
     <link data-chunk="sections-Categories" rel="preload" as="script" href="sections-Categories-b1a34e769adbb09b0edd.js" integrity="sha512-C8EyaKtDlsZcS/E7m6zpnSCpPyaRsDoNZbn+U0Vm+QT9m1EWu09qE3MjVGyekyWlsVcbFqoXMOHcjqqxpbkNEw=="/>
     <link data-chunk="sections-Reviews" rel="preload" as="script" href="sections-Reviews-362fb9c832c958312019.js" integrity="sha512-pOC6Xr3sJyl5Or17g4NgpQgViKQ/czYVEJpXu+EDAVwDLVpv8UYBbnbrvfoFhfYetW8G/LC0hpsSALlKrW3vDw=="/>
+
 </head>
 <body>
 <div id="___gatsb">
@@ -215,20 +220,16 @@
                     <div class="Header-wideBreakpoint--ZKKub">
                         <div class="Container-container--DIXxP Header-wrapper--38o1w Header-hideOnTablet--1zfyU">
                             <a href="#" aria-label="Eshagi">
-
                                 <img src="eshago_logo.png" alt="Eshagi Logo" class="Header-logo--7o3IK">
                             </a>
                             <nav class="Header-mainNav--4dBEy" aria-label="Main">
                                 <ul>
                                     <li class="Header-subNav--JYaGg"><a href="how-it-works/why-affirm.html" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN"><span class="Header-linkText--xgKfN">What is Eshagi</span></a></li>
                                     <li class="Header-subNav--JYaGg"><a href="how-it-works.html" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN"><span class="Header-linkText--xgKfN">How to use</span></a></li>
-                                    <li class="Header-subNav--JYaGg">
-                                        <button type="button" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN">
-                                            <span>Shop</span>
-                                            <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg" class="Header-icon--76bGP">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.869 1.162a.5.5 0 0 1-.031.707l-3 2.75-3 2.75a.5.5 0 0 1-.676 0l-6-5.5a.5.5 0 1 1 .676-.738L7.5 6.321l5.662-5.19a.5.5 0 0 1 .707.031Z" fill="#000" stroke="#000" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg>
-                                        </button>
+                                    <li class="Header-subNav--JYaGg nav-item">
+                                        <a type="button" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN" href="#" id="shop">
+                                           Shop
+                                        </a>
                                     </li>
                                 </ul>
                                 <div class="Header-buttonContainer--7hruo">
@@ -248,7 +249,7 @@
                                     <svg viewBox="0 0 420 167" xmlns="phone.png" class="Header-logo--7o3IK">
                                         <g clip-rule="evenodd" fill-rule="evenodd">
                                             <g fill="var(--color-greyscale-black-100)" class="svg-fill">
-                                                <path d="M34.3 94.1c-11.3 0-24.4 5.4-31.5 11l6.5 13.6c5.7-5.2 14.9-9.6 23.2-9.6 7.9 0 12.2 2.6 12.2 7.9 0 3.6-2.9 5.4-8.3 6.1C16 125.7 0 131.3 0 147c0 12.4 8.9 20 22.7 20 9.9 0 18.7-5.5 22.9-12.7V165H64v-44.9c0-18.5-12.9-26-29.7-26zm-6.9 58.5c-5.2 0-7.8-2.5-7.8-6.7 0-7.8 8.7-10.4 24.6-12.1.1 10.4-7 18.8-16.8 18.8zM237.5 107.7V96.1h-18.4V165h19.7v-33.2c0-15.8 9.5-20.4 16.2-20.4 2.6 0 6.1.8 8.4 2.5l3.6-18.2c-3-1.3-6.2-1.6-8.8-1.6-10.1 0-16.5 4.5-20.7 13.6zM358.4 94.1c-10.4 0-18.2 6.2-22.3 12.1-3.8-7.7-11.7-12.1-21.3-12.1-10.4 0-17.6 5.8-21 12.4V96.1h-19V165h19.7v-35.5c0-12.7 6.7-18.8 12.9-18.8 5.6 0 10.8 3.6 10.8 13V165H338v-35.5c0-12.9 6.5-18.8 13-18.8 5.2 0 10.7 3.8 10.7 12.9V165h19.7v-47.6c0-15.5-10.4-23.3-23-23.3zM133.6 91v5.1h-29.9v-7c0-9.1 5.2-11.7 9.7-11.7 2.6 0 6 .6 8.8 2.2l6.1-13.9c-3.6-2.1-9.5-4-17.4-4-12.6 0-26.9 7.1-26.9 29.4v5.1H72.6v15.2H84V165h19.7v-53.7h29.9V165h19.7v-53.7h17.9V96.1h-17.9v-7c0-9.1 5.2-11.7 9.7-11.7 5 0 8.8 2.2 8.8 2.2l6.1-13.9s-6.2-4-17.4-4c-12.5-.1-26.9 7-26.9 29.3zM182.9 96.1h19.7V165h-19.7z"></path>
+                                                <img src="eshago_logo.png" alt="Eshagi Logo" class="Header-logo--7o3IK">
                                             </g>
                                             <path d="M297.7 0c-53.2 0-100.6 36.9-114 84.4H203C214.2 49 252.3 18 297.7 18c55.2 0 102.8 42 102.8 107.4 0 14.7-1.9 27.9-5.5 39.6h18.7l.2-.6c3.1-12.1 4.6-25.2 4.6-39C418.5 52.5 365.4 0 297.7 0" fill="var(--color-primary-base)" class="svg-fill rainbow"></path>
                                         </g>
@@ -268,6 +269,45 @@
                                         </g>
                                     </svg>
                                 </div>
+{{--                                <nav class="Header-mobileMenu--1y0x8 Header-mobileMenuOpen--4ozmz" id="mobileMenu">--}}
+{{--                                    <div class="Header-mobileMenu-Container--6vKHd">--}}
+{{--                                        <button class="Header-crossButton--12GY0" type="button" aria-label="Close site navigation menu" tabindex="0">--}}
+{{--                                            <svg viewBox="0 0 27 26" xmlns="http://www.w3.org/2000/svg" class="Header-cross--6wfgm">--}}
+{{--                                                <g fill="none" stroke="var(--color-greyscale-black-100)" stroke-linecap="square" stroke-width="2">--}}
+{{--                                                    <path d="m2 2 23 22M25 2 2 24"></path>--}}
+{{--                                                </g>--}}
+{{--                                            </svg>--}}
+{{--                                        </button>--}}
+{{--                                        <nav class="Header-mobileTopNav--7vEFT">--}}
+{{--                                            <ul>--}}
+{{--                                                <li class="Header-topNav-item--2ixeW">--}}
+{{--                                                    <a href="/" class="Header-topNav-itemLink--37M0c Header-topNav-itemSelected--1GqcZ">For shoppers</a>--}}
+{{--                                                </li>--}}
+{{--                                                <li class="Header-topNav-item--2ixeW">--}}
+{{--                                                    <a href="/business" class="Header-topNav-itemLink--37M0c">For businesses</a>--}}
+{{--                                                </li>--}}
+{{--                                            </ul>--}}
+{{--                                        </nav>--}}
+{{--                                        <div class="Header-mobileLinks--1jbJu" aria-label="Site navigation" role="menu">--}}
+{{--                                            <a href="/how-it-works/why-affirm" class="MobileLink-mobileLink--1FbDd" role="menuitem">What is Eshagi</a>--}}
+{{--                                            <a href="/how-it-works" class="MobileLink-mobileLink--1FbDd" role="menuitem">How to use</a>--}}
+{{--                                            <a href="/how-it-works/why-affirm" class="MobileLink-mobileLink--1FbDd" role="menuitem">Shop</a>--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                    <div class="Header-buttonContainer--7hruo"><a href="/user/signin" class="ButtonPrimary-buttonPrimary--1qZwZ">--}}
+{{--                                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
+{{--                                                <path clip-rule="evenodd" d="M8.999 1.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm-4 2.5a4 4 0 1 1 8 0 4 4 0 0 1-8 0ZM9 10.5c-4.294 0-7.5 2.807-7.5 5.963 0 .27.181.555.519.7 1.968.848 4.268 1.337 6.731 1.337 2.8 0 5.387-.632 7.517-1.703.161-.08.233-.219.233-.334 0-3.156-3.206-5.963-7.5-5.963Zm-9 5.963C0 12.205 4.181 9 9 9s9 3.205 9 7.463c0 .746-.452 1.37-1.06 1.675C14.591 19.318 11.772 20 8.75 20c-2.66 0-5.162-.528-7.324-1.459C.63 18.199 0 17.427 0 16.463Z">--}}
+
+{{--                                                </path>--}}
+{{--                                            </svg>--}}
+{{--                                            <span>Log in</span>--}}
+{{--                                        </a>--}}
+{{--                                        <a href="/user/signup" class="ButtonPrimary-buttonPrimary--1qZwZ ButtonPrimary-buttonTertiary--1WjyY">--}}
+{{--                                            <span>Sign up</span>--}}
+{{--                                        </a>--}}
+{{--                                        <a href="/help/" class="Header-linkHelp--3N03b">Help</a>--}}
+{{--                                    </div>--}}
+{{--                                </nav>--}}
                             </div>
                         </div>
                     </div>
@@ -275,7 +315,6 @@
             </header>
             <div>
                 <main class="Layout-transition--32GY7" id="maincontent" role="main">
-
                     <div class="Modal-modal--18o0g" data-testid="modal">
                         <div class="Modal-modalBackdrop--1RERs" role="presentation"></div>
                         <div class="Modal-modalWrapper--4QjvB">
@@ -286,184 +325,186 @@
                             </div>
                         </div>
                     </div>
-
                     <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopXSmall--6G7Be styles-spacingBottomNone--2ubZt">
                         <a class="styled__StyledNextButtonArrow-sc-f6u918-11 styled__StyledPrevButtonArrow-sc-f6u918-12 gzlcJ dSDsDk ButtonArrow-wrapper--6vQnV ButtonArrow-left--7nmna" tabindex="-1" role="button" aria-label="Previous" disabled="" readonly="" href="#myCarousel" role="button" data-bs-slide="prev">
                             <svg width="9" height="16" viewBox="0 0 9 16" fill="#747677" xmlns="http://www.w3.org/2000/svg">
                                 <path d="m1 1 7 7-7 7"></path>
                             </svg>
                         </a>
-                            <div class="carousel slide" id="myCarousel" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="">
-                                            <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
-                                                <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
-                                                    <div class="styled__StyledRichTitle-sc-f6u918-8 dTJWxu RichText-richText--1L77z">
-                                                        <div>
-                                                            <h1>Payments on <u>your terms</u></h1>
-                                                        </div>
-                                                    </div>
-                                                    <div class="styled__StyledRichText-sc-f6u918-3 bKjtOs RichText-richText--1L77z">
-                                                        <div>
-                                                            <p>Buy now, pay later with flexible plans that fit your budget. And take Affirm everywhere, so you never pay hidden fees or compound interest.</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="styled__StyledSearch-sc-f6u918-4 cdJbAL Search-searchContainer--2QS3C Search-searchContainer__centered--4fHMn">
-                                                        <div id="searchContainer" class="Search-searchBar--23nsv">
-                                                            <div aria-controls="search-results" aria-owns="search-results" aria-expanded="false" aria-haspopup="listbox" role="combobox" class="Search-searchBar--23nsv">
-                                                      <span class="Search-searchBar__icon__wrapper--5KqBC">
-                                                         <svg width="19" height="19" viewBox="0 0 19 19" fill="#101820" xmlns="http://www.w3.org/2000/svg" aria-label="Search Icon" class="Search-searchBar__icon--1d5rO">
-                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.96 8.44c0-3.033 2.468-5.5 5.5-5.5 3.034 0 5.5 2.467 5.5 5.5s-2.466 5.5-5.5 5.5a5.506 5.506 0 0 1-5.5-5.5Zm15.708 8.793-4.25-4.25A7.454 7.454 0 0 0 15.96 8.44a7.5 7.5 0 1 0-7.5 7.5c1.71 0 3.282-.579 4.543-1.543l4.25 4.25a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414Z"></path>
-                                                         </svg>
-                                                      </span>
-                                                                <input aria-activedescendant="" class="Search-searchBar__inputField--37g20 imports-body--I9Byh" aria-label="Search Input" placeholder="Search for a store" type="text" id="SearchBar" value=""/>
-                                                            </div>
-                                                        </div>
+                        <div class="carousel slide" id="myCarousel" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="">
+                                        <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
+                                            <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
+                                                <div class="styled__StyledRichTitle-sc-f6u918-8 dTJWxu RichText-richText--1L77z">
+                                                    <div>
+                                                        <h1>Buy now, pay later <u>(BNPL)</u></h1>
                                                     </div>
                                                 </div>
-                                                <div class="styled__ColumnImage-sc-f6u918-6 kesodR">
-                                                    <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
-                                                        <div style="max-width:600px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;544&#x27; width=&#x27;600&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
-                                                        <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
-                                                        <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
-                                                        <noscript>
-                                                            <img src="phone2.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
-                                                        </noscript>
-                                                        <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
+                                                <div class="styled__StyledRichText-sc-f6u918-3 bKjtOs RichText-richText--1L77z">
+                                                    <div>
+                                                        <p>Customers can purchase a wide range of products
+                                                            from thousands of partner retailers, paying in convenient installments with zero interest
+                                                            over four months.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="styled__StyledSearch-sc-f6u918-4 cdJbAL Search-searchContainer--2QS3C Search-searchContainer__centered--4fHMn">
+                                                    <div id="searchContainer" class="Search-searchBar--23nsv">
+                                                        <div aria-controls="search-results" aria-owns="search-results" aria-expanded="false" aria-haspopup="listbox" role="combobox" class="Search-searchBar--23nsv">
+                                                   <span class="Search-searchBar__icon__wrapper--5KqBC">
+                                                      <svg width="19" height="19" viewBox="0 0 19 19" fill="#101820" xmlns="http://www.w3.org/2000/svg" aria-label="Search Icon" class="Search-searchBar__icon--1d5rO">
+                                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M2.96 8.44c0-3.033 2.468-5.5 5.5-5.5 3.034 0 5.5 2.467 5.5 5.5s-2.466 5.5-5.5 5.5a5.506 5.506 0 0 1-5.5-5.5Zm15.708 8.793-4.25-4.25A7.454 7.454 0 0 0 15.96 8.44a7.5 7.5 0 1 0-7.5 7.5c1.71 0 3.282-.579 4.543-1.543l4.25 4.25a.997.997 0 0 0 1.414 0 .999.999 0 0 0 0-1.414Z"></path>
+                                                      </svg>
+                                                   </span>
+                                                            <input aria-activedescendant="" class="Search-searchBar__inputField--37g20 imports-body--I9Byh" aria-label="Search Input" placeholder="Search for a store" type="text" id="SearchBar" value=""/>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="">
-                                            <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
-                                                <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
-                                                    <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">Meet the  E-Shagi Card™</h2>
-                                                    <div class="styled__StyledRichText-sc-f6u918-3 bKjtOs RichText-richText--1L77z">
-                                                        <div>
-                                                            <h3 class="imports-h3--3yLlm imports-h4--1GRDI"><strong class="imports-bold--1wLam">One card. Two ways to pay.</strong></h3>
-                                                            <p>Request to pay over time in the app, then swipe. For everything else, use it as your everyday debit card.</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="styled__CtaContainer-sc-f6u918-9 llWheg"><a href="card.html" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>See how it works</span></a></div>
-                                                </div>
-                                                <div class="styled__ColumnImage-sc-f6u918-6 kesodR">
-                                                    <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
-                                                        <div style="max-width:600px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;544&#x27; width=&#x27;600&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
-                                                        <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                            <div class="styled__ColumnImage-sc-f6u918-6 kesodR">
+                                                <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
+                                                    <div style="max-width:600px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;544&#x27; width=&#x27;600&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
+                                                    <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                                    <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                    <noscript>
                                                         <img src="phone2.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
-                                                        <noscript>
-                                                            <img src="phone2.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
-                                                        </noscript>
-                                                        <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
-                                                    </div>
+                                                    </noscript>
+                                                    <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="carousel-item">
-                                        <div class="">
-                                            <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
-                                                <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
-                                                    <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">It’s better in  the app</h2>
-                                                    <div class="styled__StyledRichText-sc-f6u918-3 bKjtOs RichText-richText--1L77z">
-                                                        <div>
-                                                            <p>Online, in stores, wherever you love to shop—pay over time and get exclusive deals like as low as 0% APR with the Affirm app.</p>
-                                                        </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
+                                            <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
+                                                <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">Instant Merchant onboarding</h2>
+                                                <div class="styled__StyledRichText-sc-f6u918-3 bKjtOs RichText-richText--1L77z">
+                                                    <div>
+                                                        <h3 class="imports-h3--3yLlm imports-h4--1GRDI"><strong class="imports-bold--1wLam">Become a Partner Today</strong></h3>
+                                                    <p>We empower brick-and-mortar retailers to
+                                                        offer BNPL options in their stores, receiving immediate payment for approved customers.</p>
                                                     </div>
-                                                    <div class="styled__CtaContainer-sc-f6u918-9 llWheg">
-                                                        <a href="https://affirm.app.link/Ig53hfwykEb" rel="noopener" target="_blank" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Download the app</span></a>
-                                                        <div class="styled__StyledDownloadApp-sc-f6u918-13 enzwUd">
-                                                            <div class="DownloadApp-ctaWrap--4t74H DownloadApp-mobileOnly--1LTLG">
-                                                                <div class="AppStoreBadges-container--2aUGZ">
-                                                                    <div class="AppStoreBadges-item--3TirS">
-                                                                        <a href="https://bnc.lt/mnGl/bP433iKXvw" rel="noopener noreferrer">
-                                                                            <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained AppStoreBadges-badge--7gr2N">
-                                                                                <div style="max-width:288px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;97&#x27; width=&#x27;288&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
-                                                                                <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                                </div>
+                                                <div class="styled__CtaContainer-sc-f6u918-9 llWheg"><a href="card.html" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Register Today</span></a></div>
+                                            </div>
+                                            <div class="styled__ColumnImage-sc-f6u918-6 kesodR">
+                                                <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
+                                                    <div style="max-width:600px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;544&#x27; width=&#x27;600&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
+                                                    <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                                    <img src="phone2.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                    <noscript>
+                                                        <img src="phone2.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                    </noscript>
+                                                    <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
+                                            <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
+                                                <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">Financial Inclusion</h2>
+                                                <div class="styled__StyledRichText-sc-f6u918-3 bKjtOs RichText-richText--1L77z">
+                                                    <div>
+                                                        <p>We connect banks to our platform, enabling them to
+                                                            seamlessly extend credit to their customers for purchases within our vast retail network.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="styled__CtaContainer-sc-f6u918-9 llWheg">
+                                                    <a href="https://affirm.app.link/Ig53hfwykEb" rel="noopener" target="_blank" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Download the app</span></a>
+                                                    <div class="styled__StyledDownloadApp-sc-f6u918-13 enzwUd">
+                                                        <div class="DownloadApp-ctaWrap--4t74H DownloadApp-mobileOnly--1LTLG">
+                                                            <div class="AppStoreBadges-container--2aUGZ">
+                                                                <div class="AppStoreBadges-item--3TirS">
+                                                                    <a href="https://bnc.lt/mnGl/bP433iKXvw" rel="noopener noreferrer">
+                                                                        <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained AppStoreBadges-badge--7gr2N">
+                                                                            <div style="max-width:288px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;97&#x27; width=&#x27;288&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
+                                                                            <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                                                            <img src="phone.pn?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                                            <noscript>
                                                                                 <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
-                                                                                <noscript>
-                                                                                    <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
-                                                                                </noscript>
-                                                                                <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="AppStoreBadges-item--3TirS">
-                                                                        <a href="https://bnc.lt/mnGl/XLGlcMVXvw" rel="noopener noreferrer">
-                                                                            <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained AppStoreBadges-badge--7gr2N">
-                                                                                <div style="max-width:324px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;97&#x27; width=&#x27;324&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
-                                                                                <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                                                            </noscript>
+                                                                            <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="AppStoreBadges-item--3TirS">
+                                                                    <a href="https://bnc.lt/mnGl/XLGlcMVXvw" rel="noopener noreferrer">
+                                                                        <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained AppStoreBadges-badge--7gr2N">
+                                                                            <div style="max-width:324px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;97&#x27; width=&#x27;324&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
+                                                                            <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                                                            <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                                            <noscript>
                                                                                 <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
-                                                                                <noscript>
-                                                                                    <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
-                                                                                </noscript>
-                                                                                <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
+                                                                            </noscript>
+                                                                            <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
+                                                                        </div>
+                                                                    </a>
                                                                 </div>
                                                             </div>
-                                                            <div class="DownloadApp-desktopOnly--7etNQ">
-                                                                <div class="DownloadApp-qrCode--3xbbT">
-                                                                    <div><img src="https://images.ctfassets.net/4rc1asww3mw7/7DByX43i2oNKH6nqmNXqHN/3253534f506fdf64227f18748b4f7901/www_homepage_hero_app_slide__Dec_2023__QR-code.svg" alt="Download app QR code" class="DownloadApp-qrCodeImage--74auN"/></div>
-                                                                </div>
+                                                        </div>
+                                                        <div class="DownloadApp-desktopOnly--7etNQ">
+                                                            <div class="DownloadApp-qrCode--3xbbT">
+                                                                <div><img src="https://images.ctfassets.net/4rc1asww3mw7/7DByX43i2oNKH6nqmNXqHN/3253534f506fdf64227f18748b4f7901/www_homepage_hero_app_slide__Dec_2023__QR-code.svg" alt="Download app QR code" class="DownloadApp-qrCodeImage--74auN"/></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="styled__ColumnImage-sc-f6u918-6 kesodR">
-                                                    <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
-                                                        <div style="max-width:600px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;544&#x27; width=&#x27;600&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
-                                                        <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                            </div>
+                                            <div class="styled__ColumnImage-sc-f6u918-6 kesodR">
+                                                <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
+                                                    <div style="max-width:600px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;544&#x27; width=&#x27;600&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
+                                                    <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                                    <picture>
+                                                        <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=avif 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=avif 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=avif 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=avif 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
+                                                        <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=webp 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=webp 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=webp 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=webp 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
+                                                        <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 600px) 600px, 100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=png 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=png 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=png 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=png 1200w" alt=""/>
+                                                    </picture>
+                                                    <noscript>
                                                         <picture>
-                                                            <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=avif 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=avif 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=avif 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=avif 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
-                                                            <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=webp 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=webp 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=webp 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=webp 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
-                                                            <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 600px) 600px, 100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=png 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=png 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=png 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=png 1200w" alt=""/>
+                                                            <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=avif 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=avif 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=avif 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=avif 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
+                                                            <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=webp 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=webp 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=webp 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=webp 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
+                                                            <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 600px) 600px, 100vw" decoding="async" loading="lazy" src="https://astrocred.co.zw/front_img/main-banner3.jpg" srcSet="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=png 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=png 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=png 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=png 1200w" alt=""/>
                                                         </picture>
-                                                        <noscript>
-                                                            <picture>
-                                                                <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=avif 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=avif 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=avif 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=avif 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
-                                                                <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=webp 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=webp 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=webp 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=webp 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
-                                                                <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 600px) 600px, 100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=png 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=png 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=png 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=png 1200w" alt=""/>
-                                                            </picture>
-                                                        </noscript>
-                                                        <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
-                                                    </div>
+                                                    </noscript>
+                                                    <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                         <a class="styled__StyledNextButtonArrow-sc-f6u918-11 gzlcJ ButtonArrow-wrapper--6vQnV" tabindex="0" role="button" aria-label="Next" href="#myCarousel" role="button" data-bs-slide="next">
                             <svg width="9" height="16" viewBox="0 0 9 16" xmlns="http://www.w3.org/2000/svg">
                                 <path d="m1 1 7 7-7 7"></path>
                             </svg>
                         </a>
                     </section>
-
-
-
                     <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopXSmall--6G7Be styles-spacingBottomStandard--2DrRP">
                         <div class="Container-container--DIXxP IllustrationWithText-container--5EV1Y IllustrationWithText-darkText--1vq6E">
                             <h2 class="IllustrationWithText-title--3zRaK imports-bodyTitleLarge--3TNN9">How to use Eshagi</h2>
                             <div class="IllustrationWithText-elementsContainer--6M0QY IllustrationWithText-hasHeadingText--6dH4Z">
                                 <div class="IllustrationWithText-container--1OPwm IllustrationWithText-container-rowDirection--6OnJr IllustrationWithText-width_33--75qaK">
-                                    <img src="https://images.ctfassets.net/4rc1asww3mw7/2s3c6cmoTXKipgIDi1S1Xn/41af32c83294d3b8cbf9cf6ac9c4712f/Step1_svg.svg" alt="how to use Affirm - At checkout" class="IllustrationWithText-image--345By IllustrationWithText-leftAlignedImage--7djnZ" loading="lazy"/>
+                                    <img src="https://images.ctfassets.net/4rc1asww3mw7/2s3c6cmoTXKipgIDi1S1Xn/41af32c83294d3b8cbf9cf6ac9c4712f/Step1_svg.svg" alt="how to use Eshagi - At checkout" class="IllustrationWithText-image--345By IllustrationWithText-leftAlignedImage--7djnZ" loading="lazy"/>
                                     <div class="IllustrationWithText-dataContainer--2sdsx">
                                         <h3 class="IllustrationWithText-title--5nnfC IllustrationWithText-leftAlignedText--48mGd imports-h3--3yLlm imports-h4--1GRDI">At checkout</h3>
                                         <div class="RichText-richText--1L77z IllustrationWithText-description--5431d IllustrationWithText-leftAlignedText--48mGd">
                                             <div>
-                                                <p>Look for the Affirm logo when completing your purchase, or pay with your <a href="card.html" class="imports-linkText--2pLgL">Eshagi Card.</a> </p>
+                                                <p>Look for the Eshagi logo when completing your purchase, or pay with your <a href="card.html" class="imports-linkText--2pLgL">Eshagi Card.</a> </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="IllustrationWithText-container--1OPwm IllustrationWithText-container-rowDirection--6OnJr IllustrationWithText-width_33--75qaK">
-                                    <img src="https://images.ctfassets.net/4rc1asww3mw7/5ZuiRR7Y0ALavfyfHCAki3/e5bdffa2fbc46c734368a7ff72840468/Step2_svg.svg" alt="how to use Affirm - Affirm app" class="IllustrationWithText-image--345By IllustrationWithText-leftAlignedImage--7djnZ" loading="lazy"/>
+                                    <img src="https://images.ctfassets.net/4rc1asww3mw7/5ZuiRR7Y0ALavfyfHCAki3/e5bdffa2fbc46c734368a7ff72840468/Step2_svg.svg" alt="how to use Eshagi - Eshagi app" class="IllustrationWithText-image--345By IllustrationWithText-leftAlignedImage--7djnZ" loading="lazy"/>
                                     <div class="IllustrationWithText-dataContainer--2sdsx">
                                         <h3 class="IllustrationWithText-title--5nnfC IllustrationWithText-leftAlignedText--48mGd imports-h3--3yLlm imports-h4--1GRDI">Eshagi app</h3>
                                         <div class="RichText-richText--1L77z IllustrationWithText-description--5431d IllustrationWithText-leftAlignedText--48mGd">
@@ -474,7 +515,7 @@
                                     </div>
                                 </div>
                                 <div class="IllustrationWithText-container--1OPwm IllustrationWithText-container-rowDirection--6OnJr IllustrationWithText-width_33--75qaK">
-                                    <img src="https://images.ctfassets.net/4rc1asww3mw7/2fg800WX69eI6rkxhs2Tu/6ea325b318b1e71ab84cefce77be2f0d/Step3_svg.svg" alt="how to use Affirm - The Affirm Card™" class="IllustrationWithText-image--345By IllustrationWithText-leftAlignedImage--7djnZ" loading="lazy"/>
+                                    <img src="https://images.ctfassets.net/4rc1asww3mw7/2fg800WX69eI6rkxhs2Tu/6ea325b318b1e71ab84cefce77be2f0d/Step3_svg.svg" alt="how to use Eshagi - The Eshagi Card™" class="IllustrationWithText-image--345By IllustrationWithText-leftAlignedImage--7djnZ" loading="lazy"/>
                                     <div class="IllustrationWithText-dataContainer--2sdsx">
                                         <h3 class="IllustrationWithText-title--5nnfC IllustrationWithText-leftAlignedText--48mGd imports-h3--3yLlm imports-h4--1GRDI">The Eshagi Card™</h3>
                                         <div class="RichText-richText--1L77z IllustrationWithText-description--5431d IllustrationWithText-leftAlignedText--48mGd">
@@ -488,8 +529,6 @@
                             <div class="IllustrationWithText-button--6hQrh"><a href="how-it-works.html" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Learn more</span></a></div>
                         </div>
                     </section>
-
-
                     <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopNone--1Hwd4 styles-spacingBottomNone--2ubZt">
                         <div class="styled__SectionBgColor-sc-1y2kxlw-0 ioAcIJ">
                             <div class="Container-container--DIXxP styled__CategoriesRoot-sc-12udlfx-0 hNBiAT">
@@ -912,7 +951,7 @@
                                                 <picture>
                                                     <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=750&amp;h=589&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=1080&amp;h=848&amp;q=50&amp;fm=avif 1080w,https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=1224&amp;h=961&amp;q=50&amp;fm=avif 1224w" sizes="100vw"/>
                                                     <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=750&amp;h=589&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=1080&amp;h=848&amp;q=50&amp;fm=webp 1080w,https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=1224&amp;h=961&amp;q=50&amp;fm=webp 1224w" sizes="100vw"/>
-                                                    <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=1224&amp;h=961&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=750&amp;h=589&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=1080&amp;h=848&amp;q=50&amp;fm=png 1080w,https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=1224&amp;h=961&amp;q=50&amp;fm=png 1224w" alt="Take affirm card"/>
+                                                    <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=1224&amp;h=961&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=750&amp;h=589&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=1080&amp;h=848&amp;q=50&amp;fm=png 1080w,https://images.ctfassets.net/4rc1asww3mw7/1JkLVQndQU0Ftn1MlKjZmr/a67f8c1f8ebf5358b5dc7c0c85c8a01e/take_the_affirm_card.png?w=1224&amp;h=961&amp;q=50&amp;fm=png 1224w" alt="Take Eshagi card"/>
                                                 </picture>
                                             </noscript>
                                             <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
@@ -920,7 +959,7 @@
                                     </div>
                                     <div class="styled__ColumnText-sc-2253dy-2 crMWkU">
                                         <div>
-                                            <h2 class="styled__Heading-sc-2253dy-4 bHeuno">Take the Affirm Card™ everywhere</h2>
+                                            <h2 class="styled__Heading-sc-2253dy-4 bHeuno">Take the Eshagi Card™ everywhere</h2>
                                             <div class="RichText-richText--1L77z">
                                                 <div>
                                                     <p>Request to pay over time in the app, then swipe. For everything else, use it as your everyday debit card.</p>
@@ -949,7 +988,6 @@
                             </div>
                         </div>
                     </section>
-
                     <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopNone--1Hwd4 styles-spacingBottomNone--2ubZt">
                         <div class="styled__SectionBgColor-sc-1y2kxlw-0 eNnUnX">
                             <div class="styled__ContentTwoColumnRoot-sc-2253dy-0 csBuiC">
@@ -980,12 +1018,12 @@
                                                 <div>
                                                     <h3 class="imports-h3--3yLlm imports-h4--1GRDI">1.4M+ App Store reviews</h3>
                                                     <p>
-                                                        Check your purchasing power, get exclusive deals like as low as 0% APR, and make payments from the palm of your hand with the Affirm app.
+                                                        Check your purchasing power, get exclusive deals like as low as 0% APR, and make payments from the palm of your hand with the Eshagi app.
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="https://affirm.app.link/CQtZiGDSCDb" rel="noopener" target="_blank" class="styled__StyledButtonPrimary-sc-2253dy-5 gQmpLg ButtonPrimary-buttonPrimary--1qZwZ ButtonPrimary-buttonInverted--6RDH2"><span>Download the Affirm app</span></a>
+                                        <a href="https://affirm.app.link/CQtZiGDSCDb" rel="noopener" target="_blank" class="styled__StyledButtonPrimary-sc-2253dy-5 gQmpLg ButtonPrimary-buttonPrimary--1qZwZ ButtonPrimary-buttonInverted--6RDH2"><span>Download the Eshagi app</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -997,7 +1035,7 @@
                                         <div class="styled__Testimonial-sc-11yqsob-4 fvsreG">
                                             <div class="RichText-richText--1L77z">
                                                 <div>
-                                                    <p>“I’ve been with Affirm forever. It’s a great way of getting what you want and the payment plan is affordable...Thank you, Affirm!”</p>
+                                                    <p>“I’ve been with Eshagi forever. It’s a great way of getting what you want and the payment plan is affordable...Thank you, Eshagi!”</p>
                                                 </div>
                                             </div>
                                             <h3 class="styled__HeadingTestimonial-sc-11yqsob-5 bnmTUf">Pamela D.</h3>
@@ -1013,7 +1051,7 @@
                                         <div class="styled__Testimonial-sc-11yqsob-4 fvsreG">
                                             <div class="RichText-richText--1L77z">
                                                 <div>
-                                                    <p>&quot;Affirm is very flexible and amazing to use. The payment plans are simple and they make the user experience very friendly and understandable.”</p>
+                                                    <p>&quot;Eshagi is very flexible and amazing to use. The payment plans are simple and they make the user experience very friendly and understandable.”</p>
                                                 </div>
                                             </div>
                                             <h3 class="styled__HeadingTestimonial-sc-11yqsob-5 bnmTUf">Isaiah P.</h3>
@@ -1031,98 +1069,13 @@
                             </article>
                         </div>
                     </section>
-
                     <div id="footer" class="Container-container--DIXxP Footer-footer--2bjb2" data-testid="footer">
                         <div class="Footer-row--1W9vm">
                             <div class="Footer-meta--3m3Jp">
                                 <div class="Footer-socials--1lsVJ"><a href="https://www.instagram.com/affirm/" rel="noopener" target="_blank" class="Footer-socialLink--34hee"><img src="https://images.ctfassets.net/4rc1asww3mw7/4YuArUqs5g1ch4iDauDJdF/fb4f13fdff7eade828e27b490fd7b460/instagram-icon-01.svg?fl=progressive&amp;w=26" alt="Instagram" class="Footer-socialIcon--3TjSK" loading="lazy" width="26" height="26"/><img src="https://images.ctfassets.net/4rc1asww3mw7/4YuArUqs5g1ch4iDauDJdF/fb4f13fdff7eade828e27b490fd7b460/instagram-icon-01.svg?fl=progressive&amp;w=26" alt="Instagram" class="Footer-socialIcon--3TjSK Footer-socialIconHighlighted--PqS09" loading="lazy" width="26" height="26"/></a><a href="https://www.linkedin.com/company/affirm" rel="noopener" target="_blank" class="Footer-socialLink--34hee"><img src="https://images.ctfassets.net/4rc1asww3mw7/2Ozu6gQ4SWdTqS2N8NYSPJ/9cd411cdfbf157abc8fe4166561b19b5/linkedIn-icon-01.svg?fl=progressive&amp;w=26" alt="Linkedin" class="Footer-socialIcon--3TjSK" loading="lazy" width="26" height="26"/><img src="https://images.ctfassets.net/4rc1asww3mw7/2Ozu6gQ4SWdTqS2N8NYSPJ/9cd411cdfbf157abc8fe4166561b19b5/linkedIn-icon-01.svg?fl=progressive&amp;w=26" alt="Linkedin" class="Footer-socialIcon--3TjSK Footer-socialIconHighlighted--PqS09" loading="lazy" width="26" height="26"/></a><a href="https://twitter.com/Affirm" rel="noopener" target="_blank" class="Footer-socialLink--34hee"><img src="https://images.ctfassets.net/4rc1asww3mw7/6laFJFmyGRxSgEpbStQyQc/a02416546f218890706ee07aa35deffa/twitter-icon-01.svg?fl=progressive&amp;w=26" alt="Twitter" class="Footer-socialIcon--3TjSK" loading="lazy" width="26" height="26"/><img src="https://images.ctfassets.net/4rc1asww3mw7/6laFJFmyGRxSgEpbStQyQc/a02416546f218890706ee07aa35deffa/twitter-icon-01.svg?fl=progressive&amp;w=26" alt="Twitter" class="Footer-socialIcon--3TjSK Footer-socialIconHighlighted--PqS09" loading="lazy" width="26" height="26"/></a><a href="https://www.pinterest.com/Affirm/" rel="noopener" target="_blank" class="Footer-socialLink--34hee"><img src="https://images.ctfassets.net/4rc1asww3mw7/2Z7xRtBZ47jCbVvxaUgdU4/821adbf9ff3bbc51aaaf731382add8ea/pinterest-01.svg?fl=progressive&amp;w=26" alt="Pinterest" class="Footer-socialIcon--3TjSK" loading="lazy" width="26" height="26"/><img src="https://images.ctfassets.net/4rc1asww3mw7/2Z7xRtBZ47jCbVvxaUgdU4/821adbf9ff3bbc51aaaf731382add8ea/pinterest-01.svg?fl=progressive&amp;w=26" alt="Pinterest" class="Footer-socialIcon--3TjSK Footer-socialIconHighlighted--PqS09" loading="lazy" width="26" height="26"/></a><a href="https://www.facebook.com/AffirmInc/" rel="noopener" target="_blank" class="Footer-socialLink--34hee"><img src="https://images.ctfassets.net/4rc1asww3mw7/49T7I7HzGVeZSdWRzrcqau/fcad2fe4ec9accb248aa474870b4b590/facebook-01.svg?fl=progressive&amp;w=26" alt="Facebook" class="Footer-socialIcon--3TjSK" loading="lazy" width="26" height="26"/><img src="https://images.ctfassets.net/4rc1asww3mw7/49T7I7HzGVeZSdWRzrcqau/fcad2fe4ec9accb248aa474870b4b590/facebook-01.svg?fl=progressive&amp;w=26" alt="Facebook" class="Footer-socialIcon--3TjSK Footer-socialIconHighlighted--PqS09" loading="lazy" width="26" height="26"/></a></div>
                                 <div class="LanguageSwitcher-wrapper--23xu2">
-                                    <div class="LanguageSwitcher-label--4eTKt imports-body--I9Byh" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false" aria-label="Select language">
-                                    <span class="LanguageSwitcher-labelInner--4k1fU">
-                                       <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained LanguageSwitcher-flag--5hahK">
-                                          <div style="max-width:24px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;24&#x27; width=&#x27;24&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
-                                          <img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAACDVBMVEUAAAAMDIgZGaEBAZsKCqElAob1AAD0AADxAADtAADjAAAAAJ8EBJcMDJz2hoby39////8rK5wcHJ8HB5z46+vjz8/ie3sAAGABAYjsCAjvAAABAYwoKKP0aWnpl5ccHItjY7fu4ODNqKh/f77iEhIJCYfmUVFPT6bs7OwEBIDhNTU8OpTfOzvp6enn5+faSEjYR0fSEhPRFxfBpKTh1tbk2dnQtbXWiIjcXV3aXFzWhobXAADMBwfABQWPAADIcHDRwMDi19fj2NjbycnHZWWamprYx8fVdnbSdnbVwMDn5+e2AADAAADCAADEAADFAADGAADEAADBAACrAABRUbsDA55LS7o0IJ36dXVoaMMICJ1cXL8XF6MmJKf67e0mJqY8PK8ODpxVVbkGBplPT7c1Foz0Hx9ERLADA5RoaL8BAZNYWLgODpkjD4z0Z2cSEpcqKqJAQKsODpVeXrgHB5JWVrU3NqX26uobG5cjI5tCQqoCAoxhYbgEBI1TU7EPD5MiBn7tKirsKSlTU68UFJIsLJ07O6QSEpBXV7EKCoxSUq4yGoftSkoXF48iIpU5OaABAYVXV69PT6sMDIojI5Ty8vJaWq0XF4wvL5hCQqIREYldXa8HB4RXV6wzG4DnODhAPplZPovlPj7u7u7hQkLcKyvdLCzdKyvp39/o39/cW1vVHR3k2dnWZ2fXZ2eiVu8QAAAAVHRSTlMAFl2x3v394bJdFwNa3t5aAwuY+vufCwSfmANb+/paF97eFV1dsrHh3/39/f3e4bGyXV0W3t4XWvr7WwOYoAQLnfv6mAsEW97eWgMXXbLh/d6xXRVBIOGMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AIFChAkAIvjSwAAAKVJREFUGNNt0C1ugkEURuFzLlfwo1BIBItAogqioqpbwOBYCDgMDkmCavKp6i4FgULVUvEB6Ux45ZNzR4wA+NwvgMBAF6pAo1cQhjr3jjR6QUZtdkf48pyk3QJTHPthgRx18mmFHjIGNRIZfdVblNh7WT6e+o8d6kWGL7FWI2Ib5TqblKnrItz6k2R1nyLMdPWknX4j8KbLtr7ttWl/Ht5VUT0B/AFSVxRG4uN2OwAAAABJRU5ErkJggg==" alt=""/>
-                                          <picture>
-                                             <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=avif 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=avif 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=avif 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=avif 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                             <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=webp 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=webp 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=webp 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=webp 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                             <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 24px) 24px, 100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=png 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=png 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=png 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=png 48w" alt="The American flag"/>
-                                          </picture>
-                                          <noscript>
-                                             <picture>
-                                                <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=avif 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=avif 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=avif 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=avif 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=webp 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=webp 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=webp 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=webp 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 24px) 24px, 100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=png 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=png 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=png 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=png 48w" alt="The American flag"/>
-                                             </picture>
-                                          </noscript>
-                                          <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
-                                       </div>
-                                       United States
-                                    </span>
-                                        <svg width="10" height="6" viewBox="0 0 10 6" stroke="var(--color-greyscale-black-100)" fill="none" xmlns="http://www.w3.org/2000/svg" class="LanguageSwitcher-chevron--6nU2h">
-                                            <path d="m9 1.215-4 4-4-4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
                                     </div>
                                     <div class="LanguageSwitcher-popup--7sy2y LanguageSwitcher-isFooter--17m2K">
-                                        <a class="LanguageSwitcher-link--5BevK imports-bodySmall--1bfJ1" href="en-au/index.html">
-                                            <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained LanguageSwitcher-flag--5hahK">
-                                                <div style="max-width:24px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;24&#x27; width=&#x27;24&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
-                                                <img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAACHFBMVEUAAABgZom/o6/mhIflen7Ys7oqNG4kLmkkLWkkLGYhKGAbIEVydpjDhZPnjZEkLGkjK2UgKGifobCaiqDcg4olLWsjK2YgJ1znGCDgkJMuNWtgZXrWGR/jIihla5Xi4uTGGyHgGyFSWYchJ1zftLXlOT4lLmojK2WLfJgkLWdVTnskLWdUTnskLWgnL2lRWIYlLWcwOW8+RngjLGaVmK/f4OUiK2PCwsfq6us/R3kmLmGSlq1/hKRqcJbd3t8bG0U4P3AzO2/v7+8gJlkjK2MiKmIgJ1soMGgiK2MjLGYkLWgiK2QVIEUgJ14iKmIjLGYkLGYjLGcjLGYiKmMfKFzfuL6QlLJETYAlL2wlLmwlLWvtu729vcxnbZdUXItWXownMW0lLmvsrK7smJrriYzqe3/pdHfqcHTmbHEsMGzkHiTkGyHgGyIsLWjlNjzoYWXpc3bpfoHnhIjmiIzlio7ii5AsMWwpMm3pqq3w6+zrmZvlgISdkqtXXYxSWYlRV4gnL2zmP0S9iJhtcprX1NzsqqzkV1y3d4lNT4EnL20mLmw5QHgoMWslLmklLmrmPUK2hJc3P3ego7zo2d3qgYThYGaZcY02PXa+wM91ep7lO0CyhJgoMGxbYY7Ly9fuxcbkZGgsLWktNm+Pk69kapMwLmYtM2sxOnEmL2olL2okLmlpb5YyO3ImMGokLWisr8MrNG7Q0dpLU4MqM2zUwzQaAAAAVXRSTlMAFFyr4vr646tbFQRZ2P7YWQMKmPr6lwoDlpgEWfr6WRXY2BRc/v5dq6vj4vr6+vri5KurXf5cFNjYFVn6+lkEmJcDCpeYCgNZ2P5ZBBVd4/r64l0UjRWrogAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gCBxQPBT0Ju3oAAADsSURBVBgZTcExSgNRFIbR779zBcljAgpCIBkSLcRSyBIsBosswAW4DrGxENxBdqClNtpYiGBpZavoRIKFpBGsxnnPUXKOiPTvi4aAIKlUxJX0CYJ1qVTyDTfSHNHTvn4tiG5VOa5V0ZBIXGikiVpvRMW53NVRi+TVpZ0DtR5hV416atbtPuXJNuR5To2ZhcBDJ9qEEAJgbkFjFtR9ZmM+6MPA3N5FQzOSCmRuQ+mZRkHiYGanWVZEJA5knsnkLFk58awa3m+sseQsu3NcWyxzIdjT/Jg/Rz1dI6CUDkmmtekSRDRRNZD0MtIFjR/ubyoT90ToMgAAAABJRU5ErkJggg==" alt=""/>
-                                                <picture>
-                                                    <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=6&amp;h=6&amp;q=50&amp;fm=avif 6w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=12&amp;h=12&amp;q=50&amp;fm=avif 12w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=24&amp;h=24&amp;q=50&amp;fm=avif 24w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=48&amp;h=48&amp;q=50&amp;fm=avif 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                    <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=6&amp;h=6&amp;q=50&amp;fm=webp 6w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=12&amp;h=12&amp;q=50&amp;fm=webp 12w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=24&amp;h=24&amp;q=50&amp;fm=webp 24w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=48&amp;h=48&amp;q=50&amp;fm=webp 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                    <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 24px) 24px, 100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=24&amp;h=24&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=6&amp;h=6&amp;q=50&amp;fm=png 6w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=12&amp;h=12&amp;q=50&amp;fm=png 12w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=24&amp;h=24&amp;q=50&amp;fm=png 24w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=48&amp;h=48&amp;q=50&amp;fm=png 48w" alt="The Australian flag"/>
-                                                </picture>
-                                                <noscript>
-                                                    <picture>
-                                                        <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=6&amp;h=6&amp;q=50&amp;fm=avif 6w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=12&amp;h=12&amp;q=50&amp;fm=avif 12w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=24&amp;h=24&amp;q=50&amp;fm=avif 24w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=48&amp;h=48&amp;q=50&amp;fm=avif 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                        <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=6&amp;h=6&amp;q=50&amp;fm=webp 6w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=12&amp;h=12&amp;q=50&amp;fm=webp 12w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=24&amp;h=24&amp;q=50&amp;fm=webp 24w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=48&amp;h=48&amp;q=50&amp;fm=webp 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                        <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 24px) 24px, 100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=24&amp;h=24&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=6&amp;h=6&amp;q=50&amp;fm=png 6w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=12&amp;h=12&amp;q=50&amp;fm=png 12w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=24&amp;h=24&amp;q=50&amp;fm=png 24w,https://images.ctfassets.net/4rc1asww3mw7/H55UyRf5jJzrbD7VcqswZ/20f2722a724a8d92430c744be09eeac8/Australia.png?w=48&amp;h=48&amp;q=50&amp;fm=png 48w" alt="The Australian flag"/>
-                                                    </picture>
-                                                </noscript>
-                                                <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
-                                            </div>
-                                            Australia
-                                        </a>
-                                        <a class="LanguageSwitcher-link--5BevK imports-bodySmall--1bfJ1" href="en-ca/index.html">
-                                            <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained LanguageSwitcher-flag--5hahK">
-                                                <div style="max-width:24px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;24&#x27; width=&#x27;24&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
-                                                <img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAACXlBMVEUAAADr6+vx8fH29vby8vL39/f09PT09PTm5ua+vr7XAAD50ND5+fn8/Pzv7+/kxsb3AADJAADhAAD4nZ33pqblAADIAADvAADmAADeAADbAADvAADxAADvAAC1AADjAADsAADeAADXAADsAADgAADjAADfAADdAADcAADcAADZAADaAADVAADXAADWAADXAADPAADaAADHAADIAADVAADNAACkAADTAADUAADSAADBAAC3AAC/AADHAADPAACoAADCAADbjo7dmJi+AACqAADLrKzY2Njh4eHfw8OvAACpqanOzs7c3Nza2tra2trc3NzX19fPz8/8/Pz6+vr0AAD3mJj5+fn3oqLxAAD1mJj4+Pj46+v44OD2oaHuAADzl5f29vb29fX3ior3bW3zoKDrAADsAADylpb19fX14+P0cnL0GBj0Dg70cXH03d3yn5/qAADwlZXz7+/zycnwNDTwAADwLS3z19fz8PDwnp7nAADulJTufHztQkLsKCjua2vuZWXsOjrtU1PueXnunZ3kAADsk5PsfHznAQHoHh7oISHrcHDsnJzhAADqjY3mUVHiAQHiAADlQkLqmJjfAADokpLt39/jS0vdAADdAQHiR0fs2Njpm5vmkZHs7OzpycnaDQ3aCgraCQnaCAjaDg7qz8/nmprcAADaAADkkJDr6+voycnko6PnxMTgenrii4vnvLzknJzoysrlmZnZAADXAADij4/p6endf3/glJTjmJjUAADgjo7o6OjdjIzfn5/hl5fSAADejY3m5ubl4ODm4uLflpbl5eXj4+Pk5OR7fgPBAAAAUnRSTlMAE1mr3vf53VsXA1PX/t5aAwqY+fqWCgOTmFr6+VMX3tcTW/5Zq93f+fr6+d7dq6tZ/lsT194XU/n6WgOYkwMKlvr5mApa3thTAxdbq93591oThs2eVQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gBGA41L51wt2oAAADqSURBVBgZPcHNKoRhGIDh+37f55vf0GRhQTYOwkYo2SjHY6EQ5RwchZUs2FAcioUVo2YyP9+Yl8Z1SeGfSeWQOYGOekjhg36A0NN9Fp70HVlzR1lw+vI5CLKhgNZAHufVgZvuoThL1jOIEc9GHIjirxHNRDZyFxQVjYZyfBd2wOKNdQtIkbqgX8tu9Tt1v6eQIrVA29OgCtoqpEhNcA6aWECKFFBZzJJ+tyYrnynSzQn+q9qJjRzZJRTQGqqcuAjZ9koBrYE8PvM1CBsKaA1kQ4Q9vWbhVB8R2G16KcXsXO9BiiOLYSO8Ze4HCSMujq6JP5gAAAAASUVORK5CYII=" alt=""/>
-                                                <picture>
-                                                    <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=avif 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=avif 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=avif 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=avif 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                    <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=webp 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=webp 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=webp 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=webp 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                    <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 24px) 24px, 100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=png 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=png 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=png 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=png 48w" alt="The Canadian flag"/>
-                                                </picture>
-                                                <noscript>
-                                                    <picture>
-                                                        <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=avif 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=avif 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=avif 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=avif 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                        <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=webp 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=webp 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=webp 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=webp 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                        <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 24px) 24px, 100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=png 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=png 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=png 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=png 48w" alt="The Canadian flag"/>
-                                                    </picture>
-                                                </noscript>
-                                                <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
-                                            </div>
-                                            Canada (En)
-                                        </a>
-                                        <a class="LanguageSwitcher-link--5BevK imports-bodySmall--1bfJ1" href="fr-ca/index.html">
-                                            <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained LanguageSwitcher-flag--5hahK">
-                                                <div style="max-width:24px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;24&#x27; width=&#x27;24&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
-                                                <img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAACXlBMVEUAAADr6+vx8fH29vby8vL39/f09PT09PTm5ua+vr7XAAD50ND5+fn8/Pzv7+/kxsb3AADJAADhAAD4nZ33pqblAADIAADvAADmAADeAADbAADvAADxAADvAAC1AADjAADsAADeAADXAADsAADgAADjAADfAADdAADcAADcAADZAADaAADVAADXAADWAADXAADPAADaAADHAADIAADVAADNAACkAADTAADUAADSAADBAAC3AAC/AADHAADPAACoAADCAADbjo7dmJi+AACqAADLrKzY2Njh4eHfw8OvAACpqanOzs7c3Nza2tra2trc3NzX19fPz8/8/Pz6+vr0AAD3mJj5+fn3oqLxAAD1mJj4+Pj46+v44OD2oaHuAADzl5f29vb29fX3ior3bW3zoKDrAADsAADylpb19fX14+P0cnL0GBj0Dg70cXH03d3yn5/qAADwlZXz7+/zycnwNDTwAADwLS3z19fz8PDwnp7nAADulJTufHztQkLsKCjua2vuZWXsOjrtU1PueXnunZ3kAADsk5PsfHznAQHoHh7oISHrcHDsnJzhAADqjY3mUVHiAQHiAADlQkLqmJjfAADokpLt39/jS0vdAADdAQHiR0fs2Njpm5vmkZHs7OzpycnaDQ3aCgraCQnaCAjaDg7qz8/nmprcAADaAADkkJDr6+voycnko6PnxMTgenrii4vnvLzknJzoysrlmZnZAADXAADij4/p6endf3/glJTjmJjUAADgjo7o6OjdjIzfn5/hl5fSAADejY3m5ubl4ODm4uLflpbl5eXj4+Pk5OR7fgPBAAAAUnRSTlMAE1mr3vf53VsXA1PX/t5aAwqY+fqWCgOTmFr6+VMX3tcTW/5Zq93f+fr6+d7dq6tZ/lsT194XU/n6WgOYkwMKlvr5mApa3thTAxdbq93591oThs2eVQAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gBGA41L51wt2oAAADqSURBVBgZPcHNKoRhGIDh+37f55vf0GRhQTYOwkYo2SjHY6EQ5RwchZUs2FAcioUVo2YyP9+Yl8Z1SeGfSeWQOYGOekjhg36A0NN9Fp70HVlzR1lw+vI5CLKhgNZAHufVgZvuoThL1jOIEc9GHIjirxHNRDZyFxQVjYZyfBd2wOKNdQtIkbqgX8tu9Tt1v6eQIrVA29OgCtoqpEhNcA6aWECKFFBZzJJ+tyYrnynSzQn+q9qJjRzZJRTQGqqcuAjZ9koBrYE8PvM1CBsKaA1kQ4Q9vWbhVB8R2G16KcXsXO9BiiOLYSO8Ze4HCSMujq6JP5gAAAAASUVORK5CYII=" alt=""/>
-                                                <picture>
-                                                    <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=avif 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=avif 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=avif 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=avif 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                    <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=webp 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=webp 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=webp 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=webp 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                    <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 24px) 24px, 100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=png 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=png 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=png 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=png 48w" alt="The Canadian flag"/>
-                                                </picture>
-                                                <noscript>
-                                                    <picture>
-                                                        <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=avif 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=avif 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=avif 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=avif 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                        <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=webp 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=webp 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=webp 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=webp 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                        <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 24px) 24px, 100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=6&amp;h=6&amp;q=50&amp;fm=png 6w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=12&amp;h=12&amp;q=50&amp;fm=png 12w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=24&amp;h=24&amp;q=50&amp;fm=png 24w,https://images.ctfassets.net/4rc1asww3mw7/5uH9prgRT1LkM66YvhzPe7/9fb421ff4e95165ed3fa3d795f2d82c5/Canada.png?w=48&amp;h=48&amp;q=50&amp;fm=png 48w" alt="The Canadian flag"/>
-                                                    </picture>
-                                                </noscript>
-                                                <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
-                                            </div>
-                                            Canada (Fr)
-                                        </a>
                                         <a class="LanguageSwitcher-link--5BevK imports-bodySmall--1bfJ1" href="index.html">
                                             <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained LanguageSwitcher-flag--5hahK">
                                                 <div style="max-width:24px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;24&#x27; width=&#x27;24&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
@@ -1141,30 +1094,24 @@
                                                 </noscript>
                                                 <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
                                             </div>
-                                            United States
+                                            Zimbabwe
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <nav class="Footer-nav--4uF7T" aria-label="Footer">
-                                <div class="Footer-navColumn--2aJRL" role="menu" aria-label="For shoppers"><span role="presentation" class="Footer-navColumnTitle--OOh0B imports-tag--7t9J0">For shoppers</span><a href="/" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">How it works</a><a href="card.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Affirm Card™</a><a href="savings.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Savings</a><a href="https://www.affirm.com/help/" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Help</a></div>
+                                <div class="Footer-navColumn--2aJRL" role="menu" aria-label="For shoppers"><span role="presentation" class="Footer-navColumnTitle--OOh0B imports-tag--7t9J0">For shoppers</span><a href="/" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">How it works</a><a href="card.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Eshagi Card™</a><a href="savings.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Savings</a><a href="https://www.affirm.com/help/" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Help</a></div>
                                 <div class="Footer-navColumn--2aJRL" role="menu" aria-label="For businesses"><span role="presentation" class="Footer-navColumnTitle--OOh0B imports-tag--7t9J0">For businesses</span><a href="/business" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Get started</a><a href="business/solutions.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Solutions</a><a href="business/partners/directory/index.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Partner directory</a><a href="docs.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">For developers</a><a href="https://businesshub.affirm.com/" rel="noopener" target="_blank" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Business support </a></div>
-                                <div class="Footer-navColumn--2aJRL" role="menu" aria-label="About Affirm"><span role="presentation" class="Footer-navColumnTitle--OOh0B imports-tag--7t9J0">About Affirm</span><a href="about.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">About us</a><a href="careers.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Careers</a><a href="https://investors.affirm.com/" rel="noopener" target="_blank" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Investors</a><a href="https://investors.affirm.com/news-events/all-news" rel="noopener" target="_blank" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Press</a><a href="security.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Security</a><a href="cares.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Affirm Cares</a><a href="diversity-inclusion.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Diversity &amp; inclusion</a></div>
+                                <div class="Footer-navColumn--2aJRL" role="menu" aria-label="About Affirm"><span role="presentation" class="Footer-navColumnTitle--OOh0B imports-tag--7t9J0">About Eshagi</span><a href="about.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">About us</a><a href="careers.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Careers</a><a href="https://investors.affirm.com/" rel="noopener" target="_blank" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Investors</a><a href="https://investors.affirm.com/news-events/all-news" rel="noopener" target="_blank" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Press</a><a href="security.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Security</a><a href="cares.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Eshagi Cares</a><a href="diversity-inclusion.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Diversity &amp; inclusion</a></div>
                             </nav>
                         </div>
                         <div class="Footer-footnotes--5u07r imports-caption--3UuTe">
-                            <div class="RichText-richText--1L77z Footer-legalCopy--6t1DB">
-                                <div>
-                                    <p>Payment options through Affirm are provided by these lending partners: <a href="lenders.html" rel="noopener" target="_blank" class="imports-linkText--2pLgL"><u>affirm.com/lenders</u></a>. Your rate will be 0–36% APR based on credit, and is subject to an eligibility check. Affirm Pay in 4 payment option is 0% APR. Options depend on your purchase amount, may vary by merchant, and may not be available in all states. A down payment may be required. For example, a $800 purchase could be split into 12 monthly payments of $72.21 at 15% APR, or 4 interest-free payments of $200 every 2 weeks. Affirm savings accounts are held with Cross River Bank, Member FDIC. California residents: Affirm Loan Services, LLC is licensed by the Department of Financial Protection and Innovation. Loans are made or arranged pursuant to California Financing Law license 60DBO-111681. The Affirm Card is a Visa® debit card issued by Evolve Bank &amp; Trust, Member FDIC, pursuant to a license from Visa U.S.A. Inc. The Affirm Card is not available to residents of U.S. territories. Affirm, Inc., NMLS ID 1883087. Affirm Loan Services, LLC, NMLS ID 1479506. For licenses and disclosures, see <a href="licenses.html" rel="noopener" target="_blank" class="imports-linkText--2pLgL"><u>affirm.com/licenses</u></a>.</p>
-                                </div>
-                            </div>
                             <div class="Footer-legalWrap--4zFB6" role="menu">
                                 <div><a href="privacy.html" class="Footer-legalLink--2KS6l" role="menuitem">Privacy</a><a href="https://helpcenter.affirm.com/s/article/privacy-request-ccpa" rel="noopener" target="_blank" class="Footer-legalLink--2KS6l" role="menuitem">Your California privacy choices</a><a href="terms.html" class="Footer-legalLink--2KS6l" role="menuitem">Terms</a><a href="licenses.html" class="Footer-legalLink--2KS6l" role="menuitem">Licenses</a></div>
-                                <div class="Footer-copyright--3EMm1">© Affirm, Inc. All Rights Reserved.</div>
+                                <div class="Footer-copyright--3EMm1">© Eshagi, Inc. All Rights Reserved.</div>
                             </div>
                         </div>
                     </div>
-
                 </main>
             </div>
         </div>
@@ -1176,8 +1123,7 @@
 <script async="" data-chunk="sections-Hero-HeroCarousel" src="commons-e98977bd3e6a4a61f428.js" integrity="sha512-KcyMEPDm/svrfha5h+hdxg8Z0KUu0ga8NA13wjPtXUJB2jtGjAciDhDDNYEYS8KeAfortVOvpXh6pyI9iScHbA=="></script>
 <script async="" data-chunk="sections-Hero-HeroCarousel" src="sections-Hero-HeroCarousel-79ff0d3932109038ee70.js" integrity="sha512-A27RGoKl1GG6V2DstiEXR8SvBejgBovIqy1jBCSkXzMkQ6qiIVSAOdE6v8+ovyqXCM7MAjpMNL3ZeHiHdoHlKg=="></script>
 <script async="" data-chunk="sections-IllustrationWithText" src="sections-IllustrationWithText-6f22833fd326fdbe6b63.js" integrity="sha512-/jZKk8zoZMZxpUoPwA8ewgpykHtsdmbmWLuVO0DO/OCC/Mauya5jXM+NQzn+OG6aRX1913qts8Eree5BSpDcGA=="></script>
-<script async="" data-chunk="sections-SectionBackgroundColor" src="59d922eadb83546d23896818e7a29397ae4b4f10-833286d1035a04d31463.js" integrity="sha512-QxZk4H3NaBkck2CvWdQoU5ZqVD6JiKAhH5VKVsDlK42eWDfxO3sXJzYpMYkvwQGlYv4YO8+R+/iyJ8cLR7wLUg==">
-</script>
+<script async="" data-chunk="sections-SectionBackgroundColor" src="59d922eadb83546d23896818e7a29397ae4b4f10-833286d1035a04d31463.js" integrity="sha512-QxZk4H3NaBkck2CvWdQoU5ZqVD6JiKAhH5VKVsDlK42eWDfxO3sXJzYpMYkvwQGlYv4YO8+R+/iyJ8cLR7wLUg=="></script>
 <script async="" data-chunk="sections-Categories" src="sections-Categories-b1a34e769adbb09b0edd.js" integrity="sha512-C8EyaKtDlsZcS/E7m6zpnSCpPyaRsDoNZbn+U0Vm+QT9m1EWu09qE3MjVGyekyWlsVcbFqoXMOHcjqqxpbkNEw=="></script>
 <script async="" data-chunk="sections-Reviews" src="sections-Reviews-362fb9c832c958312019.js" integrity="sha512-pOC6Xr3sJyl5Or17g4NgpQgViKQ/czYVEJpXu+EDAVwDLVpv8UYBbnbrvfoFhfYetW8G/LC0hpsSALlKrW3vDw=="></script>
 <link data-chunk="sections-Hero-HeroCarousel" rel="stylesheet" href="styles.40c6f2bd237316bb4c91.css"/>
@@ -1200,15 +1146,31 @@
 <script src="sections-Questions-40fa10ce83f9b4e7f6c5.js"></script>
 <script src="sections-Reviews-362fb9c832c958312019.js"></script>
 <script src="sections-SplitContent-2e78625fa09fb39edb21.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script>
     var myCarousel = document.getElementById('myCarousel')
     var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 2000, // Set the interval between slide transitions (in milliseconds)
+        interval: 3000, // Set the interval between slide transitions (in milliseconds)
         wrap: true, // Enable continuous looping of the carousel
         keyboard: true // Enable keyboard navigation
     })
 </script>
+<script>
+    $(document).ready(function() {
+        $('#mobileMenu').hide();
+        $('.Header-hamburgerButton--42eFF').click(function() {
 
+            $('.Header-mobileMenu--1y0x8').addClass('Header-mobileMenuOpen--4ozmz');
+        });
+
+        $('.Header-crossButton--12GY0').click(function() {
+            $('.Header-mobileMenu--1y0x8').removeClass('Header-mobileMenuOpen--4ozmz');
+        });
+    });
+</script>
+<style>
+
+</style>
 </body>
 </html>
-

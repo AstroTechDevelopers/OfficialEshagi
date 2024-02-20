@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
     <meta charSet="UTF-8" />
-    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAMAAABrrFhUAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAACTUExURUdwTP///////////////////////////////////////////////////////////////////////wYICUpK9GBg9UVHSOjo/nd39ycpKvT0/lVV9aSk+sHBwdLS/Lu7+46O+ODg4BYYGLCw+6Kio+/w8IKDhJmZ+cfH+2NkZd3d/Wxs9pKTk4KC+HJ0dNHR0bGyssbGTCoAAAASdFJOUwDvQHAQIL/fX4DPkJ8wUK+PsLzt0+EAAAzTSURBVHja5V3ZcqM6EAXMDrbnkoAxBhvvu5P//7qbbTKeCUjdLbH6VE1VHqZs9+H0om5JKErN0Icj2/F807QsK/jC25+m6XuOrQ11pbfQh7bnu2rAgeqOnZHWN9u1gW8FKLjjgdYPNei25wZEuN7I6PiT96xAEK4/6qgS9IGpBnJg2p0Tgu6YgVSYA6NTzz6oAF3RgSZN+T/hj9ov/eqs/6yZWu0K2jioAb7WWu0HNcG0W2i+bQU1wrIf2vzWUVC/+a2ioD7fbyUFw8bMf8e46aSo/woaht8oBQM1aBwN+kGz6r+joCEROEFr4DTx+N2gRahfBE7QMtQrAsMNWoc6RdCG4F/QUB90KvdPJvM7TBIZn/mrlvapIVT4J6fFOr+Gs+cfCOPrfj0/td4NbLL8k8P6Gj5zEefrOd0N7JZG/8kiB9h+x8J+nrQxG+iUnlcy36OM/yZhTfKHsd4q908W8eyZjDCftykQDC2014tYT+agKgY0ZPib74Wt/+JgMUGGwkrGBzZW+s8SgZWB3XD4T9LZs2ScF80mA6dZ8z89oUEGEPYn+XNVQFHgNGN/RU+fQoHTgP0Vm/9BwaF+BsD2z8PnGpBPamYAav8kfq4Jaa0MDIBfVr367/xgXl89MIJ90+n8XCv2wMWi8F4CA1b/rp/rBlAE6rCO9V993o+PBGIrIx1k/wHv/eE5z9N08Yl1mubxmfAhoHRgifQHQP2PPeZHz875+jApaRce0utZfk0wrjYBIuQ/u65P3NiVzPexZDdwqlwAn6C1D6bBlczBHcRrUl0yhCSAxQxoPbrFeQI2EiGBQDWqCoBpRdZ/VdYgHYSnigLhLynhb5bTm/zvCgMExRkgFP6qpALmL/xnqfDIaw5oL6z5HzOQHwCSuAbzP/JMLiEZoMMANwAk53rMh1HAZ8CVXAHw7JdoPoiCVG41YIjaf50EkrEIRRkYynSAXM5yHYVUMBK6Eh2Anf/kqh9cdS+kOYEh9CzCU1AZmF88436xIckBUhmtGqIIWJFgxgs8ppw10EGwKhMDy/tCHvkDGU2gCWP9c54ElWPN+P6YVw5B1gQ+XYR5EtQA1i/Yi68JeBHwKqFdL8rAmZ4Mh6JdsFQgDdURCHiB0BSMgCeBJFRPPuQFQk0oBZa7X1ir/SwG9kISsIkVcDgJgrYwcBBpELIFsGiP/QwGOGHAogug1AGasJ/BQEyXgEVygNkpCFrFwIEqAZvmAIegIZQ+kYQoAYvkAOugMcSkTGDRBLBvuP4rbEyVPZQ5qRZgHgOclDW/giZRtjKLKbWARlkDNJMA+GvzNUECPiUCNmx/qWey4+AYvwwMKwiA22W2eUeWZcut7EDIDk06dhZWIoCc+KOXr7vjdPV0j9U02r2+yAsDbAk42BwYygsAL5fob9O/KXj/F22W6BYRQQIqcjvcQlIHYJvdio2/xxTLwZUgAQ0XAkMZDrDNjnzrP3F8keAEKSoTGngB4BwA8uzvEC2FnYApgR/tURsvAIwDbKInLI5L0UyQYjrkJrrYCOHa362eCJhuwN8wx0vARHhATCi3hc1/x06wHFrDS4EBehWQV27+uwig9VEyQ68IHLAH5AI18Ov0SQhTaCBI0So1wR4QkgWwjJ5EAdVAsQT2UB+w0TkQIoDL6kkckYgEmGFwAPSAmCgACY//AzcRCaxhPqCjQyBfAJvVkyRkAhKIYbXQCOsBMf/37GTZDw0DSeGTSkDrAR/rAYAaYCtNAdBy4Ir1Ae+bABfpAaAiUJ4EVjAJzLFatSBJcEFeBSyf6pZAjPUBHRACYnoRdKxbAmusD/yekHjIyALshGfMyBbdNq8vyzdk2eYWcQLGhR4GY0AQcJELQeg6uKwQWB1/9nyyo4RqqEiuM8b/d/lVQI78SL4EVreSvL5kUQDzgQU2Y+ncgchZqBP2UwLRhWHKRdgHZsi2iMZbCk/EhsH/SiDiFHWb8vYQ3Qdi7nJgjAwBiM2AEcb8N9xKYya9OchaEPm8GLinlcFFEphCSvqtYBCYIIPAZymElBRqGvZbAqudWOKArohC5A/WOTFQpBd479XgJnepDwAbpHtk0B6y68CTSBL8xBQew5lhEKigBXLlYrOPhxwEQ8DnkmiaBeIEANPABBm1PXYS2IvviNmuppgZz0WQgMIgcGKnARcXA7Fbwjaoyf9RtDV4xZXu78WwiqsDK90SshTuja5xvWGVvRIQj4FIHIUJOCDTgK4McUkgrtD87U28O14UBc/MPKjhekx5dfZnUwnjAaxqR6yZyKK+bZHbbDeVMh8pTAMJqxBwcJ12yfuCty+vl90x4k8QwQRccYHbYfXD9qKFMDPgb35sFJNCQI770R5rJnCtKAu+bDCmIwlIcYWAzxoLFtVBwsZfItLEBEzAAkeAySLgLLsMQG6UkkZAyiLAQgXUsBHrMQTMcQRYSALO1Gh/ERyWgwk44WphJgHSCkGxjUI4Aia46s1SgsoJkGB+dQQE1RMgZaNMdwmQtVGmqwRI2yjTUQLkbZJohICZKAHydgg0Q4BoISTRfrFCaN8MATfsbrA31F4JBqxCSGwtsIMZfdx97BS5n6MIEXCQWArHIqNh7h6pVXTJtoWDJCEC1rjVIJOAXKQfwG7yrI5Z4bygmn7AgUWAKa25AneA1a5kWrKtvSPE7Acgmyt/OQBLALfSYVEmTkCMk63JaokJdIU3jMfPmJVexAk449pYPqspeqDPBaa0MyBR7XMBj9UWx05ZIFJ+Yh6JXAkTgJ1mOczDIuTZ4I223SsTrwQPyJ2tNnOjcEjNg+VSXhJrZ5GTM+ydgkPklAWUBmh2LCWsBbBbGobM8fiecGPfR/OftuPzKIGAGW6HSKAriorLg7FQDMyoxXNEj4GsLKjij4vMAKuBDSkHyNgvvkAmLpdzYGhGK4YvlBi4kdEPyJFJ4D/2cYnCkAKoBcsXAq+04hlMAHanqMM5NUrcK3zBn/7h2A8k4ITd2jpSFGWILCsALYFyNa+I9gMJWGNLN41zYCSh3R30ij35wLUfSAD2vEDAvT/nTPKBlyfcWgAwPAIRMME+L5d7bnRPSoRb1AmwDDI8iqhJkBkC/uPeHjGn+cAUfDfINoPNziKqBzBDwIB7aKrwGBLfB468fuhuk2UZ4MAgioAJ+pCjxj02hz+OCihqqhqMpOhDjjr34GTxcdRUKAhURkCIPebr8o/OFidCfleEPBSP6AQc0DcdeJBbpGLS0cGMellCRicgRnvACHCDRrEPxFVJYEkngHDXhwG5SjChXSNFk8AuoBOQo5/Un/fueGhlVSOBKKATMMFf+ObD7pOd0ySwxd8h9X5bCpmAHH/Xx+jPNToqts0GkADaCT5GJlQCKBee6cArlVOaBFin4ctHRlQCCBeemdAbZZNnmgRwW6S+bgsiEjAh/Mb7O9Z1fIKF9AYRm+RuHMeJKAJgzzAM8LXic9prnUCNjq/V0SYQImBBuPPSRLxfjnBl5+9cAHKDu8PlNAIol57+fako2wfmtHebfYqAu1nur5slSASklFtvDcTV+sE5LAJwrwCbgn8u1niZFoNFQFL468IU4QGgt+zSsSy7Vbf0Tp3q8e97NnS14i/Mdv+cDlxFu8asDwpevmjW8a0v2Waze8Nlky2DRuEj3y/RO4x+Xi+vPpL9FuVVs31C0bs39UciwCC8arFP8Amv2ekVNMKLlvqEspcuPowEbPI71/ubA2HvnO67AB5EApbAa8f7LoCHkIAl9Ob5vgvgAWoBi/Pmae3BBdB7CYy5b58fPuAy8G94j7cMrLk92mQEBAig4g55yyNgz+OgBbOf8/7ZfkfAXvdHHQUM95EdoLfFgIEgoI9O4CgouI/sAB+ZoGflkGogCehbOTRQ0OjVmsDD26/oPWqPWTqBgB6FAXwA6FmD0FaI6Ek14Chk9GJiPqbb34tASAuA34Gw8wxYhiKEYcdTgSpof+cHBSNFGJ1OhrYiAR1Oho6iPDQDkuzvLAPS7O8oAxLt7yQDUu3vIAOS7e8cA9Lt71iPzFYqwKgzVbGqKZWgKysja6goj8yAZSiVQe9Ah2SsK1XCecDw/8/isNWhULWVytHmQFCl+98FgtbOjDxdqQeDVrqBOlBqQxvdwDWUOuE8XPRvtwjcoVI/nAd+/O0SgWkoTcG2Hiv4F4jAf5jcX0pBo+sjc6g0j+b8wNSUdqAZCixbaQ/qp6BV5tdPQevM/6DAfDjf/7GXoJakOG6r+R9JcVCxJ6iOrrQco+pkoJqa0gUY1UQDc6ArnYExMB/Yetk6UDto/Vf7dOQJnzyxPK2j1v8WggAJrmd32/hvJWiDMZIFyx9o/TD+rkwaOWOX21BXXd+zh32z/V4NQ812PN80Leu7Znr70zR9z7FH9Vv+PyHEqKY4KygCAAAAAElFTkSuQmCC" rel="icon" type="image/png" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <link rel="preload" href="static/CalibreWeb-Regular-4dd57d9179e958e4824e104f9d1feb4c.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" href="static/CalibreWeb-Bold-c0a295d928388222864fd66ea681f189.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" href="static/CalibreWeb-Semibold-191c32431eb5d1ebd758787617309f6e.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
-    <link rel="preload" href="static/Axiforma-Light-a36136010aebd665262360957f4a05bb.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="preload" href="{{ asset('static/CalibreWeb-Regular-4dd57d9179e958e4824e104f9d1feb4c.woff2') }}" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="{{ asset('static/CalibreWeb-Bold-c0a295d928388222864fd66ea681f189.woff2') }}" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="{{ asset('static/CalibreWeb-Semibold-191c32431eb5d1ebd758787617309f6e.woff2') }}" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="{{ asset('static/Axiforma-Light-a36136010aebd665262360957f4a05bb.woff2') }}" as="font" type="font/woff2" crossorigin="anonymous" />
     <meta name="generator" content="Gatsby 4.25.4" />
     <meta data-react-helmet="true" name="description" content="Affirm gives your customers a better way to pay over time, with no fees or surprises. From 0% APR offers to flexible payment plans, we offer a wide variety of payment solutions to expand your customer base and increase average order value." />
     <meta data-react-helmet="true" property="og:title" content="Affirm for merchants: offer customer financing and buy now pay later options for your business" />
@@ -3982,29 +3981,10 @@
             }))
         }), !0);
     </script>
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
-    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-33675760-4"></script>
-
     <title data-react-helmet="true">Eshagi for merchants: offer customer financing and buy now pay later options for your business</title>
     <link data-react-helmet="true" rel="canonical" href="business.html" />
     <link data-react-helmet="true" rel="alternate" hreflang="x-default" href="business.html" />
     <link data-react-helmet="true" rel="alternate" hreflang="en-us" href="business.html" />
-    <script>
-        (function(w, d, s, l, i) {
-            w[l] = w[l] || [];
-            w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
-            });
-            var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
-            j.async = true;
-            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '';
-            f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-5KXB9LP');
-    </script>
     <link data-chunk="sections-LogoLinkRow" rel="preload" as="style" href="styles.40c6f2bd237316bb4c91.css" />
     <link data-chunk="sections-LogoLinkRow" rel="preload" as="script" href="sections-LogoLinkRow-0c03419cdcff5924ffb3.js" integrity="sha512-7diL2LIEtzyTXYjca76GcIZQi/CNuYwYmGGsfr+AQipJRwbXgGKKMTdT2MdHn9jEzs11dcYvq8W6P2/5tdJDJA==" />
     <link data-chunk="sections-ParallaxTakeover" rel="preload" as="script" href="sections-ParallaxTakeover-83e54f797bf2f3225a41.js" integrity="sha512-D86QE5xhmORxI69oXSFq4Gf2j7yjrfVD3QT25imi08k7RgIDEEFubaUktZLrh/+KyFjUq44H423CPLE9dA5ofw==" />
@@ -4013,7 +3993,80 @@
     <link data-chunk="sections-SplitContent" rel="preload" as="script" href="sections-SplitContent-2e78625fa09fb39edb21.js" integrity="sha512-AMpIQVqNY+ZP95MihF6x2UaoXeX3BqkYK1xWDm8aocqhpKbO6IS7A+jkbRxwEa0vPsz+yanOxEWoPDGiOOfn1Q==" />
     <link data-chunk="sections-LeftAlignSimpleText" rel="preload" as="script" href="sections-LeftAlignSimpleText-8fd690ee9eb32c7436b6.js" integrity="sha512-CVWybL2d9+ZCf70O45/DMt5rEpvsSC+nP0SGr7oa7Hrm3beAAV/XjFD7aQng+4+il2dHUoEwwauk6izfS976Vg==" />
     <link data-chunk="sections-Questions" rel="preload" as="script" href="sections-Questions-40fa10ce83f9b4e7f6c5.js" integrity="sha512-I1g6rO4wsBSu7+11COn5tH5C1Z6Ww63FSAVgktNHbocAEDouX17x0wuSytYOiY1QFrYQPMY8CKPWUK6Hk2ROtA==" />
+    <script async="" src="https://script.hotjar.com/modules.a02b08e96dea6b9516bd.js" charset="utf-8"></script>
+    <script src="https://script.hotjar.com/browser-perf.8417c6bba72228fa2e29.js"></script>
+    <script src="https://bat.bing.com/p/action/56348942.js" type="text/javascript" async="" data-ueto="ueto_9b3299369b"></script>
 
+    <style type="text/css">.marquee-container {
+            overflow-x: hidden !important;
+            display: flex !important;
+            flex-direction: row !important;
+            position: relative;
+            width: var(--width);
+            transform: var(--transform);
+        }
+        .marquee-container:hover div {
+            animation-play-state: var(--pause-on-hover);
+        }
+        .marquee-container:active div {
+            animation-play-state: var(--pause-on-click);
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .overlay::before, .overlay::after {
+            background: linear-gradient(to right, var(--gradient-color));
+            content: "";
+            height: 100%;
+            position: absolute;
+            width: var(--gradient-width);
+            z-index: 2;
+        }
+        .overlay::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+        .overlay::before {
+            left: 0;
+            top: 0;
+        }
+
+        .marquee {
+            flex: 0 0 auto;
+            min-width: var(--min-width);
+            z-index: 1;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+            animation-play-state: var(--play);
+            animation-delay: var(--delay);
+            animation-direction: var(--direction);
+        }
+        @keyframes scroll {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .initial-child-container {
+            flex: 0 0 auto;
+            display: flex;
+            min-width: auto;
+            flex-direction: row;
+        }
+
+        .child {
+            transform: var(--transform);
+        }
+    </style>
 </head>
 <body>
 <noscript>
@@ -4090,14 +4143,7 @@
                         <div class="Header-hideAboveTablet--6hCsq">
                             <div class="Header-wrapper--38o1w">
                                 <a href="index.html" aria-label="Affirm">
-                                    <svg viewBox="0 0 420 167" xmlns="http://www.w3.org/2000/svg" class="Header-logo--7o3IK">
-                                        <g clip-rule="evenodd" fill-rule="evenodd">
-                                            <g fill="var(--color-greyscale-black-100)" class="svg-fill">
-                                                <path d="M34.3 94.1c-11.3 0-24.4 5.4-31.5 11l6.5 13.6c5.7-5.2 14.9-9.6 23.2-9.6 7.9 0 12.2 2.6 12.2 7.9 0 3.6-2.9 5.4-8.3 6.1C16 125.7 0 131.3 0 147c0 12.4 8.9 20 22.7 20 9.9 0 18.7-5.5 22.9-12.7V165H64v-44.9c0-18.5-12.9-26-29.7-26zm-6.9 58.5c-5.2 0-7.8-2.5-7.8-6.7 0-7.8 8.7-10.4 24.6-12.1.1 10.4-7 18.8-16.8 18.8zM237.5 107.7V96.1h-18.4V165h19.7v-33.2c0-15.8 9.5-20.4 16.2-20.4 2.6 0 6.1.8 8.4 2.5l3.6-18.2c-3-1.3-6.2-1.6-8.8-1.6-10.1 0-16.5 4.5-20.7 13.6zM358.4 94.1c-10.4 0-18.2 6.2-22.3 12.1-3.8-7.7-11.7-12.1-21.3-12.1-10.4 0-17.6 5.8-21 12.4V96.1h-19V165h19.7v-35.5c0-12.7 6.7-18.8 12.9-18.8 5.6 0 10.8 3.6 10.8 13V165H338v-35.5c0-12.9 6.5-18.8 13-18.8 5.2 0 10.7 3.8 10.7 12.9V165h19.7v-47.6c0-15.5-10.4-23.3-23-23.3zM133.6 91v5.1h-29.9v-7c0-9.1 5.2-11.7 9.7-11.7 2.6 0 6 .6 8.8 2.2l6.1-13.9c-3.6-2.1-9.5-4-17.4-4-12.6 0-26.9 7.1-26.9 29.4v5.1H72.6v15.2H84V165h19.7v-53.7h29.9V165h19.7v-53.7h17.9V96.1h-17.9v-7c0-9.1 5.2-11.7 9.7-11.7 5 0 8.8 2.2 8.8 2.2l6.1-13.9s-6.2-4-17.4-4c-12.5-.1-26.9 7-26.9 29.3zM182.9 96.1h19.7V165h-19.7z"></path>
-                                            </g>
-                                            <path d="M297.7 0c-53.2 0-100.6 36.9-114 84.4H203C214.2 49 252.3 18 297.7 18c55.2 0 102.8 42 102.8 107.4 0 14.7-1.9 27.9-5.5 39.6h18.7l.2-.6c3.1-12.1 4.6-25.2 4.6-39C418.5 52.5 365.4 0 297.7 0" fill="var(--color-primary-base)" class="svg-fill rainbow"></path>
-                                        </g>
-                                    </svg>
+                                    <img src="eshago_logo.png" alt="Eshagi Logo" class="Header-logo--7o3IK">
                                 </a>
                                 <div class="Header-mobileMenuOverlay--wp2il"></div>
                                 <a href="#ulf" class="ButtonPrimary-buttonPrimary--1qZwZ Header-mobileSignInButton--QugOV ButtonPrimary-buttonTransparent--4cp67">
@@ -4145,7 +4191,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <p class="HeroSplitForm-description--40sTB">Affirm gives your customers a better way to pay over time, with no fees or surprises. From 0% APR offers to flexible payment plans, we offer a wide variety of payment solutions to expand your customer base and increase average order value.</p>
+                                        <p class="HeroSplitForm-description--40sTB">Eshagi gives your customers a better way to pay over time, with no fees or surprises. From 0% APR offers to flexible payment plans, we offer a wide variety of payment solutions to expand your customer base and increase average order value.</p>
                                         <div class="HeroSplitForm-metrics--2O2bP">
                                             <div id="f9efd2ba-577d-5f9e-bdd4-f8f5f6a404d1" class="Metric-container--5cJ4a Metric-textDark--3l46Z" style="background:linear-gradient(319deg,  #FFA900, #FFCA61)">
                                                 <div class="Metric-titleContainer--UoIKB">
@@ -4318,278 +4364,67 @@
                                     <div>
                                         <div class="Container-container--DIXxP DetailsForm-wrapper--1K4e6 HeroSplitForm-detailsForm--4iLtV">
                                             <div class="DetailsForm-inner--DwXj0">
-                                                <form data-testid="DetailsForm" method="post" action="https://info.affirm.com/l/778433/2019-09-25/q5fwb" novalidate="">
+                                                @if ($errors->any())
+                                                    <div class="alert alert-danger">
+                                                        <ul>
+                                                            @foreach ($errors->all() as $error)
+                                                                <li>{{ $error }}</li>
+                                                            @endforeach
+                                                        </ul>
+                                                    </div>
+                                                @endif
+                                                <form data-testid="DetailsForm" method="post" action="/reg-partner" novalidate="">
+                                                    @csrf
                                                     <div class="DetailsForm-form--6eWet">
                                                         <div class="DetailsForm-field--3vPBU null">
                                                             <div class="Input-wrap--6gkok">
-                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputFirstName-0" type="text" name="FirstName" />
-                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputFirstName-0">First name</label>
+                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputFirstName-0" type="text" name="partner_name" />
+                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputFirstName-0">Partner name</label>
                                                             </div>
                                                         </div>
                                                         <div class="DetailsForm-field--3vPBU null">
                                                             <div class="Input-wrap--6gkok">
-                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputLastName-0" type="text" name="LastName" />
-                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputLastName-0">Last name</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="DetailsForm-field--3vPBU null">
-                                                            <div class="Input-wrap--6gkok">
-                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputEmail-0" type="email" name="Email" />
-                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputEmail-0">Business email</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="DetailsForm-field--3vPBU null">
-                                                            <div class="Input-wrap--6gkok">
-                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputWebsite-0" type="url" name="Website" maxLength="128" />
-                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputWebsite-0">Website</label>
+                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputLastName-0" type="text" name="merchantname" />
+                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputLastName-0" type="hidden" name="newUi" value="1"/>
+                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputLastName-0">Trading name (if different)</label>
                                                             </div>
                                                         </div>
                                                         <div class="DetailsForm-field--3vPBU">
                                                             <label class="Dropdown-wrapper--3Ss15" for="DetailsFormDropdownCountry-0">
+                                                                <span class="imports-caption--3UuTe Dropdown-label--1eQ4v">Partner Type</span>
+                                                                <select id="DetailsFormDropdownCountry-0" class="Dropdown-select--5NvlT" required="" name="partner_type">
+                                                                    <option disabled="" hidden="" selected=""></option>
+                                                                    <option value="Zambia">Agent</option>
+                                                                    <option value="Zimbabwe">Merchant</option>
+                                                                </select>
+                                                                <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="Dropdown-chevron--7DjWW">
+                                                                    <path d="m1 1 8 8 8-8"></path>
+                                                                </svg>
+                                                            </label>
+                                                        </div>
+                                                        <div class="DetailsForm-field--3vPBU">
+                                                            <label class="Dropdown-wrapper--3Ss15" for="DetailsFormDropdownCountry-0">
+                                                                <span class="imports-caption--3UuTe Dropdown-label--1eQ4v">Type of Business</span>
+                                                                <select id="DetailsFormDropdownCountry-0" class="Dropdown-select--5NvlT" required="" name="business_type">
+                                                                    <option disabled="" hidden="" selected=""></option>
+                                                                    <option value="Private Limited Company">Private Limited Company</option>
+                                                                    <option value="Sole Trader">Sole Trader</option>
+                                                                    <option value="Private Business Corporation">Private Business Corporation</option>
+                                                                    <option value="Co-Operative Society">Co-Operative Society</option>
+                                                                </select>
+                                                                <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="Dropdown-chevron--7DjWW">
+                                                                    <path d="m1 1 8 8 8-8"></path>
+                                                                </svg>
+                                                            </label>
+                                                        </div>
+                                                        <div class="DetailsForm-field--3vPBU">
+                                                            <label class="Dropdown-wrapper--3Ss15" for="DetailsFormDropdownCountry-0">
                                                                 <span class="imports-caption--3UuTe Dropdown-label--1eQ4v">Country</span>
-                                                                <select id="DetailsFormDropdownCountry-0" class="Dropdown-select--5NvlT" required="" name="Country">
+                                                                <select id="DetailsFormDropdownCountry-0" class="Dropdown-select--5NvlT" required="" name="country">
                                                                     <option disabled="" hidden="" selected=""></option>
-                                                                    <option value="US">United States</option>
-                                                                    <option value="CA">Canada</option>
-                                                                    <option value="Afghanistan">Afghanistan</option>
-                                                                    <option value="Albania">Albania</option>
-                                                                    <option value="Algeria">Algeria</option>
-                                                                    <option value="American Samoa">American Samoa</option>
-                                                                    <option value="Andorra">Andorra</option>
-                                                                    <option value="Angola">Angola</option>
-                                                                    <option value="Anguilla">Anguilla</option>
-                                                                    <option value="Antarctica">Antarctica</option>
-                                                                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
-                                                                    <option value="Argentina">Argentina</option>
-                                                                    <option value="Armenia">Armenia</option>
-                                                                    <option value="Aruba">Aruba</option>
-                                                                    <option value="Australia">Australia</option>
-                                                                    <option value="Austria">Austria</option>
-                                                                    <option value="Azerbaijan">Azerbaijan</option>
-                                                                    <option value="Bahamas">Bahamas</option>
-                                                                    <option value="Bahrain">Bahrain</option>
-                                                                    <option value="Bangladesh">Bangladesh</option>
-                                                                    <option value="Barbados">Barbados</option>
-                                                                    <option value="Belarus">Belarus</option>
-                                                                    <option value="Belgium">Belgium</option>
-                                                                    <option value="Belize">Belize</option>
-                                                                    <option value="Benin">Benin</option>
-                                                                    <option value="Bermuda">Bermuda</option>
-                                                                    <option value="Bhutan">Bhutan</option>
-                                                                    <option value="Bolivia">Bolivia</option>
-                                                                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
-                                                                    <option value="Botswana">Botswana</option>
-                                                                    <option value="Brazil">Brazil</option>
-                                                                    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
-                                                                    <option value="British Virgin Islands">British Virgin Islands</option>
-                                                                    <option value="Brunei">Brunei</option>
-                                                                    <option value="Bulgaria">Bulgaria</option>
-                                                                    <option value="Burkina Faso">Burkina Faso</option>
-                                                                    <option value="Burundi">Burundi</option>
-                                                                    <option value="Cambodia">Cambodia</option>
-                                                                    <option value="Cameroon">Cameroon</option>
-                                                                    <option value="Cape Verde">Cape Verde</option>
-                                                                    <option value="Cayman Islands">Cayman Islands</option>
-                                                                    <option value="Central African Republic">Central African Republic</option>
-                                                                    <option value="Chad">Chad</option>
-                                                                    <option value="Chile">Chile</option>
-                                                                    <option value="China">China</option>
-                                                                    <option value="Christmas Island">Christmas Island</option>
-                                                                    <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
-                                                                    <option value="Colombia">Colombia</option>
-                                                                    <option value="Comoros">Comoros</option>
-                                                                    <option value="Congo">Congo</option>
-                                                                    <option value="Cook Islands">Cook Islands</option>
-                                                                    <option value="Costa Rica">Costa Rica</option>
-                                                                    <option value="Croatia">Croatia</option>
-                                                                    <option value="Cuba">Cuba</option>
-                                                                    <option value="Curaçao">Curaçao</option>
-                                                                    <option value="Cyprus">Cyprus</option>
-                                                                    <option value="Czech Republic">Czech Republic</option>
-                                                                    <option value="Côte d’Ivoire">Côte d’Ivoire</option>
-                                                                    <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
-                                                                    <option value="Denmark">Denmark</option>
-                                                                    <option value="Djibouti">Djibouti</option>
-                                                                    <option value="Dominica">Dominica</option>
-                                                                    <option value="Dominican Republic">Dominican Republic</option>
-                                                                    <option value="Ecuador">Ecuador</option>
-                                                                    <option value="Egypt">Egypt</option>
-                                                                    <option value="El Salvador">El Salvador</option>
-                                                                    <option value="Equatorial Guinea">Equatorial Guinea</option>
-                                                                    <option value="Eritrea">Eritrea</option>
-                                                                    <option value="Estonia">Estonia</option>
-                                                                    <option value="Ethiopia">Ethiopia</option>
-                                                                    <option value="Falkland Islands">Falkland Islands</option>
-                                                                    <option value="Faroe Islands">Faroe Islands</option>
-                                                                    <option value="Fiji">Fiji</option>
-                                                                    <option value="Finland">Finland</option>
-                                                                    <option value="France">France</option>
-                                                                    <option value="French Guiana">French Guiana</option>
-                                                                    <option value="French Polynesia">French Polynesia</option>
-                                                                    <option value="French Southern Territories">French Southern Territories</option>
-                                                                    <option value="Gabon">Gabon</option>
-                                                                    <option value="Gambia">Gambia</option>
-                                                                    <option value="Georgia">Georgia</option>
-                                                                    <option value="Germany">Germany</option>
-                                                                    <option value="Ghana">Ghana</option>
-                                                                    <option value="Gibraltar">Gibraltar</option>
-                                                                    <option value="Greece">Greece</option>
-                                                                    <option value="Greenland">Greenland</option>
-                                                                    <option value="Grenada">Grenada</option>
-                                                                    <option value="Guadeloupe">Guadeloupe</option>
-                                                                    <option value="Guam">Guam</option>
-                                                                    <option value="Guatemala">Guatemala</option>
-                                                                    <option value="Guernsey">Guernsey</option>
-                                                                    <option value="Guinea">Guinea</option>
-                                                                    <option value="Guinea-Bissau">Guinea-Bissau</option>
-                                                                    <option value="Guyana">Guyana</option>
-                                                                    <option value="Haiti">Haiti</option>
-                                                                    <option value="Honduras">Honduras</option>
-                                                                    <option value="Hungary">Hungary</option>
-                                                                    <option value="Iceland">Iceland</option>
-                                                                    <option value="India">India</option>
-                                                                    <option value="Indonesia">Indonesia</option>
-                                                                    <option value="Iran">Iran</option>
-                                                                    <option value="Iraq">Iraq</option>
-                                                                    <option value="Ireland">Ireland</option>
-                                                                    <option value="Isle of Man">Isle of Man</option>
-                                                                    <option value="Israel">Israel</option>
-                                                                    <option value="Italy">Italy</option>
-                                                                    <option value="Jamaica">Jamaica</option>
-                                                                    <option value="Japan">Japan</option>
-                                                                    <option value="Jersey">Jersey</option>
-                                                                    <option value="Jordan">Jordan</option>
-                                                                    <option value="Kazakhstan">Kazakhstan</option>
-                                                                    <option value="Kenya">Kenya</option>
-                                                                    <option value="Kiribati">Kiribati</option>
-                                                                    <option value="Kuwait">Kuwait</option>
-                                                                    <option value="Kyrgyzstan">Kyrgyzstan</option>
-                                                                    <option value="Laos">Laos</option>
-                                                                    <option value="Latvia">Latvia</option>
-                                                                    <option value="Lebanon">Lebanon</option>
-                                                                    <option value="Lesotho">Lesotho</option>
-                                                                    <option value="Liberia">Liberia</option>
-                                                                    <option value="Libya">Libya</option>
-                                                                    <option value="Liechtenstein">Liechtenstein</option>
-                                                                    <option value="Lithuania">Lithuania</option>
-                                                                    <option value="Luxembourg">Luxembourg</option>
-                                                                    <option value="Macao S.A.R., China">Macao S.A.R., China</option>
-                                                                    <option value="Macedonia">Macedonia</option>
-                                                                    <option value="Madagascar">Madagascar</option>
-                                                                    <option value="Malawi">Malawi</option>
-                                                                    <option value="Malaysia">Malaysia</option>
-                                                                    <option value="Maldives">Maldives</option>
-                                                                    <option value="Mali">Mali</option>
-                                                                    <option value="Malta">Malta</option>
-                                                                    <option value="Marshall Islands">Marshall Islands</option>
-                                                                    <option value="Martinique">Martinique</option>
-                                                                    <option value="Mauritania">Mauritania</option>
-                                                                    <option value="Mauritius">Mauritius</option>
-                                                                    <option value="Mayotte">Mayotte</option>
-                                                                    <option value="Mexico">Mexico</option>
-                                                                    <option value="Micronesia">Micronesia</option>
-                                                                    <option value="Moldova">Moldova</option>
-                                                                    <option value="Monaco">Monaco</option>
-                                                                    <option value="Mongolia">Mongolia</option>
-                                                                    <option value="Montenegro">Montenegro</option>
-                                                                    <option value="Montserrat">Montserrat</option>
-                                                                    <option value="Morocco">Morocco</option>
-                                                                    <option value="Mozambique">Mozambique</option>
-                                                                    <option value="Myanmar">Myanmar</option>
-                                                                    <option value="Namibia">Namibia</option>
-                                                                    <option value="Nauru">Nauru</option>
-                                                                    <option value="Nepal">Nepal</option>
-                                                                    <option value="Netherlands">Netherlands</option>
-                                                                    <option value="New Caledonia">New Caledonia</option>
-                                                                    <option value="New Zealand">New Zealand</option>
-                                                                    <option value="Nicaragua">Nicaragua</option>
-                                                                    <option value="Niger">Niger</option>
-                                                                    <option value="Nigeria">Nigeria</option>
-                                                                    <option value="Niue">Niue</option>
-                                                                    <option value="Norfolk Island">Norfolk Island</option>
-                                                                    <option value="North Korea">North Korea</option>
-                                                                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
-                                                                    <option value="Norway">Norway</option>
-                                                                    <option value="Oman">Oman</option>
-                                                                    <option value="Pakistan">Pakistan</option>
-                                                                    <option value="Palau">Palau</option>
-                                                                    <option value="Palestinian Territory">Palestinian Territory</option>
-                                                                    <option value="Panama">Panama</option>
-                                                                    <option value="Papua New Guinea">Papua New Guinea</option>
-                                                                    <option value="Paraguay">Paraguay</option>
-                                                                    <option value="Peru">Peru</option>
-                                                                    <option value="Philippines">Philippines</option>
-                                                                    <option value="Pitcairn">Pitcairn</option>
-                                                                    <option value="Poland">Poland</option>
-                                                                    <option value="Portugal">Portugal</option>
-                                                                    <option value="Puerto Rico">Puerto Rico</option>
-                                                                    <option value="Qatar">Qatar</option>
-                                                                    <option value="Romania">Romania</option>
-                                                                    <option value="Russia">Russia</option>
-                                                                    <option value="Rwanda">Rwanda</option>
-                                                                    <option value="Réunion">Réunion</option>
-                                                                    <option value="Saint Barthélemy">Saint Barthélemy</option>
-                                                                    <option value="Saint Helena">Saint Helena</option>
-                                                                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
-                                                                    <option value="Saint Lucia">Saint Lucia</option>
-                                                                    <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
-                                                                    <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
-                                                                    <option value="Samoa">Samoa</option>
-                                                                    <option value="San Marino">San Marino</option>
-                                                                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
-                                                                    <option value="Saudi Arabia">Saudi Arabia</option>
-                                                                    <option value="Senegal">Senegal</option>
-                                                                    <option value="Serbia">Serbia</option>
-                                                                    <option value="Seychelles">Seychelles</option>
-                                                                    <option value="Sierra Leone">Sierra Leone</option>
-                                                                    <option value="Singapore">Singapore</option>
-                                                                    <option value="Slovakia">Slovakia</option>
-                                                                    <option value="Slovenia">Slovenia</option>
-                                                                    <option value="Solomon Islands">Solomon Islands</option>
-                                                                    <option value="Somalia">Somalia</option>
-                                                                    <option value="South Africa">South Africa</option>
-                                                                    <option value="South Korea">South Korea</option>
-                                                                    <option value="South Sudan">South Sudan</option>
-                                                                    <option value="Spain">Spain</option>
-                                                                    <option value="Sri Lanka">Sri Lanka</option>
-                                                                    <option value="Sudan">Sudan</option>
-                                                                    <option value="Suriname">Suriname</option>
-                                                                    <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
-                                                                    <option value="Swaziland">Swaziland</option>
-                                                                    <option value="Sweden">Sweden</option>
-                                                                    <option value="Switzerland">Switzerland</option>
-                                                                    <option value="Syria">Syria</option>
-                                                                    <option value="Taiwan">Taiwan</option>
-                                                                    <option value="Tajikistan">Tajikistan</option>
-                                                                    <option value="Tanzania">Tanzania</option>
-                                                                    <option value="Thailand">Thailand</option>
-                                                                    <option value="Timor-Leste">Timor-Leste</option>
-                                                                    <option value="Togo">Togo</option>
-                                                                    <option value="Tokelau">Tokelau</option>
-                                                                    <option value="Tonga">Tonga</option>
-                                                                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
-                                                                    <option value="Tunisia">Tunisia</option>
-                                                                    <option value="Turkey">Turkey</option>
-                                                                    <option value="Turkmenistan">Turkmenistan</option>
-                                                                    <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
-                                                                    <option value="Tuvalu">Tuvalu</option>
-                                                                    <option value="U.S. Virgin Islands">U.S. Virgin Islands</option>
-                                                                    <option value="Uganda">Uganda</option>
-                                                                    <option value="Ukraine">Ukraine</option>
-                                                                    <option value="United Arab Emirates">United Arab Emirates</option>
-                                                                    <option value="United Kingdom">United Kingdom</option>
-                                                                    <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
-                                                                    <option value="Uruguay">Uruguay</option>
-                                                                    <option value="Uzbekistan">Uzbekistan</option>
-                                                                    <option value="Vanuatu">Vanuatu</option>
-                                                                    <option value="Vatican">Vatican</option>
-                                                                    <option value="Venezuela">Venezuela</option>
-                                                                    <option value="Vietnam">Vietnam</option>
-                                                                    <option value="Wallis and Futuna">Wallis and Futuna</option>
-                                                                    <option value="Western Sahara">Western Sahara</option>
-                                                                    <option value="Yemen">Yemen</option>
-                                                                    <option value="Zambia">Zambia</option>
-                                                                    <option value="Zimbabwe">Zimbabwe</option>
+                                                                    @foreach(\App\Models\Localel::all() as $country)
+                                                                        <option value="{{ $country->id }}">{{ $country->country }}</option>
+                                                                    @endforeach
                                                                 </select>
                                                                 <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="Dropdown-chevron--7DjWW">
                                                                     <path d="m1 1 8 8 8-8"></path>
@@ -4597,104 +4432,66 @@
                                                             </label>
                                                         </div>
                                                         <div class="DetailsForm-field--3vPBU">
-                                                            <label class="Dropdown-wrapper--3Ss15" for="DetailsFormDropdownAnnual_Sales_through_Website__c-0">
-                                                                <span class="imports-caption--3UuTe Dropdown-label--1eQ4v">Annual revenue</span>
-                                                                <select id="DetailsFormDropdownAnnual_Sales_through_Website__c-0" class="Dropdown-select--5NvlT" required="" name="Annual_Sales_through_Website__c">
+                                                            <label class="Dropdown-wrapper--3Ss15" for="DetailsFormDropdownCountry-0">
+                                                                <span class="imports-caption--3UuTe Dropdown-label--1eQ4v">Years Trading</span>
+                                                                <select id="DetailsFormDropdownCountry-0" class="Dropdown-select--5NvlT" required="" name="yearsTrading">
                                                                     <option disabled="" hidden="" selected=""></option>
-                                                                    <option value="Pre-Launch">Pre-Launch</option>
-                                                                    <option value="&lt;$2M">&lt;$2M</option>
-                                                                    <option value="$2M-5M">$2M-5M</option>
-                                                                    <option value="$5M-20M">$5M-20M</option>
-                                                                    <option value="$20M-75M">$20M-75M</option>
-                                                                    <option value="&gt;$75M">&gt;$75M</option>
+                                                                    <option value="1">1</option>
+                                                                    <option value="2">2</option>
+                                                                    <option value="3">3</option>
+                                                                    <option value="4">4</option>
+                                                                    <option value="5">5</option>
+                                                                    <option value="5+">5+</option>
+
                                                                 </select>
                                                                 <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="Dropdown-chevron--7DjWW">
                                                                     <path d="m1 1 8 8 8-8"></path>
                                                                 </svg>
                                                             </label>
                                                         </div>
-                                                        <div class="DetailsForm-field--3vPBU">
-                                                            <label class="Dropdown-wrapper--3Ss15" for="DetailsFormDropdownECommerce_Platform__c-0">
-                                                                <span class="imports-caption--3UuTe Dropdown-label--1eQ4v">E-commerce platform</span>
-                                                                <select id="DetailsFormDropdownECommerce_Platform__c-0" class="Dropdown-select--5NvlT" required="" name="ECommerce_Platform__c">
-                                                                    <option disabled="" hidden="" selected=""></option>
-                                                                    <option value="3DCart">3DCart</option>
-                                                                    <option value="Aftermarket Websites">Aftermarket Websites</option>
-                                                                    <option value="AmeriCommerce">AmeriCommerce</option>
-                                                                    <option value="ASP Classic">ASP Classic</option>
-                                                                    <option value="Aspenware">Aspenware</option>
-                                                                    <option value="ASP.NET">ASP.NET</option>
-                                                                    <option value="BigCommerce">BigCommerce</option>
-                                                                    <option value="Checkout Champ">Checkout Champ</option>
-                                                                    <option value="Cirkuit">Cirkuit</option>
-                                                                    <option value="CMS Max">CMS Max</option>
-                                                                    <option value="CoreCommerce">CoreCommerce</option>
-                                                                    <option value="CORESense">CORESense</option>
-                                                                    <option value="Dakis">Dakis</option>
-                                                                    <option value="Drupal Commerce">Drupal Commerce</option>
-                                                                    <option value="Ecwid">Ecwid</option>
-                                                                    <option value="Inntopia">Inntopia</option>
-                                                                    <option value="Java">Java</option>
-                                                                    <option value="Konnektive">Konnektive</option>
-                                                                    <option value="Lightspeed eCommerce">Lightspeed eCommerce</option>
-                                                                    <option value="Magento">Magento</option>
-                                                                    <option value="Magento 2">Magento 2</option>
-                                                                    <option value="Miva Merchant">Miva Merchant</option>
-                                                                    <option value="Mojo">Mojo</option>
-                                                                    <option value="Nebhub">Nebhub</option>
-                                                                    <option value="OpenCart">OpenCart</option>
-                                                                    <option value="OsCommerce">OsCommerce</option>
-                                                                    <option value="PHP">PHP</option>
-                                                                    <option value="Podium">Podium</option>
-                                                                    <option value="PrestaShop">PrestaShop</option>
-                                                                    <option value="Punchmark">Punchmark</option>
-                                                                    <option value="Python">Python</option>
-                                                                    <option value="Rally">Rally</option>
-                                                                    <option value="Selfbook">Selfbook</option>
-                                                                    <option value="Shift4Shop">Shift4Shop</option>
-                                                                    <option value="Shopify">Shopify</option>
-                                                                    <option value="Shopping Cart Elite">Shopping Cart Elite</option>
-                                                                    <option value="Solidus">Solidus</option>
-                                                                    <option value="Squarespace Commerce">Squarespace Commerce</option>
-                                                                    <option value="StudioPlus">StudioPlus Software</option>
-                                                                    <option value="SunShop">SunShop</option>
-                                                                    <option value="SynXis">SynXis</option>
-                                                                    <option value="Thinkspace">Thinkspace</option>
-                                                                    <option value="Ultracart">Ultracart</option>
-                                                                    <option value="Volusion">Volusion</option>
-                                                                    <option value="VTEX">VTEX</option>
-                                                                    <option value="Web Shop Manager">Web Shop Manager</option>
-                                                                    <option value="Wix Stores">Wix Stores</option>
-                                                                    <option value="WooCommerce">WooCommerce</option>
-                                                                    <option value="Workarea">Workarea</option>
-                                                                    <option value="X-Cart">X-Cart</option>
-                                                                    <option value="Zoey">Zoey</option>
-                                                                    <option value="In-store only">In-store only</option>
-                                                                    <option value="Other">Other</option>
-                                                                </select>
-                                                                <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="Dropdown-chevron--7DjWW">
-                                                                    <path d="m1 1 8 8 8-8"></path>
-                                                                </svg>
-                                                            </label>
+                                                        <br>
+                                                        <div class="DetailsForm-field--3vPBU null">
+                                                            <h1>Contact Person Details</h1>
+                                                            <br>
+
+                                                            <div class="Input-wrap--6gkok">
+                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputEmail-0" type="text" name="cfullname" />
+                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputEmail-0">Contact Person Full name</label>
+                                                            </div>
                                                         </div>
-                                                        <div class="DetailsForm-field--3vPBU">
-                                                            <label class="Dropdown-wrapper--3Ss15" for="DetailsFormDropdownFirst_annapolis_AOV__c-0">
-                                                                <span class="imports-caption--3UuTe Dropdown-label--1eQ4v">Average Order Value</span>
-                                                                <select id="DetailsFormDropdownFirst_annapolis_AOV__c-0" class="Dropdown-select--5NvlT" required="" name="First_annapolis_AOV__c">
-                                                                    <option disabled="" hidden="" selected=""></option>
-                                                                    <option value="&lt;$50">&lt;$50</option>
-                                                                    <option value="$50-$100">$50-$100</option>
-                                                                    <option value="$100-$150">$100-$150</option>
-                                                                    <option value="$150-$250">$150-$250</option>
-                                                                    <option value="$250-$500">$250-$500</option>
-                                                                    <option value="$500-$1000">$500-$1000</option>
-                                                                    <option value="&gt;$1000">&gt;$1000</option>
-                                                                </select>
-                                                                <svg width="18" height="10" viewBox="0 0 18 10" fill="none" xmlns="http://www.w3.org/2000/svg" class="Dropdown-chevron--7DjWW">
-                                                                    <path d="m1 1 8 8 8-8"></path>
-                                                                </svg>
-                                                            </label>
+                                                        <div class="DetailsForm-field--3vPBU null">
+                                                            <div class="Input-wrap--6gkok">
+                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputWebsite-0" type="text" name="cdesignation" maxLength="128" />
+                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputWebsite-0">Contact Person Designation</label>
+                                                            </div>
                                                         </div>
+                                                        <div class="DetailsForm-field--3vPBU null">
+                                                            <div class="Input-wrap--6gkok">
+                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputWebsite-0" type="text" name="telephoneNo" maxLength="128" />
+                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputWebsite-0">Telephone No</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="DetailsForm-field--3vPBU null">
+                                                            <div class="Input-wrap--6gkok">
+                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputWebsite-0" type="email" name="cemail" maxLength="128" />
+                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputWebsite-0">Email</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="DetailsForm-field--3vPBU null">
+                                                            <div class="Input-wrap--6gkok">
+                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputWebsite-0" type="password" name="password" maxLength="128" />
+                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputWebsite-0">Password</label>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="DetailsForm-field--3vPBU null">
+                                                            <div class="Input-wrap--6gkok">
+                                                                <input class="Input-input--418Co Input-empty--5d1du" id="DetailsFormInputWebsite-0" type="password" name="password_confirmation" maxLength="128" />
+                                                                <label class="imports-caption--3UuTe Input-label--7Hxos" for="DetailsFormInputWebsite-0">Confirm Password</label>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
                                                     <div style="opacity:0;position:absolute;left:0;height:0;width:0;z-index:-1">
                                                         <label for="pardot_extra_field_0">Comments</label>
@@ -4736,295 +4533,7 @@
                             </div>
                         </div>
                     </section>
-                    <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopSmall--2gZjb styles-spacingBottomSmall--4AR9m" style="background-color:var(--color-ui-colors-text-100)">
-                        <div>
-                            <div class="Container-container--DIXxP">
-                                <div class="LogoLinkRow-row--7uILS">
-                                    <div class="LogoLinkRow-heading--6hRjx LogoLinkRow-textCenter--1dXx6">
-                                        <h2 class="imports-h3--3yLlm imports-h4--1GRDI">Trusted by leading businesses</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="LogoLinkRow-marquee--3F0UN LogoLinkRow-marqueeStatic--6vDE8">
-                                <div hidden="" class="LogoLinkRow-marqueeControl--5AZH6">
-                                    <div style="padding:0 50px" class="LogoLinkRow-slide--1JKuf">
-                                        <img src="https://images.ctfassets.net/4rc1asww3mw7/4gvmSIyJI2ZLFoiyOkzlJU/a36777d68d432e181356adc974df0c02/T-Mobile_logo.svg" alt="" />
-                                    </div>
-                                    <div style="padding:0 50px" class="LogoLinkRow-slide--1JKuf">
-                                        <img src="https://images.ctfassets.net/4rc1asww3mw7/4YKBsSmE7kUlCbCIjtQNgT/897e449e13aff88d6567b49e5c8e1d65/Walmart.svg" alt="" />
-                                    </div>
-                                    <div style="padding:0 50px" class="LogoLinkRow-slide--1JKuf">
-                                        <img src="https://images.ctfassets.net/4rc1asww3mw7/2dLTT9xt4xePw4hu02aWK/0c88457135fe660980ea30bdafb01692/Amazon.svg" alt="" />
-                                    </div>
-                                    <div style="padding:0 50px" class="LogoLinkRow-slide--1JKuf">
-                                        <img src="https://images.ctfassets.net/4rc1asww3mw7/6fwdAx0jwMZlw3VUFA3qFq/4954efdb7d411faa6e6bd629c8871c6c/GUCCI.svg" alt="" />
-                                    </div>
-                                    <div style="padding:0 50px" class="LogoLinkRow-slide--1JKuf">
-                                        <img src="https://images.ctfassets.net/4rc1asww3mw7/4EEMqoNh7mXPNoMOtrkiXJ/101db58d185b1458d140d502ff1c928b/expedia_2.svg" alt="" />
-                                    </div>
-                                    <div style="padding:0 50px" class="LogoLinkRow-slide--1JKuf">
-                                        <img src="https://images.ctfassets.net/4rc1asww3mw7/4ZLAs92fXRqa7ieBi6wMpR/fec0daa73871fae27fb4c7816323bf54/Target.svg" alt="" />
-                                    </div>
-                                    <div style="padding:0 50px" class="LogoLinkRow-slide--1JKuf">
-                                        <img src="https://images.ctfassets.net/4rc1asww3mw7/3Vg8GXVI4j04HBEocoyFmG/5a9cbaec93f5e487c7fa4f9a220763bb/Shopify_logo.svg" alt="" />
-                                    </div>
-                                    <div style="padding:0 50px" class="LogoLinkRow-slide--1JKuf">
-                                        <img src="https://images.ctfassets.net/4rc1asww3mw7/01ac3QfCO5aGx06PpyH0Kh/db483d7a83aef992d0d50384cc5ec485/bigcommerce_2.svg" alt="" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopNone--1Hwd4 styles-spacingBottomNone--2ubZt" style="background-color:var(--color-ui-colors-text-100)">
-                        <div class="Container-container--DIXxP" style="background-color:inherit">
-                            <div class="ParallaxTakeover-parallax_takeover_root--6xOmb">
-                                <section class="ParallaxTakeover-section_main--5iyGP">
-                                    <div class="ParallaxTakeover-scroll_control--7bBc5">
-                                        <div id="625c1b70-b030-50bb-a845-47b2ecd1ce33_scroll_control" class="ParallaxTakeover-scroll_control__element--3VErj"></div>
-                                        <div id="4b8670ec-369b-5c85-bd48-5582755dcc2d_scroll_control" class="ParallaxTakeover-scroll_control__element--3VErj"></div>
-                                        <div id="b8688a43-58ae-5e46-916e-45206614af4c_scroll_control" class="ParallaxTakeover-scroll_control__element--3VErj"></div>
-                                        <div id="9c3768f8-91ba-582f-b17c-263fd8cba045_scroll_control" class="ParallaxTakeover-scroll_control__element--3VErj"></div>
-                                    </div>
-                                    <section class="ParallaxTakeover-section_content--5dWUb">
-                                        <div class="ParallaxTakeover-sticky--3WrVb">
-                                            <div class="ParallaxTakeover-text_content_outer_wrapper--2n7Rw">
-                                                <div class="ParallaxTakeover-text_content_inner_wrapper--KlD2a">
-                                                    <div class="ParallaxTakeover-animationWrapper--5FUDK">
-                                                        <div class="ParallaxTakeover-container_text--47q1W ParallaxTakeover-text_content--3JMhq">
-                                                            <div>
-                                                                <div>
-                                                                    <h2 class="imports-bodyTitleLarge--3TNN9 ParallaxTakeover-title--3jHub">
-                                                                        <div class="RichText-richText--1L77z">
-                                                                            <div>
-                                                                                <p>Give your consumer the Affirm advantage </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </h2>
-                                                                </div>
-                                                                <div class="imports-bodySubTitleLarge--4E4LU ParallaxTakeover-revealingTextDesc--1YeNP">
-                                                                    <div class="RichText-richText--1L77z ParallaxTakeover-subheading--3LyVr">
-                                                                        <div>
-                                                                            <p>
-                                                                                <strong class="imports-bold--1wLam">Our payment solutions increase consideration</strong>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="RichText-richText--1L77z">
-                                                                        <div>
-                                                                            <p>When shoppers discover they have a smarter choice in how they pay at checkout, they’ll be more likely to convert. </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="ParallaxTakeover-container_text--47q1W ParallaxTakeover-text_content--3JMhq">
-                                                            <div>
-                                                                <div>
-                                                                    <h2 class="imports-bodyTitleLarge--3TNN9 ParallaxTakeover-title--3jHub">
-                                                                        <div class="RichText-richText--1L77z">
-                                                                            <div>
-                                                                                <p>Plans on their terms </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </h2>
-                                                                </div>
-                                                                <div class="imports-bodySubTitleLarge--4E4LU ParallaxTakeover-revealingTextDesc--1YeNP">
-                                                                    <div class="RichText-richText--1L77z ParallaxTakeover-subheading--3LyVr">
-                                                                        <div>
-                                                                            <p>
-                                                                                <strong class="imports-bold--1wLam">Foundational technology for sustainable growth</strong>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="RichText-richText--1L77z">
-                                                                        <div>
-                                                                            <p>Our Adaptive Checkout™ technology delivers personalized payment options that are tailored to each purchase—including flexible plans from 4 interest-free payments every 2 weeks to longer installments up to 36 months.  </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="ParallaxTakeover-container_text--47q1W ParallaxTakeover-text_content--3JMhq">
-                                                            <div>
-                                                                <div>
-                                                                    <h2 class="imports-bodyTitleLarge--3TNN9 ParallaxTakeover-title--3jHub">
-                                                                        <div class="RichText-richText--1L77z">
-                                                                            <div>
-                                                                                <p>Convenience drives conversion </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </h2>
-                                                                </div>
-                                                                <div class="imports-bodySubTitleLarge--4E4LU ParallaxTakeover-revealingTextDesc--1YeNP">
-                                                                    <div class="RichText-richText--1L77z ParallaxTakeover-subheading--3LyVr">
-                                                                        <div>
-                                                                            <p>
-                                                                                <strong class="imports-bold--1wLam">Give your customers flexibility and boost your business</strong>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="RichText-richText--1L77z">
-                                                                        <div>
-                                                                            <p>Our high-LTV customers give you the Affirm advantage—see a 20% repeat purchase rate and 60%+ AOV. </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="ParallaxTakeover-container_text--47q1W ParallaxTakeover-text_content--3JMhq ParallaxTakeover-container_text__active--6S2BA">
-                                                            <div>
-                                                                <div>
-                                                                    <h2 class="imports-bodyTitleLarge--3TNN9 ParallaxTakeover-title--3jHub">
-                                                                        <div class="RichText-richText--1L77z">
-                                                                            <div>
-                                                                                <p>Payments made simple </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </h2>
-                                                                </div>
-                                                                <div class="imports-bodySubTitleLarge--4E4LU ParallaxTakeover-revealingTextDesc--1YeNP">
-                                                                    <div class="RichText-richText--1L77z ParallaxTakeover-subheading--3LyVr">
-                                                                        <div>
-                                                                            <p>
-                                                                                <strong class="imports-bold--1wLam">Seamlessly settle every transaction  </strong>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="RichText-richText--1L77z">
-                                                                        <div>
-                                                                            <p>We make it easy for your consumers to make payments and manage their account with the Affirm app—and we pay you upfront and in full. We send the funds to your bank account via ACH transfer within 1–3 business days of each transaction. </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="ParallaxTakeover-container_images--g7Yw2">
-                                                    <div class=""></div>
-                                                    <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper ParallaxTakeover-image--2Osbw">
-                                                        <div aria-hidden="true" style="padding-top:112.5%"></div>
-                                                        <img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;object-fit:contain;object-position:50% 50%" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAMAAAA8w5+RAAACf1BMVEUAAABQUE9dXl1kZWRlZWRmZmZdXV1QUE+CgoCUlJSEhYaFhYRXV1ZaW1pTVFNXWFdcXFtXV1dgYWBXV1ZhYWFlZWVhYmFeX15sbGxmZmZqa2pTU1NXV1dRUlFVVlVRUVFRUVBQUVBVVVVQUFBVVVRQUE9UVFRUVFNPUE9TVFNPT09TU1NRUlFVVVV6enmXl5eVlZR9fnxLS0pbW1tiYmJiY2JLS0rz8/T///+cnJwiIiIhISGfn6H7+/vn6OnBwcH+/v7l5eXPz8/R0dHAwMCrq6qZl5KXlI+en5ycnZmcnpehopejo5ajopWpqKOqqaeOi4WOi4OTlI2Rk4qUl4qamYiSkoGYl4WkpJ2op6WOi4KTj4OYmI6WloqVk4CZl4KVknyZmISjo5uppqCRiXKSjHebm4uamomVlIOdm4WcmYGamYOjo5rFvqLv2IvXsVubkGebmoGcmoKfnIOfnYedm4SkpJq/spPiwGnZslrrv0SxpneYlXqdmYCbmX+lpJqml3+zfyfgsj741GWtm2OYkXKgnIGhnoWkoYinppuTjX6WcibuvDvyzWGZilqZkG6noYOmoYafm4CkpJmwn37BiR70x0y7o1OUh1mYkHCln4Kjn4Gfm32lpZelknbPlCPDrFBocEFpckxkZkuJk2+KkGqQk2uio5KUj3qIejRje0hmg1BriV1pmXl5rYxyoHltnXaTppeytrC/yrm/y7TCz7jF0rzJ28vL4dTK4NLJ39G3wLu3t7e/v7/IyMjDw8PV1dX6+vrNzc3ExMTj4+P4+Pjr6+vq6uru7u7FxcXJycns7Ozn5+fz8/PMzMzGxsbX19f39/e2trbc3d3T1NWt8B+NAAAAN3RSTlMARZuioqKbRB76+hxHREhGUEZTRlRYT1JVWVVKR0hGSEhIRkhGSEZGSEZIRkdEHvr6HEWboqJEmoV1qgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gBGA4mFE2UH9wAAACrSURBVBjTtZE9DoJAEIW/t4uwLJyFwsLC61h6ADqNiYUx8QoeyJh4Gk0EAxbIij+Fja+bL/PeTGYEgCSJBqsrgACcCnU66gwYgGiS4pwb1e20qwFMrESSMmkAvXr9DglQT2g/Oi9+aE876P8z/SuM3u0lbAeZicRtSbgaAHUsxRtajAK0eblKpfmrPVpTwQ68CRmmBrPIcrAm/KjQnli0FTOdesj4sXZjDwB3J7sZ8UsWcmgAAAAASUVORK5CYII=" alt="" />
-                                                        <picture>
-                                                            <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=750&amp;h=844&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1080&amp;h=1215&amp;q=50&amp;fm=avif 1080w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1200&amp;h=1350&amp;q=50&amp;fm=avif 1200w" sizes="100vw" />
-                                                            <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=750&amp;h=844&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1080&amp;h=1215&amp;q=50&amp;fm=webp 1080w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1200&amp;h=1350&amp;q=50&amp;fm=webp 1200w" sizes="100vw" />
-                                                            <img data-gatsby-image-ssr="" data-main-image="" style="object-fit:contain;object-position:50% 50%;opacity:0" sizes="100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=750&amp;h=844&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1080&amp;h=1215&amp;q=50&amp;fm=png 1080w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png 1200w" alt="" />
-                                                        </picture>
-                                                        <noscript>
-                                                            <picture>
-                                                                <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=750&amp;h=844&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1080&amp;h=1215&amp;q=50&amp;fm=avif 1080w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1200&amp;h=1350&amp;q=50&amp;fm=avif 1200w" sizes="100vw" />
-                                                                <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=750&amp;h=844&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1080&amp;h=1215&amp;q=50&amp;fm=webp 1080w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1200&amp;h=1350&amp;q=50&amp;fm=webp 1200w" sizes="100vw" />
-                                                                <img data-gatsby-image-ssr="" data-main-image="" style="object-fit:contain;object-position:50% 50%;opacity:0" sizes="100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=750&amp;h=844&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1080&amp;h=1215&amp;q=50&amp;fm=png 1080w,https://images.ctfassets.net/4rc1asww3mw7/1MMK54ASnmWSJFimJm3Fs2/7c76d5b21293595f48908039228d8242/Parallax_UI-1.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png 1200w" alt="" />
-                                                            </picture>
-                                                        </noscript>
-                                                        <script type="module">
-                                                            const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
-                                                            if (t) {
-                                                                const t = document.querySelectorAll("img[data-main-image]");
-                                                                for (let e of t) {
-                                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
-                                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
-                                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
-                                                                    e.complete && (e.style.opacity = 1, e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity = 0)
-                                                                }
-                                                            }
-                                                        </script>
-                                                    </div>
-                                                    <div class=""></div>
-                                                    <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper ParallaxTakeover-image--2Osbw">
-                                                        <div aria-hidden="true" style="padding-top:112.5%"></div>
-                                                        <img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;object-fit:contain;object-position:50% 50%" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAMAAAA8w5+RAAABzlBMVEUAAABQUE9dXl1kZWRlZWRmZmZdXV1QUE+CgoCUlJSEhYaFhYRXV1ZaW1pTVFNXWFdcXFtXV1dgYWBXV1ZhYWFlZWVhYmFeX15sbGxmZmZqa2pTU1NXV1dRUlFVVlVRUVFRUVBQUVBVVVVQUFBVVVRQUE9UVFRUVFNPUE9TVFNPT09TU1NRUlFVVVV6enmbm5uZmZl9fnxLS0pbW1tiYmJiY2JLS0rz8/T///+cnJwiIiIhISGfn6H7+/vn6OnHx8f+/v79/f309PTLy8vKysr8/PzNzc3Cw8PV1tjZ29zX2drY2tvc3d7a29zi4+T9/f6/v8nc3PHb2+/b2+3e3+Df4OHZ2tvg4eLGxsbPz8/9/v7MzM3Ozs7p6vXl5ujp6uv6+/zs7u/d3+HKy8vHx8/s7P739/74+P/Fxc3Jyc/Z2f3b3N3V19jo6ers7O3s7e7Gxs329vf19fbw8fH3+Pjr7Oz4+PjLy8719v3u7vbu7vXw8Pfv7/b29v3IyMzt7u/y8vP19fX09PXLy8zw8PH5+fnz9PT6+vrNzc78/P3q6+zr7O3t7e739/fn6Orl5ufOzs/MzMyrq82kpPmlpcuHh8pPT/RmZvZ+fsff4OItKCoAAAAAN3RSTlMARZuioqKbRB76+hxHREhGUEZTRlRYT1JVWVVKR0hGSEhIRkhGSEZGSEZIRkdEHvr6HEWboqJEmoV1qgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gCAg8PAGrO81YAAAEBSURBVBgZBcExaxRRFAbQ8915b3YGcQkY2NLKLkYRE0kTJNj7Uy21tLFwFTVolV4EJVU0myjsek5AksTWkFsITDlMkiQf8wcF7Xg2TYv+7+9JQUH13LXdNYaCBjW09CRzNgUNak6S2ymZCxrUfH2HEQENMiwjkWSABjUlICkoqN77j3ExzRdTQUH5NP467+vaKCgoyrMv2qmCBrV8nrPdSfJzBQry/f14s/jd+3kHBbHp965Xr69eatCgDh6+Ybm6sF8wwP64erD3+H4erY+/XqKAV/Y2ta5TgQbD06t3WL11VtCg6gUgBQ1qCLGjCgKHmR0d+PbBTT4j4EkS2A5r+A8PWjJe3Ia9cAAAAABJRU5ErkJggg==" alt="" />
-                                                        <picture>
-                                                            <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=750&amp;h=844&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1080&amp;h=1215&amp;q=50&amp;fm=avif 1080w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1200&amp;h=1350&amp;q=50&amp;fm=avif 1200w" sizes="100vw" />
-                                                            <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=750&amp;h=844&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1080&amp;h=1215&amp;q=50&amp;fm=webp 1080w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1200&amp;h=1350&amp;q=50&amp;fm=webp 1200w" sizes="100vw" />
-                                                            <img data-gatsby-image-ssr="" data-main-image="" style="object-fit:contain;object-position:50% 50%;opacity:0" sizes="100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=750&amp;h=844&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1080&amp;h=1215&amp;q=50&amp;fm=png 1080w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png 1200w" alt="" />
-                                                        </picture>
-                                                        <noscript>
-                                                            <picture>
-                                                                <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=750&amp;h=844&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1080&amp;h=1215&amp;q=50&amp;fm=avif 1080w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1200&amp;h=1350&amp;q=50&amp;fm=avif 1200w" sizes="100vw" />
-                                                                <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=750&amp;h=844&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1080&amp;h=1215&amp;q=50&amp;fm=webp 1080w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1200&amp;h=1350&amp;q=50&amp;fm=webp 1200w" sizes="100vw" />
-                                                                <img data-gatsby-image-ssr="" data-main-image="" style="object-fit:contain;object-position:50% 50%;opacity:0" sizes="100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=750&amp;h=844&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1080&amp;h=1215&amp;q=50&amp;fm=png 1080w,https://images.ctfassets.net/4rc1asww3mw7/6UnZ5dges7PDdLGFYoecIZ/bc53a30e0c7d9c8704a75d1f2dc65a2f/Parallax_UI-2.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png 1200w" alt="" />
-                                                            </picture>
-                                                        </noscript>
-                                                        <script type="module">
-                                                            const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
-                                                            if (t) {
-                                                                const t = document.querySelectorAll("img[data-main-image]");
-                                                                for (let e of t) {
-                                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
-                                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
-                                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
-                                                                    e.complete && (e.style.opacity = 1, e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity = 0)
-                                                                }
-                                                            }
-                                                        </script>
-                                                    </div>
-                                                    <div class=""></div>
-                                                    <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper ParallaxTakeover-image--2Osbw">
-                                                        <div aria-hidden="true" style="padding-top:112.5%"></div>
-                                                        <img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;object-fit:contain;object-position:50% 50%" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAMAAAA8w5+RAAAB41BMVEUAAABQUE9dXl1kZWRlZWRmZmZdXV1QUE+CgoCUlJSEhYaFhYRXV1ZaW1pTVFNXWFdcXFtXV1dgYWBXV1ZhYWFlZWVhYmFeX15sbGxmZmZqa2pTU1NXV1dRUlFVVlVRUVFRUVBQUVBVVVVQUFBVVVRQUE9UVFRUVFNPUE9TVFNPT09TU1NRUlFVVVV6enmPjpKZmZl9fnxLS0pbW1tiYmJiY2JLS0rz8/T///+cnJwiIiIhISGfn6H7+/vn6OnIyMj8/PzP0NTIyd38/P3Dw8POzs7+/v7l5ufp6ez9/f79/f3Jycm+vr/b3N7f4OHg4eL8/P7s7PzKysz5+vr5+fr7+/z6+vvKy8vMzc3V19nd3+Hg4uTc3uDf4ePh4+T5+vvJysvt7vDu8PL3+Pnz9PXW2NrJysrx8vTw8fPx8/Tu7/Hi4+XLzMzJycq7vLzb3N3Y2dr19fXNzc3Ly8z39/fMzM3u7u/Fxc7s7e7o6ers7e3r7O2/wMDIyM7y8vLu7+/w8PDy8/PExMXIyM/x8vLv8PDt7e719fb09fb29vf19vf09PX9/v7ExMTh4uPj5OXk5OXz8/6UlPPCwszt7e3v7+/Kysrp6urs7O3p6uv4+fnLy8vU1dbNz9HLzNzP0Ofw8P0MCC8+AAAAN3RSTlMARZuioqKbRB76+hxHREhGUEZTRlRYT1JVWVVKR0hGSEhIRkhGSEZGSEZIRkdEHvr6HEWboqJEmoV1qgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gBGBMuFJGzpfcAAAD8SURBVBjTVZG9SgNREIW/M3d37oqgRSImaEAtLBRSWFik9RkU9Ml8CDWVzyCIYKWNgo0KCkEbzc9KsNjEvU43H+fMnGEEgCSJKUFjAAEU6qqqG30BBpDtixhjLK1X9QDmkYlLIVMCo7TwBi2lcLwkLUL+DzYktSVVeysoCqEfcinUSlz6BleZ2JvvAAxZTaC1n7Z0BawnMNf23QdAMOYX2bPZkLoMQBsWegAHMYnkkgBcWW13d+/UzgDQbC2bre3s3j+uPAzmdjYlleccz6ZU8hf3z8ui6F+kkV5DaDeAE5Lwgz7gcHZofz/q6mjSkaTTkW7nkL3Zhmm4BvgF5hQp4zs6bBAAAAAASUVORK5CYII=" alt="" />
-                                                        <picture>
-                                                            <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=750&amp;h=844&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1080&amp;h=1215&amp;q=50&amp;fm=avif 1080w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1200&amp;h=1350&amp;q=50&amp;fm=avif 1200w" sizes="100vw" />
-                                                            <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=750&amp;h=844&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1080&amp;h=1215&amp;q=50&amp;fm=webp 1080w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1200&amp;h=1350&amp;q=50&amp;fm=webp 1200w" sizes="100vw" />
-                                                            <img data-gatsby-image-ssr="" data-main-image="" style="object-fit:contain;object-position:50% 50%;opacity:0" sizes="100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=750&amp;h=844&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1080&amp;h=1215&amp;q=50&amp;fm=png 1080w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png 1200w" alt="" />
-                                                        </picture>
-                                                        <noscript>
-                                                            <picture>
-                                                                <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=750&amp;h=844&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1080&amp;h=1215&amp;q=50&amp;fm=avif 1080w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1200&amp;h=1350&amp;q=50&amp;fm=avif 1200w" sizes="100vw" />
-                                                                <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=750&amp;h=844&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1080&amp;h=1215&amp;q=50&amp;fm=webp 1080w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1200&amp;h=1350&amp;q=50&amp;fm=webp 1200w" sizes="100vw" />
-                                                                <img data-gatsby-image-ssr="" data-main-image="" style="object-fit:contain;object-position:50% 50%;opacity:0" sizes="100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=750&amp;h=844&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1080&amp;h=1215&amp;q=50&amp;fm=png 1080w,https://images.ctfassets.net/4rc1asww3mw7/3YHTqo4yS5O85mtRtwsgA/b8b68972d180dfd904feea3c3a06e850/Parallax_UI-3.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png 1200w" alt="" />
-                                                            </picture>
-                                                        </noscript>
-                                                        <script type="module">
-                                                            const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
-                                                            if (t) {
-                                                                const t = document.querySelectorAll("img[data-main-image]");
-                                                                for (let e of t) {
-                                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
-                                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
-                                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
-                                                                    e.complete && (e.style.opacity = 1, e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity = 0)
-                                                                }
-                                                            }
-                                                        </script>
-                                                    </div>
-                                                    <div class="ParallaxTakeover-active--3NUvm"></div>
-                                                    <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper ParallaxTakeover-image--2Osbw">
-                                                        <div aria-hidden="true" style="padding-top:112.5%"></div>
-                                                        <img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear;object-fit:contain;object-position:50% 50%" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAMAAAA8w5+RAAABhlBMVEUAAABQUE9dXl1kZWRlZWRmZmZdXV1QUE+CgoCUlJSEhYaFhYRXV1ZaW1pTVFNXWFdcXFtXV1dgYWBXV1ZhYWFlZWVhYmFeX15sbGxmZmZqa2pTU1NXV1dRUlFVVlVRUVFRUVBQUVBVVVVQUFBVVVRQUE9UVFRUVFNPUE9TVFNPT09TU1NRUlFVVVV6enmZmZmYmJh9fnxLS0pbW1tiYmJiY2JLS0rz8/T///+cnJwiIiIhISGfn6H7+/vn6OnOzs79/f309PTLy8u3t7fT09Pe3t7Nzc35+fn29vbQ0ND8/Pzy8/Ty8vP7+/zU1NS+vr7i4uLd3d3l5eX39/fx8fLz9PT4+PnBwc7o6Pnm5vfn5/ft7f3+/v75+fq9vr/Lzc/U1tfX2NrNz9HJycm/v8Dk5ebx8fP09Pby+ve+vsnc3PXk5Pz6+vzLy8zx8vLw8PHx8vPu7/Dv8PHz8/XIycnw8fL6+vr29vf39/jz8/35+f7s7e7ExMX6+/v8/P3d3t/g4en4+P75Fgb5AAAAN3RSTlMARZuioqKbRB76+hxHREhGUEZTRlRYT1JVWVVKR0hGSEhIRkhGSEZGSEZIRkdEHvr6HEWboqJEmoV1qgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+gBFwcoKkXEBCAAAADbSURBVBgZBcG7alQBFAXQtfc9dyb4SBGZymCTgIUgIih+hf9qrV8g1gMWVsEUCklxieCD4FoBSRL3lvyGwEleJkmSL7lDYd7Gfr+bv3/eFQY6azYwhUL/LQugMNAHt86S/KQwUEzuClAI+uvxIywwUE+TbTs8+6Ew0NMkF7nZUxjoPkmOblwcodDdbndcn7ziqlDouq5vrvv9cHgOBnLMue0cX8FALh8mB8mVgYFe3wJOC4UCUCgAIFBYACgUCkBhoC+Sb5dJkg8w0I/vc3Yi+bQNBLxOAvfLZ/gPUH8lODBDvv0AAAAASUVORK5CYII=" alt="" />
-                                                        <picture>
-                                                            <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=750&amp;h=844&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1080&amp;h=1215&amp;q=50&amp;fm=avif 1080w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1200&amp;h=1350&amp;q=50&amp;fm=avif 1200w" sizes="100vw" />
-                                                            <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=750&amp;h=844&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1080&amp;h=1215&amp;q=50&amp;fm=webp 1080w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1200&amp;h=1350&amp;q=50&amp;fm=webp 1200w" sizes="100vw" />
-                                                            <img data-gatsby-image-ssr="" data-main-image="" style="object-fit:contain;object-position:50% 50%;opacity:0" sizes="100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=750&amp;h=844&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1080&amp;h=1215&amp;q=50&amp;fm=png 1080w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png 1200w" alt="" />
-                                                        </picture>
-                                                        <noscript>
-                                                            <picture>
-                                                                <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=750&amp;h=844&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1080&amp;h=1215&amp;q=50&amp;fm=avif 1080w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1200&amp;h=1350&amp;q=50&amp;fm=avif 1200w" sizes="100vw" />
-                                                                <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=750&amp;h=844&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1080&amp;h=1215&amp;q=50&amp;fm=webp 1080w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1200&amp;h=1350&amp;q=50&amp;fm=webp 1200w" sizes="100vw" />
-                                                                <img data-gatsby-image-ssr="" data-main-image="" style="object-fit:contain;object-position:50% 50%;opacity:0" sizes="100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=750&amp;h=844&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1080&amp;h=1215&amp;q=50&amp;fm=png 1080w,https://images.ctfassets.net/4rc1asww3mw7/spFRQupP9yF3SUJAaXvul/e4330d9fbb6e69da2f37f61505f5a32f/Parallax_UI-4.png?w=1200&amp;h=1350&amp;q=50&amp;fm=png 1200w" alt="" />
-                                                            </picture>
-                                                        </noscript>
-                                                        <script type="module">
-                                                            const t = "undefined" != typeof HTMLImageElement && "loading" in HTMLImageElement.prototype;
-                                                            if (t) {
-                                                                const t = document.querySelectorAll("img[data-main-image]");
-                                                                for (let e of t) {
-                                                                    e.dataset.src && (e.setAttribute("src", e.dataset.src), e.removeAttribute("data-src")), e.dataset.srcset && (e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset"));
-                                                                    const t = e.parentNode.querySelectorAll("source[data-srcset]");
-                                                                    for (let e of t) e.setAttribute("srcset", e.dataset.srcset), e.removeAttribute("data-srcset");
-                                                                    e.complete && (e.style.opacity = 1, e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity = 0)
-                                                                }
-                                                            }
-                                                        </script>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </section>
-                            </div>
-                        </div>
-                    </section>
+
                     <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopNone--1Hwd4 styles-spacingBottomNone--2ubZt" style="background-color:var(--color-ui-colors-background)">
                         <div class="Container-container--DIXxP MultiLinkCTA-container--4INaC MultiLinkCTA-textDark--1zwnv" style="background-color:var(--color-ui-colors-background)">
                             <div class="MultiLinkCTA-wrapper--6sCCa">
@@ -5081,7 +4590,7 @@
                         </div>
                     </section>
                     <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopSmall--2gZjb styles-spacingBottomSmall--4AR9m">
-                        <div style="background-color:var(--color-ui-colors-text-100)" class="styles-spacingTopSmall--2gZjb styles-spacingBottomSmall--4AR9m SplitContent-fillBackground--6Hj4d">
+                        <div style="background-color:var(--color-ui-colors-text-100)" class="styles-spacingTopSmall--2gZj styles-spacingBottomSmal--4AR9m SplitContent-fillBackground--6Hj4">
                             <div class="Container-container--DIXxP SplitContent-wrapper--4G3MU SplitContent-transitionInverted--6INyU" style="background:linear-gradient(319deg,  #FFA900, #FFCA61)">
                                 <div class="SplitContent-contentWidth--58KWb SplitContent-contentWidth_1224--60ar5 SplitContent-contentRight--3zxDK SplitContent-internalCard--3eW2w">
                                     <div class="SplitContent-textWidth--6LFeE SplitContent-width_564--2FKhs">
@@ -6096,14 +5605,13 @@
 <script async="" data-chunk="sections-Questions" src="sections-Questions-40fa10ce83f9b4e7f6c5.js" integrity="sha512-I1g6rO4wsBSu7+11COn5tH5C1Z6Ww63FSAVgktNHbocAEDouX17x0wuSytYOiY1QFrYQPMY8CKPWUK6Hk2ROtA=="></script>
 <link data-chunk="sections-LogoLinkRow" rel="stylesheet" href="styles.40c6f2bd237316bb4c91.css" />
 <script id="gatsby-script-loader">
-    /*
-																				<![CDATA[*/
+    /*<![CDATA[*/
     window.pagePath = "/business";
-    window.___webpackCompilationHash = "997d7d689be9bce0760e"; /*]]>*/
+    window.___webpackCompilationHash = "997d7d689be9bce0760e";
+    /*]]>*/
 </script>
 <script id="gatsby-chunk-mapping">
-    /*
-																				<![CDATA[*/
+    /*<![CDATA[*/
     window.___chunkMapping = {
         "polyfill": ["/polyfill-95289570a2c5c7efea95.js"],
         "app": ["/app-c1a6d0b108a36a07809d.js"],
@@ -6177,10 +5685,217 @@
         "sections-ContentTwoColumn": []
     }; /*]]>*/
 </script>
-<script src="polyfill-95289570a2c5c7efea95.js" integrity="sha512-R+WUj0cepYOsv1G590+7qFL9Nr/y0xZg8802IvN9HMBY0Hng3tZptnP0NTmXRrbUT4QOo3M6AMLbopk8NFJz2Q==" nomodule=""></script>
-<script src="app-c1a6d0b108a36a07809d.js" integrity="sha512-QUvQDV8c5m14BsyyG6uMMmvN7tXSk95Ozfft5s14WYJAsRXi5PjBkZ1iYVk34MPrib9UYGvG7T5/l7Ki2x17LA==" async=""></script>
-<script src="framework-824650aebc1c21e12038.js" integrity="sha512-LtUwJSwq0f+XUwu9SSQgiN+Rc+trmgelc/Oo30RU0zxU1qmTi9t6L/wwyA4pkyrZFCt8Uu5qpiiyRxwpN8rFxQ==" async=""></script>
-<script src="webpack-runtime-4aae6c6e512d47431a85.js" integrity="sha512-BPL9Dwyp4aSCj9aMw/DDXV7UHJSncThTXwNXU4o9XCWV+Qc6RaD1by7zS1Zro1edgZsSX7tb3HD/mzLpHV4omg==" async=""></script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"856909b6dd114eb2","version":"2024.2.0","token":"143e5b8dd7d741e48bf82b91636dfcd4"}' crossorigin="anonymous"></script>
+<script src="{{ asset('polyfill-95289570a2c5c7efea95.js') }}">
+
+</script>
+<script src="{{ asset('app-c1a6d0b108a36a07809d.js') }}"></script>
+<script src="{{ asset('framework-824650aebc1c21e12038.js') }}"  async=""></script>
+<script src="{{ asset('8228.js') }}"  async=""></script>
+<script src="{{ asset('component.js') }}"  async=""></script>
+<script src="webpack-runtime-4aae6c6e512d47431a85.js"  async=""></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"  data-cf-beacon='{"rayId":"856909b6dd114eb2","version":"2024.2.0","token":"143e5b8dd7d741e48bf82b91636dfcd4"}' crossorigin="anonymous"></script>
+<script type="text/javascript" id="">(function(a,b,f,d,l,g,h,k,c,e){if(!a[d]||!a[d]._q){for(;k<h.length;)l(g,h[k++]);c=b.createElement(f);c.async=1;c.src="https://cdn.branch.io/branch-latest.min.js";e=b.getElementsByTagName(f)[0];e.parentNode.insertBefore(c,e);a[d]=g}})(window,document,"script","branch",function(a,b){a[b]=function(){a._q.push([b,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking".split(" "),
+        0);branch.init("key_live_eak0b1ysFeymTfKqPf8GfmjhyFpG45mQ");</script>
+<script type="text/javascript" id="">(function(c,d,f,g,e){c[e]=c[e]||[];var h=function(){var b={ti:"56348942"};b.q=c[e];c[e]=new UET(b);c[e].push("pageLoad")};var a=d.createElement(f);a.src=g;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(h(),a.onload=a.onreadystatechange=null)};d=d.getElementsByTagName(f)[0];d.parentNode.insertBefore(a,d)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+<script type="text/javascript" id="">(function(c,d,f,g,e){c[e]=c[e]||[];var h=function(){var b={ti:"56348942"};b.q=c[e];c[e]=new UET(b);c[e].push("pageLoad")};var a=d.createElement(f);a.src=g;a.async=1;a.onload=a.onreadystatechange=function(){var b=this.readyState;b&&"loaded"!==b&&"complete"!==b||(h(),a.onload=a.onreadystatechange=null)};d=d.getElementsByTagName(f)[0];d.parentNode.insertBefore(a,d)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script>
+<script type="text/javascript" id="">(function(a,b,c,d,e){a=b.createElement(c);b=b.getElementsByTagName(c)[0];a.async=1;a.id=e;a.src=d;b.parentNode.insertBefore(a,b)})(window,document,"script","https://tag.demandbase.com/6dae68e9a5745319.min.js","demandbase_js_lib");</script>
+<script type="text/javascript" id="">(function(d,e,f,b,c,a){c="";b="https://tracking.g2crowd.com/attribution_tracking/conversions/"+d+".js?p\x3d"+encodeURI(e)+"\x26e\x3d"+c;a=document.createElement("script");a.type="application/javascript";a.async=!0;a.src=b;f.getElementsByTagName("head")[0].appendChild(a)})("4907",document.location.href,document);</script>
+<script type="text/javascript" id="">(function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.referrerPolicy="unsafe-url";a.src="https://ws.zoominfo.com/pixel/610d802e3db1e0001a0dc7be";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();</script>
+<script type="text/javascript" id="">var lastUrl_GTM=location.href;(new MutationObserver(function(){var a=location.href;a!==lastUrl_GTM&&(lastUrl_GTM=a,onUrlChange())})).observe(document,{subtree:!0,childList:!0});function onUrlChange(){location.pathname.includes("/business")&&applyGTMtag()}
+    function applyGTMtag(){var a=1,g=document.location.href,b=document.location.search.substring(1),c=(new Date).getTime(),d=window.localStorage,e="last_utm_query",f;/(^|&)utm_/.test(b)&&(d[e]=JSON.stringify({time:c,query:b}));/(^|&)msclkid/.test(b)&&(d[e]=JSON.stringify({time:c,query:b}));/(^|&)gclid/.test(b)&&(d[e]=JSON.stringify({time:c,query:b}));/(^|&)sfdc_campaign_id/.test(b)?d[e]=JSON.stringify({time:c,query:b}):(f=JSON.parse(d[e]||'""'))&&c-f.time<=864E5*a&&!b&&(a=document.createElement("a"),
+        a.href=g,a.search+=(a.search?"\x26":"")+f.query,history.replaceState("",{},a))}applyGTMtag();</script>
+<div style="display: none; visibility: hidden;">
+    <script type="text/javascript">var _tvq=window._tvq=window._tvq||[];
+        (function(){var c="https:"==document.location.protocol?"https://collector-21536.us.tvsquared.com/":"http://collector-21536.us.tvsquared.com/";_tvq.push(["setSiteId","TV-7281456336-1"]);_tvq.push(["setTrackerUrl",c+"tv2track.php"]);_tvq.push([function(){this.deleteCustomVariable(5,"page")}]);_tvq.push(["trackPageView"]);var a=document,b=a.createElement("script");a=a.getElementsByTagName("script")[0];b.type="text/javascript";b.defer=!0;b.async=!0;b.src=c+"tv2track.js";a.parentNode.insertBefore(b,a)})();</script>
+</div>
+<script type="text/javascript" id="">_linkedin_partner_id="1759124";window._linkedin_data_partner_ids=window._linkedin_data_partner_ids||[];window._linkedin_data_partner_ids.push(_linkedin_partner_id);</script>
+<script type="text/javascript" id="">(function(a){a||(window.lintrk=function(c,d){window.lintrk.q.push([c,d])},window.lintrk.q=[]);a=document.getElementsByTagName("script")[0];var b=document.createElement("script");b.type="text/javascript";b.async=!0;b.src="https://snap.licdn.com/li.lms-analytics/insight.min.js";a.parentNode.insertBefore(b,a)})(window.lintrk);</script>
+<iframe id="_hjSafeContext_75119851" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="about:blank" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
+<iframe alt="" aria-hidden="true" width="0" height="0" sandbox="" id="db-sync" src="https://s.company-target.com/s/sync?exc=lr" style="display: none; border: 0px;"></iframe>
+<img alt="" aria-hidden="true" width="0" height="0" id="db_lr_pixel_ad" src="https://id.rlcdn.com/464526.gif" style="display: none;">
+<iframe allow="join-ad-interest-group" data-tagging-id="DC-9664781" data-load-time="1708353000934" height="0" width="0" style="display: none; visibility: hidden;" src="https://td.doubleclick.net/td/fls/rul/activityi;fledge=1;src=9664781;npa=0;auiddc=2136341401.1708349491;ps=1;pcor=2005859664;pscdl=noapi;gtm=45fe42e0za200;gcd=13l3l3l3l1;dma=0;uaa=arm;uab=64;uafvl=Not%2520A(Brand%3B99.0.0.0%7CGoogle%2520Chrome%3B121.0.6167.184%7CChromium%3B121.0.6167.184;uamb=0;uam=;uap=macOS;uapv=14.2.1;uaw=0;epver=2;~oref=https%3A%2F%2Fwww.affirm.com%2Fbusiness?"></iframe>
+<div id="batBeacon334595080686" style="width: 0px; height: 0px; display: none; visibility: hidden;"><img id="batBeacon565258427900" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=56348942&amp;Ver=2&amp;mid=348bd882-f060-438e-8021-072a45be39a8&amp;sid=335b7590cf2b11eeb3450140d2214b6c&amp;vid=c7901630c73011eeab66a17199abb4bb&amp;vids=0&amp;msclkid=N&amp;pi=918639831&amp;lg=en-US&amp;sw=1920&amp;sh=1080&amp;sc=24&amp;tl=Affirm%20for%20merchants%3A%20offer%20customer%20financing%20and%20buy%20now%20pay%20later%20options%20for%20your%20business&amp;p=https%3A%2F%2Fwww.affirm.com%2Fbusiness&amp;r=&amp;lt=1796&amp;evt=pageLoad&amp;sv=1&amp;rn=560553" style="width: 0px; height: 0px; display: none; visibility: hidden;"></div>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","2122864838008953");fbq("track","PageView");fbq("track","ViewContent");</script>
 </body>
+<script src="https://www.affirm.com/component---src-templates-page-index-tsx-30cf2291559fc35ca3c6.js"></script>
+<div id="vidcor-container"><link rel="stylesheet" href="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/css/cadcom.css" type="text/css">
+    <link rel="stylesheet" href="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&amp;display=swap" rel="stylesheet">
+
+    <!--Action frame start--->
+    <div id="cc-recording-web" class="recording-option-popup-container">
+        <!-- <iframe src="about:blank" style="visibility:hidden;" allowtransparency="true" application="yes" allow="microphone;camera;speaker;" id="cc-recording-web"
+                frameBorder="0" style=""></iframe> -->
+    </div>
+    <!---End-->
+
+
+    <!--Toster for message show dynamic--->
+    <div id="fde-add-brading-logo"></div>
+    <!---End-->
+
+    <!--Toster for message show dynamic--->
+    <div id="fde-add-toster-web">
+    </div>
+    <!---End-->
+
+    <!--Gmail frame add Start-->
+    <div id="cc-video-search" style="z-index: 1000000004;display: none;position: fixed;top:0;width: 100vw;height: 100vh;background: rgba(0,0,0, 0.5);">
+    </div>
+    <!--End-->
+    <!--2f Login frame add Start-->
+    <div id="fde-2flogin-frame" style="z-index: 1000000003;position: fixed;top: 5%;left:30%;">
+
+    </div>
+    <!--End-->
+    <!--Video frame start--->
+    <div id="cc-recording-block" style="display: none;z-index: 1000000002;bottom: 20px; left: 100px;">
+        <div class="cc-personal-recorder-view show" id="vcc-ffcam-container">
+            <table>
+                <tbody><tr>
+                    <td id="vcc-left-position"></td>
+                    <td>
+                        <!--<div class="timer_count" id="vcc-timer-elem"></div>-->
+                        <!-- <div class="timer_count" id="vcc-timer-elem" style="display: none;"></div> -->
+                        <div class="cc-ffcam-view-wrap cc-round-shadow" style="display: inline-block;">
+                            <div class="cc-ffcam-view size-1 cc-round" id="vcc-video-frame">
+                                <div class="cc-ffcam-iframe-container" id="vidcor-video-frame">
+                                    <div class="fl-loader-bg" id="fde-video-loader" style="opacity: 0;">
+                                        <div class="fl-loading-bar-spinner fl-spinner sml">
+                                            <div class="fl-spinner-icon sml"></div>
+                                        </div>
+                                    </div>
+                                    <!-- <img id="vidcor-ff-img" style="width:100%;	object-fit:cover; height:100%;"
+                                        onerror="this.onerror=null;this.src='chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/user.jpeg';" /> -->
+                                    <div id="vidcor-ff-img" style="width:100%;	object-fit:cover; height:100%; display: none;">
+                                        <div style="text-align: center;padding-top: 40px;font-weight: bold;font-family: 'Circular-Loom';">Close other apps</div>
+                                        <div style="padding-top: 25px;font-size: 13px;text-align: center;font-family: 'Circular-Loom';">
+                                            It looks like some other app is <br> already using your camera.
+                                        </div>
+                                        <div style="text-align: center;pointer-events: all;padding-top: 10px;">
+                                            <button id="retryVideoFrmae" style="cursor: pointer;background-color: #1e51c39c;color: #fff;border: black;border-radius: 10px;width: 70px;height: 25px;">Retry</button>
+                                        </div>
+                                    </div>
+                                    <iframe src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/template/iframe.html" id="vidcor-ff-cam" class="cc-zoom1" allow="camera;microphone"></iframe>
+                                </div>
+
+
+
+                                <div class="cc-camera-type-blk" style="display: none;">
+                                    <div class="cc-camera-type">
+                                        <div class="c-shape-sqr cc-tt" id="fde-square-click">
+                                            <span class="cc-tt-hint">Click to change the shape<br>to square</span>
+                                        </div>
+                                        <div class="c-shape-cir cc-tt act" id="fde-rount-click">
+                                            <span class="cc-tt-hint">Click to change the shape<br>to circle</span>
+                                        </div>
+                                    </div>
+                                    <div class="shape-size">
+                                        <div class="size-button size-3 vcc-cam-zoom3"></div>
+                                        <div class="size-button size-2 vcc-cam-zoom2"></div>
+                                        <div class="size-button size-1 vcc-cam-zoom1 active"></div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- <div class="cc-camera-size-tooltip">
+                                    <div class="size-button size-1 vcc-cam-zoom1 active"></div>
+                                    <div class="size-button size-2 vcc-cam-zoom2"></div>
+                                    <div class="size-button size-3 vcc-cam-zoom3"></div>
+                                </div> -->
+
+                                <!-- <span class="cc-ffcam-close size-1"></span> -->
+                                <div class="cc-tt">
+                                    <span class="cc-flipcamera" id="vcc-flip-camera"></span>
+                                    <span class="cc-tt-hint hint-camera" style="height:14px!important;">Mirror Camera</span>
+                                </div>
+                                <!-- <span class="cc-bg-setting" id="fde-bg-blur-click"></span> -->
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody></table>
+        </div>
+    </div>
+    <!------------Tools Start---------------->
+    <section class="cc-tools-container" valign="bottom" id="fde-action-menu-items" style="display: none;top: 144px; left: 0px;">
+        <div style="position: relative;bottom: 0px; left:-10px; top:10px; display: flex;">
+            <img id="drag-elem-id" class="cc-drag" src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/drag.png">
+            <div class="cc-tools">
+                <div>
+                    <strong class="recording-duration" id="vcc-timer-elem" style="display: none;">0:00:00</strong>
+                </div>
+                <img src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-pause-ico.png" id="vcc-pause-btn" style="display: none;" title="Pause Recording">
+                <img src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-play-ico.png" id="vcc-resume-btn" style="display: none;" title="Resume Recording">
+                <img src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-play-ico.png" id="vcc-init-btn" title="Start Recording" style="display: none;">
+                <span class="pos-rel" style="height:36px;">
+			<img src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-close-ico.png" id="open-cancel-option" title="Cancel Recording">
+				<div class="cls-rec" id="cancel-option-list" style="display: none;">
+					<ul>
+						<li id="vcc-cancel-btn">Cancel recording</li>
+						<li id="fde-restart">Restart recording</li>
+					</ul>
+				</div>
+			</span>
+
+                <img src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-finish-rc.png" id="vcc-stop-btn" style="display: none;" title="Finish Recording">
+                <img src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-camera-on-ico.png" id="vcc-cam-setting-btn" title="Camera ON">
+                <img src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-camera-off-ico.png" id="vcc-cam-hide-setting-btn" title="Camera OFF">
+                <div id="vcc-draw-elem" style="display: none;">
+                    <div id="drawing-tools-open">
+                        <div class="pentool">Tools</div>
+                    </div>
+                    <div id="drawing-tools-list" style="display: none;">
+                        <img class="extra-tools drawingToolHideShow" id="vcc-draw-pen" src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-pen-ico.png" title="Pen Tool">
+                        <img class="extra-tools drawingToolHideShow" id="vcc-draw-eraser" src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-eraser-ico.png" title="Eraser">
+                        <img class="extra-tools drawingToolHideShow" id="vcc-clear-draw" src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-clear-pen.png" title="Clear Paint">
+                        <img class="extra-tools drawingToolHideShow" id="vcc-cursor-focus" src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-focus-ico.png" title="Mouse Pointer Spotlight">
+                        <img class="extra-tools drawingToolHideShow" id="vcc-draw-highlight" src="chrome-extension://hfadalcgppcbffdnichplalnmhjbabbm/images/icons/flu-mouse.png" title="Mouse Click Highlighter">
+                    </div>
+
+                    <div id="drawing-tools-close" style="display: none;">
+                        <div class="pentool-cls"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="cc-tools ccpen-col" id="cc-pen-editor" style="display: none;">
+                <div class="brush-tools">
+                    <div class="pen-color" id="pen-color-id">
+                        <ul style="padding-left:5px; margin:0">
+                            <!-- First one is default if changed please change it in ElectronConstant as well. -->
+                            <li data-color="#7fffd4" title="Aqua Menthe"></li>
+                            <li data-color="#8a2be2" title="Proton Purple"></li>
+                            <li data-color="#ff4500" title="Orange Red"></li>
+                            <li data-color="#008000" title="Office Green"></li>
+                            <li data-color="#0000ff" title="Just Blue"></li>
+                            <li data-color="#ffc0cb" title="Blush Pink"></li>
+                            <li data-color="#dfff00" title="Chartreuse Yellow"></li>
+                            <li data-color="#fff9e3" title="Cosmic Latte"></li>
+                            <li data-color="#000" title="All Black"></li>
+                            <li data-color="#fff" title="Simple White"></li>
+                        </ul>
+                    </div>
+                    <div class="brush-size-wrapper">
+                        <span id="pen-size-text" class="cc-pensize">5px</span>
+                        <div class="brush-size">
+                            <input id="pen-size" type="range" orient="vertical" min="5" max="20" value="5">
+                        </div>
+                        <div id="current-pen-size" class="pen-size"></div>
+                    </div>
+                </div>
+                <div class="cc-close" id="cc-editor-close">close</div>
+            </div>
+        </div>
+    </section>
+    <!------------Tools Ends----------------->
+
+    <!--End-->
+
+    <!--Message popup --->
+    <div id="fde-popup-message"></div>
+    <div id="fde-common-popup-message"></div>
+    <!---End-->
+
+    <!-- ---------------------------------------------------------------------------------- --></div>
 </html>
