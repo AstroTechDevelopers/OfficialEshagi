@@ -2,22 +2,22 @@
     <div class="navbar-header">
         <div class="d-flex">
             <!-- LOGO -->
-            <div class="navbar-brand-box">
+            <div class="navbar-brand-box" style="margin-top: 10px">
                 <a href="{{url('/home')}}" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="{{url('images/logo_sm.png')}}" alt="" height="32">
+                                    <img src="{{url('eshago_logo.png')}}" alt="" height="32">
                                 </span>
                     <span class="logo-lg">
-                                    <img src="{{url('images/logo.png')}}" alt="" height="30">
+                                    <img src="{{url('eshago_logo.png')}}" alt="" height="30">
                                 </span>
                 </a>
 
                 <a href="{{url('/home')}}" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="{{url('images/logo_sm.png')}}" alt="" height="32">
+                                    <img src="{{url('eshago_logo.png')}}" alt="" height="32">
                                 </span>
                     <span class="logo-lg">
-                                    <img src="{{url('images/logo.png')}}" alt="" height="30">
+                                    <img src="{{url('eshago_logo.png')}}" alt="" height="30">
                                 </span>
                 </a>
             </div>
@@ -137,7 +137,7 @@
                         <li><a href="{{url('/loans/deleted')}}">Deleted Loans</a></li>
                     </ul>
                 </li>
-{{-- 
+{{--
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <div class="d-inline-block icons-sm mr-1"><i class="fas fa-money-bill-alt"></i></div>
@@ -3424,7 +3424,7 @@
                         <li><a href="{{url('representatives/create')}}">Add Representative</a></li>
                     </ul>
                 </li>
-                
+
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <div class="d-inline-block icons-sm mr-1"><i class="mdi mdi-account-multiple-outline"></i></div>
@@ -3717,7 +3717,7 @@
                         <li><a href="{{url('/partner-loans')}}">My Loans</a></li>
                     </ul>
                 </li>
-{{-- 
+{{--
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <div class="d-inline-block icons-sm mr-1"><i class="fas fa-money-bill-alt"></i></div>

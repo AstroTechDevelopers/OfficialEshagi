@@ -24,5 +24,11 @@ class Category extends Model
 
     protected $table = 'product_categories';
 
-    protected $hidden = ['user_id'];    
+    protected $hidden = ['user_id'];
+
+    protected function products()
+    {
+        return $this->hasMany(Product::class,'id', 'product_category_id');
+    }
+
 }

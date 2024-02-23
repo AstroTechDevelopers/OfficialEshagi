@@ -38,9 +38,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/faq', 'App\Http\Controllers\WelcomeController@faq')->name('faq');
-Route::get('/contact_us', 'App\Http\Controllers\WelcomeController@contactUs')->name('contact_us');
+Route::get('/shopping', 'App\Http\Controllers\ShopController@index')->name('contact_us');
 Route::get('/privacy_policy', 'App\Http\Controllers\WelcomeController@privacyPolicy')->name('privacy_policy');
 Route::get('/terms_and_conditions', 'App\Http\Controllers\WelcomeController@termsAndConditions')->name('terms_and_conditions');
+Route::get('/shop', 'App\Http\Controllers\ShopController@index')->name('shop');
+Route::get('/shopping/product/{id}', 'App\Http\Controllers\ShopController@productShow');
+Route::get('checkout', 'App\Http\Controllers\ShopController@checkout');
+Route::get('cart', 'App\Http\Controllers\ShopController@cart');
 
 Route::middleware('guest:web')->group(function () {
 Route::get('/quick-register', [ClientController::class, 'quickRegisterClient'])->name('quick.register')->middleware('activity');
@@ -924,12 +928,7 @@ Route::group(['middleware' => ['auth', 'activated','checkuserpass', 'activity', 
 });
 
 Route::group(['middleware' => ['activity', 'checkblocked']], function () {
-
     Route::get('/get-client-kyc/{natid}','App\Http\Controllers\KycController@getClientKyc')->name('view.clientkyc');
-
-    //Route::get('/payslips/*','KycController@getPayslip')->name('view.clientpayslip');
-
-    //Route::get('/pphotos/*','KycController@getPassportPhoto')->name('view.clientpphoto');
 });
 
 Route::group(['middleware' => ['auth', 'activated','activity',  'checkblocked']], function () {

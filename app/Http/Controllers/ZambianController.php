@@ -531,7 +531,6 @@ class ZambianController extends Controller
         ->select("id", "country", "province")
         ->orderBy("province", 'asc')
         ->get();
-
         $banks = DB::table('banks')
             ->where('locale_id','=',2)
             ->groupBy('bank')

@@ -61,7 +61,7 @@
     <header class="navbar-header clearfix">
         <nav class="navbar navbar-expand-lg fixed-top ">
             <div class="container">
-                <img class="navbar-brand" src="{{asset('images/logo_official.png')}}" alt="eShagi" width="200px" height="200px">
+                <img class="navbar-brand" src="{{asset('eshago_logo.png')}}" alt="eShagi" width="200px" height="200px">
 
                 <div style="right:0">
                     <a href="{{route('quick.register')}}" class="btn btn-blue">Register</a>
@@ -87,7 +87,9 @@
                                                 <label>Mobile Number</label>
                                                 <div class="input-group">
                                                    <select class="input-group-addon custom-select form-control col-lg-3 dynamic" name="countryCode" id="countryCode" readonly required>
-                                                      <option value="260">+260</option>
+                                                     @foreach(\App\Models\Localel::all() as $country)
+                                                         <option value="{{ $country->country_code }}">{{ $country->country_code }}</option>
+                                                     @endforeach
                                                    </select>
                                                    <input class="form-control col-lg-10 {{ $errors->has('mobile') ? ' is-invalid' : '' }}" type="text" name="mobile" id="mobile"  title="Mobile number must be the one proided at the time of registration"  value="{{ old('mobile') }}" required autofocus placeholder="EG. 775731858">
                                                    @if ($errors->has('mobile'))
@@ -95,7 +97,7 @@
                                                          <strong>{{ $errors->first('mobile') }}</strong>
                                                       </span>
                                                    @endif
-                                                </div>   
+                                                </div>
                                             </div>
                                             <div class="form-group" id="mypassword">
                                                 <label>Password</label>
@@ -107,7 +109,7 @@
                                                 @endif
                                             </div>
 
-                                            <input class="btn btn-success btn-send" id="loginbtn" type="submit" value="Login">
+                                            <input class="btn btn-blue btn-send" id="loginbtn" type="submit" value="Login">
                                             <br> <br><span id="notyet1">Not yet Registered? </span><a id="notyet2" href="{{route('quick.register')}}">Click Here</a>
 
                                             <br> <br><span id="notyet1">{{ __('auth.forgot') }} </span><a id="notyet2" href="{{ route('password.request') }}">Reset It Here</a>

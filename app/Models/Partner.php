@@ -15,6 +15,11 @@ class Partner extends Model
         return $this->hasMany(Product::class);
     }
 
+    protected function localel()
+    {
+       return $this->belongsTo(Localel::class, 'locale_id', 'id');
+    }
+
     use HasRoleAndPermission;
     use Notifiable;
     use SoftDeletes;

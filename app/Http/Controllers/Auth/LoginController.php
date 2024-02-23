@@ -23,7 +23,6 @@ class LoginController extends Controller
     | to conveniently provide its functionality to your applications.
     |
     */
-
     use AuthenticatesUsers;
 
     /**
@@ -52,8 +51,6 @@ class LoginController extends Controller
      */
     public function logout()
     {
-        // $user = Auth::user();
-        // Log::info('User Logged Out. ', [$user]);
         Auth::logout();
         Session::flush();
 
@@ -74,13 +71,12 @@ class LoginController extends Controller
         $request->merge([
             $login_type => $request->input('mobile')
         ]);
-        
+
         $mobileNumber = '0' . $request->input('mobile');
 
         // Check client registration validated or not. Do not allow to login if not validated
-        //$userActive = User::where('mobile',$request->input('mobile'))->where('status','1')->first();
         $userActive = User::where('mobile',$request->input('mobile'))->orWhere('mobile',$mobileNumber)->orWhere('mobile',ltrim($request->input('mobile'), '0'))->where('status','1')->first();
-        //echo "<pre>";print_r($userActive);echo "</pre>";die();
+
         if(empty($userActive)){
             return redirect()->back()
             ->withInput()
@@ -91,14 +87,12 @@ class LoginController extends Controller
             //if (Auth::attempt($request->only($login_type, 'password'))) {
             if(!empty($userActive) && !empty(Hash::check($request->password, $userActive->password))) {
                 Auth::login($userActive);
-                //return redirect()->intended($this->redirectPath());
             }
-
             return redirect()->back()
             ->withInput()
             ->withErrors([
                 'mobile' => 'These credentials(Mobile Number/Email or password) do not match our records.',
             ]);
-        }        
+        }
     }
 }

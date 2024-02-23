@@ -11,6 +11,11 @@ class Product extends Model
     {
         return $this->belongsTo(Partner::class);
     }
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class,'product_category_id', 'id');
+    }
     use SoftDeletes;
     /**
      * The database table used by the model.

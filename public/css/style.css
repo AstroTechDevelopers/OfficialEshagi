@@ -106,7 +106,7 @@ a {
 }
 
 a:hover {
-  color: #8CC641;
+  color: #4cb6c0;
   text-decoration: none;
 }
 
@@ -166,7 +166,7 @@ hr.hr {
 }
 
 .bg-color-1 {
-  background-color: #8CC641;
+  background-color: #4cb6c0;
 }
 
 /*-------margins padding--------*/
@@ -294,12 +294,12 @@ Buttons
 }
 
 .btn-blue{
-  background-color: #8CC641;
+  background-color: #4cb6c0;
   color:#fff!important;
 }
 
 .btn-none{
-  background-color: #;
+  background-color: #4cb6c0;
   color:#fff!important;
   border: 1px solid #fff;
 }
@@ -322,7 +322,7 @@ Buttons
 .btn-white {
   width: auto;
   background-color: #fff;
-  color: #8CC641;
+  color: #4cb6c0;
   border: 1px solid transparent;
 }
 .btn-white:hover,
@@ -332,7 +332,7 @@ Buttons
   color:#fff;
 }
 .btn-green{
- background-color: #8CC641;
+ background-color: #4cb6c0;
  color: #fff;
 }
 .btn-green:hover,.btn-green:focus{
@@ -372,25 +372,22 @@ Preloader page
  position: relative;
  animation: loader 1s ease infinite;
  top: 50%;
- margin: -46px auto 0; }
+ margin: -46px auto 0;
+}
 
  @keyframes loader{
   0%, 100% {
-    box-shadow: -13px 20px 0 #8CC641, 13px 20px 0 rgba(102,102, 255, 0.2), 13px 46px 0 rgba(102,102, 255,0.2), -13px 46px 0 rgba(102,102, 255,0.2); }
+    box-shadow: -13px 20px 0 #4cb6c0, 13px 20px 0 rgba(102,102, 255, 0.2), 13px 46px 0 rgba(102,102, 255,0.2), -13px 46px 0 rgba(102,102, 255,0.2); }
     25% {
-      box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 #8CC641, 13px 46px 0 rgba(0102,102, 255,0.2), -13px 46px 0 rgba(102,102, 255,0.2); }
+      box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 #4cb6c0, 13px 46px 0 rgba(0102,102, 255,0.2), -13px 46px 0 rgba(102,102, 255,0.2); }
       50% {
-        box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 rgba(102,102, 255,0.2), 13px 46px 0 #8CC641, -13px 46px 0 rgba(102,102, 255,0.2); }
+        box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 rgba(102,102, 255,0.2), 13px 46px 0 #4cb6c0, -13px 46px 0 rgba(102,102, 255,0.2); }
         75% {
-          box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 rgba(102,102, 255,0.2), 13px 46px 0 rgba(102,102, 255,0.2), -13px 46px 0 #8CC641; } }
-        
-
+          box-shadow: -13px 20px 0 rgba(102,102, 255,0.2), 13px 20px 0 rgba(102,102, 255,0.2), 13px 46px 0 rgba(102,102, 255,0.2), -13px 46px 0 #4cb6c0; } }
 
 /*----------------------------------------
 Navigation
 ----------------------------------------*/
-
-
 
 .navbar-header {
   z-index: 999;
@@ -432,7 +429,7 @@ Navigation
   height: 44px;
   width: 44px;
     text-decoration-color: #ffffff;
-  background-color: #8CC641;
+  background-color: #4cb6c0;
   border-radius: 50%;
   overflow: hidden;
   text-indent: 100%;
@@ -471,7 +468,7 @@ Navigation
  transform: translateX(-50%) translateY(-50%);
  width: 22px;
  height: 2px;
- background-color: #8CC641;
+ background-color: #4cb6c0;
 }
 .navigation-is-open .menu-nav-trigger .menu-nav-icon{
   left: 50%;
@@ -538,7 +535,6 @@ Navigation
   left: 0;
   fill: #fff;
 }
-
 .menu-nav-trigger svg {
   position: absolute;
   top: 0;
@@ -599,7 +595,7 @@ Navigation
   overflow: hidden;
   height: 100%;
   width: 100%;
-  background-color: #8CC641;
+  background-color: #4cb6c0;
   visibility: hidden;
   -webkit-transition: visibility 0s 0.7s;
   -moz-transition: visibility 0s 0.7s;
@@ -787,7 +783,7 @@ Hero
   left: -8px;
   position: relative;
   padding: 0 30px;
-  background-color: #8CC641;
+  background-color: #4cb6c0;
   color: #fff;
 }
 .quote-form button:hover,
@@ -834,8 +830,8 @@ Hero
   right: -180px;
 }
 .slider-image .slick-dots li button {
- background: #8CC641;
- color: #8CC641;
+ background: #4cb6c0;
+ color: #4cb6c0;
  height: 12px;
  width: 8px;
  border-radius: 50%;
@@ -927,7 +923,7 @@ About
 .icon-block img {
   width: 50px;
   margin-bottom: 25px;
-  height: auto,
+  height: auto;
 }
 .list-text img{
   width: 30px;
@@ -1194,7 +1190,7 @@ Pricing tables
 .table-price .nav-tabs .active{
   content: "";
   width: 100%;
-  background-color: #8CC641!important;
+  background-color: #4cb6c0!important;
    -webkit-transition: all 250ms ease-in-out;
   transition: all 250ms ease-in-out;
   border-radius: 50px;
@@ -1468,8 +1464,8 @@ Testimonials
 }
 
 .testimonial-slider .slick-dots button{
-  background: #8CC641;
-  color: #8CC641;
+  background: #4cb6c0;
+  color: #4cb6c0;
   height: 8px;
   padding: 0;
   display: inline-block;
@@ -1661,7 +1657,7 @@ footer p.sucess-message {
 
 }
 #scrollUp{
-  background: #8CC641;
+  background: #4cb6c0;
   border-radius:50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;

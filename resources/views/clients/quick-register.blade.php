@@ -37,7 +37,7 @@
     <link rel="icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
 
     <script src="{{asset('js/modernizr.js')}}"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <!--[if lt IE 9]>
     <script src="{{asset('js/html5shiv.min.js')}}"></script>
     <script src="{{asset('js/respond.min.js')}}"></script>
@@ -118,10 +118,10 @@
                                         <div class="form-group">
                                             <label>Country</label>
                                             <div class="input-group">
-                                                <select class="form-control" name="locale" id="locale" required>
+                                                <select class="form-control country" name="locale" id="locale" required>
                                                     <option value="{{ old('locale') }}">{{ old('locale') }}</option>
                                                     @if ($countries)
-                                                        @foreach($countries as $country)
+                                                        @foreach(\App\Models\Localel::all() as $country)
                                                             <option value="{{ $country->id }}">{{ $country->country }} </option>
                                                         @endforeach
                                                     @endif
@@ -132,13 +132,12 @@
                                                 </span>
                                                 @endif
                                             </div>
-
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label> National ID</label>
-                                            <input class="form-control  {{ $errors->has('natid') ? ' is-invalid' : '' }}" type="text" autocapitalize="characters" maxlength="15" name="natid" id="natid" value="{{ old('natid') }}" required="required" pattern="^[0-9]{2}-[0-9]{5,7}-[A-Z]-[0-9]{2}$|^\d{6}\/\d{2}\/\d{1}$" title="ID Format should be of supported format" placeholder="Enter your National ID...">
+                                            <input class="form-control  {{ $errors->has('natid') ? ' is-invalid' : '' }}" type="text" autocapitalize="characters" maxlength="15" name="natid" id="natid" value="{{ old('natid') }}" required="required" title="ID Format should be of supported format" placeholder="Enter your National ID...">
                                             @if ($errors->has('natid'))
                                                 <span class="invalid-feedback">
                                                     <strong>{{ $errors->first('natid') }}</strong>
@@ -153,7 +152,7 @@
                                             <label>Mobile Number (Without Country Code)</label>
                                             <div class="input-group">
                                                 <select class="input-group-addon custom-select form-control col-lg-2 dynamic" name="countryCode" id="countryCode" readonly required>
-                                                    <option value="260">+260</option>
+                                                        <option value=""></option>
                                                 </select>
                                                 {{--<input class="input-group-addon form-control col-lg-2" value="+263" id="countryCode" readonly>--}}
                                                 <input class="form-control {{ $errors->has('mobile') ? ' is-invalid' : '' }}" type="number" name="mobile" value="{{ old('mobile') }}" onkeyup="validateNumber()" maxlength="10" id="mobile" required="required" placeholder="EG. 775731858">
@@ -178,7 +177,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                                 <hr>
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -193,7 +191,6 @@
                                             <input class="form-control" type="password" name="password_confirmation" id="password_confirmation" required="required" placeholder="Repeat password">
                                         </div>
                                     </div>
-
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
@@ -222,7 +219,42 @@
             document.getElementById("mobile").value=myNumber.substring(0, myNumber.length - 1);
         }
     }
+</script>
+<script>
+    $(document).ready(function() {
+        const countries = <?php echo json_encode($countries); ?>;
+        const selectElement = $('.country');
+        selectElement.change(function() {
+            const selectedValue = $(this).val();
+            let selectedCountry = searchCountryById(selectedValue);
+            var selectElement = $('#countryCode');
+            selectElement.empty();
+            var optionElement = $('<option>');
+            optionElement.attr('value', selectedCountry.country_code);
+            optionElement.text(selectedCountry.country_code);
+            selectElement.append(optionElement);
 
+            if(selectedCountry.country_short == 'ZW')
+            {
+                $('#natid').attr('pattern', '^\\d{8}[A-Z]\\d{2}$');
+
+            }
+            else if(selectedCountry.country_short == 'ZM')
+            {
+                $('#natid').attr('pattern', '^[0-9]{2}-[0-9]{5,7}-[A-Z]-[0-9]{2}$|^\d{6}\/\d{2}\/\d{1}$');
+
+            }
+        });
+
+        function searchCountryById(id) {
+            for (let i = 0; i < countries.length; i++) {
+                if (countries[i].id == id) {
+                    return countries[i];
+                }
+            }
+            return null;
+        }
+    });
 </script>
 
 <script src="{{asset('js/jquery-3.3.1.min.js')}} "></script>

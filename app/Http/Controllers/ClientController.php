@@ -505,7 +505,7 @@ class ClientController extends Controller
                 'province'        => 'required',
                 'country'        => 'required',
                 'home_type'        => 'required',
-                'resduration'        => 'required|numeric',                
+                'resduration'        => 'required|numeric',
             ],
             [
                 'kin_title.required'           => 'Please select a title.',
@@ -527,10 +527,10 @@ class ClientController extends Controller
                 'province.required' => 'Which province are you in?',
                 'country.required' => 'State your country if?',
                 'home_type.required' => 'What is the state of your home?',
-                'resduration.required' => 'No. of months you have stayed at this residences?',                
+                'resduration.required' => 'No. of months you have stayed at this residences?',
             ]
         );
-        
+
         if ($validator->fails()) {
             //echo 533;die();
             return redirect('remaining-details')->withErrors($validator)->withInput();
@@ -542,7 +542,7 @@ class ClientController extends Controller
             return redirect('remaining-details')->withInput()->with('error', 'You cannot use your mobile number as a next of kin number. Please use another number');
         }
         //echo 542;die();
-		
+
 		$relationship='';
 		if($request['relationship']=='other'){
 			$relationship = $request['relationship1'];
@@ -572,7 +572,7 @@ class ClientController extends Controller
             'province'             => $request['province'],
             'country'             => $request['country'],
             'home_type'             => $request['home_type'],
-            'res_duration' => $request['resduration'],            
+            'res_duration' => $request['resduration'],
         ]);
         $kyc->save();
 
@@ -762,7 +762,7 @@ class ClientController extends Controller
 
                 $user->payslip_pic = $filename;
                 $user->payslip_stat = true;
-                
+
                 if($request->hasFile('payslip2') && $request->file('payslip2')->isValid()) {
                    $payslip2 = $request->file('payslip2');
                    if (auth()->user()->locale == '2'){
@@ -1081,7 +1081,7 @@ class ClientController extends Controller
         $banks = DB::table('banks')->get();
         $locale = Localel::find(auth()->user()->locale);
         */
-        
+
         if ($request->input('salary') > $request->input('gross')) {
             return redirect()->back()->with('error', 'Sorry, Net salary cannot be greater than gross salary')->withInput();
         }
@@ -1165,14 +1165,14 @@ class ClientController extends Controller
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();
         }
-        
+
         $ipAddress = new CaptureIpTrait();
         if($ipAddress == 'null'){
             $ipAddress = '0.0.0.0';
         }else {
             $ipAddress = $ipAddress->getClientIp();
         }
-        
+
         $newPass = str_random(8);
         $role = Role::where('slug', '=', 'client')->first();
         $activated = true;
@@ -1227,7 +1227,7 @@ class ClientController extends Controller
             ]);
 
             $limit->save();
-                
+
             $user = User::create([
                'name'              => $name,
                'first_name'        => $request['first_name'],
@@ -1251,7 +1251,7 @@ class ClientController extends Controller
            $profile = new Profile();
            $user->profile()->save($profile);
         }
-        
+
         return redirect('step-two-registering/'.$client->id);
         //return redirect('remaining-details');
         //return view('clients.register-for-clienttwo', compact('client', 'banks', 'locale'));
@@ -1350,7 +1350,7 @@ class ClientController extends Controller
         if ($client->mobile == $request['kin_number']) {
             return redirect('step-two-registering/'.$client->id)->withInput()->with($data);
         }
-        
+
         $relationship='';
 		if($request['relationship']=='other'){
 			$relationship = $request['relationship1'];
@@ -1391,7 +1391,7 @@ class ClientController extends Controller
             ]);
             $ssbInfo->save();
         }*/
-        
+
         $validator = Validator::make($request->all(),
             [
                 'natid'                  => 'required|max:15|unique:kycs',
@@ -1414,7 +1414,7 @@ class ClientController extends Controller
                 'province'        => 'required',
                 'country'        => 'required',
                 'home_type'        => 'required',
-                'resduration'        => 'required|numeric',                
+                'resduration'        => 'required|numeric',
             ],
             [
                 'natid.required'                => 'We need client National ID Number to proceed. Did you follow the correct steps?',
@@ -1438,10 +1438,10 @@ class ClientController extends Controller
                 'province.required' => 'Which province are you in?',
                 'country.required' => 'State your country if?',
                 'home_type.required' => 'What is the state of your home?',
-                'resduration.required' => 'No. of months you have stayed at this residences?',                
+                'resduration.required' => 'No. of months you have stayed at this residences?',
             ]
         );
-        
+
         $client = Client::where('natid',$request['natid'])->firstOrFail();
 
         if ($validator->fails()) {
@@ -1461,7 +1461,7 @@ class ClientController extends Controller
         if ($client->mobile == $request['kin_number']) {
             return redirect('remaining-details')->withInput()->with('error', 'You cannot use your mobile number as a next of kin number. Please use another number');
         }
-		
+
 		$relationship='';
 		if($request['relationship']=='other'){
 			$relationship = $request['relationship1'];
@@ -1491,7 +1491,7 @@ class ClientController extends Controller
             'province'             => $request['province'],
             'country'             => $request['country'],
             'home_type'             => $request['home_type'],
-            'res_duration' => $request['resduration'],            
+            'res_duration' => $request['resduration'],
         ]);
         $kyc->save();
 
@@ -1530,7 +1530,7 @@ class ClientController extends Controller
         );
         $yuser = Kyc::where('natid', $request->input('clientnationalid'))->first();
         $userModel = User::where('natid', $request->input('clientnationalid'))->first();
-        
+
         if ($validator->fails()) {
             if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                return redirect()->back()->withErrors($validator)->withInput();
@@ -1561,7 +1561,7 @@ class ClientController extends Controller
                     'yuser' => $yuser,
                     'error' => 'Invalid image supplied.'
                 ];
-                
+
                 if(auth()->user()->hasRole('loansofficer')){
                    return redirect()->back()->with('error', 'Invalid image supplied.');
                 }
@@ -1572,7 +1572,7 @@ class ClientController extends Controller
                 'yuser' => $yuser,
                 'error' => 'No file was detected here.'
             ];
-            
+
             if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                return redirect()->back()->with('error', 'Invalid image supplied.');
             }
@@ -1622,14 +1622,14 @@ class ClientController extends Controller
                 $yuser->national_pic_back = $filename;
                 $yuser->national_stat_back = true;
                 $yuser->updated_at = now();
-                
+
                 $yuser->save();
             } else {
                 $data = [
                     'yuser' => $yuser,
                     'error' => 'Invalid image supplied.'
                 ];
-                
+
                 if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                    return redirect()->back()->with('error', 'Invalid image supplied.');
                 }
@@ -1703,13 +1703,13 @@ class ClientController extends Controller
                    return redirect()->back()->with('error', 'Invalid image supplied.');
                 }
                 return redirect('register-client-kyc')->with($data);
-            } 
+            }
         } else {
             $data = [
                 'yuser' => $yuser,
                 'error' => 'No file was detected here.'
             ];
-            
+
             if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                return redirect()->back()->with('error', 'No file was detected here.');
             }
@@ -1719,7 +1719,7 @@ class ClientController extends Controller
         if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
            return redirect()->back()->with('success','Passport size photo of client uploaded successfully.');
         }
-        
+
         return view('clients.register-client-kyc', compact('yuser'));
     }
 
@@ -1745,7 +1745,7 @@ class ClientController extends Controller
                }
                return redirect('register-client-kyc/'.$yuser->id)->withErrors($validator);
             }
-            
+
             if ($request->file('payslip')->isValid()) {
                $payslip = $request->file('payslip');
                if ($userModel->locale == '2'){
@@ -1754,25 +1754,25 @@ class ClientController extends Controller
                   $filename = $request->input('clientnationalid') . '.' . $payslip->getClientOriginalExtension();
                }
                Storage::disk('public')->put('payslips/' . $filename, File::get($payslip));
-         
+
                $yuser->payslip_pic = $filename;
                $yuser->payslip_stat = true;
                $yuser->updated_at = now();
                $yuser->save();
-            } else {                
+            } else {
                $data = [
                     'yuser' => $yuser,
                     'error' => 'Invalid image supplied.'
                 ];
-                
+
                 if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                    return redirect()->back()->with('error','Invalid image supplied.');
                 }
-                
+
                 return redirect('register-client-kyc')->with($data);
             }
-         } 
-         
+         }
+
          if($request->hasFile('payslip2')){
             $validator = Validator::make($request->all(),
                [
@@ -1790,7 +1790,7 @@ class ClientController extends Controller
                }
                return redirect('register-client-kyc/'.$yuser->id)->withErrors($validator);
             }
-            
+
             if($request->file('payslip2')->isValid()) {
                $payslip2 = $request->file('payslip2');
                if ($userModel->locale == '2'){
@@ -1799,24 +1799,24 @@ class ClientController extends Controller
                   $filename2 = 'ps_2' . $request->input('clientnationalid') . '.' . $payslip2->getClientOriginalExtension();
                }
                Storage::disk('public')->put('payslips/' . $filename2, File::get($payslip2));
-         
+
                $yuser->payslip_pic_2 = $filename2;
                $yuser->payslip_stat_2 = true;
                $yuser->updated_at = now();
                $yuser->save();
-            } else {                
+            } else {
                $data = [
                     'yuser' => $yuser,
                     'error' => 'Invalid image supplied.'
                 ];
-                
+
                 if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                    return redirect()->back()->with('error','Invalid image supplied.');
                 }
                 return redirect('register-client-kyc')->with($data);
             }
-         } 
-         
+         }
+
          if($request->hasFile('payslip3')){
             $validator = Validator::make($request->all(),
                [
@@ -1834,7 +1834,7 @@ class ClientController extends Controller
                }
                return redirect('register-client-kyc/'.$yuser->id)->withErrors($validator);
             }
-            
+
             if($request->hasFile('payslip3') && $request->file('payslip3')->isValid()) {
                $payslip3 = $request->file('payslip3');
                if ($userModel->locale == '2'){
@@ -1843,24 +1843,24 @@ class ClientController extends Controller
                   $filename3 = 'ps_3' . $request->input('clientnationalid') . '.' . $payslip3->getClientOriginalExtension();
                }
                Storage::disk('public')->put('payslips/' . $filename3, File::get($payslip3));
-         
+
                $yuser->payslip_pic_3 = $filename3;
                $yuser->payslip_stat_3 = true;
                $yuser->updated_at = now();
                $yuser->save();
-             } else {                
+             } else {
                 $data = [
                     'yuser' => $yuser,
                     'error' => 'Invalid image supplied.'
                 ];
-                
+
                 if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                    return redirect()->back()->with('error','Invalid image supplied.');
                 }
                 return redirect('register-client-kyc')->with($data);
              }
-         } 
-         
+         }
+
          if($request->hasFile('payslip4')){
             $validator = Validator::make($request->all(),
                [
@@ -1878,7 +1878,7 @@ class ClientController extends Controller
                }
                return redirect('register-client-kyc/'.$yuser->id)->withErrors($validator);
             }
-            
+
             if($request->hasFile('payslip4') && $request->file('payslip4')->isValid()) {
                $payslip4 = $request->file('payslip4');
                if ($userModel->locale == '2'){
@@ -1887,34 +1887,34 @@ class ClientController extends Controller
                   $filename4 = 'ps_4' . $request->input('clientnationalid') . '.' . $payslip4->getClientOriginalExtension();
                }
                Storage::disk('public')->put('payslips/' . $filename4, File::get($payslip4));
-         
+
                $yuser->payslip_pic_4 = $filename4;
                $yuser->payslip_stat_4 = true;
                $yuser->updated_at = now();
                $yuser->save();
-            } else {                
+            } else {
                $data = [
                     'yuser' => $yuser,
                     'error' => 'Invalid image supplied.'
                 ];
-                
+
                 if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                    return redirect()->back()->with('error','Invalid image supplied.');
                 }
                 return redirect('register-client-kyc')->with($data);
             }
          }
-        
+
         if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
            return redirect()->back()->with('success','Salary slips of client uploaded successfully.');
-        } 
+        }
         return view('clients.register-client-kyc', compact('yuser'));
     }
-    
+
     function uploadClientEmpApproval(Request $request){
         $yuser = Kyc::where('natid', $request->input('clientnationalid'))->first();
         $userModel = User::where('natid', $request->input('clientnationalid'))->first();
-        
+
         $validator = Validator::make($request->all(),
             [
                 'emp_letter'  => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
@@ -1931,13 +1931,13 @@ class ClientController extends Controller
             }
             return redirect('register-client-kyc/'.$yuser->id)->withErrors($validator);
         }
-        
+
         if($request->hasFile('emp_letter')) {
 
             if ($request->file('emp_letter')->isValid()) {
 
                 $empLetter = $request->file('emp_letter');
-                
+
                 if ($userModel->locale == '2'){
                     $filename = str_replace("/","_",$request->input('clientnationalid')) . '.' . $empLetter->getClientOriginalExtension();
                 } else {
@@ -1955,7 +1955,7 @@ class ClientController extends Controller
                     'yuser' => $yuser,
                     'error' => 'Invalid image supplied.'
                 ];
-                
+
                 if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                    return redirect()->back()->with('error','Invalid image supplied.');
                 }
@@ -1967,7 +1967,7 @@ class ClientController extends Controller
                 'yuser' => $yuser,
                 'error' => 'No file was detected here.'
             ];
-            
+
             if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                return redirect()->back()->with('error','No file was detected here.');
             }
@@ -1979,11 +1979,11 @@ class ClientController extends Controller
         }
         return view('clients.register-client-kyc', compact('yuser'));
     }
-    
+
     function uploadClientSignature(Request $request){
         $yuser = Kyc::where('natid', $request->input('clientnationalid'))->first();
         $userModel = User::where('natid', $request->input('clientnationalid'))->first();
-        
+
         $validator = Validator::make($request->all(),
             [
                 'signature'  => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
@@ -1997,13 +1997,13 @@ class ClientController extends Controller
         if ($validator->fails()) {
                return redirect()->back()->withErrors($validator)->withInput();
         }
-        
+
         if($request->hasFile('signature')) {
 
             if ($request->file('signature')->isValid()) {
 
                 $signature = $request->file('signature');
-                
+
                 if ($userModel->locale == '2'){
                     $filename = str_replace("/","_",$request->input('clientnationalid')) . '.' . $signature->getClientOriginalExtension();
                 } else {
@@ -2021,7 +2021,7 @@ class ClientController extends Controller
                     'yuser' => $yuser,
                     'error' => 'Invalid image supplied.'
                 ];
-                
+
                 return redirect()->back()->with('error','Invalid image supplied.');
             }
 
@@ -2030,7 +2030,7 @@ class ClientController extends Controller
                 'yuser' => $yuser,
                 'error' => 'No file was detected here.'
             ];
-            
+
             return redirect()->back()->with('error','No file was detected here.');
         }
 
@@ -2084,7 +2084,7 @@ class ClientController extends Controller
                     'yuser' => $user,
                     'error' => 'Invalid image supplied.'
                 ];
-                
+
                 if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                    return redirect()->back()->with('error', 'Invalid image supplied.');
                 }
@@ -2095,13 +2095,13 @@ class ClientController extends Controller
                 'yuser' => $user,
                 'error' => 'No file was detected here.'
             ];
-            
+
             if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
                return redirect()->back()->with('error', 'No file was detected here.');
             }
             return redirect('register-client-kyc')->with($data);
         }
-        
+
         if(auth()->user()->hasRole('loansofficer') || auth()->user()->hasRole('agent')){
            return redirect()->back()->with('success', 'Proof of residence uploaded successfully.');
         }
@@ -2128,58 +2128,29 @@ class ClientController extends Controller
 
     public function postQuicklyRegister(Request $request) {
         $name = generateUsername($_POST['first_name'], $_POST['last_name']);
-        $locale = Localel::where('id',$request['locale'])->firstOrFail();
+        $locale = Localel::findOrFail($request['locale']);
 
+        $validations = $this->validateInput($locale);
+        $validation  = $validations[0];
+        $messages    = $validations[1];
         $validator = Validator::make(
             $request->all(),
-            [
-                'first_name'            => 'required',
-                'last_name'             => 'required',
-                'natid'                 => array(
-                    'required',
-                    'max:15',
-                    'regex:/^[0-9]{2}-[0-9]{5,7}-[A-Z]-[0-9]{2}$|\d{6}\/\d{2}\/\d{1}$/',
-                    'unique:users'
-                ),
-                'email'                 => 'required|email|max:255|unique:users',
-                'mobile'                 => 'required|max:10|unique:users',
-                'password'              => 'required|min:6|max:30|confirmed',
-                'password_confirmation' => 'required|same:password',
-            ],
-            [
-                'first_name.required'           => trans('auth.fNameRequired'),
-                'last_name.required'            => trans('auth.lNameRequired'),
-                'natid.required'                => 'We need your National ID Number to proceed.',
-                'natid.unique'                   => 'This ID Number is already registered with AstroCred.',
-                'natid.regex'                   => 'This ID Number has an invalid ID Format.',
-                'email.required'                => trans('auth.emailRequired'),
-                'email.email'                   => trans('auth.emailInvalid'),
-                'email.unique'                   => 'This email is already registered with AstroCred.',
-                'mobile.required'                   => 'We need a phone number to create your account.',
-                'mobile.unique'                   => 'This phone number is already registered with AstroCred.',
-                'password.required'             => trans('auth.passwordRequired'),
-                'password.min'                  => trans('auth.PasswordMin'),
-                'password.max'                  => trans('auth.PasswordMax'),
-            ]
+            $validation,
+            $messages
         );
 
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();
         }
 
-        $ipAddress = new CaptureIpTrait();
-        if($ipAddress == 'null'){
-            $ipAddress = '0.0.0.0';
-        }else {
-            $ipAddress = $ipAddress->getClientIp();
-        }
+        $ipAddress = $request->ip();
 
         $role = Role::where('slug', '=', 'client')->first();
         $activated = true;
 
         try {
-           DB::beginTransaction();
 
+           DB::beginTransaction();
            $user = User::create([
               'name'              => $name,
               'first_name'        => $request['first_name'],
@@ -2197,7 +2168,6 @@ class ClientController extends Controller
            ]);
 
            $user->attachRole($role);
-           //$this->initiateEmailActivation($user);
 
            $profile = new Profile();
            $user->profile()->save($profile);
@@ -2221,8 +2191,6 @@ class ClientController extends Controller
               'useremail' => $request['email'],
               'message' => 'Registration successful! OTP has been sent on your registered email address. Please verify your account to log in.',
            ];
-
-           //Auth::login($user);
            return view('clients.verify')->with($data);
         } catch(\Exception $exp) {
             DB::rollBack(); // Tell Laravel, "It's not you, it's me. Please don't persist to DB"
@@ -2231,6 +2199,74 @@ class ClientController extends Controller
                 'status' => 'failed'
             ], 400);
         }
+    }
+
+    private function validateInput(Localel $country) : array
+    {
+        $returnArray = array();
+        if($country->country_short == 'ZW') {
+            $returnArray[0] = [
+                'first_name' => 'required',
+                'last_name' => 'required',
+                'natid' => array(
+                    'required',
+                    'max:15',
+                    'regex:/^\d{8}[A-Z]\d{2}$/',
+                    'unique:users'
+                ),
+                'email' => 'required|email|max:255|unique:users',
+                'mobile' => 'required|max:10|unique:users',
+                'password' => 'required|min:6|max:30|confirmed',
+                'password_confirmation' => 'required|same:password',
+            ];
+            $returnArray[1] = [
+                'first_name.required' => trans('auth.fNameRequired'),
+                'last_name.required' => trans('auth.lNameRequired'),
+                'natid.required' => 'We need your National ID Number to proceed.',
+                'natid.unique' => 'This ID Number is already registered with AstroCred.',
+                'natid.regex' => 'This ID Number has an invalid ID Format.',
+                'email.required' => trans('auth.emailRequired'),
+                'email.email' => trans('auth.emailInvalid'),
+                'email.unique' => 'This email is already registered with AstroCred.',
+                'mobile.required' => 'We need a phone number to create your account.',
+                'mobile.unique' => 'This phone number is already registered with AstroCred.',
+                'password.required' => trans('auth.passwordRequired'),
+                'password.min' => trans('auth.PasswordMin'),
+                'password.max' => trans('auth.PasswordMax'),
+            ];
+        }else if($country->country_short == 'ZM')
+        {
+            $returnArray[0] = [
+                'first_name' => 'required',
+                'last_name' => 'required',
+                'natid' => array(
+                    'required',
+                    'max:15',
+                    'regex:/^[0-9]{2}-[0-9]{5,7}-[A-Z]-[0-9]{2}$|\d{6}\/\d{2}\/\d{1}$/',
+                    'unique:users'
+                ),
+                'email' => 'required|email|max:255|unique:users',
+                'mobile' => 'required|max:10|unique:users',
+                'password' => 'required|min:6|max:30|confirmed',
+                'password_confirmation' => 'required|same:password',
+            ];
+            $returnArray[1] = [
+                'first_name.required' => trans('auth.fNameRequired'),
+                'last_name.required' => trans('auth.lNameRequired'),
+                'natid.required' => 'We need your National ID Number to proceed.',
+                'natid.unique' => 'This ID Number is already registered with AstroCred.',
+                'natid.regex' => 'This ID Number has an invalid ID Format.',
+                'email.required' => trans('auth.emailRequired'),
+                'email.email' => trans('auth.emailInvalid'),
+                'email.unique' => 'This email is already registered with AstroCred.',
+                'mobile.required' => 'We need a phone number to create your account.',
+                'mobile.unique' => 'This phone number is already registered with AstroCred.',
+                'password.required' => trans('auth.passwordRequired'),
+                'password.min' => trans('auth.PasswordMin'),
+                'password.max' => trans('auth.PasswordMax'),
+            ];
+        }
+        return $returnArray;
     }
 
     public function contQuicklyRegister() {
@@ -2373,7 +2409,7 @@ class ClientController extends Controller
 
                 $limit->save();
             }
-            
+
             //return redirect('home');
             return redirect('remaining-details');
     }
@@ -2432,7 +2468,7 @@ class ClientController extends Controller
             'useremail' => $user->email,
             'message' => 'Registration successful! OTP was sent on your registered email address. Please submit OTP to verify your account to log in.',
          ];
- 
+
          //Auth::login($user);
          return view('clients.verify')->with($data);
     }
@@ -2453,7 +2489,7 @@ class ClientController extends Controller
                 'useremail' => $request->useremail,
                 'message' => 'Invalid OTP. Please submit valid OTP to activate your account.',
              ];
-     
+
              //Auth::login($user);
              return view('clients.verify')->with($data);
         }
@@ -2470,9 +2506,9 @@ class ClientController extends Controller
            ->whereNull('clients.natid')
             ->get();
             //echo "<pre>";print_r($users); echo "</pre>";die();
-        //select('SELECT * FROM `users` u LEFT JOIN clients c ON (u.natid=c.natid) WHERE c.natid IS NULL');        
+        //select('SELECT * FROM `users` u LEFT JOIN clients c ON (u.natid=c.natid) WHERE c.natid IS NULL');
 
-        //$users = DB::select('SELECT * FROM `users` u LEFT JOIN clients c ON (u.natid=c.natid) WHERE c.natid IS NULL');    
+        //$users = DB::select('SELECT * FROM `users` u LEFT JOIN clients c ON (u.natid=c.natid) WHERE c.natid IS NULL');
         return view('clients.quickly-registered-users')->with('users', $users);
     }
 }

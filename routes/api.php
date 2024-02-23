@@ -31,6 +31,8 @@ Route::group(['middleware' => ['cors']], function () {
     Route::post('/calculate-loan', [LoanApiController::class, 'loanCalculator'])->name('loanmarii');
     Route::get('/checking-user/{mobile}', [ApiAuthController::class, 'whoAmI'])->name('ndonzani');
     Route::post('/check-natid', [ClientApiController::class, 'checkNatID'])->name('idbhohere');
+    Route::post('/get_products', 'App\Http\Controllers\ShopController@getProducts');
+
 
 });
 

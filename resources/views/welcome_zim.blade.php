@@ -200,7 +200,7 @@
     <link data-chunk="sections-SectionBackgroundColor" rel="preload" as="script" href="59d922eadb83546d23896818e7a29397ae4b4f10-833286d1035a04d31463.js" integrity="sha512-QxZk4H3NaBkck2CvWdQoU5ZqVD6JiKAhH5VKVsDlK42eWDfxO3sXJzYpMYkvwQGlYv4YO8+R+/iyJ8cLR7wLUg=="/>
     <link data-chunk="sections-Categories" rel="preload" as="script" href="sections-Categories-b1a34e769adbb09b0edd.js" integrity="sha512-C8EyaKtDlsZcS/E7m6zpnSCpPyaRsDoNZbn+U0Vm+QT9m1EWu09qE3MjVGyekyWlsVcbFqoXMOHcjqqxpbkNEw=="/>
     <link data-chunk="sections-Reviews" rel="preload" as="script" href="sections-Reviews-362fb9c832c958312019.js" integrity="sha512-pOC6Xr3sJyl5Or17g4NgpQgViKQ/czYVEJpXu+EDAVwDLVpv8UYBbnbrvfoFhfYetW8G/LC0hpsSALlKrW3vDw=="/>
-
+    @include('shop.inc.headers')
 </head>
 <body>
 <div id="___gatsb">
@@ -217,105 +217,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="Header-header--5qK1l">
-                    <a href="#maincontent" class="Header-skipLink--2hrII">Skip to main content</a>
-                    <div class="Header-wideBreakpoint--ZKKub">
-
-                            {{-- <nav class="Header-mainNav--4dBEy" aria-label="Main">
-                                <ul>
-                                    <li class="Header-subNav--JYaGg"><a href="how-it-works/why-affirm.html" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN"><span class="Header-linkText--xgKfN">What is Eshagi</span></a></li>
-                                    <li class="Header-subNav--JYaGg"><a href="how-it-works.html" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN"><span class="Header-linkText--xgKfN">How to use</span></a></li>
-                                    <li class="Header-subNav--JYaGg nav-item">
-                                        <a type="button" class="Header-subNavTitle--6T0fN Header-link--49ctG Header-linkText--xgKfN" href="#" id="shop">
-                                           Shop
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div class="Header-buttonContainer--7hruo">
-                                    <a href="user/signin.html" style="background-color: #4cb6c0" class="ButtonPrimary-buttonPrimary--1qZwZ">
-                                        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path clip-rule="evenodd" d="M8.999 1.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm-4 2.5a4 4 0 1 1 8 0 4 4 0 0 1-8 0ZM9 10.5c-4.294 0-7.5 2.807-7.5 5.963 0 .27.181.555.519.7 1.968.848 4.268 1.337 6.731 1.337 2.8 0 5.387-.632 7.517-1.703.161-.08.233-.219.233-.334 0-3.156-3.206-5.963-7.5-5.963Zm-9 5.963C0 12.205 4.181 9 9 9s9 3.205 9 7.463c0 .746-.452 1.37-1.06 1.675C14.591 19.318 11.772 20 8.75 20c-2.66 0-5.162-.528-7.324-1.459C.63 18.199 0 17.427 0 16.463Z"></path>
-                                        </svg>
-                                        <span>Log in</span>
-                                    </a>
-                                    <a href="https://www.affirm.com/user/signup" class="ButtonPrimary-buttonPrimary--1qZwZ ButtonPrimary-buttonTertiary--1WjyY"><span>Sign up</span></a><a href="https://www.affirm.com/help/" class="Header-linkHelp--3N03b">Help</a>
-                                </div>
-                            </nav> --}}
-
-
-
-
-
-{{--                                <nav class="Header-mobileMenu--1y0x8 Header-mobileMenuOpen--4ozmz" id="mobileMenu">--}}
-{{--                                    <div class="Header-mobileMenu-Container--6vKHd">--}}
-{{--                                        <button class="Header-crossButton--12GY0" type="button" aria-label="Close site navigation menu" tabindex="0">--}}
-{{--                                            <svg viewBox="0 0 27 26" xmlns="http://www.w3.org/2000/svg" class="Header-cross--6wfgm">--}}
-{{--                                                <g fill="none" stroke="var(--color-greyscale-black-100)" stroke-linecap="square" stroke-width="2">--}}
-{{--                                                    <path d="m2 2 23 22M25 2 2 24"></path>--}}
-{{--                                                </g>--}}
-{{--                                            </svg>--}}
-{{--                                        </button>--}}
-{{--                                        <nav class="Header-mobileTopNav--7vEFT">--}}
-{{--                                            <ul>--}}
-{{--                                                <li class="Header-topNav-item--2ixeW">--}}
-{{--                                                    <a href="/" class="Header-topNav-itemLink--37M0c Header-topNav-itemSelected--1GqcZ">For shoppers</a>--}}
-{{--                                                </li>--}}
-{{--                                                <li class="Header-topNav-item--2ixeW">--}}
-{{--                                                    <a href="/business" class="Header-topNav-itemLink--37M0c">For businesses</a>--}}
-{{--                                                </li>--}}
-{{--                                            </ul>--}}
-{{--                                        </nav>--}}
-{{--                                        <div class="Header-mobileLinks--1jbJu" aria-label="Site navigation" role="menu">--}}
-{{--                                            <a href="/how-it-works/why-affirm" class="MobileLink-mobileLink--1FbDd" role="menuitem">What is Eshagi</a>--}}
-{{--                                            <a href="/how-it-works" class="MobileLink-mobileLink--1FbDd" role="menuitem">How to use</a>--}}
-{{--                                            <a href="/how-it-works/why-affirm" class="MobileLink-mobileLink--1FbDd" role="menuitem">Shop</a>--}}
-{{--                                        </div>--}}
-{{--                                    </div>--}}
-{{--                                    <div class="Header-buttonContainer--7hruo"><a href="/user/signin" class="ButtonPrimary-buttonPrimary--1qZwZ">--}}
-{{--                                            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">--}}
-{{--                                                <path clip-rule="evenodd" d="M8.999 1.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Zm-4 2.5a4 4 0 1 1 8 0 4 4 0 0 1-8 0ZM9 10.5c-4.294 0-7.5 2.807-7.5 5.963 0 .27.181.555.519.7 1.968.848 4.268 1.337 6.731 1.337 2.8 0 5.387-.632 7.517-1.703.161-.08.233-.219.233-.334 0-3.156-3.206-5.963-7.5-5.963Zm-9 5.963C0 12.205 4.181 9 9 9s9 3.205 9 7.463c0 .746-.452 1.37-1.06 1.675C14.591 19.318 11.772 20 8.75 20c-2.66 0-5.162-.528-7.324-1.459C.63 18.199 0 17.427 0 16.463Z">--}}
-
-{{--                                                </path>--}}
-{{--                                            </svg>--}}
-{{--                                            <span>Log in</span>--}}
-{{--                                        </a>--}}
-{{--                                        <a href="/user/signup" class="ButtonPrimary-buttonPrimary--1qZwZ ButtonPrimary-buttonTertiary--1WjyY">--}}
-{{--                                            <span>Sign up</span>--}}
-{{--                                        </a>--}}
-{{--                                        <a href="/help/" class="Header-linkHelp--3N03b">Help</a>--}}
-{{--                                    </div>--}}
-{{--                                </nav>--}}
-
-
-                        <div class="nav">
-                            <div class="nav-header">
-                                <!-- Add the image tag with the image source and any necessary attributes -->
-
-                                <div class="logo-e">
-                                    <img src="eshago_logo.png" style="margin-left: -185px; margin-top: 15px" alt="Eshagi Logo" class="Header-logo--7o3IK">
-                                </div>
-
-                              </div>
-                            <input type="checkbox" id="nav-check">
-
-                            <div class="nav-btn">
-                              <label for="nav-check">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                              </label>
-                            </div>
-                            <div class="nav-links" style="color: black;">
-                              <ul>
-                                <li><a href="#" target="_blank">What is Eshagi</a></li>
-                                <li><a href="#" target="_blank">How to use</a></li>
-                                <li><a href="#" target="_blank">Shop</a></li>
-                                <li><a href="#" target="_blank">Eshagi Card</a></li>
-                              </ul>
-                            </div>
-                          </div>
-                    </div>
-                </div>
+                @include('shop.inc.nav')
             </header>
             <div>
                 <main class="Layout-transition--32GY7" id="maincontent" role="main">
@@ -992,136 +894,163 @@
                             </div>
                         </div>
                     </section>
-                    <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopNone--1Hwd4 styles-spacingBottomNone--2ubZt">
-                        <div class="styled__SectionBgColor-sc-1y2kxlw-0 eNnUnX">
-                            <div class="styled__ContentTwoColumnRoot-sc-2253dy-0 csBuiC">
-                                <div class="Container-container--DIXxP styled__ContentContainer-sc-2253dy-1 iGhDxH">
-                                    <div class="styled__ColumnImage-sc-2253dy-3 knca-dc">
-                                        <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper styled__MainImage-sc-2253dy-7 fxiurY">
-                                            <div aria-hidden="true" style="padding-top:80.61224489795919%"></div>
-                                            <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
-                                            <picture>
-                                                <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=750&amp;h=605&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=980&amp;h=790&amp;q=50&amp;fm=avif 980w" sizes="100vw"/>
-                                                <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=750&amp;h=605&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=980&amp;h=790&amp;q=50&amp;fm=webp 980w" sizes="100vw"/>
-                                                <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=980&amp;h=790&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=750&amp;h=605&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=980&amp;h=790&amp;q=50&amp;fm=png 980w" alt="iPhone 15 Pro Portrait"/>
-                                            </picture>
-                                            <noscript>
-                                                <picture>
-                                                    <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=750&amp;h=605&amp;q=50&amp;fm=avif 750w,https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=980&amp;h=790&amp;q=50&amp;fm=avif 980w" sizes="100vw"/>
-                                                    <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=750&amp;h=605&amp;q=50&amp;fm=webp 750w,https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=980&amp;h=790&amp;q=50&amp;fm=webp 980w" sizes="100vw"/>
-                                                    <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=980&amp;h=790&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=750&amp;h=605&amp;q=50&amp;fm=png 750w,https://images.ctfassets.net/4rc1asww3mw7/59nSngTSb0QkkOjdLLeRoW/76b881e57c441666026678d439a90ede/iphone_15_portrait_app_980.png?w=980&amp;h=790&amp;q=50&amp;fm=png 980w" alt="iPhone 15 Pro Portrait"/>
-                                                </picture>
-                                            </noscript>
-                                            <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
-                                        </div>
-                                    </div>
-                                    <div class="styled__ColumnText-sc-2253dy-2 crMWkU">
-                                        <img src="https://images.ctfassets.net/4rc1asww3mw7/2E0iAbha2vTS6nS1xWUkPO/f5d757fec624b10831fec50fff59e3e7/www_homepage_app_download_module__Dec_2023__QR-code.jpeg" alt="" class="styled__QrImage-sc-2253dy-6 COMsy" loading="lazy"/><img src="https://images.ctfassets.net/4rc1asww3mw7/chHKx1VcFf2teXXy8AB0r/9d340622ea5b89f7f5613e807adc7b2c/App-review-rating.svg" alt="iPhone 15 Pro Portrait" class="" loading="lazy"/>
-                                        <div>
-                                            <div class="RichText-richText--1L77z">
-                                                <div>
-                                                    <h3 class="imports-h3--3yLlm imports-h4--1GRDI">1.4M+ App Store reviews</h3>
-                                                    <p>
-                                                        Check your purchasing power, get exclusive deals like as low as 0% APR, and make payments from the palm of your hand with the Eshagi app.
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <a href="https://affirm.app.link/CQtZiGDSCDb" rel="noopener" target="_blank" class="styled__StyledButtonPrimary-sc-2253dy-5 gQmpLg ButtonPrimary-buttonPrimary--1qZwZ ButtonPrimary-buttonInverted--6RDH2"><span>Download the Eshagi app</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <article class="styled__ReviewsRoot-sc-11yqsob-0 fejWSp">
-                                <div class="Container-container--DIXxP">
-                                    <img src="https://images.ctfassets.net/4rc1asww3mw7/5BPVtFy9SZCmGeLDHbwZRC/a8db1a7464378e4a93029927eddd4ba4/customer_approval.svg" alt="" class="styled__StyledImage-sc-11yqsob-2 bKFzON" loading="lazy"/>
-                                    <h2 class="styled__Heading-sc-11yqsob-1 iQEGIw">Reviews from shoppers just like you</h2>
-                                    <div class="styled__Testimonials-sc-11yqsob-3 hVcmWL">
-                                        <div class="styled__Testimonial-sc-11yqsob-4 fvsreG">
-                                            <div class="RichText-richText--1L77z">
-                                                <div>
-                                                    <p>“I’ve been with Eshagi forever. It’s a great way of getting what you want and the payment plan is affordable...Thank you, Eshagi!”</p>
-                                                </div>
-                                            </div>
-                                            <h3 class="styled__HeadingTestimonial-sc-11yqsob-5 bnmTUf">Pamela D.</h3>
-                                        </div>
-                                        <div class="styled__Testimonial-sc-11yqsob-4 fvsreG">
-                                            <div class="RichText-richText--1L77z">
-                                                <div>
-                                                    <p>“Easy process, clear terms, incredible convenience.”</p>
-                                                </div>
-                                            </div>
-                                            <h3 class="styled__HeadingTestimonial-sc-11yqsob-5 bnmTUf">Clint M.</h3>
-                                        </div>
-                                        <div class="styled__Testimonial-sc-11yqsob-4 fvsreG">
-                                            <div class="RichText-richText--1L77z">
-                                                <div>
-                                                    <p>&quot;Eshagi is very flexible and amazing to use. The payment plans are simple and they make the user experience very friendly and understandable.”</p>
-                                                </div>
-                                            </div>
-                                            <h3 class="styled__HeadingTestimonial-sc-11yqsob-5 bnmTUf">Isaiah P.</h3>
-                                        </div>
-                                        <div class="styled__Testimonial-sc-11yqsob-4 fvsreG">
-                                            <div class="RichText-richText--1L77z">
-                                                <div>
-                                                    <p>“A great way to get big ticket items if you don’t have the cash all at once.”</p>
-                                                </div>
-                                            </div>
-                                            <h3 class="styled__HeadingTestimonial-sc-11yqsob-5 bnmTUf">Joseph B.</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </section>
-                    <div id="footer" class="Container-container--DIXxP Footer-footer--2bjb2" data-testid="footer">
-                        <div class="Footer-row--1W9vm">
-                            <div class="Footer-meta--3m3Jp">
-                                <div class="Footer-socials--1lsVJ"><a href="https://www.instagram.com/affirm/" rel="noopener" target="_blank" class="Footer-socialLink--34hee"><img src="https://images.ctfassets.net/4rc1asww3mw7/4YuArUqs5g1ch4iDauDJdF/fb4f13fdff7eade828e27b490fd7b460/instagram-icon-01.svg?fl=progressive&amp;w=26" alt="Instagram" class="Footer-socialIcon--3TjSK" loading="lazy" width="26" height="26"/><img src="https://images.ctfassets.net/4rc1asww3mw7/4YuArUqs5g1ch4iDauDJdF/fb4f13fdff7eade828e27b490fd7b460/instagram-icon-01.svg?fl=progressive&amp;w=26" alt="Instagram" class="Footer-socialIcon--3TjSK Footer-socialIconHighlighted--PqS09" loading="lazy" width="26" height="26"/></a><a href="https://www.linkedin.com/company/affirm" rel="noopener" target="_blank" class="Footer-socialLink--34hee"><img src="https://images.ctfassets.net/4rc1asww3mw7/2Ozu6gQ4SWdTqS2N8NYSPJ/9cd411cdfbf157abc8fe4166561b19b5/linkedIn-icon-01.svg?fl=progressive&amp;w=26" alt="Linkedin" class="Footer-socialIcon--3TjSK" loading="lazy" width="26" height="26"/><img src="https://images.ctfassets.net/4rc1asww3mw7/2Ozu6gQ4SWdTqS2N8NYSPJ/9cd411cdfbf157abc8fe4166561b19b5/linkedIn-icon-01.svg?fl=progressive&amp;w=26" alt="Linkedin" class="Footer-socialIcon--3TjSK Footer-socialIconHighlighted--PqS09" loading="lazy" width="26" height="26"/></a><a href="https://twitter.com/Affirm" rel="noopener" target="_blank" class="Footer-socialLink--34hee"><img src="https://images.ctfassets.net/4rc1asww3mw7/6laFJFmyGRxSgEpbStQyQc/a02416546f218890706ee07aa35deffa/twitter-icon-01.svg?fl=progressive&amp;w=26" alt="Twitter" class="Footer-socialIcon--3TjSK" loading="lazy" width="26" height="26"/><img src="https://images.ctfassets.net/4rc1asww3mw7/6laFJFmyGRxSgEpbStQyQc/a02416546f218890706ee07aa35deffa/twitter-icon-01.svg?fl=progressive&amp;w=26" alt="Twitter" class="Footer-socialIcon--3TjSK Footer-socialIconHighlighted--PqS09" loading="lazy" width="26" height="26"/></a><a href="https://www.pinterest.com/Affirm/" rel="noopener" target="_blank" class="Footer-socialLink--34hee"><img src="https://images.ctfassets.net/4rc1asww3mw7/2Z7xRtBZ47jCbVvxaUgdU4/821adbf9ff3bbc51aaaf731382add8ea/pinterest-01.svg?fl=progressive&amp;w=26" alt="Pinterest" class="Footer-socialIcon--3TjSK" loading="lazy" width="26" height="26"/><img src="https://images.ctfassets.net/4rc1asww3mw7/2Z7xRtBZ47jCbVvxaUgdU4/821adbf9ff3bbc51aaaf731382add8ea/pinterest-01.svg?fl=progressive&amp;w=26" alt="Pinterest" class="Footer-socialIcon--3TjSK Footer-socialIconHighlighted--PqS09" loading="lazy" width="26" height="26"/></a><a href="https://www.facebook.com/AffirmInc/" rel="noopener" target="_blank" class="Footer-socialLink--34hee"><img src="https://images.ctfassets.net/4rc1asww3mw7/49T7I7HzGVeZSdWRzrcqau/fcad2fe4ec9accb248aa474870b4b590/facebook-01.svg?fl=progressive&amp;w=26" alt="Facebook" class="Footer-socialIcon--3TjSK" loading="lazy" width="26" height="26"/><img src="https://images.ctfassets.net/4rc1asww3mw7/49T7I7HzGVeZSdWRzrcqau/fcad2fe4ec9accb248aa474870b4b590/facebook-01.svg?fl=progressive&amp;w=26" alt="Facebook" class="Footer-socialIcon--3TjSK Footer-socialIconHighlighted--PqS09" loading="lazy" width="26" height="26"/></a></div>
-                                <div class="LanguageSwitcher-wrapper--23xu2">
-                                    </div>
-                                    <div class="LanguageSwitcher-popup--7sy2y LanguageSwitcher-isFooter--17m2K">
-                                        <a class="LanguageSwitcher-link--5BevK imports-bodySmall--1bfJ1" href="index.html">
-                                            <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained LanguageSwitcher-flag--5hahK">
-                                                <div style="max-width:24px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;24&#x27; width=&#x27;24&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
-                                                <img aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear" decoding="async" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAACDVBMVEUAAAAMDIgZGaEBAZsKCqElAob1AAD0AADxAADtAADjAAAAAJ8EBJcMDJz2hoby39////8rK5wcHJ8HB5z46+vjz8/ie3sAAGABAYjsCAjvAAABAYwoKKP0aWnpl5ccHItjY7fu4ODNqKh/f77iEhIJCYfmUVFPT6bs7OwEBIDhNTU8OpTfOzvp6enn5+faSEjYR0fSEhPRFxfBpKTh1tbk2dnQtbXWiIjcXV3aXFzWhobXAADMBwfABQWPAADIcHDRwMDi19fj2NjbycnHZWWamprYx8fVdnbSdnbVwMDn5+e2AADAAADCAADEAADFAADGAADEAADBAACrAABRUbsDA55LS7o0IJ36dXVoaMMICJ1cXL8XF6MmJKf67e0mJqY8PK8ODpxVVbkGBplPT7c1Foz0Hx9ERLADA5RoaL8BAZNYWLgODpkjD4z0Z2cSEpcqKqJAQKsODpVeXrgHB5JWVrU3NqX26uobG5cjI5tCQqoCAoxhYbgEBI1TU7EPD5MiBn7tKirsKSlTU68UFJIsLJ07O6QSEpBXV7EKCoxSUq4yGoftSkoXF48iIpU5OaABAYVXV69PT6sMDIojI5Ty8vJaWq0XF4wvL5hCQqIREYldXa8HB4RXV6wzG4DnODhAPplZPovlPj7u7u7hQkLcKyvdLCzdKyvp39/o39/cW1vVHR3k2dnWZ2fXZ2eiVu8QAAAAVHRSTlMAFl2x3v394bJdFwNa3t5aAwuY+vufCwSfmANb+/paF97eFV1dsrHh3/39/f3e4bGyXV0W3t4XWvr7WwOYoAQLnfv6mAsEW97eWgMXXbLh/d6xXRVBIOGMAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH6AIFChAkAIvjSwAAAKVJREFUGNNt0C1ugkEURuFzLlfwo1BIBItAogqioqpbwOBYCDgMDkmCavKp6i4FgULVUvEB6Ux45ZNzR4wA+NwvgMBAF6pAo1cQhjr3jjR6QUZtdkf48pyk3QJTHPthgRx18mmFHjIGNRIZfdVblNh7WT6e+o8d6kWGL7FWI2Ib5TqblKnrItz6k2R1nyLMdPWknX4j8KbLtr7ttWl/Ht5VUT0B/AFSVxRG4uN2OwAAAABJRU5ErkJggg==" alt=""/>
-                                                <picture>
-                                                    <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=avif 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=avif 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=avif 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=avif 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                    <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=webp 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=webp 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=webp 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=webp 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                    <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 24px) 24px, 100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=png 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=png 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=png 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=png 48w" alt="The American flag"/>
-                                                </picture>
-                                                <noscript>
-                                                    <picture>
-                                                        <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=avif 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=avif 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=avif 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=avif 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                        <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=webp 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=webp 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=webp 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=webp 48w" sizes="(min-width: 24px) 24px, 100vw"/>
-                                                        <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 24px) 24px, 100vw" decoding="async" loading="lazy" src="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=png" srcSet="https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=6&amp;h=6&amp;q=50&amp;fm=png 6w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=12&amp;h=12&amp;q=50&amp;fm=png 12w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=24&amp;h=24&amp;q=50&amp;fm=png 24w,https://images.ctfassets.net/4rc1asww3mw7/5BkSbOYcnHWds4kzGrfLdC/528d46ec5e7715a69c9c7079740f4774/USA.png?w=48&amp;h=48&amp;q=50&amp;fm=png 48w" alt="The American flag"/>
-                                                    </picture>
-                                                </noscript>
-                                                <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
-                                            </div>
-                                            Zimbabwe
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <nav class="Footer-nav--4uF7T" aria-label="Footer">
-                                <div class="Footer-navColumn--2aJRL" role="menu" aria-label="For shoppers"><span role="presentation" class="Footer-navColumnTitle--OOh0B imports-tag--7t9J0">For shoppers</span><a href="/" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">How it works</a><a href="card.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Eshagi Card™</a><a href="savings.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Savings</a><a href="https://www.affirm.com/help/" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Help</a></div>
-                                <div class="Footer-navColumn--2aJRL" role="menu" aria-label="For businesses"><span role="presentation" class="Footer-navColumnTitle--OOh0B imports-tag--7t9J0">For businesses</span><a href="/business" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Get started</a><a href="business/solutions.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Solutions</a><a href="business/partners/directory/index.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Partner directory</a><a href="docs.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">For developers</a><a href="https://businesshub.affirm.com/" rel="noopener" target="_blank" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Business support </a></div>
-                                <div class="Footer-navColumn--2aJRL" role="menu" aria-label="About Affirm"><span role="presentation" class="Footer-navColumnTitle--OOh0B imports-tag--7t9J0">About Eshagi</span><a href="about.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">About us</a><a href="careers.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Careers</a><a href="https://investors.affirm.com/" rel="noopener" target="_blank" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Investors</a><a href="https://investors.affirm.com/news-events/all-news" rel="noopener" target="_blank" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Press</a><a href="security.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Security</a><a href="cares.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Eshagi Cares</a><a href="diversity-inclusion.html" class="Footer-navColumnItem--5wIQF imports-body--I9Byh" role="menuitem">Diversity &amp; inclusion</a></div>
-                            </nav>
-                        </div>
-                        <div class="Footer-footnotes--5u07r imports-caption--3UuTe">
-                            <div class="Footer-legalWrap--4zFB6" role="menu">
-                                <div><a href="privacy.html" class="Footer-legalLink--2KS6l" role="menuitem">Privacy</a><a href="https://helpcenter.affirm.com/s/article/privacy-request-ccpa" rel="noopener" target="_blank" class="Footer-legalLink--2KS6l" role="menuitem">Your California privacy choices</a><a href="terms.html" class="Footer-legalLink--2KS6l" role="menuitem">Terms</a><a href="licenses.html" class="Footer-legalLink--2KS6l" role="menuitem">Licenses</a></div>
-                                <div class="Footer-copyright--3EMm1">© Eshagi, Inc. All Rights Reserved.</div>
-                            </div>
-                        </div>
-                    </div>
                 </main>
             </div>
         </div>
     </div>
-    <div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div>
 </div>
+<section class="feature-area mainfeature__bg grey-bg pt-50 pb-40" data-background="shop/assets/img/shape/footer-shape-1.svg">
+    <div class="container">
+        <div class="mainfeature__border pb-15">
+            <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2">
+                <div class="col">
+                    <div class="mainfeature__item text-center mb-30">
+                        <div class="mainfeature__icon">
+                            <img src="shop/assets/img/icon/feature-icon-1.svg" alt="">
+                        </div>
+                        <div class="mainfeature__content">
+                            <h4 class="mainfeature__title">Fast Delivery</h4>
+                            <p>Across West & East India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mainfeature__item text-center mb-30">
+                        <div class="mainfeature__icon">
+                            <img src="shop/assets/img/icon/feature-icon-2.svg" alt="">
+                        </div>
+                        <div class="mainfeature__content">
+                            <h4 class="mainfeature__title">safe payment</h4>
+                            <p>100% Secure Payment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mainfeature__item text-center mb-30">
+                        <div class="mainfeature__icon">
+                            <img src="shop/assets/img/icon/feature-icon-3.svg" alt="">
+                        </div>
+                        <div class="mainfeature__content">
+                            <h4 class="mainfeature__title">Online Discount</h4>
+                            <p>Add Multi-buy Discount </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mainfeature__item text-center mb-30">
+                        <div class="mainfeature__icon">
+                            <img src="shop/assets/img/icon/feature-icon-4.svg" alt="">
+                        </div>
+                        <div class="mainfeature__content">
+                            <h4 class="mainfeature__title">Help Center</h4>
+                            <p>Dedicated 24/7 Support </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mainfeature__item text-center mb-30">
+                        <div class="mainfeature__icon">
+                            <img src="shop/assets/img/icon/feature-icon-5.svg" alt="">
+                        </div>
+                        <div class="mainfeature__content">
+                            <h4 class="mainfeature__title">Curated items</h4>
+                            <p>From Handpicked Sellers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="tpfooter__area theme-bg-2">
+        <div class="tpfooter__top pb-15">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="tpfooter__widget footer-col-1 mb-50">
+                            <h4 class="tpfooter__widget-title">Let Us Help You</h4>
+                            <p>If you have any question, please <br> contact us at:
+                                <a href="mailto:support@example.com">support@example.com</a>
+                            </p>
+                            <div class="tpfooter__widget-social mt-45">
+                                <span class="tpfooter__widget-social-title mb-5">Social Media:</span>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-skype"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="tpfooter__widget footer-col-2 mb-50">
+                            <h4 class="tpfooter__widget-title">Looking for Orfarm?</h4>
+                            <p>68 St. Vicent Place, Glasgow, Greater <br> Newyork NH2012, UK.</p>
+                            <div class="tpfooter__widget-time-info mt-35">
+                                <span>Monday – Friday: <b>8:10 AM – 6:10 PM</b></span>
+                                <span>Saturday: <b>10:10 AM – 06:10 PM</b></span>
+                                <span>Sunday: <b>Close</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-5">
+                        <div class="tpfooter__widget footer-col-3 mb-50">
+                            <h4 class="tpfooter__widget-title">HOT CATEGORIES</h4>
+                            <div class="tpfooter__widget-links">
+                                <ul>
+                                    <li><a href="#">Fruits &amp; Vegetables</a></li>
+                                    <li><a href="#">Dairy Products</a></li>
+                                    <li><a href="#">Package Foods</a></li>
+                                    <li><a href="#">Beverage</a></li>
+                                    <li><a href="#">Health &amp; Wellness</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-6 col-md-8 col-sm-7">
+                        <div class="tpfooter__widget footer-col-4 mb-50">
+                            <h4 class="tpfooter__widget-title">Our newsletter</h4>
+                            <div class="tpfooter__widget-newsletter">
+                                <p>Subscribe to the Orfarm mailing list to receive updates <br> on new arrivals &amp; other information.</p>
+                                <form action="index.html">
+                                    <span><i><img src="shop/assets/img/shape/message-1.svg" alt=""></i></span>
+                                    <input type="email" placeholder="Your email address...">
+                                    <button class="tpfooter__widget-newsletter-submit tp-news-btn">Subscribe</button>
+                                </form>
+                                <div class="tpfooter__widget-newsletter-check mt-10">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            I accept terms &amp; conditions &amp; privacy policy.
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tpfooter___bottom pt-40 pb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-7 col-sm-12">
+                        <div class="tpfooter__copyright">
+                            <span class="tpfooter__copyright-text">Copyright © <a href="#">Eshagi</a> all rights reserved.</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 col-sm-12">
+                        <div class="tpfooter__copyright-thumb text-end">
+                            <img src="shop/assets/img/shape/footer-payment.png " alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
 <script id="__LOADABLE_REQUIRED_CHUNKS__" type="application/json">[9351,2094,2642,6216,9941,9492]</script>
 <script id="__LOADABLE_REQUIRED_CHUNKS___ext" type="application/json">{"namedChunks":["sections-Hero-HeroCarousel","sections-IllustrationWithText","sections-SectionBackgroundColor","sections-Categories","sections-ContentTwoColumn","sections-CtaBanner","sections-Reviews"]}</script>
 <script async="" data-chunk="sections-Hero-HeroCarousel" src="commons-e98977bd3e6a4a61f428.js" integrity="sha512-KcyMEPDm/svrfha5h+hdxg8Z0KUu0ga8NA13wjPtXUJB2jtGjAciDhDDNYEYS8KeAfortVOvpXh6pyI9iScHbA=="></script>
@@ -1173,8 +1102,6 @@
         });
     });
 </script>
-<style>
-
-</style>
+@include('shop.inc.footer')
 </body>
 </html>
