@@ -20,10 +20,14 @@ class ShopController extends Controller
     public function getProducts(Request  $request)
     {
         $products = array();
+        $sum = 0;
         $productIDs = explode(',',$request->input('products'));
         foreach ($productIDs as $productID)
-            $prod = Product::findOrFail();
             $products[] = Product::findOrFail(!is_int($productID) ? intval($productID) : $productID);
+
+        foreach ($products as $product)
+            $sum += $product->price;
+        $products[] = ['total'=>$sum];
         return response($products, 201);
     }
     public function checkout()

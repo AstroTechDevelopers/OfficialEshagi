@@ -1233,12 +1233,11 @@
                 var productId = $(this).data('product-id');
                 var cart = getStorage();
 
-                if(!cart.includes(productId)){
+                console.log(productId, cart)
+                if(!(cart.includes(productId) || cart.includes(productId.toString()))){
                     cart.push(productId)
                 }
-                console.log(cart);
                 localStorage.setItem('cart', cart.join(","))
-
                  addProductsToCart(getStorage());
             });
 
@@ -1263,7 +1262,36 @@
                         products: productIds.join(',')
                     },
                     success: function(response) {
-
+                        let cartItems = $('#cart-items'); // Get the container for the cart items
+                        cartItems.empty(); // Clear any existing cart items
+                        response.forEach(function(product) {
+                            // Create new HTML elements for the product data
+                            console.log(product.total)
+                            if(product.total == undefined) {
+                                let listItem = $('<li>');
+                                let itemContent = $('<div>', {class: 'tpcart__item'});
+                                let itemImg = $('<div>', {class: 'tpcart__img'});
+                                let img = $('<img>', {
+                                    src: 'shop/assets/img/product/products1-min.jpg',
+                                    alt: product.pname
+                                });
+                                let delBtn = $('<div>', {class: 'tpcart__del'}).html('<a href="#"><i class="icon-x-circle"></i></a>');
+                                let itemDetails = $('<div>', {class: 'tpcart__content'});
+                                let itemTitle = $('<span>', {class: 'tpcart__content-title'}).html('<a href="shop-details.html">' + product.pname + '</a>');
+                                let cartPrice = $('<div>', {class: 'tpcart__cart-price'});
+                                let quantity = $('<span>', {class: 'quantity'}).text('1 x');
+                                let newPrice = $('<span>', {class: 'new-price'}).text('$' + product.price.toFixed(2));
+                                // Append the new HTML elements to the appropriate container
+                                itemImg.append(img, delBtn);
+                                itemDetails.append(itemTitle, cartPrice);
+                                cartPrice.append(quantity, newPrice);
+                                itemContent.append(itemImg, itemDetails);
+                                listItem.append(itemContent);
+                                cartItems.append(listItem);
+                                $('#cartNumber').append(response.length)
+                            }
+                                $('#heilight-price').empty().append(product.total)
+                        });
                     }
                 });
             }
