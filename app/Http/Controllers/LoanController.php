@@ -10,6 +10,7 @@ use App\Models\Commission;
 use App\Models\Kyc;
 use App\Models\Localel;
 use App\Models\Masetting;
+use App\Models\OrderItem;
 use App\Models\Partner;
 use App\Models\MaterialsGroup;
 use App\Models\Category;
@@ -71,6 +72,7 @@ class LoanController extends Controller
      */
     public function create()
     {
+
         $loan = Loan::where('user_id', auth()->user()->id)
         ->where('loan_status','<',13)
         ->get();
@@ -86,7 +88,16 @@ class LoanController extends Controller
             return view('clients.register-three', compact('yuser'));
         }
         $bank = Bank::where('id', $yuser->bank)->first();
-        
+
+        if($orderId = request()->get('id')){
+            $total = OrderItem::where('order_id', $orderId)
+                ->join('products', 'order_items.product_id', '=', 'products.id')
+                ->sum(DB::raw('products.price * order_items.quantity'));
+
+            return view('loans.apply-loan', compact('user', 'bank', 'yuser', 'total'));
+
+        }
+
         if($loanCount===0){
             return view('loans.apply-loan', compact('user', 'bank','yuser'));
         }else {
@@ -150,7 +161,7 @@ class LoanController extends Controller
                     'interestRate'                  => 'required',
                     'monthly'                  => 'required',
                     'disbursed'                  => 'required',
-                    'charges'                  => 'required',                
+                    'charges'                  => 'required',
                 ],
                 [
                     'user_id.required'       => 'Please make sure you\'re logged in.',
@@ -162,7 +173,7 @@ class LoanController extends Controller
                     'interestRate.required'         => 'What is the proposed loan rate?.',
                     'monthly.required'         => 'What are the proposed loan repayment amounts?',
                     'disbursed.required'         => 'What is the proposed amount to be received by you?',
-                    'charges.required'       => 'What are the charges that come with processing this loan?',                
+                    'charges.required'       => 'What are the charges that come with processing this loan?',
                 ]
             );
         } else{
@@ -181,7 +192,7 @@ class LoanController extends Controller
                     'monthly'                  => 'required',
                     'disbursed'                  => 'required',
                     'managementFee'                  => 'required',
-                    'charges'                  => 'required',                
+                    'charges'                  => 'required',
                 ],
                 [
                     'user_id.required'       => 'Please make sure you\'re logged in.',
@@ -195,7 +206,7 @@ class LoanController extends Controller
                     'monthly.required'         => 'What are the proposed loan repayment amounts?',
                     'disbursed.required'         => 'What is the proposed amount to be received by you?',
                     'managementFee.required'   => 'What is the management fee?',
-                    'charges.required'       => 'What are the charges that come with processing this loan?',                
+                    'charges.required'       => 'What are the charges that come with processing this loan?',
                 ]
             );
         }
@@ -234,7 +245,7 @@ class LoanController extends Controller
             'product'        => $pd,
             'pprice'        => $pp,
             'notes'        => $request->input('prod_descrip'),
-            'locale'        => auth()->user()->locale,            
+            'locale'        => auth()->user()->locale,
         ]);
         $loan->save();
 
@@ -264,7 +275,7 @@ class LoanController extends Controller
         // }
 
         //return view('loans.loan-info', compact('loan', 'client', 'partner','agent', 'repInfo', 'merchant'));
-        
+
         return view('loans.loan-info', compact('loan', 'client'));
 
     }
@@ -457,7 +468,6 @@ class LoanController extends Controller
     }
 
     function uploadSignature(Request $request) {
-
         $validator = Validator::make(
             $request->all(),
             [
@@ -708,7 +718,7 @@ class LoanController extends Controller
             ->orWhere('c.creator','=','Self')
             ->where('c.locale_id','=',auth()->user()->locale)
             ->get();
-        
+
 
         return view('loans.new-partner-loan', compact('clients', 'partner'));
     }
@@ -848,7 +858,7 @@ class LoanController extends Controller
         } else {
             $products = Product::where('creator', auth()->user()->name)->get();
         }
-        
+
         //echo 853;
         //die();
 
@@ -969,7 +979,7 @@ class LoanController extends Controller
 
             $getOtp = Http::post("https://bulksms.zamtel.co.zm/api/v2.1/action/send/api_key/9fdf069005cbfee64181ec5904e4a1a6/contacts/" . $locale->country_code.$client->mobile."/senderId/AstroCred/message/AstroCred OTP: Your pin for AstroCred Product Loan is: ".$otp.". Regards, AstroCred.")->body();
             //$getOtp = Http::post("https://bulksms.zamtel.co.zm/api/v2.1/action/send/api_key/9fdf069005cbfee64181ec5904e4a1a6/contacts/260956021372/senderId/AstroCred/message/AstroCred OTP: Your pin for AstroCred Product Loan is: ".$otp.". Regards, AstroCred.")->body();
-                
+
 
             $json = json_decode($getOtp);
             //$status = $json['data'][0]['status'];

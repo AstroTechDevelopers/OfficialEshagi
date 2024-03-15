@@ -30,7 +30,7 @@ class OldMutualController extends Controller
             ->body();
 
         $arr=json_decode($details, TRUE);
-
+        dd($details);
         return view('oldmutual.list-loan-products', compact('arr'));
     }
 

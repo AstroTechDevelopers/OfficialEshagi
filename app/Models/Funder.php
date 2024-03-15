@@ -65,6 +65,10 @@ class Funder extends Model
         'email',
         'tel_no',
         'support_email',
+        'max_repayment_month',
+        'interest_rate_percentage',
+        'require_deposit',
+        'initial_deposit_percentage'
     ];
 
     /**

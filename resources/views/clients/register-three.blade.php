@@ -52,7 +52,7 @@
 <header class="navbar-header clearfix">
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('images/logo.png')}}" alt=""></a>
+            <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('eshago_logo.png')}}" alt=""></a>
             <div style="right:0">
                 <ul>
                     <li>
@@ -99,7 +99,7 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <input type="file" name="natid" id="natid" accept="image/*" />
-                                            <button id="upId" class="btn btn-blue">Upload</button>
+                                            <button id="upId" type="submit" class="btn btn-blue">Upload</button>
                                         </div>
                                         <div class="col-lg-6">
                                             <p>1. Please make sure you uploaded a cropped image of your National ID </p>
@@ -248,11 +248,11 @@
                                             <input type="file" name="payslip3" id="payslip3" accept="image/*" /><br /><br />
                                             <input type="file" name="payslip4" id="payslip4" accept="image/*" /><br /><br />
                                             <button id="upPay" class="btn btn-blue">Upload Payslips</button>
-											
+
                                         </div>
                                         <div class="col-lg-6">
                                             <p>1. Please make sure you uploaded a cropped image of your most recent payslip. </p>
-                                        </div>										
+                                        </div>
                                     </div>
                                 </form>
                             @else
@@ -265,14 +265,14 @@
                                             <input type="file" name="payslip3" id="payslip3" accept="image/*" /><br /><br />
                                             <input type="file" name="payslip4" id="payslip4" accept="image/*" /><br /><br />
                                             <button id="upPay" class="btn btn-blue">Upload Payslips</button>
-                                        </div>										
+                                        </div>
                                         <div class="col-lg-6">
                                             <p>1. Please upload a cropped image of your most recent payslip. <br>
 											    2. You can upload payslip upto 4 page separatly by using all BROWSE (FILE UPLOAD) options. <br>
                                                 3. Each Payslip image should not be greater than 4MB. <br>
                                                 4. Each Payslip image should of the format: jpeg,png,jpg,gif,svg. <br></p>
                                         </div>
-                                    </div>									
+                                    </div>
                                 </form>
                             @endif
 							<p></p>
@@ -330,7 +330,7 @@
                                     <br>
                                 </div>
                                 <br>
-                    
+
                             @endif
 
                         </div>

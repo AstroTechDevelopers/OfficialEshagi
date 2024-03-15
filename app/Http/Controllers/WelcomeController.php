@@ -19,16 +19,16 @@ class WelcomeController extends Controller
      */
     public function welcome()
     {
-        //$country = $this->getCountry();
-        $country = null;
+        $country = $this->getCountry();
+       // $country = null;
         if ($country !== null) {
             if (property_exists($country, 'country')) {
                 switch ($country->country) {
                     case "ZM":
-                        config('COUNTRY', 'ZAMBIA');
+                        request()->session()->put('country', 1);
                         return view("welcome_zim");
                     case "ZW":
-                        config('COUNTRY', 'ZIMBABWE');
+                        request()->session()->put('country', 2);
                         return view('welcome_zim');
                     default:
                         return view('errors.401');
@@ -92,7 +92,7 @@ class WelcomeController extends Controller
      */
     private function getCountry()
     {
-        $ipAddress = env('APP_ENV') == 'local' ? '197.220.16.10' : request()->ip();
+        $ipAddress = env('APP_ENV') == 'local' ? '197.221.253.61' : request()->ip();
         $client = new Client();
         $uri = config('app.country_base_url').$ipAddress.'?token='.config('app.country_api_token');
 

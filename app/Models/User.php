@@ -196,4 +196,30 @@ class User extends Authenticatable
         return $this->hasMany(DeviceLoan::class);
     }
 
+    protected function localel()
+    {
+        return $this->belongsTo(Localel::class, 'locale', 'id');
+    }
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+
+    public function partner($email)
+    {
+        return Partner::where('cemail', $email)->first();
+    }
+
+    public function kyc()
+    {
+        return $this->hasOne(Kyc::class, 'id', 'user_id');
+    }
+
+    public  static function getClientByEmail(string $email)
+    {
+        return Client::where('email', $email)->first();
+    }
+
+
+
 }

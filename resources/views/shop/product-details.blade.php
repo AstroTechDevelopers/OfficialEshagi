@@ -97,23 +97,11 @@
                                                         <button type="button" class="tp-btn-2 addToCart" data-product-id="{{ $product->id }}" href="cart.html">Add to cart</button>
                                                     </div>
                                                 </div>
-                                                <ul class="product__details-check">
-                                                    <li>
-                                                        <a href="#"><i class="icon-heart icons"></i> add to wishlist</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-layers"></i> Add to Compare</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#"><i class="icon-share-2"></i> Share</a>
-                                                    </li>
-                                                </ul>
                                             </div>
                                             <div class="product__details-stock mb-25">
                                                 <ul>
                                                     <li>Availability: <i>54 Instock</i></li>
-                                                    <li>Categories: <span>Vegetables, Meat & Eggs, Fruit Drink </span></li>
-                                                    <li>Tags: <span>Chicken, Natural, Organic</span></li>
+                                                    <li>Categories: <span>{{ $product->category->category_name }}</span></li>
                                                 </ul>
                                             </div>
                                             <div class="product__details-payment text-center">
@@ -138,67 +126,12 @@
                             <div class="tab-content" id="nav-tabContent">
                                 <div class="tab-pane fade show active" id="nav-description" role="tabpanel" aria-labelledby="nav-description-tab" tabindex="0">
                                     <div class="tpdescription__content">
-                                        <p>Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia eserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, aque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                                    </div>
-                                    <div class="tpdescription__product-wrapper mt-30 mb-30 d-flex justify-content-between align-items-center">
-                                        <div class="tpdescription__product-info">
-                                            <h5 class="tpdescription__product-title">PRODUCT DETAILS</h5>
-                                            <ul class="tpdescription__product-info">
-                                                <li>Material: Plastic, Wood</li>
-                                                <li>Legs: Lacquered oak and black painted oak</li>
-                                                <li>Dimensions and Weight: Height: 80 cm, Weight: 5.3 kg</li>
-                                                <li>Length: 48cm</li>
-                                                <li>Depth: 52 cm</li>
-                                            </ul>
-                                            <p>Lemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut <br> fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem <br> sequi nesciunt.</p>
-                                        </div>
-                                        <div class="tpdescription__product-thumb">
-                                            <img src="shop/assets/img/product/product-single-1.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="tpdescription__video">
-                                        <h5 class="tpdescription__product-title">PRODUCT DETAILS</h5>
-                                        <p>Form is an armless modern chair with a minimalistic expression. With a simple and contemporary design Form Chair has a soft and welcoming ilhouette and a distinctly residential look. The legs appear almost as if they are growing out of the shell. This gives the design flexibility and makes it possible to vary the frame. Unika is a mouth blown series of small, glass pendant lamps, originally designed for the Restaurant Gronbech. Est eum itaque maiores qui blanditiis architecto. Eligendi saepe rem ut. Cumque quia earum eligendi. </p>
-                                        <div class="tpdescription__video-wrapper p-relative mt-30 mb-35 w-img">
-                                            <img src="shop/assets/img/product/product-video1.jpg" alt="">
-                                            <div class="tpvideo__video-btn">
-                                                <a class="tpvideo__video-icon popup-video" href="https://www.youtube.com/watch?v=rLrV5Tel7zw">
-                                                    <i>
-                                                        <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M15.6499 6.58886L15.651 6.58953C17.8499 7.85553 18.7829 9.42511 18.7829 10.8432C18.7829 12.2613 17.8499 13.8308 15.651 15.0968L15.6499 15.0975L12.0218 17.195L8.3948 19.2919C8.3946 19.292 8.3944 19.2921 8.3942 19.2922C6.19546 20.558 4.36817 20.5794 3.13833 19.8697C1.9087 19.1602 1.01562 17.5694 1.01562 15.0382V10.8432V6.64818C1.01562 4.10132 1.90954 2.51221 3.13721 1.80666C4.36609 1.1004 6.1936 1.12735 8.3942 2.39416C8.3944 2.39428 8.3946 2.3944 8.3948 2.39451L12.0218 4.49135L15.6499 6.58886Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg>
-                                                    </i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <h5 class="tpdescription__product-title">Product supreme quality</h5>
-                                        <p>Form is an armless modern chair with a minimalistic expression. With a simple and contemporary design Form Chair has a soft and welcoming ilhouette and a distinctly residential look. The legs appear almost as if they are growing out of the shell. This gives the design flexibility and makes it possible to vary the frame. Unika is a mouth blown series of small, glass pendant lamps, originally designed for the Restaurant Gronbech. Est eum itaque maiores qui blanditiis architecto. Eligendi saepe rem ut. Cumque quia earum eligendi. </p>
-                                        <p>Duis semper erat mauris, sed egestas purus commodo. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+                                        <p>{{ $product->descrip }}</p>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="nav-information" role="tabpanel" aria-labelledby="nav-info-tab" tabindex="0">
                                     <div class="tpdescription__content">
-                                        <p>Designed by Puik in 1949 as one of the first models created especially for Carl Hansen & Son, and produced since 1950. The last of a series of chairs wegner designed based on inspiration from antique chinese armchairs. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia eserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, aque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
-                                    </div>
-                                    <div class="tpdescription__product-wrapper mt-30 mb-30 d-flex justify-content-between align-items-center">
-                                        <div class="tpdescription__product-info">
-                                            <h5 class="tpdescription__product-title">PRODUCT DETAILS</h5>
-                                            <ul class="tpdescription__product-info">
-                                                <li>Material: Plastic, Wood</li>
-                                                <li>Legs: Lacquered oak and black painted oak</li>
-                                                <li>Dimensions and Weight: Height: 80 cm, Weight: 5.3 kg</li>
-                                                <li>Length: 48cm</li>
-                                                <li>Depth: 52 cm</li>
-                                            </ul>
-                                            <p>Lemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut <br> fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem <br> sequi nesciunt.</p>
-                                        </div>
-                                        <div class="tpdescription__product-thumb">
-                                            <img src="shop/assets/img/product/product-single-1.png" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="tpdescription__video">
-                                        <h5 class="tpdescription__product-title">PRODUCT DETAILS</h5>
-                                        <p>Form is an armless modern chair with a minimalistic expression. With a simple and contemporary design Form Chair has a soft and welcoming ilhouette and a distinctly residential look. The legs appear almost as if they are growing out of the shell. This gives the design flexibility and makes it possible to vary the frame. Unika is a mouth blown series of small, glass pendant lamps, originally designed for the Restaurant Gronbech. Est eum itaque maiores qui blanditiis architecto. Eligendi saepe rem ut. Cumque quia earum eligendi. </p>
+                                        <p>No addtional Content</p>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="nav-review" role="tabpanel" aria-labelledby="nav-review-tab" tabindex="0">
@@ -407,14 +340,15 @@
             <div class="tpproduct__arrow double-product p-relative">
                 <div class="swiper-container tpproduct-active tpslider-bottom p-relative">
                     <div class="swiper-wrapper">
+                        @foreach(\App\Models\Product::where('partner_id', $product->partner->id)->get() as $relatedProduct) @endforeach
                         <div class="swiper-slide">
                             <div class="tpproduct p-relative">
                                 <div class="tpproduct__thumb p-relative text-center">
-                                    <a href="#"><img src="shop/assets/img/product/products29-min.jpg" alt=""></a>
-                                    <a class="tpproduct__thumb-img" href="shop-details.html"><img src="shop/assets/img/product/products30-min.jpg" alt=""></a>
+                                    <a href="#"><img src="{{ $product->product_image ? 'merchants/products/'.$product->product_image :  'shop/assets/img/product/products1-min.jpg' }}" alt=""></a>
+                                    <a class="tpproduct__thumb-img" href="/shopping/product/{{ $product->id }}"><img src="{{ $product->product_image ? 'merchants/products/'.$product->product_image :  'shop/assets/img/product/products1-min.jpg' }}" alt=""></a>
                                     <div class="tpproduct__info bage">
-                                        <span class="tpproduct__info-discount bage__discount">-50%</span>
-                                        <span class="tpproduct__info-hot bage__hot">HOT</span>
+                                        <span class="tpproduct__info-discount bage__discount">00</span>
+                                        <span class="tpproduct__info-hot bage__hot">{{ $relatedProduct->partner->merchantname  }}</span>
                                     </div>
                                     <div class="tpproduct__shopping">
                                         <a class="tpproduct__shopping-wishlist" href="wishlist.html"><i class="icon-heart icons"></i></a>
@@ -424,10 +358,10 @@
                                 </div>
                                 <div class="tpproduct__content">
                                  <span class="tpproduct__content-weight">
-                                    <a href="shop-details.html">Fresh Meat</a>
+                                    <a href="shop-details.html">{{ $relatedProduct->model }}</a>
                                  </span>
                                     <h4 class="tpproduct__title">
-                                        <a href="shop-details-top-.html">Mangosteen Organic From VietNamese</a>
+                                        <a href="shop-details-top-.html">{{ $relatedProduct->pname }}</a>
                                     </h4>
                                     <div class="tpproduct__rating mb-5">
                                         <a href="#"><i class="icon-star_outline1"></i></a>
@@ -437,8 +371,8 @@
                                         <a href="#"><i class="icon-star_outline1"></i></a>
                                     </div>
                                     <div class="tpproduct__price">
-                                        <span>$56.00</span>
-                                        <del>$19.00</del>
+                                        <span>{{ $relatedProduct->price_with_currency }}</span>
+                                        <del>{{ $relatedProduct->price + 10 }}</del>
                                     </div>
                                 </div>
                                 <div class="tpproduct__hover-text">
@@ -446,248 +380,7 @@
                                         <button type="button" class="tp-btn-2 addToCart" data-product-id="{{ $product->id }}" href="cart.html">Add to cart</button>
                                     </div>
                                     <div class="tpproduct__descrip">
-                                        <ul>
-                                            <li>Type: Organic</li>
-                                            <li>MFG: August 4.2021</li>
-                                            <li>LIFE: 60 days</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tpproduct p-relative">
-                                <div class="tpproduct__thumb p-relative text-center">
-                                    <a href="#"><img src="shop/assets/img/product/products9-min.jpg" alt=""></a>
-                                    <a class="tpproduct__thumb-img" href="shop-details.html"><img src="shop/assets/img/product/products10-min.jpg" alt=""></a>
-                                    <div class="tpproduct__info bage">
-                                        <span class="tpproduct__info-discount bage__discount">-40%</span>
-                                    </div>
-                                    <div class="tpproduct__shopping">
-                                        <a class="tpproduct__shopping-wishlist" href="wishlist.html"><i class="icon-heart icons"></i></a>
-                                        <a class="tpproduct__shopping-wishlist" href="#"><i class="icon-layers"></i></a>
-                                        <a class="tpproduct__shopping-cart" href="#"><i class="icon-eye"></i></a>
-                                    </div>
-                                </div>
-                                <div class="tpproduct__content">
-                                 <span class="tpproduct__content-weight">
-                                    <a href="shop-details.html">Fresh Meat</a>
-                                 </span>
-                                    <h4 class="tpproduct__title">
-                                        <a href="shop-details-top.html">Soda Sparkling Water Maker (Rose Gold)</a>
-                                    </h4>
-                                    <div class="tpproduct__rating mb-5">
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                    </div>
-                                    <div class="tpproduct__price">
-                                        <span>$56.00</span>
-                                        <del>$19.00</del>
-                                    </div>
-                                </div>
-                                <div class="tpproduct__hover-text">
-                                    <div class="tpproduct__hover-btn d-flex justify-content-center mb-10">
-                                        <button type="button" class="tp-btn-2 addToCart" data-product-id="{{ $product->id }}" href="cart.html">Add to cart</button>
-                                    </div>
-                                    <div class="tpproduct__descrip">
-                                        <ul>
-                                            <li>Type: Organic</li>
-                                            <li>MFG: August 4.2021</li>
-                                            <li>LIFE: 60 days</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tpproduct p-relative">
-                                <div class="tpproduct__thumb p-relative text-center">
-                                    <a href="#"><img src="shop/assets/img/product/products13-min.jpg" alt=""></a>
-                                    <a class="tpproduct__thumb-img" href="shop-details.html"><img src="shop/assets/img/product/products35-min.jpg" alt=""></a>
-                                    <div class="tpproduct__info bage">
-                                        <span class="tpproduct__info-discount bage__discount">-10%</span>
-                                    </div>
-                                    <div class="tpproduct__shopping">
-                                        <a class="tpproduct__shopping-wishlist" href="wishlist.html"><i class="icon-heart icons"></i></a>
-                                        <a class="tpproduct__shopping-wishlist" href="#"><i class="icon-layers"></i></a>
-                                        <a class="tpproduct__shopping-cart" href="#"><i class="icon-eye"></i></a>
-                                    </div>
-                                </div>
-                                <div class="tpproduct__content">
-                                 <span class="tpproduct__content-weight">
-                                    <a href="shop-details-3.html">Fresh Fruits</a>
-                                 </span>
-                                    <h4 class="tpproduct__title">
-                                        <a href="shop-details.html">HOT - Lettuce Fresh Produce Fruit Vegetables</a>
-                                    </h4>
-                                    <div class="tpproduct__rating mb-5">
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                    </div>
-                                    <div class="tpproduct__price">
-                                        <span>$56.00</span>
-                                        <del>$19.00</del>
-                                    </div>
-                                </div>
-                                <div class="tpproduct__hover-text">
-                                    <div class="tpproduct__hover-btn d-flex justify-content-center mb-10">
-                                        <button type="button" class="tp-btn-2 addToCart" data-product-id="{{ $product->id }}" href="cart.html">Add to cart</button>
-                                    </div>
-                                    <div class="tpproduct__descrip">
-                                        <ul>
-                                            <li>Type: Organic</li>
-                                            <li>MFG: August 4.2021</li>
-                                            <li>LIFE: 60 days</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tpproduct p-relative">
-                                <div class="tpproduct__thumb p-relative text-center">
-                                    <a href="#"><img src="shop/assets/img/product/products27-min.jpg" alt=""></a>
-                                    <a class="tpproduct__thumb-img" href="shop-details.html"><img src="shop/assets/img/product/products14-min.jpg" alt=""></a>
-                                    <div class="tpproduct__info bage">
-                                        <span class="tpproduct__info-discount bage__discount">-90%</span>
-                                        <span class="tpproduct__info-hot bage__hot">HOT</span>
-                                    </div>
-                                    <div class="tpproduct__shopping">
-                                        <a class="tpproduct__shopping-wishlist" href="wishlist.html"><i class="icon-heart icons"></i></a>
-                                        <a class="tpproduct__shopping-wishlist" href="#"><i class="icon-layers"></i></a>
-                                        <a class="tpproduct__shopping-cart" href="#"><i class="icon-eye"></i></a>
-                                    </div>
-                                </div>
-                                <div class="tpproduct__content">
-                                 <span class="tpproduct__content-weight">
-                                    <a href="shop-details-3.html">Fresh Fruits</a>
-                                 </span>
-                                    <h4 class="tpproduct__title">
-                                        <a href="shop-details-grid.html">Pure Irish Organic Beef Quarter Pounder Burgers</a>
-                                    </h4>
-                                    <div class="tpproduct__rating mb-5">
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                    </div>
-                                    <div class="tpproduct__price">
-                                        <span>$56.00</span>
-                                        <del>$19.00</del>
-                                    </div>
-                                </div>
-                                <div class="tpproduct__hover-text">
-                                    <div class="tpproduct__hover-btn d-flex justify-content-center mb-10">
-                                        <button type="button" class="tp-btn-2 addToCart" data-product-id="{{ $product->id }}" href="cart.html">Add to cart</button>
-                                    </div>
-                                    <div class="tpproduct__descrip">
-                                        <ul>
-                                            <li>Type: Organic</li>
-                                            <li>MFG: August 4.2021</li>
-                                            <li>LIFE: 60 days</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tpproduct p-relative">
-                                <div class="tpproduct__thumb p-relative text-center">
-                                    <a href="#"><img src="shop/assets/img/product/products15-min.jpg" alt=""></a>
-                                    <a class="tpproduct__thumb-img" href="shop-details.html"><img src="shop/assets/img/product/products32-min.jpg" alt=""></a>
-                                    <div class="tpproduct__info bage">
-                                        <span class="tpproduct__info-discount bage__discount">-50%</span>
-                                    </div>
-                                    <div class="tpproduct__shopping">
-                                        <a class="tpproduct__shopping-wishlist" href="wishlist.html"><i class="icon-heart icons"></i></a>
-                                        <a class="tpproduct__shopping-wishlist" href="#"><i class="icon-layers"></i></a>
-                                        <a class="tpproduct__shopping-cart" href="#"><i class="icon-eye"></i></a>
-                                    </div>
-                                </div>
-                                <div class="tpproduct__content">
-                                 <span class="tpproduct__content-weight">
-                                    <a href="shop-details-3.html">Vagetables</a>
-                                 </span>
-                                    <h4 class="tpproduct__title">
-                                        <a href="shop-details-3.html">Ginger Fresh, Whole, Organic - 250gram</a>
-                                    </h4>
-                                    <div class="tpproduct__rating mb-5">
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                    </div>
-                                    <div class="tpproduct__price">
-                                        <span>$56.00</span>
-                                        <del>$19.00</del>
-                                    </div>
-                                </div>
-                                <div class="tpproduct__hover-text">
-                                    <div class="tpproduct__hover-btn d-flex justify-content-center mb-10">
-                                        <button type="button" class="tp-btn-2 addToCart" data-product-id="{{ $product->id }}" href="cart.html">Add to cart</button>
-                                    </div>
-                                    <div class="tpproduct__descrip">
-                                        <ul>
-                                            <li>Type: Organic</li>
-                                            <li>MFG: August 4.2021</li>
-                                            <li>LIFE: 60 days</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="tpproduct p-relative">
-                                <div class="tpproduct__thumb p-relative text-center">
-                                    <a href="#"><img src="shop/assets/img/product/products12-min.jpg" alt=""></a>
-                                    <a class="tpproduct__thumb-img" href="shop-details.html"><img src="shop/assets/img/product/products28-min.jpg" alt=""></a>
-                                    <div class="tpproduct__info bage">
-                                        <span class="tpproduct__info-discount bage__discount">-40%</span>
-                                        <span class="tpproduct__info-hot bage__hot">HOT</span>
-                                    </div>
-                                    <div class="tpproduct__shopping">
-                                        <a class="tpproduct__shopping-wishlist" href="wishlist.html"><i class="icon-heart icons"></i></a>
-                                        <a class="tpproduct__shopping-wishlist" href="#"><i class="icon-layers"></i></a>
-                                        <a class="tpproduct__shopping-cart" href="#"><i class="icon-eye"></i></a>
-                                    </div>
-                                </div>
-                                <div class="tpproduct__content">
-                                 <span class="tpproduct__content-weight">
-                                    <a href="shop-details-3.html">Fresh Fruits</a>
-                                 </span>
-                                    <h4 class="tpproduct__title">
-                                        <a href="shop-details-grid.html">Laffy Taffy Laff Bites Gone Bananas - 4 Packs</a>
-                                    </h4>
-                                    <div class="tpproduct__rating mb-5">
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                    </div>
-                                    <div class="tpproduct__price">
-                                        <span>$56.00</span>
-                                        <del>$19.00</del>
-                                    </div>
-                                </div>
-                                <div class="tpproduct__hover-text">
-                                    <div class="tpproduct__hover-btn d-flex justify-content-center mb-10">
-                                        <button type="button" class="tp-btn-2 addToCart" data-product-id="{{ $product->id }}" href="cart.html">Add to cart</button>
-                                    </div>
-                                    <div class="tpproduct__descrip">
-                                        <ul>
-                                            <li>Type: Organic</li>
-                                            <li>MFG: August 4.2021</li>
-                                            <li>LIFE: 60 days</li>
-                                        </ul>
+                                       <p>{{ $relatedProduct->descrip }}</p>
                                     </div>
                                 </div>
                             </div>

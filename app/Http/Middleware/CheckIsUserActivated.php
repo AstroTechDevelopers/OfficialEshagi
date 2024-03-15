@@ -68,7 +68,6 @@ class CheckIsUserActivated
                     if ($user->isAdmin()) {
                         return redirect('home');
                     }
-
                     return redirect('home');
                 }
 

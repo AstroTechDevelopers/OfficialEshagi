@@ -13,7 +13,7 @@
         var interest_rate = {!! getInterestRate() !!};
 		var management_rate = {!! getManagementRate() !!}
 		var management_fee = amount * management_rate;
-		
+
         if (bankCharge=="") {
             alert("Please select Microfinance");
             return;
@@ -59,7 +59,7 @@
         return 0;
     }
     //function display(amountDibursed,interest_rate,paybackPeriod,payment,total_charges,tax,insurance,arrangement){
-	function display(amountDibursed,interest_rate,management_rate,paybackPeriod,payment,total_charges,arrangement,management_fee){	
+	function display(amountDibursed,interest_rate,management_rate,paybackPeriod,payment,total_charges,arrangement,management_fee){
 
         document.getElementById("monthly").value=parseFloat(payment).toFixed(2);
         document.getElementById("interestRate").value=interest_rate;

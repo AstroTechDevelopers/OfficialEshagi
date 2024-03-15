@@ -227,7 +227,7 @@ class KycController extends Controller
         ->get();*/
         /*$users = DB::table('kycs as k')
             ->leftJoin('clients as c', 'k.natid', '=', 'c.natid')
-            ->select('c.first_name','c.last_name','c.natid', 'c.reds_number', 'k.id as kid', 'k.status','k.created_at')    
+            ->select('c.first_name','c.last_name','c.natid', 'c.reds_number', 'k.id as kid', 'k.status','k.created_at')
 			->where('clients.natid', 'IS NULL')
             ->get();*/
 
@@ -241,7 +241,7 @@ class KycController extends Controller
     }
 
     //public function evaluateKyc($id, $loanId){
-    public function evaluateKyc($id){    
+    public function evaluateKyc($id){
         //echo 245;die();
         $kyc = Kyc::findOrFail($id);
         //echo 247;die();
@@ -297,10 +297,10 @@ class KycController extends Controller
         $kyc = Kyc::where('natid',$client->natid)->first();
         $bank = Bank::where('id',$kyc->bank)->first();
         $loan = Loan::where('client_id',$id)->first();
-        
+
         $emails = [$client->email, 'tech@idigitalise.co.in'];
         $natids = explode("/",$client->natid);
-        
+
         $pdfFileName = storage_path() . DIRECTORY_SEPARATOR . 'app/downloads' . DIRECTORY_SEPARATOR . "KYCForm_".$natids[0]."_".$natids[1]."_".$natids[1].".pdf";
         $pdf = \PDF::loadView('kycs.kyc-form', compact('client','kyc', 'bank', 'loan'));
         $pdf->save($pdfFileName);
@@ -2157,22 +2157,22 @@ class KycController extends Controller
             ->where('c.deleted_at', '=',null)
             ->get();
 
-        return view('zwmb.zwmb-pending-kycs', compact('kycs'));        
+        return view('zwmb.zwmb-pending-kycs', compact('kycs'));
     }
 
     public function approveKYC($kycid){
         $reviewer = auth()->user()->first_name . " " . auth()->user()->last_name;
         DB::statement("UPDATE kycs SET reviewer='" . $reviewer ."', kyc_status=1 WHERE id=". $kycid);
-        
+
         $kyc = kyc::findOrFail($kycid);//Kyc::where('natid',$client->natid)->first();
         $client = Client::where('natid',$kyc->natid)->first();
         $bank = Bank::where('id',$kyc->bank)->first();
         $loan = Loan::where('client_id',$client->id)->first();
-        
+
         $emails = [$client->email, 'loanszam@astroafrica.tech'];
         $natids = explode("/",$client->natid);
-        
-        $pdfFileName = storage_path() . DIRECTORY_SEPARATOR . 'app/downloads' . DIRECTORY_SEPARATOR . "KYCForm_".$natids[0]."_".$natids[1]."_".$natids[1].".pdf";
+
+        $pdfFileName = storage_path() . DIRECTORY_SEPARATOR . 'app/downloads' . DIRECTORY_SEPARATOR . "KYCForm_".$natids[0]."_".$natids[0]."_".$natids[0].".pdf";
         $pdf = \PDF::loadView('kycs.kyc-form', compact('client','kyc', 'bank', 'loan'));
         $pdf->save($pdfFileName);
         $data=[];
@@ -2187,7 +2187,7 @@ class KycController extends Controller
         $attachSP = public_path() . DIRECTORY_SEPARATOR . 'payslips' . DIRECTORY_SEPARATOR . $kyc->payslip_pic;
         $attachEAL = public_path() . DIRECTORY_SEPARATOR . 'empletters' . DIRECTORY_SEPARATOR . $kyc->emp_approval_letter;
 
-        Mail::send('emails.new-loan-kyc', $data, function($message)use($pdf, $emails, $pdfFileName, $attachNP, $attachNPB, $attachPP, $attachSP, $attachEAL) {
+     /*   Mail::send('emails.new-loan-kyc', $data, function($message)use($pdf, $emails, $pdfFileName, $attachNP, $attachNPB, $attachPP, $attachSP, $attachEAL) {
             $message->to($emails)->subject('KYC of a new loan request');
             $message->attach($pdfFileName);
             $message->attach($attachNP);
@@ -2195,12 +2195,12 @@ class KycController extends Controller
             $message->attach($attachPP);
             $message->attach($attachSP);
             $message->attach($attachEAL);
-        });
+        });*/
 
         //return $pdf->stream("KYCForm".$client->natid.".pdf");
         return redirect()->back()->with('success', 'KYC approved successfully and kyc documents mailed to financier and to the customer.');
     }
-    
+
     public function rejectKYC(Request $request, $kycid){
         $rejectedFor = $request->rejectReason;
         DB::statement("UPDATE kycs SET reject_reason='". $rejectedFor ."' AND kyc_status=0 WHERE id=". $kycid);
@@ -2209,7 +2209,7 @@ class KycController extends Controller
         $emails = [$client->email, 'loanszam@astroafrica.tech'];
         $data = ['rejectedFor' => $rejectedFor, 'first_name' => $client->first_name, 'last_name' => $client->last_name];
         Mail::send('emails.loan-kyc-rejected', $data, function($message)use($emails) {
-            $message->to($emails)->subject('KYC Rejected');            
+            $message->to($emails)->subject('KYC Rejected');
         });
         return redirect()->back()->with('success', 'KYC rejected successfully.');
     }

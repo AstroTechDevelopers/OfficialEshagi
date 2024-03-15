@@ -45,6 +45,8 @@
     <![endif]-->
 
     <link href="{{ asset('css/select2.min.css')}}" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar-default" data-offset="100">
@@ -53,7 +55,7 @@
     <header class="navbar-header clearfix">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('images/logo.png')}}" alt=""></a>
+                <a class="navbar-brand" href="{{url('/')}}"><img src="{{asset('eshago_logo.png')}}" alt=""></a>
                 <div style="right:0">
                     <ul>
                         <li>
@@ -180,7 +182,7 @@
 												<option value="Father">Father</option>
 												<option value="Daughter">Daughter</option>
                                                 <option value="Son">Son</option>
-												<option value="Uncle">Uncle</option>                                              
+												<option value="Uncle">Uncle</option>
                                                 <option value="Aunt">Aunt</option>
                                                 <option value="Cousin">Cousin</option>
 												<option value="Other">Other</option>
@@ -261,16 +263,9 @@
                                             <label>Province</label>
                                             <select class="form-control{{ $errors->has('province') ? ' is-invalid' : '' }}" type="text" name="province" id="province" required="required" >
                                                 <option value="{{ old('province') }}">{{ old('province') }}</option>
-                                                <option value="Lusaka">Lusaka</option>
-                                                <option value="Bulawayo">Copperbelt</option>
-                                                <option value="Manicaland">Central</option>
-                                                <option value="Mashonaland Central">Western</option>
-                                                <option value="Mashonaland East">Nothwestern</option>
-                                                <option value="Mashonaland West">Eastern</option>
-                                                <option value="Masvingo">Luapula</option>
-                                                <option value="Matabeleland North">Nothern</option>
-                                                <option value="Matabeleland South">Muchinaga</option>
-                                                <option value="Midlands">Southern</option>
+                                               @foreach(\App\Models\Province::all() as $province)
+                                                   <option value="{{ $province->province }}">{{ $province->province }}</option>
+                                               @endforeach
                                             </select>
                                             @if ($errors->has('province'))
                                                 <span class="invalid-feedback">
@@ -283,7 +278,9 @@
                                         <div class="form-group">
                                             <label>Country</label>
                                             <select class="form-control" id="country" name="country">
-                                                <option value="Zambia">Zambia</option>
+                                                @foreach(\App\Models\Localel::all() as $country)
+                                                    <option value="{{ $country->country }}">{{ $country->country }}</option>
+                                                @endforeach
                                             </select>
                                         </div>
                                     </div>
@@ -445,7 +442,7 @@
             document.getElementById("relationship").value = document.getElementById("relationship").value;
         }
     }
-	
+
     $("#kin_title").select2({
         placeholder: 'Please select your next of kin\'s title',
         allowClear:true,

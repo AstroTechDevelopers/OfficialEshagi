@@ -12,10 +12,10 @@ class Partner extends Model
 
     public function products()
     {
-        return $this->hasMany(Product::class);
+        return $this->hasMany(Product::class,'product_id', 'id');
     }
 
-    protected function localel()
+    public function localel()
     {
        return $this->belongsTo(Localel::class, 'locale_id', 'id');
     }

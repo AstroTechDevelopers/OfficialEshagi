@@ -61,7 +61,7 @@
 
                         <div class="form-group mb-3 row">
                             <div class="col-12">
-                                <input class="form-control{{ $errors->has('natid') ? ' is-invalid' : '' }}" type="text" name="natid" id="natid" pattern="^[0-9]{2}-[0-9]{6,7}-[a-zA-Z]-[0-9]{2}$|^[0-9]{6}\/[0-9]{2}\/[0-9]{1}$" title="Format should be in the form of as on your National ID"  value="{{ old('email') }}" required autofocus placeholder="Enter your national ID...">
+                                <input class="form-control{{ $errors->has('natid') ? ' is-invalid' : '' }}" type="text" name="natid" id="natid"  title="Format should be in the form of as on your National ID"  value="{{ old('email') }}" required autofocus placeholder="Enter your national ID...">
                                 @if ($errors->has('natid'))
                                     <span class="invalid-feedback">
                                                         <strong>{{ $errors->first('natid') }}</strong>

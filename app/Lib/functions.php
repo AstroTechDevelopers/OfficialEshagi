@@ -87,7 +87,10 @@ function getLoantype($id){
         $loanType = 'Recharge Credit';
     }elseif ($id == 4) {
         $loanType = 'Hybrid Loan';
-    }else{
+    }else if($id == 5){
+        $loanType = 'Product Loan';
+    }
+    else{
         $loanType = 'Loan Type not yet defined.';
     }
 
@@ -176,6 +179,15 @@ function getDeviceLoanstatus($id){
     }
 
     return $loanStatus;
+}
+
+function getLoanStatusDescription(string $status){
+    switch ($status){
+        case  'new' || 'NEW' :
+           return 'New Loan';
+        default :
+            return 'Loan Undefined';
+    }
 }
 
 function getZambianLoanstatus($id){

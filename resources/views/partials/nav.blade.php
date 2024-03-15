@@ -135,45 +135,10 @@
                         <li><a href="{{url('/crb-recheck')}}">CRB Recheck </a></li>
                         <li><a href="{{url('/loans')}}">All Loans</a></li>
                         <li><a href="{{url('/loans/deleted')}}">Deleted Loans</a></li>
+                        <li><a href="{{url('/product-loans')}}">Product Loans</a></li>
+
                     </ul>
                 </li>
-{{--
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <div class="d-inline-block icons-sm mr-1"><i class="fas fa-money-bill-alt"></i></div>
-                        <span>USD Loans</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{url('/usd-loan-calculator')}}">USD Loan Calculator</a></li>
-                        <li><a href="{{url('/new-usd-loans')}}">New Loans</a></li>
-                        <li><a href="{{url('/pending-loans')}}">Pending Loans</a></li>
-                        <li><a href="{{url('/approved-loans')}}">Approved</a></li>
-                        <li><a href="{{url('/disbursed-loans')}}">Disbursed </a></li>
-                        <li><a href="{{url('/loan-records')}}">Loan Records</a></li>
-                        <li><a href="{{url('/usd-loans')}}">All Loans</a></li>
-                    </ul>
-                </li> --}}
-
-                <!--<li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect">
-                        <div class="d-inline-block icons-sm mr-1"><i class="fas fa-money-bill-alt"></i></div>
-                        <span>Zambia Loans</span>
-                    </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{url('/zam-loan-calculator')}}">Zambia Loan Calculator</a></li>
-                        <li><a href="{{url('/reassign-loan')}}">ReAssign Loan</a></li>
-                        <li><a href="{{url('/new-zambia-loans')}}">Open Loans</a></li>
-                        <li><a href="{{url('/zambia-pending-loans')}}">Pending Loans</a></li>
-                        <li><a href="{{url('/zambia-authorized')}}">Authorized </a></li>
-                        <li><a href="{{url('/zambia-disbursed')}}">Disbursed </a></li>
-                        <li><a href="{{url('/zambia-declined')}}">Declined Loans</a></li>
-                        <li><a href="{{url('/zam-enroll-paytrigger')}}">Enroll To PayTrigger</a></li>
-                        <li><a href="{{url('/enrolled-paytrigger')}}">Enrolled on PayTrigger</a></li>
-                        <li><a href="{{url('/zambia-loans')}}">All Loans</a></li>
-                        <li><a href="{{url('/zambia-loans/deleted')}}">Deleted Loans</a></li>
-                    </ul>
-                </li>-->
-
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <div class="d-inline-block icons-sm mr-1"><i class="mdi mdi-cellphone-android"></i></div>
@@ -860,6 +825,8 @@
                         <li><a href="{{url('/crb-recheck')}}">CRB Recheck </a></li>
                         <li><a href="{{url('/loans')}}">All Loans</a></li>
                         <li><a href="{{url('/loans/deleted')}}">Deleted Loans</a></li>
+                        <li><a href="{{url('/pending-disbursement')}}">Pending Disbursement</a></li>
+
                     </ul>
                 </li>
 
@@ -3389,6 +3356,19 @@
                         <li><a href="{{url('/partner-loans')}}">Partner Loans</a></li>
                         <li><a href="{{url('/loans-pending-disbursement')}}">Payments Pending</a></li>
                     </ul>
+                </li>    <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
+                        <div class="d-inline-block icons-sm mr-1"><i class="fas fa-dollar-sign"></i></div>
+                        <span>Product Loans</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{url('/orders?status=new')}}">New Orders</a></li>
+                        <li><a href="{{url('/orders?status=pending-approval-loan')}}">Pending Approval( Loan Officer )</a></li>
+                        <li><a href="{{url('/orders?status=pending-approval-financier')}}">Pending Approval( Financier )</a></li>
+                        <li><a href="{{url('/orders?status=pending-dispatch')}}">Approved Orders Pending Dispatch</a></li>
+                        <li><a href="{{url('/orders?status=dispatched-orders')}}">Dispatched Orders</a></li>
+                        <li><a href="{{url('/orders?status=new')}}">Disbursement</a></li>
+                    </ul>
                 </li>
 
                 {{-- <li>
@@ -4177,6 +4157,7 @@
                         <ul class="sub-menu" aria-expanded="false">
                             <li><a href="{{url('/zam-loan-calculator')}}">Loan Calculator</a></li>
                             <li><a href="{{url('/new-zambia-device')}}">Apply Device Loan</a></li>
+                            <li><a href="{{url('/loans/create')}}">New Product Loan</a></li>
                             <li><a href="{{url('/new-zambia-cash')}}">Apply Cash Loan</a></li>
                             <li><a href="{{url('/zambia-me-loans')}}">My Loans</a></li>
                         </ul>

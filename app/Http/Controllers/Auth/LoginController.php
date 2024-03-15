@@ -74,9 +74,16 @@ class LoginController extends Controller
 
         $mobileNumber = '0' . $request->input('mobile');
 
-        // Check client registration validated or not. Do not allow to login if not validated
-        $userActive = User::where('mobile',$request->input('mobile'))->orWhere('mobile',$mobileNumber)->orWhere('mobile',ltrim($request->input('mobile'), '0'))->where('status','1')->first();
+        if($login_type == 'mobile')
+        {
+            $userActive = User::where('mobile',$request->input('mobile'))->orWhere('mobile',$mobileNumber)->orWhere('mobile',ltrim($request->input('mobile'), '0'))->where('status','1')->first();
 
+        }else if($login_type == 'email'){
+            $userActive = User::where('email',$request->input('mobile'))->where('status','1')->first();
+        }
+
+
+        // Check client registration validated or not. Do not allow to login if not validated
         if(empty($userActive)){
             return redirect()->back()
             ->withInput()
@@ -84,9 +91,11 @@ class LoginController extends Controller
                 'mobile' => 'This account is not verified. Please verify your account.',
             ]);
         }else{
-            //if (Auth::attempt($request->only($login_type, 'password'))) {
             if(!empty($userActive) && !empty(Hash::check($request->password, $userActive->password))) {
                 Auth::login($userActive);
+                if($request->input('isShop') == 'yes'){
+                    return redirect('shopping');
+                }
             }
             return redirect()->back()
             ->withInput()

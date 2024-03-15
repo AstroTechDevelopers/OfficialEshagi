@@ -42,9 +42,18 @@ Route::get('/shopping', 'App\Http\Controllers\ShopController@index')->name('cont
 Route::get('/privacy_policy', 'App\Http\Controllers\WelcomeController@privacyPolicy')->name('privacy_policy');
 Route::get('/terms_and_conditions', 'App\Http\Controllers\WelcomeController@termsAndConditions')->name('terms_and_conditions');
 Route::get('/shop', 'App\Http\Controllers\ShopController@index')->name('shop');
-Route::get('/shopping/product/{id}', 'App\Http\Controllers\ShopController@productShow');
-Route::get('checkout', 'App\Http\Controllers\ShopController@checkout');
+Route::get('/shopping/product/{id}', 'App\Http\Controllers\ShopController@productShow')->name('shop');
+Route::get('checkout/{id}', 'App\Http\Controllers\ShopController@checkout')->name('checkout');
+Route::get('/orders', 'App\Http\Controllers\OrdersController@index')->name('orders');
 Route::get('cart', 'App\Http\Controllers\ShopController@cart');
+Route::get('shop_products/{id}', 'App\Http\Controllers\ShopController@shopProducts');
+Route::get('bank_signup', 'App\Http\Controllers\ClientController@bankSignup');
+Route::post('checkout', 'App\Http\Controllers\ShopController@postCheckout');
+Route::post('place-order', 'App\Http\Controllers\ShopController@placeOrder');
+Route::post('cart', 'App\Http\Controllers\ShopController@openCart');
+Route::post('update-cart', 'App\Http\Controllers\ShopController@updateCart');
+
+
 
 Route::middleware('guest:web')->group(function () {
 Route::get('/quick-register', [ClientController::class, 'quickRegisterClient'])->name('quick.register')->middleware('activity');

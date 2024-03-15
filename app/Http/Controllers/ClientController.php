@@ -305,10 +305,6 @@ class ClientController extends Controller
             return redirect()->back()->with('error', 'Sorry, Net salary cannot be greater than gross salary')->withInput();
         }
 
-        // if ($request->input('usd_salary') > $request->input('usd_gross')) {
-        //     return redirect()->back()->with('error', 'Sorry, Net USD salary cannot be greater than gross salary')->withInput();
-        // }
-
         $name = generateUsername($_POST['first_name'], $_POST['last_name']);
 
         $locale = Localel::where('id',$request['country'])->firstOrFail();
@@ -594,6 +590,7 @@ class ClientController extends Controller
     }
 
     function uploadNationalID(Request $request){
+
         $validator = Validator::make($request->all(),
             [
                 'natid'  => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
@@ -603,7 +600,6 @@ class ClientController extends Controller
                 'natid.mimes'               => 'Frontside National ID file should of the format: jpeg,png,jpg,gif,svg.',
             ]
         );
-
         if ($validator->fails()) {
             return redirect('kyc-documents')->withErrors($validator)->withInput();
         }
@@ -2294,7 +2290,6 @@ class ClientController extends Controller
                     'first_name'            => 'required',
                     'last_name'             => 'required',
                     'natid'                 => 'required|max:15|unique:clients',
-                    'email'                 => 'nullable|email|max:255|unique:clients',
                     'mobile'                 => 'required|max:10|unique:clients',
                     'dob'                 => 'required|date',
                     'gender'                 => 'required',
@@ -2510,5 +2505,10 @@ class ClientController extends Controller
 
         //$users = DB::select('SELECT * FROM `users` u LEFT JOIN clients c ON (u.natid=c.natid) WHERE c.natid IS NULL');
         return view('clients.quickly-registered-users')->with('users', $users);
+    }
+
+    public function bankSignup()
+    {
+        return view('clients.bank_reg');
     }
 }

@@ -55,7 +55,7 @@
     <header class="navbar-header clearfix">
         <nav class="navbar navbar-expand-lg fixed-top ">
             <div class="container">
-                <img class="navbar-brand" src="{{asset('images/logo.png')}}" alt="eShagi">
+                <img class="navbar-brand" src="{{asset('eshago_logo.png')}}" alt="eShagi">
 
                 <div style="right:0">
                     <a href="{{route('regista-patina')}}" class="btn btn-blue">Register</a>

@@ -64,7 +64,7 @@
     <header class="navbar-header clearfix">
         <nav class="navbar navbar-expand-lg fixed-top ">
             <div class="container">
-                <img class="navbar-brand" src="{{asset('images/logo.png')}}" alt="eShagi">
+                <img class="navbar-brand" src="{{asset('eshago_logo.png')}}" alt="eShagi">
 
                 <div style="right:0">
                     <ul>
@@ -168,7 +168,7 @@
                                         <div class="form-group">
                                             <label>Mobile Number</label>
                                             <div class="input-group">
-                                                <input class="input-group-addon form-control col-lg-2" value="+260" id="countryCode" readonly>
+                                                <input class="input-group-addon form-control col-lg-2" value="+{{ auth()->user()->localel->country_code }}" id="countryCode" readonly>
                                                 <input class="form-control {{ $errors->has('mobile') ? ' is-invalid' : '' }}  col-lg-10" type="number" name="mobile" value="{{ auth()->user()->mobile ?? old('mobile') }}" onkeyup="validateNumber()" maxlength="10" id="mobile" required="required" placeholder="EG. 967342845">
                                                 @if ($errors->has('mobile'))
                                                     <span class="invalid-feedback">
@@ -253,6 +253,7 @@
                                             <label>Nationality</label>
                                             <select class="form-control" id="nationality" name="nationality" onchange="validateId1()">
                                                 <option value="{{ old('nationality') }}">{{ old('nationality') }}</option>
+                                                <option value="Zambia">Zimbabwe</option>
                                                 <option value="Zambia">Zambia</option>
                                                 <option value="other">Other</option>
                                             </select>
@@ -334,7 +335,7 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>ZMW Gross Monthly Salary</label>
+                                            <label>Gross Monthly Salary</label>
                                             <div class="input-group">
                                                 <input class="form-control {{ $errors->has('gross') ? ' is-invalid' : '' }} col-lg-12" name="gross" type="text" pattern="^\d{1,3}*(\.\d+)?$" value="{{ old('gross') }}" data-type="currency" id="gross" required placeholder="Enter Gross Salary">
                                                 @if ($errors->has('gross'))
@@ -347,7 +348,7 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>ZMW Net Monthly Salary</label>
+                                            <label>Net Monthly Salary</label>
                                             <div class="input-group">
                                                 <input class="form-control {{ $errors->has('salary') ? ' is-invalid' : '' }} col-lg-12" name="salary" type="text" pattern="^\d{1,3}*(\.\d+)?$" value="{{ old('salary') }}" data-type="currency" id="salary" required placeholder="Enter Net Salary">
                                                 <br>
@@ -359,21 +360,7 @@
                                                 @endif
                                             </div>
                                         </div>
-                                    </div>                                       
-{{-- 
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label>USD Gross Monthly Salary</label>
-                                            <div class="input-group">
-                                                <input class="form-control {{ $errors->has('usd_gross') ? ' is-invalid' : '' }} col-lg-12" name="usd_gross" type="text" pattern="^\d{1,3}*(\.\d+)?$" value="{{ old('usd_gross') }}" data-type="currency" id="usd_gross" placeholder="Enter USD Gross Salary (if any)">
-                                                @if ($errors->has('usd_gross'))
-                                                    <span class="invalid-feedback">
-                                                        <strong>{{ $errors->first('usd_gross') }}</strong>
-                                                    </span>
-                                                @endif
-                                            </div>
-                                        </div>
-                                    </div> --}}
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -392,7 +379,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                                 {{-- <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
@@ -469,19 +456,12 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Province</label>
-                                            <select class="form-control{{ $errors->has('province') ? ' is-invalid' : '' }}" type="text" name="province" id="province" required="required" >
-                                                <option value="{{ old('province') }}">{{ old('province') }}</option>
-                                                <option value="Lusaka">Lusaka</option>
-                                                <option value="Copperbelt">Copperbelt</option>
-                                                <option value="Central">Central</option>
-                                                <option value="Western">Western</option>
-                                                <option value="Nothwestern">Nothwestern</option>
-                                                <option value="Eastern">Eastern</option>
-                                                <option value="Luapula">Luapula</option>
-                                                <option value="Nothern">Nothern</option>
-                                                <option value="Muchinaga">Muchinaga</option>
-                                                <option value="Southern">Southern</option>
+                                            <label>Country</label>
+                                            <select class="form-control{{ $errors->has('country') ? ' is-invalid' : '' }}" type="select" name="country" id="country" required="required" >
+                                                <option value="{{ old('country') }}">{{ old('country') }}</option>
+                                                @foreach(\App\Models\Localel::all() as $country)
+                                                    <option value="{{ $country->country }}">{{ $country->country }}</option>
+                                                @endforeach
                                             </select>
                                             @if ($errors->has('province'))
                                                 <span class="invalid-feedback">
@@ -492,13 +472,20 @@
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <label>Country</label>
-                                            <select class="form-control" id="country" name="country">
-                                                <option value="Zambia">Zambia</option>
+                                            <label>Province</label>
+                                            <select class="form-control{{ $errors->has('province') ? ' is-invalid' : '' }}" type="text" name="province" id="province" required="required" >
+                                                <option value="{{ old('province') }}">{{ old('province') }}</option>
+                                                @foreach(\App\Models\Province::all() as $province)
+                                                    <option value="{{ $province->province }}">{{ $province->province }}</option>
+                                                @endforeach
                                             </select>
+                                            @if ($errors->has('province'))
+                                                <span class="invalid-feedback">
+                                                        <strong>{{ $errors->first('province') }}</strong>
+                                                    </span>
+                                            @endif
                                         </div>
                                     </div>
-
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Occupation Type</label>

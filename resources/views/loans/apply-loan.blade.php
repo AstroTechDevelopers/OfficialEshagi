@@ -59,43 +59,32 @@
                             <h2 class="title-h2">Loan Details</h2>
                                 <hr>
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-4">
                                     <label>Loan Amount</label>
                                     <div class="input-group">
                                         <input class="input-group-addon form-control col-lg-2" value="{{getLocaleInfo()->currency_code}}" readonly>
-                                        <input type="number" step=0.01 onkeyup="validateCreditLimit()" class="form-control col-lg-10" name="amount" id="amount" placeholder="Enter loan amount" >
+                                        <input type="number" step=0.01 onkeyup="validateCreditLimit()" class="form-control col-lg-10" name="amount" id="amount" value="{{ !is_null($total) ? $total : '' }}" placeholder="Enter loan amount" >
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6">
-                                    <label>Repayment Period</label>
-                                    <select onchange="calculate();" class="form-control" id="paybackPeriod" name="paybackPeriod">
-                                        <option value="">Select repayment period</option>
-                                        <option value="2">2 months</option>
-                                        <option value="3">3 months</option>
-                                        <option value="4">4 months</option>
-                                        <option value="5">5 months</option>
-                                        <option value="6">6 months</option>
-                                        <option value="7">7 months</option>
-                                        <option value="8">8 months</option>
-                                        <option value="9">9 months</option>
-                                        <option value="10">10 months</option>
-                                        <option value="11">11 months</option>
-                                        <option value="12">12 months</option>
-                                        <option value="13">13 months</option>
-                                        <option value="14">14 months</option>
-                                        <option value="15">15 months</option>
-                                        <option value="16">16 months</option>
-                                        <option value="17">17 months</option>
-                                        <option value="18">18 months</option>
-                                        <option value="19">19 months</option>
-                                        <option value="20">20 months</option>
-                                        <option value="21">21 months</option>
-                                        <option value="22">22 months</option>
-                                        <option value="23">23 months</option>
-                                        <option value="24">24 months</option>
+                                <div class="col-lg-4">
+                                    <label>Financier</label>
+                                    <select  class="form-control" id="financier" name="financier">
+                                       @if(auth()->user()->reg_type == 'normal')
+                                           @foreach(\App\Models\Funder::all() as $funder)
+                                               <option value="{{ $funder->id }}">{{ $funder->funder }}</option>
+                                           @endforeach
+                                       @endif
                                     </select>
-                                </div>                                
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <label>Repayment Period</label>
+                                    <select class="form-control" id="paybackPeriod" name="paybackPeriod">
+                                        <option value="">Select repayment period</option>
+                                    </select>
+                                </div>
+
                             </div>
                                 <br>
                             <h2 class="title-h2">Payout Account</h2>
@@ -119,20 +108,20 @@
                                 <div class="col-lg-6">
                                     <p><strong>Monthly Repayment :</strong> {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('monthly') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="text" name="monthly" id="monthly" required value="{{ old('monthly') }}" placeholder="0" readonly></p>
                                     <p>Interest Rate :          <input class="{{ $errors->has('interestRate') ? ' is-invalid' : '' }} col-lg-2" style="border: none;width: 100%;" type="text" name="interestRate" id="interestRate" required value="{{ old('interestRate') }}" placeholder="{!! getInterestRate() !!}" readonly>%</p>
-                                    <p>Management Rate :   <input class="{{ $errors->has('managementRate') ? ' is-invalid' : '' }} col-lg-2" style="border: none;width: 100%;" type="text" name="managementRate" id="managementRate" required value="{{ old('managementRate') }}" placeholder="{!! getManagementRate() !!}" readonly></p>
+{{--                                    <p>Management Rate :   <input class="{{ $errors->has('managementRate') ? ' is-invalid' : '' }} col-lg-2" style="border: none;width: 100%;" type="text" name="managementRate" id="managementRate" required value="{{ old('managementRate') }}" placeholder="{!! getManagementRate() !!}" readonly></p>--}}
                                 </div>
 
                                 <div class="col-lg-6">
-                                    <p><strong>Amount Disbursed :</strong> {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('disbursed') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="text" name="disbursed" id="disbursed" required value="{{ old('disbursed') }}" placeholder="0" readonly></p>
+                                    <p><strong>Amount Disbursed :</strong> {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('disbursed') ? ' is-invalid' : '' }} col-lg-6 disbursed" style="border: none;width: fit-content;" type="text" name="disbursed" id="disbursed" required value="{{ old('disbursed') }}" placeholder="0" readonly></p>
                                     <p>Payment Period Rate :  <input class="{{ $errors->has('tenure') ? ' is-invalid' : '' }} col-lg-2" style="border: none;width: 100%;" type="text" name="tenure" id="tenure" required value="{{ old('tenure') }}" placeholder="0" readonly>Months</p>
-									<p>Management Fee :  {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('managementFee') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="text" name="managementFee" id="managementFee" required value="{{ old('managementFee') }}" placeholder="0" readonly></p>
+{{--									<p>Management Fee :  {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('managementFee') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="text" name="managementFee" id="managementFee" required value="{{ old('managementFee') }}" placeholder="0" readonly></p>--}}
                                     <!--<p>Tax : {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('tax') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="text" name="tax" id="tax" required value="{{ old('tax') }}" placeholder="0" readonly></p>-->
                                 </div>
 
                             </div>
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <p>Admin/Arrangement : {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('arrangement') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="text" name="arrangement" id="arrangement" required value="{{ old('arrangement') }}" placeholder="0" readonly></p>
+{{--                                    <p>Admin/Arrangement : {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('arrangement') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="text" name="arrangement" id="arrangement" required value="{{ old('arrangement') }}" placeholder="0" readonly></p>--}}
                                     <!--<p>Insurance :         {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('insurance') ? ' is-invalid' : '' }} col-lg-2" style="border: none;width: 100%;" type="text" name="insurance" id="insurance" required value="{{ old('insurance') }}" placeholder="0" readonly></p>-->
                                 </div>
 
@@ -156,13 +145,51 @@
     </div>
 @endsection
 @section('footer_scripts')
-    
+
     <script src="{{ asset('js/select2.min.js')}}"></script>
 
     <script type="text/javascript">
         $("#paybackPeriod").select2({
             placeholder: 'Please select a Payback period.',
             allowClear:true,
+        });
+
+        $("#financier").select2({
+            placeholder: 'Please select a Payback period.',
+            allowClear:true,
+        });
+        var funder = null
+        $('#financier').change( function () {
+            var financierID = $(this).val()
+            $.ajax({
+                url: '/api/financier/' + financierID,
+                method: 'GET',
+                success: function (response) {
+                   let maxMonths = response.max_repayment_month
+                    var options = '<option>Please Select Repayment Period</option>';
+                   $('#paybackPeriod').empty()
+                    for( let x = 1 ; x <= maxMonths ; x++)
+                    {
+                        var subString = "<option value=" + x + ">" + x + " Month(s)</option>"
+                        options = options + subString
+                    }
+                    funder = response
+                    $('#interestRate').val(funder.interest_rate_percentage)
+                    $('#paybackPeriod').append(options)
+
+                }
+            })
+        });
+
+        $('#paybackPeriod').change( function () {
+            var period = $(this).val()
+            var amount = $('#amount').val()
+            var disbursedAmount = (1 + funder.interest_rate_percentage/100) * amount;
+            var chargeAmount = (funder.interest_rate_percentage/100) * amount;
+            $('#monthly').val( (disbursedAmount / period).toFixed(2));
+            $('#disbursed').val(disbursedAmount.toFixed(2));
+            $('#tenure').val(period);
+            $('#charges').val(chargeAmount.toFixed(2))
         });
     </script>
 
@@ -175,9 +202,6 @@
                 document.getElementById("amount").value=0;
             }
         }
-        
+
     </script>
-
-    @include('loans.calculate-loan')
-
 @endsection

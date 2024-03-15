@@ -154,4 +154,9 @@ class Client extends Authenticatable
         'fsb_rating'                          => 'string',
     ];
 
+    public function kyc()
+    {
+        return $this->hasOne(Kyc::class, 'user_id');
+    }
+
 }

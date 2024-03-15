@@ -170,7 +170,66 @@
                                     @endif
                                 </div>
                             </div>
+                            <hr><br>
 
+                            <div class="form-group has-feedback row {{ $errors->has('require_deposit') ? ' has-error ' : '' }}">
+                                {!! Form::label('require_deposit', 'Does Funder Require deposit ?', array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <select class="custom-select form-control dynamic" name="require_deposit" id="require_deposit" required>
+                                        <option value="">Select Option</option>
+                                        <option value="1">YES</option>
+                                        <option value="0">NO</option>
+                                    </select>
+                                    @if ($errors->has('require_deposit'))
+                                        <span class="help-block">
+                                                <strong>{{ $errors->first('require_deposit') }}</strong>
+                                            </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback row {{ $errors->has('initial_deposit_percentage') ? ' has-error ' : '' }}" id="initialDeposit">
+                                {!! Form::label('initial_deposit_percentage', 'Initial Deposit %' , array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::number('initial_deposit_percentage', NULL, array('id' => 'initial_deposit_percentage', 'class' => 'form-control', 'placeholder' => 'e.g. 10')) !!}
+                                    </div>
+                                    @if ($errors->has('initial_deposit_percentage'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('initial_deposit_percentage') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback row {{ $errors->has('interest_rate_percentage') ? ' has-error ' : '' }}">
+                                {!! Form::label('interest_rate_percentage', 'Interest Rate %' , array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::number('interest_rate_percentage', NULL, array('id' => 'interest_rate_percentage', 'class' => 'form-control', 'placeholder' => 'e.g. 10', 'required')) !!}
+                                    </div>
+                                    @if ($errors->has('interest_rate_percentage'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('interest_rate_percentage') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group has-feedback row {{ $errors->has('max_repayment_month') ? ' has-error ' : '' }}">
+                                {!! Form::label('max_repayment_month', 'Max Repayment Months' , array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::number('max_repayment_month', NULL, array('id' => 'max_repayment_month', 'class' => 'form-control', 'placeholder' => 'e.g. 4', 'required')) !!}
+                                    </div>
+                                    @if ($errors->has('max_repayment_month'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('max_repayment_month') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <hr><br>
                             {!! Form::button('Add Funder', array('class' => 'btn btn-success margin-bottom-1 mb-1 float-right','type' => 'submit' )) !!}
                             {!! Form::close() !!}
                         </div>
@@ -189,5 +248,22 @@
             placeholder: 'Please select locale.',
             allowClear:true,
         });
+
+    </script>
+    <script>
+        $(document).ready(function (){
+            $('#initialDeposit').hide();
+
+            $('#require_deposit').change(function() {
+                var selectedValue = $(this).val();
+                if(selectedValue == 1){
+                    $('#initialDeposit').show();
+                }
+                else{
+                    $('#initialDeposit').hide();
+                }
+            });
+        });
+
     </script>
 @endsection

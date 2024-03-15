@@ -79,7 +79,7 @@ class ProductController extends Controller
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();
         }
-        
+
         /*$partner = DB::table('partners')
             ->where('regNumber',auth()->user()->natid)
             ->first();*/
@@ -92,7 +92,7 @@ class ProductController extends Controller
 
         if($request->hasFile('product_image')) {
             if ($request->file('product_image')->isValid()) {
-               $productImage = $request->file('product_image');                
+               $productImage = $request->file('product_image');
                $filename = 'pi_' . substr($request->input('pcode'),2) . "_" . $partner->id . '.' . $productImage->getClientOriginalExtension();
                Storage::disk('public')->put('merchants/products/' . $filename, File::get($productImage));
             } else {
@@ -101,13 +101,6 @@ class ProductController extends Controller
         } else {
            return back()->withErrors(['product_image'=>'No file was detected here.'])->withInput();
         }
-
-        /*if($request->hasFile('product_image')) {
-            echo 90;die();
-           if ($request->file('product_image')->isValid()) {
-              $productImage = $request->file('product_image');                
-              $filename = 'pi_' . substr($request->input('pcode'),2) . "_" . $partner->id . '.' . $productImage->getClientOriginalExtension();
-              Storage::disk('public')->put('merchants/products/' . $filename, File::get($productImage));*/
 
               if ($request->input('loandevice') =='on'){
                  $isLoanDevice = true;
@@ -128,17 +121,11 @@ class ProductController extends Controller
                 'product_category_id' => $request->input('category_id'),
                 'product_image' => $filename,
             ]);
-    
+
             $product->save();
-    
+
             return redirect()->back()->with('success', 'Product added successfully.');
 
-           /*} else {
-              return back()->withErrors(['product_image'=>'Invalid image supplied.'])->withInput();
-           }
-        } else {
-           return back()->withErrors(['product_image'=>'No file was detected here.'])->withInput();
-        }*/
     }
 
     /**
@@ -185,7 +172,7 @@ class ProductController extends Controller
                 'price'     => 'required',
                 'product_image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:4096',
             ],
-            [                
+            [
                 'category_id.required'        => 'What is the product category for the product?',
                 'pcode.required'        => 'What is the product code for the product?',
                 'pcode.unique'        => 'Product code is already in the system.',
@@ -216,7 +203,7 @@ class ProductController extends Controller
 
         if($request->hasFile('product_image')) {
             if ($request->file('product_image')->isValid()) {
-               $productImage = $request->file('product_image');                
+               $productImage = $request->file('product_image');
                $filename = 'pi_' . substr($request->input('pcode'),2) . "_" . $partner->id . '.' . $productImage->getClientOriginalExtension();
                Storage::disk('public')->put('merchants/products/' . $filename, File::get($productImage));
             } else {

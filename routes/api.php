@@ -32,6 +32,7 @@ Route::group(['middleware' => ['cors']], function () {
     Route::get('/checking-user/{mobile}', [ApiAuthController::class, 'whoAmI'])->name('ndonzani');
     Route::post('/check-natid', [ClientApiController::class, 'checkNatID'])->name('idbhohere');
     Route::post('/get_products', 'App\Http\Controllers\ShopController@getProducts');
+    Route::get('/financier/{id}', 'App\Http\Controllers\FunderController@getFunder');
 
 
 });

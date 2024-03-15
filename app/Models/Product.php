@@ -2,14 +2,21 @@
 
 namespace App\Models;
 
+use App\Scopes\ProductScope;
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Product extends Model
 {
+    protected static function booted()
+    {
+        static::addGlobalScope(new ProductScope());
+    }
+
     public function partner()
     {
-        return $this->belongsTo(Partner::class);
+        return $this->belongsTo(Partner::class, 'partner_id', 'id');
     }
 
     public function category()
@@ -98,4 +105,34 @@ class Product extends Model
 		'product_category_id' => 'integer',
 		'product_image'=> 'string',
     ];
+
+    public function getPriceWithCurrencyAttribute()
+    {
+        return $this->partner->localel->symbol . ' ' . $this->price;
+    }
+
+    public static function getOrderTotal(Array $products){
+        $sum = 0 ;
+        foreach ($products as $product)
+            $sum += $product->price;
+
+        return $sum;
+    }
+
+    public static function getCommission(Array $products)
+    {
+        return 0.03 * self::getOrderTotal($products);
+    }
+    public function orderItems()
+    {
+        return $this->hasMany(OrderItem::class,'id', 'product_id');
+    }
+
+    public function locale()
+    {
+        return $this->belongsTo(Partner::class,'locale_id','id');
+    }
+
+
 }
+

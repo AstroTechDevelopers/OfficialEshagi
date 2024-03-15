@@ -17,7 +17,15 @@ class FunderController extends Controller
     public function index()
     {
         $funders = Funder::join('localels', 'localels.id','=','funders.locale_id')
-        ->select('localels.id','localels.country','funders.id as fid','funders.funder','funders.funder_acc_num','funders.contact_fname','funders.contact_lname','funders.email','funders.tel_no','funders.support_email','funders.created_at')
+        ->select('localels.id','localels.country',
+            'funders.id as fid','funders.funder',
+            'funders.funder_acc_num','funders.contact_fname',
+            'funders.contact_lname','funders.email',
+            'funders.tel_no','funders.support_email',
+            'funders.created_at',
+            'funders.interest_rate_percentage',
+            'funders.max_repayment_month'
+        )
         ->get();
         return view('funders.funders', compact('funders'));
     }
@@ -51,6 +59,9 @@ class FunderController extends Controller
                 'email'     => 'required|unique:funders|email',
                 'tel_no'     => 'required|unique:funders',
                 'support_email'     => 'required|email',
+                'max_repayment_month' => 'required',
+                'interest_rate_percentage' =>'required',
+
             ],
             [
                 'locale_id.required'        => 'Where is the funder based?',
@@ -74,19 +85,28 @@ class FunderController extends Controller
             return back()->withErrors($validator)->withInput();
         }
 
-        $funder = Funder::create([
-            'locale_id'             => $request->input('locale_id'),
-            'funder'             => $request->input('funder'),
-            'funder_acc_num'             => $request->input('funder_acc_num'),
-            'contact_fname'             => $request->input('contact_fname'),
-            'contact_lname'             => $request->input('contact_lname'),
-            'email'             => $request->input('email'),
-            'tel_no'             => $request->input('tel_no'),
-            'support_email'             => $request->input('support_email'),
-        ]);
+        $data = [
+                'locale_id'      => $request->input('locale_id'),
+                'funder'         => $request->input('funder'),
+                'funder_acc_num' => $request->input('funder_acc_num'),
+                'contact_fname'  => $request->input('contact_fname'),
+                'contact_lname'  => $request->input('contact_lname'),
+                'email'          => $request->input('email'),
+                'tel_no'         => $request->input('tel_no'),
+                'support_email'  => $request->input('support_email'),
+                'max_repayment_month' => (int)$request->input('max_repayment_month'),
+                'interest_rate_percentage' => $request->input('interest_rate_percentage'),
+        ];
 
+        if($request->input('require_deposit') == 1){
+            $data[] =  [
+                'require_deposit'=>true,
+                'initial_deposit_percentage'=> $request->input('initial_deposit_percentage')
+            ];
+        }
+
+        $funder = Funder::create($data);
         $funder->save();
-
         return redirect('funders')->with('success', 'Funder added successfully.');
     }
 
@@ -164,7 +184,12 @@ class FunderController extends Controller
         $funder->email = $request->input('email');
         $funder->tel_no = $request->input('tel_no');
         $funder->support_email = $request->input('support_email');
+        $funder->max_repayment_month = $request->input('max_repayment_month');
+        $funder->interest_rate_percentage = $request->input('interest_rate_percentage');
 
+        if($request->input('interest_rate_percentage') == 1 )
+            $funder->require_deposit_percentage = $request->input('interest_rate_percentage');
+            $funder->initial_deposit_percentage = $request->input('initial_deposit');
         $funder->save();
 
         return back()->with('success', 'Funder info updated successfully.');
@@ -181,5 +206,10 @@ class FunderController extends Controller
         $funder->delete();
 
         return redirect('funders')->with('success', 'Funder deleted successfully.');
+    }
+
+    public function getFunder($id)
+    {
+        return response(Funder::findOrFail($id), 200);
     }
 }

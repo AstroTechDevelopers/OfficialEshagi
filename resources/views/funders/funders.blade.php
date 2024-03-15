@@ -64,7 +64,9 @@
                                     <th>Email</th>
                                     <th>Telephone</th>
                                     <th>Support Email</th>
-                                    <th>Added On</th>
+                                    <th>Needs Deposit</th>
+                                    <th>Interest Rate</th>
+                                    <th>Max Repayment Months</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
@@ -78,7 +80,10 @@
                                         <td>{{$funder->email}}</td>
                                         <td>{{$funder->tel_no}}</td>
                                         <td>{{$funder->support_email}}</td>
-                                        <td>{{$funder->created_at}}</td>
+                                        <td>{{$funder->require_deposit == 0 ? 'No' : 'Yes'}}</td>
+                                        <td>{{$funder->interest_rate_percentage .' %'}}</td>
+                                        <td>{{$funder->max_repayment_month}}</td>
+
                                         <td style="white-space: nowrap;">
                                             {!! Form::open(array('url' => 'funders/' . $funder->fid, 'class' => 'btn btn-sm btn-danger ')) !!}
                                             {!! Form::hidden('_method', 'DELETE') !!}

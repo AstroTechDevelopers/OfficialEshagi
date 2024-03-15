@@ -107,12 +107,16 @@
                                                         <strong>{{ $errors->first('password') }}</strong>
                                                     </span>
                                                 @endif
+                                                <input type="hidden" name="isShop" value="{{ !is_null(request()->get('page')) ? 'yes' : 'no'  }}">
                                             </div>
 
                                             <input class="btn btn-blue btn-send" id="loginbtn" type="submit" value="Login">
                                             <br> <br><span id="notyet1">Not yet Registered? </span><a id="notyet2" href="{{route('quick.register')}}">Click Here</a>
 
                                             <br> <br><span id="notyet1">{{ __('auth.forgot') }} </span><a id="notyet2" href="{{ route('password.request') }}">Reset It Here</a>
+
+                                            <br> <br><span id="notyet1">Sign up via bank ? </span><a id="notyet2" href="/bank_signup">Click Here</a>
+
 
                                         </div>
                                     </div>

@@ -160,4 +160,13 @@ class Kyc extends Model
 		'res_duration'                          => 'integer',
 		'reject_reason' => 'string',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+  public function bankName()
+  {
+      return $this->belongsTo(Bank::class, 'bank', 'id');
+  }
 }
