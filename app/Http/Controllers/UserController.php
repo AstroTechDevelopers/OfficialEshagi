@@ -2400,6 +2400,8 @@ class UserController extends Controller
                 ->take(10)
                 ->orderBy('l.id', 'DESC')
                 ->get();
+
+
             return view('pages.client.zm-home', compact('zambian','user', 'score', 'status', 'scoreMeans','cashLoans','devLoans'));
 
         } else{

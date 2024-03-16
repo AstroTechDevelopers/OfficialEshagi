@@ -2178,10 +2178,11 @@ class ClientController extends Controller
 
            DB::commit();
 
+           /** todo
            Mail::send('emails.validate', ['otp' => $otp, 'token' => $token,'first_name' => $request['first_name'], 'last_name' => $request['last_name']], function($message) use($request){
             $message->to($request->email);
             $message->subject('Account Verification Mail');
-           });
+           }); **/
 
            $data = [
               'useremail' => $request['email'],

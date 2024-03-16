@@ -132,7 +132,7 @@
                                         Amount:
                                     </strong>
 
-                                    Kwacha{{$loan->amount}}
+                                    {{$loan->amount}}
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="border-bottom"></div>
@@ -146,7 +146,7 @@
                                         Amount Disbursed:
                                     </strong>
 
-                                    Kwacha{{$loan->disbursed}}
+                                    {{$loan->disbursed}}
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="border-bottom"></div>
@@ -188,7 +188,7 @@
                                         Monthly Repayments:
                                     </strong>
 
-                                    Kwacha{{$loan->monthly}}
+                                    {{$loan->monthly}}
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="border-bottom"></div>
@@ -202,7 +202,7 @@
                                         Application Fee:
                                     </strong>
 
-                                    Kwacha{{$loan->appFee}}
+                                    {{$loan->appFee}}
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="border-bottom"></div>
@@ -216,7 +216,7 @@
                                         Loan Disbursement Fee:
                                     </strong>
 
-                                    Kwacha{{$loan->disbursefee}}
+                                    {{$loan->disbursefee}}
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="border-bottom"></div>
@@ -230,7 +230,7 @@
                                         Charges:
                                     </strong>
 
-                                    Kwacha{{$loan->charges}}
+                                    {{$loan->charges}}
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="border-bottom"></div>
@@ -258,7 +258,7 @@
                                         Product Price:
                                     </strong>
 
-                                    Kwacha{{$loan->pprice}}
+                                    {{$loan->pprice}}
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="border-bottom"></div>

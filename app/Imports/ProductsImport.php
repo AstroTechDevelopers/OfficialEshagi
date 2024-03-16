@@ -26,9 +26,9 @@ class ProductsImport implements ToModel , WithBatchInserts , WithChunkReading
 			$partner = Partner::where('regNumber', auth()->user()->natid)->first();
 			$partnerid = $partner->id;
 		}
-		
+
 		$category = Category::where('category_name', $row[10])->first();
-		
+
 		if(!empty($row[1])) {
 			return new Product([
 			    'loandevice' => @$row[0],

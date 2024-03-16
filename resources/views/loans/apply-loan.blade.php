@@ -55,7 +55,7 @@
                             <input type="hidden" name="cred_limit" value="{{$user->cred_limit}}">
                             <input type="hidden" name="user_id" value="{{auth()->user()->id}}">
                             <input type="hidden" name="channel_id" value="www.astrocred.co.zm">
-                            <input type="hidden" name="loan_type" value="2">
+                            <input type="hidden" name="loan_type" value="{{ isset($total) ? '5' : '2' }}">
                             <h2 class="title-h2">Loan Details</h2>
                                 <hr>
                             <div class="row">
@@ -63,7 +63,7 @@
                                     <label>Loan Amount</label>
                                     <div class="input-group">
                                         <input class="input-group-addon form-control col-lg-2" value="{{getLocaleInfo()->currency_code}}" readonly>
-                                        <input type="number" step=0.01 onkeyup="validateCreditLimit()" class="form-control col-lg-10" name="amount" id="amount" value="{{ !is_null($total) ? $total : '' }}" placeholder="Enter loan amount" >
+                                        <input type="number" step=0.01 onkeyup="validateCreditLimit()" class="form-control col-lg-10" name="amount" id="amount" value="{{ isset($total) ? $total : '' }}" placeholder="Enter loan amount" >
                                     </div>
                                 </div>
 
@@ -108,13 +108,13 @@
                                 <div class="col-lg-6">
                                     <p><strong>Monthly Repayment :</strong> {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('monthly') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="text" name="monthly" id="monthly" required value="{{ old('monthly') }}" placeholder="0" readonly></p>
                                     <p>Interest Rate :          <input class="{{ $errors->has('interestRate') ? ' is-invalid' : '' }} col-lg-2" style="border: none;width: 100%;" type="text" name="interestRate" id="interestRate" required value="{{ old('interestRate') }}" placeholder="{!! getInterestRate() !!}" readonly>%</p>
-{{--                                    <p>Management Rate :   <input class="{{ $errors->has('managementRate') ? ' is-invalid' : '' }} col-lg-2" style="border: none;width: 100%;" type="text" name="managementRate" id="managementRate" required value="{{ old('managementRate') }}" placeholder="{!! getManagementRate() !!}" readonly></p>--}}
+                                    <p>Management Rate :   <input class="{{ $errors->has('managementRate') ? ' is-invalid' : '' }} col-lg-2" style="border: none;width: 100%;" type="hidden" name="managementRate" id="managementRate" required value="0" placeholder="{!! getManagementRate() !!}" readonly></p>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <p><strong>Amount Disbursed :</strong> {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('disbursed') ? ' is-invalid' : '' }} col-lg-6 disbursed" style="border: none;width: fit-content;" type="text" name="disbursed" id="disbursed" required value="{{ old('disbursed') }}" placeholder="0" readonly></p>
                                     <p>Payment Period Rate :  <input class="{{ $errors->has('tenure') ? ' is-invalid' : '' }} col-lg-2" style="border: none;width: 100%;" type="text" name="tenure" id="tenure" required value="{{ old('tenure') }}" placeholder="0" readonly>Months</p>
-{{--									<p>Management Fee :  {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('managementFee') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="text" name="managementFee" id="managementFee" required value="{{ old('managementFee') }}" placeholder="0" readonly></p>--}}
+									<p>Management Fee :  {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('managementFee') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="hidden" name="managementFee" id="managementFee" required value="0" placeholder="0" readonly></p>
                                     <!--<p>Tax : {{getLocaleInfo()->currency_code}}<input class="{{ $errors->has('tax') ? ' is-invalid' : '' }} col-lg-6" style="border: none;width: fit-content;" type="text" name="tax" id="tax" required value="{{ old('tax') }}" placeholder="0" readonly></p>-->
                                 </div>
 

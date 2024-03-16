@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Imports\ProductsImport;
+use App\Models\Partner;
 use App\Models\Prodexchange;
 use App\Models\Product;
 use App\Models\Category;
@@ -276,7 +277,65 @@ class ProductController extends Controller
             return back()->withErrors($validator)->withInput();
         }
 
-        Excel::import(new ProductsImport, request()->file('products_excel'));
+        if ($request->hasFile('products_excel')) {
+            $file = $request->file('products_excel');
+            $data = Excel::toArray([], $file);
+
+            $products = array();
+            foreach($data[0] as $product){
+                $productObj = [
+                    'loandevice'=>0,
+                    'creator'=>auth()->user()->name,
+                    'partner_id'=>Partner::where('regNumber', auth()->user()->natid)->first()->id,
+                    'product_category_id'=>1,
+                    'pcode'=>'0',
+                    'serial'=>'',
+                    'pname' =>'',
+                    'model'=>'',
+                    'descrip'=>'',
+                    'price'=>''
+                ];
+                for ($i = 0 ; $i < count($product) ; $i++){
+                   switch ($i){
+                       case 0 :
+                           $productObj['pcode'] = $product[$i];
+                       case 1 :
+                           $productObj['serial']= $product[$i];
+                       case 2 :
+                           $productObj['pname'] = $product[$i];
+                       case 3 :
+                           $productObj['model'] = $product[$i];
+                       case 4 :
+                           $productObj['descrip']=$product[$i];
+                       case 5 :
+                           $productObj['price']  =$product[$i];
+                   }
+
+                }
+                $products[] = $productObj;
+
+               /* foreach ($product as $row){
+                    $product = [
+                        'loandevice'=> 0,
+                        'creator' => auth()->user()->name,
+                        'pcode' => $row[0],
+                        'serial' => $row[1],
+                        'pname' => $row[2],
+                        'model' => $row[3],
+                        'partner_id' =>Partner::where('regNumber', auth()->user()->natid)->first()->id ,
+                        'product_category_id' => 1,
+                        'descrip' => $row[4],
+                        'price' => $row[5]
+                    ];
+                    $products[] = $product;
+                }
+                dd('here'); */
+            }
+
+        }
+
+        Product::insert($products);
+        //Excel::import(new ProductsImport, request()->file('products_excel'));
 
         return redirect()->back()->with('success', 'Products Import completed successfully.');
     }

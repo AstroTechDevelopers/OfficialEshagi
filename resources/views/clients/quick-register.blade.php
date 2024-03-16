@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
 
-    <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('eshago_logo.png')}}" type="image/x-icon">
     <link rel="icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
 
     <script src="{{asset('js/modernizr.js')}}"></script>
@@ -64,7 +64,7 @@
     <header class="navbar-header clearfix">
         <nav class="navbar navbar-expand-lg fixed-top ">
             <div class="container">
-                <img class="navbar-brand" src="{{asset('images/logo_official.png')}}" alt="eShagi" width="200px" height="200px">
+                <img class="navbar-brand" src="{{asset('eshago_logo.png')}}" alt="eShagi" width="200px" height="200px">
 
                 <div style="right:0">
                     <a href="{{route('login')}}" class="btn btn-blue">Login</a>

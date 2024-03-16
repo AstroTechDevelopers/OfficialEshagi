@@ -232,10 +232,11 @@ class KycController extends Controller
             ->get();*/
 
         $kycs = DB::table('kycs as k')
-           ->leftJoin('clients as c', 'k.natid', '=', 'c.natid')
-           ->select('c.first_name', 'c.last_name', 'c.natid', 'c.reds_number', 'k.id as kid', 'k.status', 'k.kyc_status', 'k.created_at')
-           ->whereRaw((('k.national_stat=0 OR k.passport_stat=0 OR k.sign_stat=0 OR k.payslip_stat=0 OR k.emp_approval_stat=0') AND 'k.kyc_status=0') AND 'c.deleted_at IS NULL' AND 'k.deleted_at IS NULL')
-           ->get();
+            ->leftJoin('clients as c', 'k.natid', '=', 'c.natid')
+            ->select('c.first_name', 'c.last_name', 'c.natid', 'c.reds_number', 'k.id as kid', 'k.status', 'k.kyc_status', 'k.created_at')
+            ->whereRaw("(k.national_stat = 0 OR k.passport_stat = 0 OR k.sign_stat = 0 OR k.payslip_stat = 0 OR k.emp_approval_stat = 0) AND k.kyc_status = 0 AND c.deleted_at IS NULL AND k.deleted_at IS NULL")
+            ->get();
+
 
         return view('kycs.pending-kycs', compact('kycs'));
     }
@@ -631,7 +632,7 @@ class KycController extends Controller
             ->join('clients as c','k.natid','=','c.natid')
             ->select('c.first_name','c.last_name','c.dob','k.id','k.natid','k.status','k.created_at', 'k.reviewer','c.reds_number')
             ->where('c.locale_id','=',auth()->user()->locale)
-            ->where('k.kyc_status', '=',true)
+            ->where('k.kyc_status', '=',1)
             ->get();
         return view('kycs.approved-kycs', compact('kycs'));
     }
@@ -2161,15 +2162,21 @@ class KycController extends Controller
     }
 
     public function approveKYC($kycid){
+
         $reviewer = auth()->user()->first_name . " " . auth()->user()->last_name;
+
         DB::statement("UPDATE kycs SET reviewer='" . $reviewer ."', kyc_status=1 WHERE id=". $kycid);
 
-        $kyc = kyc::findOrFail($kycid);//Kyc::where('natid',$client->natid)->first();
+        $kyc = kyc::findOrFail($kycid);
+        $kyc->status = 1 ;
+        $kyc->save();
+
         $client = Client::where('natid',$kyc->natid)->first();
         $bank = Bank::where('id',$kyc->bank)->first();
         $loan = Loan::where('client_id',$client->id)->first();
 
         $emails = [$client->email, 'loanszam@astroafrica.tech'];
+
         $natids = explode("/",$client->natid);
 
         $pdfFileName = storage_path() . DIRECTORY_SEPARATOR . 'app/downloads' . DIRECTORY_SEPARATOR . "KYCForm_".$natids[0]."_".$natids[0]."_".$natids[0].".pdf";

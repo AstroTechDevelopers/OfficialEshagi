@@ -38,6 +38,19 @@
   </div>
 @endif
 
+@if ( request()->is('home') && is_null(\App\Models\Client::where('natid', auth()->user()->natid)->first()))
+    <div class="alert alert-warning alert-dismissable fade show" role="alert">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+        <h4>
+            <div class="icons-l uim-icon-danger">
+                <i class="uim uim-times-info" aria-hidden="true"></i>Error
+            </div>
+
+        </h4>
+        <p>We have noticed that your account is pending some kyc documentations, please click <a href="/quickly-continue">here</a> to continue</p>
+    </div>
+@endif
+
 @if (session('errors') && count($errors) > 0)
   <div class="alert alert-danger alert-dismissable fade show" role="alert">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>

@@ -263,6 +263,7 @@ class LoanController extends Controller
      */
     public function show(Loan $loan)
     {
+
         $client = Client::where('id', $loan->client_id)->first();
         $partner = User::where('id', $loan->partner_id)->first();
         $agent = User::where('name', $client->creator)->first();

@@ -47,7 +47,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="header-title">My Personal Loans</h4>
-                            <p class="text-info"> Total Monthly repayments of Kwacha {{$monthlies}}</p>
+                            <p class="text-info"> Total Monthly repayments of  {{$monthlies}}</p>
                             <table id="datatable-buttons" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                 <thead>
                                 <tr>

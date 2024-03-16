@@ -24,7 +24,7 @@
     <meta name="description" content="AstroCred is Zambia's leading online provider of affordable loans & store credit.">
     <meta name="author" content="Kauma Mbewe">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>AstroCred| Zambia's Leading Loans & Store Credit Provider</title>
+    <title>Eshagi | Africa's Leading Loans & Store Credit Provider</title>
 
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/animate.css')}}">
@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
 
     <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
-    <link rel="icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
+    <link rel="icon" href="{{asset('eshago_logo.png')}}" type="image/x-icon">
 
     <script src="{{asset('js/modernizr.js')}}"></script>
 
@@ -98,7 +98,7 @@
                                                 </span>
                                             @endif
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
