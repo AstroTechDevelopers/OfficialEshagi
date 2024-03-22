@@ -96,6 +96,8 @@ class FunderController extends Controller
                 'support_email'  => $request->input('support_email'),
                 'max_repayment_month' => (int)$request->input('max_repayment_month'),
                 'interest_rate_percentage' => $request->input('interest_rate_percentage'),
+                'insurance' => $request->input('insurance'),
+                'establishment_fees' => $request->input('establishment_fees')
         ];
 
         if($request->input('require_deposit') == 1){
@@ -153,6 +155,7 @@ class FunderController extends Controller
                 'email'     => 'required|email|unique:funders,email,'.$funder->id,
                 'tel_no'     => 'required|unique:funders,tel_no,'.$funder->id,
                 'support_email'     => 'required|email',
+                'insurance'         =>'required'
             ],
             [
                 'locale_id.required'        => 'Where is the funder based?',
@@ -186,6 +189,8 @@ class FunderController extends Controller
         $funder->support_email = $request->input('support_email');
         $funder->max_repayment_month = $request->input('max_repayment_month');
         $funder->interest_rate_percentage = $request->input('interest_rate_percentage');
+        $funder->insurance = $request->input('insurance');
+        $funder->establishment_fees = $request->input('establishment_fees');
 
         if($request->input('interest_rate_percentage') == 1 )
             $funder->require_deposit_percentage = $request->input('interest_rate_percentage');

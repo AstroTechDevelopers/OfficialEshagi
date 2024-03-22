@@ -229,7 +229,32 @@
                                     @endif
                                 </div>
                             </div>
-                            <hr><br>
+                            <div class="form-group has-feedback row {{ $errors->has('establishment_fees') ? ' has-error ' : '' }}">
+                                {!! Form::label('establishment_fees', 'Establishment Fees' , array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::number('establishment_fees', NULL, array('id' => 'establishment_fees', 'class' => 'form-control', 'placeholder' => 'e.g. 10')) !!}
+                                    </div>
+                                    @if ($errors->has('establishment_fees'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('establishment_fees') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+                            <div class="form-group has-feedback row {{ $errors->has('insurance') ? ' has-error ' : '' }}" id="initialDeposit">
+                                {!! Form::label('insurance', 'Insurance' , array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::number('insurance', NULL, array('id' => 'insurance', 'class' => 'form-control', 'placeholder' => 'e.g. 10')) !!}
+                                    </div>
+                                    @if ($errors->has('insurance'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('insurance') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
                             {!! Form::button('Add Funder', array('class' => 'btn btn-success margin-bottom-1 mb-1 float-right','type' => 'submit' )) !!}
                             {!! Form::close() !!}
                         </div>

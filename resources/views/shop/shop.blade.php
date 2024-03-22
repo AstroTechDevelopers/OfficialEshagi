@@ -1249,7 +1249,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center">
                         <div class="tpsection mb-15">
-                            <h4 class="tpsection__title text-start brand-product-title">Featured  Products</h4>
+                            <h4 class="tpsection__title text-start brand-product-title">Featured  Stores</h4>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -1262,11 +1262,11 @@
                     <div class="col-lg-3">
                         <div class="tpbrandproduct__main text-center">
                             <div class="tpbrandproduct__main-thumb mb-20">
-                                <img src="shop/assets/img/brand/brand-thumb-1.png" alt="">
+                                <img src="/featured/tvsales.jpeg" alt="">
                             </div>
                             <div class="tpbrandproduct__main-contetn">
-                                <h4 class="tpbrandproduct__title">Super Market</h4>
-                                <p>Nam liber tempor cum soluta nobis eleifend congue doming quod mazim placerat facer possim assum typi.</p>
+                                <h4 class="tpbrandproduct__title">TV Sales</h4>
+                                <p>Get Products from the national trusted furniture retailer on credit</p>
                             </div>
                         </div>
                     </div>
@@ -1275,23 +1275,19 @@
                             <div class="col-xl-4 col-lg-6">
                                 <div class="tpbrandproduct__item d-flex mb-20">
                                     <div class="tpbrandproduct__img p-relative">
-                                        <img src="shop/assets/img/product/products15-min.jpg" alt="">
+                                        <img src="/featured/electrosales.jpeg" alt="">
                                         <div class="tpproduct__info bage tpbrandproduct__bage">
                                             <span class="tpproduct__info-discount bage__discount">-50%</span>
                                         </div>
                                     </div>
                                     <div class="tpbrandproduct__contact">
-                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">Lettuce Fresh Produce Vegetables</a></span>
+                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">Electrosales</a></span>
                                         <div class="tpproduct__rating mb-5">
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
-                                        </div>
-                                        <div class="tpproduct__price">
-                                            <span>$56.00</span>
-                                            <del>$19.00</del>
                                         </div>
                                     </div>
                                 </div>
@@ -1299,13 +1295,13 @@
                             <div class="col-xl-4 col-lg-6">
                                 <div class="tpbrandproduct__item d-flex mb-20">
                                     <div class="tpbrandproduct__img p-relative">
-                                        <img src="shop/assets/img/product/products30-min.jpg" alt="">
+                                        <img src="/featured/farm_and_city.jpeg" alt="">
                                         <div class="tpproduct__info bage tpbrandproduct__bage">
                                             <span class="tpproduct__info-discount bage__discount">-50%</span>
                                         </div>
                                     </div>
                                     <div class="tpbrandproduct__contact">
-                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">Cheap and delicious fresh chicken</a></span>
+                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">Farm and City</a></span>
                                         <div class="tpproduct__rating mb-5">
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
@@ -1313,9 +1309,26 @@
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                         </div>
-                                        <div class="tpproduct__price">
-                                            <span>$56.00</span>
-                                            <del>$19.00</del>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-6">
+                                <div class="tpbrandproduct__item d-flex mb-20">
+                                    <div class="tpbrandproduct__img p-relative">
+                                        <img src="/featured/fusertech.jpeg" alt="">
+                                        <div class="tpproduct__info bage tpbrandproduct__bage">
+                                            <span class="tpproduct__info-discount bage__discount">-50%</span>
+                                        </div>
+                                    </div>
+                                    <div class="tpbrandproduct__contact">
+                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">Fuser Tech</a></span>
+                                        <div class="tpproduct__rating mb-5">
+                                            <a href="#"><i class="icon-star_outline1"></i></a>
+                                            <a href="#"><i class="icon-star_outline1"></i></a>
+                                            <a href="#"><i class="icon-star_outline1"></i></a>
+                                            <a href="#"><i class="icon-star_outline1"></i></a>
+                                            <a href="#"><i class="icon-star_outline1"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -1323,23 +1336,19 @@
                             <div class="col-xl-4 col-lg-6">
                                 <div class="tpbrandproduct__item d-flex mb-20">
                                     <div class="tpbrandproduct__img p-relative">
-                                        <img src="shop/assets/img/product/products2-min.jpg" alt="">
+                                        <img src="/featured/gold_tech.jpeg" alt="">
                                         <div class="tpproduct__info bage tpbrandproduct__bage">
                                             <span class="tpproduct__info-discount bage__discount">-50%</span>
                                         </div>
                                     </div>
                                     <div class="tpbrandproduct__contact">
-                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">Fresh Milk Chocolate Quaker Popped Rice Crisps</a></span>
+                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">Gold Tech</a></span>
                                         <div class="tpproduct__rating mb-5">
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
-                                        </div>
-                                        <div class="tpproduct__price">
-                                            <span>$56.00</span>
-                                            <del>$19.00</del>
                                         </div>
                                     </div>
                                 </div>
@@ -1347,23 +1356,19 @@
                             <div class="col-xl-4 col-lg-6">
                                 <div class="tpbrandproduct__item d-flex mb-20">
                                     <div class="tpbrandproduct__img p-relative">
-                                        <img src="shop/assets/img/product/products33-min.jpg" alt="">
+                                        <img src="/featured/halsted.png" alt="">
                                         <div class="tpproduct__info bage tpbrandproduct__bage">
                                             <span class="tpproduct__info-discount bage__discount">-50%</span>
                                         </div>
                                     </div>
                                     <div class="tpbrandproduct__contact">
-                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">1kg purple onion/ onion/ dried onion Kinh men </a></span>
+                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">Halsted</a></span>
                                         <div class="tpproduct__rating mb-5">
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
-                                        </div>
-                                        <div class="tpproduct__price">
-                                            <span>$56.00</span>
-                                            <del>$19.00</del>
                                         </div>
                                     </div>
                                 </div>
@@ -1371,47 +1376,19 @@
                             <div class="col-xl-4 col-lg-6">
                                 <div class="tpbrandproduct__item d-flex mb-20">
                                     <div class="tpbrandproduct__img p-relative">
-                                        <img src="shop/assets/img/product/products38-min.jpg" alt="">
+                                        <img src="/featured/solution_center.jpeg" alt="">
                                         <div class="tpproduct__info bage tpbrandproduct__bage">
                                             <span class="tpproduct__info-discount bage__discount">-50%</span>
                                         </div>
                                     </div>
                                     <div class="tpbrandproduct__contact">
-                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">1st Quality Fresh Meat From USA 500g</a></span>
+                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">Solution Center</a></span>
                                         <div class="tpproduct__rating mb-5">
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
-                                        </div>
-                                        <div class="tpproduct__price">
-                                            <span>$56.00</span>
-                                            <del>$19.00</del>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6">
-                                <div class="tpbrandproduct__item d-flex mb-20">
-                                    <div class="tpbrandproduct__img p-relative">
-                                        <img src="shop/assets/img/product/products7-min.jpg" alt="">
-                                        <div class="tpproduct__info bage tpbrandproduct__bage">
-                                            <span class="tpproduct__info-discount bage__discount">-50%</span>
-                                        </div>
-                                    </div>
-                                    <div class="tpbrandproduct__contact">
-                                        <span class="tpbrandproduct__product-title"><a href="shop-details.html">Fresh Organic Grape Tomatoes 100g</a></span>
-                                        <div class="tpproduct__rating mb-5">
-                                            <a href="#"><i class="icon-star_outline1"></i></a>
-                                            <a href="#"><i class="icon-star_outline1"></i></a>
-                                            <a href="#"><i class="icon-star_outline1"></i></a>
-                                            <a href="#"><i class="icon-star_outline1"></i></a>
-                                            <a href="#"><i class="icon-star_outline1"></i></a>
-                                        </div>
-                                        <div class="tpproduct__price">
-                                            <span>$56.00</span>
-                                            <del>$19.00</del>
                                         </div>
                                     </div>
                                 </div>
@@ -1435,18 +1412,93 @@
                     </div>
                     <div class="swiper-container tpproduct-active-3 tpslider-bottom p-relative tpproduct-priority">
                         <div class="swiper-wrapper">
-                            @foreach(\App\Models\Partner::all() as $partner)
                              <div class="swiper-slide">
                                 <div class="tpcartitem">
                                     <div class="tpcartitem__thumb mb-15">
-                                        <a href="/shop_products/{{$partner->id}}"><img src="shop/assets/img/cart/cart-1.jpg" alt=""></a>
+                                        <a href="#"><img src="partners/ae.png" alt=""></a>
                                     </div>
                                 </div>
                             </div>
-                            @endforeach
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/asun.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/defy.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/fastjet.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/hisense.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/hp.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/kdv.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/legend_lounge.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/sa-airways.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/samsung.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/unifur.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tpcartitem">
+                                        <div class="tpcartitem__thumb mb-15">
+                                            <a href="#"><img src="partners/wilson.jpeg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -1461,7 +1513,7 @@
             <div class="testimonial__shape p-relative">
                 <img src="shop/assets/img/shape/tree-leaf-4.svg" alt="" class="testimonial__shape-one">
                 <img src="shop/assets/img/shape/tree-leaf-5.svg" alt="" class="testimonial__shape-two">
-                <img src="shop/assets/img/shape/tree-leaf-6.png" alt="" class="testimonial__shape-three">
+{{--                <img src="shop/assets/img/shape/tree-leaf-6.png" alt="" class="testimonial__shape-three">--}}
             </div>
             <div class="swiper-container tptestimonial-active p-relative">
                 <div class="swiper-wrapper">
@@ -1470,7 +1522,7 @@
                             <div class="col-md-8">
                                 <div class="tptestimonial__item text-center ">
                                     <div class="tptestimonial__avata mb-25">
-                                        <img src="shop/assets/img/testimonial/test-avata-1.png" alt="">
+{{--                                        <img src="shop/assets/img/testimonial/test-avata-1.png" alt="">--}}
                                     </div>
                                     <div class="tptestimonial__content">
                                         <p>" Also like the fact that I can pick my staples in the brown <br>
@@ -1496,7 +1548,7 @@
                             <div class="col-md-8">
                                 <div class="tptestimonial__item text-center ">
                                     <div class="tptestimonial__avata mb-25">
-                                        <img src="shop/assets/img/testimonial/test-avata-2.png" alt="">
+{{--                                        <img src="shop/assets/img/testimonial/test-avata-2.png" alt="">--}}
                                     </div>
                                     <div class="tptestimonial__content">
                                         <p>" Also like the fact that I can pick my staples in the brown <br>
@@ -1522,7 +1574,7 @@
                             <div class="col-md-8">
                                 <div class="tptestimonial__item text-center ">
                                     <div class="tptestimonial__avata mb-25">
-                                        <img src="shop/assets/img/testimonial/test-avata-3.png" alt="">
+{{--                                        <img src="shop/assets/img/testimonial/test-avata-3.png" alt="">--}}
                                     </div>
                                     <div class="tptestimonial__content">
                                         <p>" Also like the fact that I can pick my staples in the brown <br>

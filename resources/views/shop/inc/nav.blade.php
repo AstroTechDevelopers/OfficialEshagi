@@ -32,7 +32,7 @@
                             <button class="tp-search-toggle"><i class="icon-search"></i></button>
                         </div>
                         <div class="header__info-user tpcolor__yellow ml-10">
-                            <a href="log-in.html"><i class="icon-user"></i></a>
+                            <a href="/login"><i class="icon-user"></i></a>
                         </div>
                         <div class="header__info-cart tpcolor__oasis ml-10 tp-cart-toggle">
                             <button><i><img src="{{ asset('shop/assets/img/icon/cart-1.svg') }}" alt=""></i>

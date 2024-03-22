@@ -38,7 +38,7 @@
   </div>
 @endif
 
-@if ( request()->is('home') && is_null(\App\Models\Client::where('natid', auth()->user()->natid)->first()))
+@if ( request()->is('home') && auth()->user()->utype == 'Client' && is_null(\App\Models\Client::where('natid', auth()->user()->natid)->first()))
     <div class="alert alert-warning alert-dismissable fade show" role="alert">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
         <h4>

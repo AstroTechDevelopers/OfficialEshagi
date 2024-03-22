@@ -77,7 +77,7 @@
                             <div class="form-group has-feedback row {{ $errors->has('category_id') ? ' has-error ' : '' }}">
                                 {!! Form::label('category_id', 'Product Category', array('class' => 'col-md-3 control-label')); !!}
 								<div class="col-md-9">
-                                    <div class="input-group">                                        
+                                    <div class="input-group">
                                        {!! Form::select('category_id', $categories, null, ['class' => 'form-control']) !!}
                                     </div>
                                     @if ($errors->has('category_id'))
@@ -87,7 +87,7 @@
                                     @endif
                                 </div>
                             </div>
-							
+
 							<div class="form-group has-feedback row {{ $errors->has('pcode') ? ' has-error ' : '' }}">
                                 {!! Form::label('pcode', 'Product Code', array('class' => 'col-md-3 control-label')); !!}
                                 <div class="col-md-9">
@@ -171,11 +171,11 @@
                                     @endif
                                 </div>
                             </div>
-							
+
 							<div class="form-group has-feedback row {{ $errors->has('product_image') ? ' has-error ' : '' }}">
                                 {!! Form::label('product_image', 'Product Image', array('class' => 'col-md-3 control-label')); !!}
 								<div class="col-md-9">
-                                    <div class="input-group">                                        
+                                    <div class="input-group">
                                        {!! Form::file('product_image', NULL, array('id' => 'product_image', 'class' => 'form-control', 'required')) !!}
                                     </div>
                                     @if ($errors->has('product_image'))
@@ -185,6 +185,34 @@
                                     @endif
                                 </div>
                             </div>
+                            <hr><br>
+                            <div class="form-group has-feedback row {{ $errors->has('img_1') ? ' has-error ' : '' }}">
+                                {!! Form::label('img_1', 'Additional Images', array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        {!! Form::file('img_1', NULL, array('id' => 'ing_1', 'class' => 'form-control', 'required')) !!}
+                                    </div>
+                                    @if ($errors->has('img_1'))
+                                        <span class="help-block">
+                                            <strong>{{ $errors->first('img_1') }}</strong>
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
+
+                            <div id="targetElement">
+
+                            </div>
+
+                            <div class="form-group has-feedback row" id="addBtn">
+                                {!! Form::label('img_1', 'Image', array('class' => 'col-md-3 control-label')); !!}
+                                <div class="col-md-9">
+                                    <div class="input-group">
+                                        <button id="addImage" type="button" class="btn btn-primary">+</button>
+                                    </div>
+                                </div>
+                            </div>
+
 
                             {{-- <div class="form-group has-feedback row {{ $errors->has('usd_price') ? ' has-error ' : '' }}">
                                 {!! Form::label('usd_price', 'USD Price', array('class' => 'col-md-3 control-label')); !!}
@@ -298,5 +326,40 @@
             caret_pos = updated_len - original_len + caret_pos;
             input[0].setSelectionRange(caret_pos, caret_pos);
         }
+
+        $(document).ready(function() {
+            var imgCounter = 1; // Initialize the counter
+
+            if (imgCounter < 5){
+                $('#addImage').click(function () {
+                    console.log(imgCounter)
+                    var imgID = 'img_' + imgCounter; // Generate the dynamic ID
+                    var htmlCode = `
+                                <div class="form-group has-feedback row {{ $errors->has('${imgID}') ? ' has-error ' : '' }}">
+                                   {!! Form::label('${imgID}', 'Image', array('class' => 'col-md-3 control-label')); !!}
+                    <div class="col-md-9">
+                    <div class="input-group">
+{!! Form::file('${imgID}', NULL, array('id' => '${imgID}', 'class' => 'form-control', 'required')) !!}
+                    </div>
+@if ($errors->has('${imgID}'))
+                    <span class="help-block">
+                    <strong>{{ $errors->first('${imgID}') }}</strong>
+                                      </span>
+                                @endif
+                    </div>
+                    </div>
+`;
+
+                    $('#targetElement').append(htmlCode);
+                    imgCounter++;
+                });
+
+                }else {
+xs
+                $('#addBtn').hide()
+            }
+
+                });
+
     </script>
 @endsection
