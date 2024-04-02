@@ -218,6 +218,7 @@
                     </div>
                 </div>
                 @include('shop.inc.nav')
+
             </header>
             <div>
                 <main class="Layout-transition--32GY7" id="maincontent" role="main">
@@ -295,7 +296,7 @@
                                                         offer BNPL options in their stores, receiving immediate payment for approved customers.</p>
                                                     </div>
                                                 </div>
-                                                <div class="styled__CtaContainer-sc-f6u918-9 llWheg"><a href="card.html" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Register Today</span></a></div>
+                                                <div class="styled__CtaContainer-sc-f6u918-9 llWheg"><a href="/quick-register" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Register Today</span></a></div>
                                             </div>
                                             <div class="styled__ColumnImage-sc-f6u918-6 kesodR">
                                                 <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
@@ -432,7 +433,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="IllustrationWithText-button--6hQrh"><a href="how-it-works.html" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Learn more</span></a></div>
+                            <div class="IllustrationWithText-button--6hQrh"><a href="/quick-register" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Join Today</span></a></div>
                         </div>
                     </section>
                     <section class="SectionWrapper-sectionWrapper--pQutn styles-spacingTopNone--1Hwd4 styles-spacingBottomNone--2ubZt">

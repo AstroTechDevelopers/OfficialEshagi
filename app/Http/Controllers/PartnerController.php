@@ -1418,7 +1418,7 @@ class PartnerController extends Controller
         $field = filter_var($credentials['natid'], FILTER_VALIDATE_EMAIL) ? 'email' : 'regNumber';
         if (Auth::attempt([$field => $credentials['natid'], 'password' => $credentials['password']])) {
             // Authentication passed
-            return redirect()->intended('/partner/dashboard');
+            return redirect()->intended('/home');
         } else {
             // Authentication failed
             return redirect()->back()->withErrors(['error'=>'Invalid email/registration number or password']);

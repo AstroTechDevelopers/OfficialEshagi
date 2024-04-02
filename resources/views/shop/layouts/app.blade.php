@@ -125,23 +125,16 @@
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                     <div class="tpsidebar-categories">
                         <ul>
-                            <li><a href="shop-details.html">Dairy Farm</a></li>
-                            <li><a href="shop-details.html">Healthy Foods</a></li>
-                            <li><a href="shop-details.html">Lifestyle</a></li>
-                            <li><a href="shop-details.html">Organics</a></li>
-                            <li><a href="shop-details.html">Photography</a></li>
-                            <li><a href="shop-details.html">Shopping</a></li>
-                            <li><a href="shop-details.html">Tips & Tricks</a></li>
+                            @foreach(\App\Models\Category::all() as $category)
+                               <li><a href="#">{{ $category->category_name }}</a></li>
+                            @endforeach
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <div class="tpsideinfo__account-link">
-            <a href="log-in.html"><i class="icon-user icons"></i> Login / Register</a>
-        </div>
-        <div class="tpsideinfo__wishlist-link">
-            <a href="wishlist.html" target="_parent"><i class="icon-heart"></i> Wishlist</a>
+            <a href="/login"><i class="icon-user icons"></i> Login / Register</a>
         </div>
     </div>
     <!-- sidebar-menu-area-end -->

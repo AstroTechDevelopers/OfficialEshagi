@@ -78,7 +78,7 @@
                                 {!! Form::label('category_id', 'Product Category', array('class' => 'col-md-3 control-label')); !!}
 								<div class="col-md-9">
                                     <div class="input-group">
-                                       {!! Form::select('category_id', $categories, null, ['class' => 'form-control']) !!}
+                                       {!! Form::select('category_id', \App\Models\Category::all()->pluck('category_name', 'id')->toArray(), null, ['class' => 'form-control']) !!}
                                     </div>
                                     @if ($errors->has('category_id'))
                                         <span class="help-block">
@@ -230,7 +230,7 @@
                                     @endif
                                 </div>
                             </div> --}}
-
+                            <input type="hidden" name="imageNumber" class="imageNumber">
                             {!! Form::button('Add Product', array('class' => 'btn btn-success margin-bottom-1 mb-1 float-right','type' => 'submit' )) !!}
                             {!! Form::close() !!}
                         </div>
@@ -328,8 +328,7 @@
         }
 
         $(document).ready(function() {
-            var imgCounter = 1; // Initialize the counter
-
+            var imgCounter = 1;
             if (imgCounter < 5){
                 $('#addImage').click(function () {
                     console.log(imgCounter)
@@ -353,13 +352,9 @@
                     $('#targetElement').append(htmlCode);
                     imgCounter++;
                 });
-
                 }else {
-xs
                 $('#addBtn').hide()
             }
-
-                });
-
+        });
     </script>
 @endsection

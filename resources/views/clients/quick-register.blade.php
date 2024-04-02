@@ -137,6 +137,7 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label> National ID</label>
+                                            <p class="text-danger text-sm"  style="font-size: 13px " id="id_format"></p>
                                             <input class="form-control  {{ $errors->has('natid') ? ' is-invalid' : '' }}" type="text" autocapitalize="characters" maxlength="15" name="natid" id="natid" value="{{ old('natid') }}" required="required" title="ID Format should be of supported format" placeholder="Enter your National ID...">
                                             @if ($errors->has('natid'))
                                                 <span class="invalid-feedback">
@@ -162,7 +163,6 @@
                                                 </span>
                                                 @endif
                                             </div>
-
                                         </div>
                                     </div>
                                     <div class="col-md-6">
@@ -237,12 +237,13 @@
             if(selectedCountry.country_short == 'ZW')
             {
                 $('#natid').attr('pattern', '^\\d{8}[A-Z]\\d{2}$');
+                $('#id_format').text('Please use the Zimbabwe ID format, do not put spaces and a "-" eg 02078899M25 ')
 
             }
             else if(selectedCountry.country_short == 'ZM')
             {
                 $('#natid').attr('pattern', '^[0-9]{2}-[0-9]{5,7}-[A-Z]-[0-9]{2}$|^\d{6}\/\d{2}\/\d{1}$');
-
+                $('#id_format').text('Please use the Zambian ID format')
             }
         });
 

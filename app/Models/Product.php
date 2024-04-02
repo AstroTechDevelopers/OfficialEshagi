@@ -13,12 +13,10 @@ class Product extends Model
     {
         static::addGlobalScope(new ProductScope());
     }
-
     public function partner()
     {
         return $this->belongsTo(Partner::class, 'partner_id', 'id');
     }
-
     public function category()
     {
         return $this->belongsTo(Category::class,'product_category_id', 'id');
@@ -30,14 +28,12 @@ class Product extends Model
      * @var string
      */
     protected $table = 'products';
-
     /**
      * Indicates if the model should be timestamped.
      *
      * @var bool
      */
     public $timestamps = true;
-
     /**
      * The attributes that are not mass assignable.
      *
@@ -53,9 +49,7 @@ class Product extends Model
      * @var array
      */
     protected $hidden = [
-
     ];
-
     /**
      * The attributes that should be mutated to dates.
      *
@@ -66,7 +60,6 @@ class Product extends Model
         'updated_at',
         'deleted_at',
     ];
-
     /**
      * The attributes that are mass assignable.
      *
@@ -84,8 +77,11 @@ class Product extends Model
         'partner_id',
 		'product_category_id',
 		'product_image',
+        'img_1',
+        'img_2',
+        'img_3',
+        'img_4'
     ];
-
     /**
      * The attributes that should be cast to native types.
      *
@@ -105,12 +101,10 @@ class Product extends Model
 		'product_category_id' => 'integer',
 		'product_image'=> 'string',
     ];
-
     public function getPriceWithCurrencyAttribute()
     {
         return $this->partner->localel->symbol . ' ' . $this->price;
     }
-
     public static function getOrderTotal(Array $products){
         $sum = 0 ;
         foreach ($products as $product)
@@ -118,7 +112,6 @@ class Product extends Model
 
         return $sum;
     }
-
     public static function getCommission(Array $products)
     {
         return 0.03 * self::getOrderTotal($products);
@@ -127,12 +120,9 @@ class Product extends Model
     {
         return $this->hasMany(OrderItem::class,'id', 'product_id');
     }
-
     public function locale()
     {
         return $this->belongsTo(Partner::class,'locale_id','id');
     }
-
-
 }
 

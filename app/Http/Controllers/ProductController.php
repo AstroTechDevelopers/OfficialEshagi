@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\DB;
+use Intervention\Image\Facades\Image;
 use Maatwebsite\Excel\Facades\Excel;
 //use Validator;
 
@@ -36,8 +37,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $categories = Category::all()->pluck('category_name', 'id')->toArray();
-        return view('products.add-product', compact('categories'));
+        //$categories = Category::all()->pluck('category_name', 'id')->toArray();
+        return view('products.add-product');
     }
 
     /**
@@ -103,29 +104,58 @@ class ProductController extends Controller
            return back()->withErrors(['product_image'=>'No file was detected here.'])->withInput();
         }
 
+        if($request->hasFile('img_1') || $request->hasFile('img_2') || $request->hasFile('img_3'))
+        {
+            $image_1 = $request->file('img_1');
+            $image_2 = $request->file('img_2');
+            $image_3 = $request->file('img_3');
+
+            $resizedImage1 = Image::make($image_1)->resize(100, 100);
+            $resizedImage2 = Image::make($image_2)->resize(100, 100);
+            $resizedImage3 = Image::make($image_3)->resize(100, 100);
+
+            $img_1 = 'pi_'. rand(0, 20000). substr($request->input('img_1'),2) . "_" . $partner->id . '.' . $image_1->getClientOriginalExtension();
+
+            $img_2 = 'pi_' .rand(0, 20000). substr($request->input('img_2'),2) . "_" . $partner->id . '.' . $image_2->getClientOriginalExtension();
+
+            $img_3 = 'pi_' .rand(0, 20000). substr($request->input('img_3'),2) . "_" . $partner->id . '.' . $image_3->getClientOriginalExtension();
+
+            // Save the resized image
+            $resizedImagePath1 = public_path('merchants/products/other/'.$img_1);
+            $resizedImagePath2 = public_path('merchants/products/other/'.$img_2);
+            $resizedImagePath3 = public_path('merchants/products/other/'.$img_3);
+
+            $resizedImage1->save($resizedImagePath1);
+            $resizedImage2->save($resizedImagePath2);
+            $resizedImage3->save($resizedImagePath3);
+
               if ($request->input('loandevice') =='on'){
                  $isLoanDevice = true;
               } else {
                  $isLoanDevice = false;
               }
 
-            $product = Product::create([
-                'loandevice'             => $isLoanDevice,
-                'creator'             => $request->input('creator'),
-                'pcode'             => $request->input('pcode'),
-                'serial'             => $request->input('serial'),
-                'pname'             => $request->input('pname'),
-                'model'             => $request->input('model'),
-                'descrip'             => $request->input('descrip'),
-                'price'             => $request->input('price'),
-                'partner_id'        => $partner->id,
-                'product_category_id' => $request->input('category_id'),
-                'product_image' => $filename,
-            ]);
+                $product = Product::create([
+                    'loandevice'             => $isLoanDevice,
+                    'creator'                => $request->input('creator'),
+                    'pcode'                  => $request->input('pcode'),
+                    'serial'                 => $request->input('serial'),
+                    'pname'                  => $request->input('pname'),
+                    'model'                  => $request->input('model'),
+                    'descrip'                => $request->input('descrip'),
+                    'price'                  => $request->input('price'),
+                    'partner_id'             => $partner->id,
+                    'product_category_id'    => $request->input('category_id'),
+                    'product_image'          => $filename,
+                    'img_1'                  => $img_1,
+                    'img_2'                  => $img_2,
+                    'img_3'                  => $img_3
+                ]);
 
             $product->save();
 
             return redirect()->back()->with('success', 'Product added successfully.');
+        }
 
     }
 

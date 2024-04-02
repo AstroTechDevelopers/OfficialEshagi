@@ -28,12 +28,21 @@
                 </div>
                 <div class="col-xl-3">
                     <div class="header__info d-flex align-items-center">
-                        <div class="header__info-search tpcolor__purple ml-10">
-                            <button class="tp-search-toggle"><i class="icon-search"></i></button>
-                        </div>
-                        <div class="header__info-user tpcolor__yellow ml-10">
-                            <a href="/login"><i class="icon-user"></i></a>
-                        </div>
+                        @auth
+                            <div class="header__info-search tpcolor__purple ml-10">
+                                <button class="tp-search-toggle"><i class="icon-search"></i></button>
+                            </div>
+                            <div class="header__info-user tpcolor__yellow ml-10">
+                                <a href="/home" class="btn btn-warning">My Account</a>
+                            </div>
+                        @else
+                            <div class="header__info-search tpcolor__purple ml-10">
+                                <button class="tp-search-toggle"><i class="icon-search"></i></button>
+                            </div>
+                            <div class="header__info-user tpcolor__yellow ml-10">
+                                <a href="/login" class="btn btn-primary">Join Today</a>
+                            </div>
+                        @endif
                         <div class="header__info-cart tpcolor__oasis ml-10 tp-cart-toggle">
                             <button><i><img src="{{ asset('shop/assets/img/icon/cart-1.svg') }}" alt=""></i>
                                 <span id="cartNum"></span>
