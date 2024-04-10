@@ -217,8 +217,8 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tpfooter__widget footer-col-1 mb-50">
                             <h4 class="tpfooter__widget-title">Let Us Help You</h4>
-                            <p>If you have any question, please <br> contact us at:
-                                <a href="mailto:support@example.com">support@example.com</a>
+                            <p> a. Call +263789159355
+                                b. Send a WhatsApp message on +263789159360
                             </p>
                             <div class="tpfooter__widget-social mt-45">
                                 <span class="tpfooter__widget-social-title mb-5">Social Media:</span>
@@ -232,25 +232,24 @@
                     </div>
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                         <div class="tpfooter__widget footer-col-2 mb-50">
-                            <h4 class="tpfooter__widget-title">Looking for Orfarm?</h4>
-                            <p>68 St. Vicent Place, Glasgow, Greater <br> Newyork NH2012, UK.</p>
+                            <h4 class="tpfooter__widget-title">Looking for Eshagi?</h4>
+                            <p>11th floor Causeway building along 3rd and Central Avenue
+                                <br> Harare Zimabwe</p>
                             <div class="tpfooter__widget-time-info mt-35">
                                 <span>Monday – Friday: <b>8:10 AM – 6:10 PM</b></span>
-                                <span>Saturday: <b>10:10 AM – 06:10 PM</b></span>
+                                <span>Saturday: <b>09:10 AM – 2:00 PM</b></span>
                                 <span>Sunday: <b>Close</b></span>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-4 col-md-4 col-sm-5">
                         <div class="tpfooter__widget footer-col-3 mb-50">
-                            <h4 class="tpfooter__widget-title">HOT CATEGORIES</h4>
+                            <h4 class="tpfooter__widget-title">CATEGORIES</h4>
                             <div class="tpfooter__widget-links">
                                 <ul>
-                                    <li><a href="#">Fruits & Vegetables</a></li>
-                                    <li><a href="#">Dairy Products</a></li>
-                                    <li><a href="#">Package Foods</a></li>
-                                    <li><a href="#">Beverage</a></li>
-                                    <li><a href="#">Health & Wellness</a></li>
+                                    @foreach(\App\Models\Category::all() as $category)
+                                    <li><a href="#">{{ $category->category_name }}</a></li>
+                                    @endforeach
                                 </ul>
                             </div>
                         </div>
@@ -259,7 +258,7 @@
                         <div class="tpfooter__widget footer-col-4 mb-50">
                             <h4 class="tpfooter__widget-title">Our newsletter</h4>
                             <div class="tpfooter__widget-newsletter">
-                                <p>Subscribe to the Orfarm mailing list to receive updates <br> on new arrivals & other information.</p>
+                                <p>Subscribe to the Eshagi mailing list to receive updates <br> on new arrivals & other information.</p>
                                 <form action="index.html">
                                     <span><i><img src="shop/assets/img/shape/message-1.svg" alt=""></i></span>
                                     <input type="email" placeholder="Your email address...">

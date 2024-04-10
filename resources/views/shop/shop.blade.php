@@ -73,7 +73,7 @@
         <div class="container">
             <div class="feature-bg-round white-bg pt-50 pb-15">
                 <div class="tpfeature-border">
-                    <div class="row row-cols-lg-5 row-cols-md-3 row-cols-1">
+                    <div class="row row-cols-lg-4 row-cols-md-3 row-cols-1">
                         <div class="col">
                             <div class="mainfeature__item text-center mb-45">
                                 <div class="mainfeature__icon">
@@ -81,7 +81,8 @@
                                 </div>
                                 <div class="mainfeature__content">
                                     <h4 class="mainfeature__title">Fast Delivery</h4>
-                                    <p>Across Harare</p>
+                                    <p>Across Harare within 24hours </p>
+                                    <p>Nation wide within 72 hours </p>
                                 </div>
                             </div>
                         </div>
@@ -91,8 +92,9 @@
                                     <img src="shop/assets/img/icon/feature-icon-7.svg" alt="">
                                 </div>
                                 <div class="mainfeature__content">
-                                    <h4 class="mainfeature__title">convenient payment</h4>
-                                    <p>pay installments comfortably</p>
+                                    <h4 class="mainfeature__title">Convenient payment</h4>
+                                    <p>Pay with any bank of your choice
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +105,7 @@
                                 </div>
                                 <div class="mainfeature__content">
                                     <h4 class="mainfeature__title">ONLINE DISCOUNT</h4>
-                                    <p> Add Multi-buy Discount</p>
+                                    <p>Get the best deals with us!</p>
                                 </div>
                             </div>
                         </div>
@@ -115,17 +117,6 @@
                                 <div class="mainfeature__content">
                                     <h4 class="mainfeature__title">Help Center</h4>
                                     <p>Dedicated 24/7 Support </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="mainfeature__item text-center mb-45">
-                                <div class="mainfeature__icon">
-                                    <img src="shop/assets/img/icon/feature-icon-10.svg" alt="">
-                                </div>
-                                <div class="mainfeature__content">
-                                    <h4 class="mainfeature__title">Curated items</h4>
-                                    <p>From Handpicked partners</p>
                                 </div>
                             </div>
                         </div>
@@ -176,27 +167,12 @@
                                                 </div>
                                                 <div class="tpproduct__content">
                                                   <span class="tpproduct__content-weight">
-                                                     <a href="/shopping/product/{{ $product->id }}">{{ $product->pcode }}</a>
+                                                        <h4 class="tpproduct__title">
+                                                                    <a href="/shopping/product/{{ $product->id }}">{{ $product->pname }}</a>
+                                                        </h4>
                                                   </span>
-                                                    <h4 class="tpproduct__title">
-                                                        <a href="/shopping/product/{{ $product->id }}">{{ $product->partner->merchantname }}</a>
-                                                    </h4>
-                                                    <div class="tpproduct__rating mb-5">
-                                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                                        <a href="#"><i class="icon-star_outline1"></i></a>
-                                                    </div>
                                                     <div class="tpproduct__price mb-5">
                                                         <span>{{ $product->price_with_currency }}</span>
-                                                        <del>{{ $product->price + 10 }}</del>
-                                                    </div>
-                                                    <div class="tpproduct__progress">
-                                                        <div class="progress mb-5">
-                                                            <div class="progress-bar w-25" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                        </div>
-                                                        <span>Sold: <b>16/60</b></span>
                                                     </div>
                                                 </div>
                                                 <div class="tpproduct__hover-text">
@@ -242,9 +218,6 @@
                             <nav>
                                 <div class="nav nav-tabs" role="tablist">
                                     <button class="nav-link active" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">All</button>
-                                    <button class="nav-link" id="nav-meat-tab" data-bs-toggle="tab" data-bs-target="#nav-meat" type="button" role="tab" aria-controls="nav-meat" aria-selected="false">Furniture</button>
-                                    <button class="nav-link" id="nav-vegetables-tab" data-bs-toggle="tab" data-bs-target="#nav-vegetables" type="button" role="tab" aria-controls="nav-vegetables" aria-selected="false">Electronics</button>
-                                    <button class="nav-link" id="nav-snacks-tab" data-bs-toggle="tab" data-bs-target="#nav-snacks" type="button" role="tab" aria-controls="nav-snacks" aria-selected="false">Apparel and Clothing</button>
                                 </div>
                             </nav>
                         </div>
@@ -277,27 +250,12 @@
                                                             </div>
                                                             <div class="tpproduct__content">
                                                   <span class="tpproduct__content-weight">
-                                                     <a href="/shopping/product/{{ $product->id }}">{{ $product->pcode }}</a>
+                                                        <h4 class="tpproduct__title">
+                                                                    <a href="/shopping/product/{{ $product->id }}">{{ $product->pname }}</a>
+                                                        </h4>
                                                   </span>
-                                                                <h4 class="tpproduct__title">
-                                                                    <a href="/shopping/product/{{ $product->id }}">{{ $product->partner->merchantname }}</a>
-                                                                </h4>
-                                                                <div class="tpproduct__rating mb-5">
-                                                                    <a href="#"><i class="icon-star_outline1"></i></a>
-                                                                    <a href="#"><i class="icon-star_outline1"></i></a>
-                                                                    <a href="#"><i class="icon-star_outline1"></i></a>
-                                                                    <a href="#"><i class="icon-star_outline1"></i></a>
-                                                                    <a href="#"><i class="icon-star_outline1"></i></a>
-                                                                </div>
                                                                 <div class="tpproduct__price mb-5">
                                                                     <span>{{ $product->price_with_currency }}</span>
-                                                                    <del>{{ $product->price + 10 }}</del>
-                                                                </div>
-                                                                <div class="tpproduct__progress">
-                                                                    <div class="progress mb-5">
-                                                                        <div class="progress-bar w-25" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                    </div>
-                                                                    <span>Sold: <b>16/60</b></span>
                                                                 </div>
                                                             </div>
                                                             <div class="tpproduct__hover-text">
@@ -1249,7 +1207,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center">
                         <div class="tpsection mb-15">
-                            <h4 class="tpsection__title text-start brand-product-title">Featured  Stores</h4>
+                            <h4 class="tpsection__title text-start brand-product-title"> Featured Retail Stores </h4>
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -1407,14 +1365,16 @@
                 <div class="row align-items-center">
                     <div class="col-md-6 text-center">
                         <div class="tpsection mb-15">
-                            <h4 class="tpsection__title text-start brand-product-title">Our Partners</h4>
+                            <h4 class="tpsection__title text-start brand-product-title">Our Financing Partners</h4>
                         </div>
                     </div>
                     <div class="swiper-container tpproduct-active-3 tpslider-bottom p-relative tpproduct-priority">
+
                         <div class="swiper-wrapper">
                              <div class="swiper-slide">
                                 <div class="tpcartitem">
                                     <div class="tpcartitem__thumb mb-15">
+                                        <p>CBZ</p>
                                         <a href="#"><img src="partners/ae.png" alt=""></a>
                                     </div>
                                 </div>
@@ -1422,6 +1382,7 @@
                                 <div class="swiper-slide">
                                     <div class="tpcartitem">
                                         <div class="tpcartitem__thumb mb-15">
+                                            <p>Woman’s Bank</p>
                                             <a href="#"><img src="partners/asun.jpeg" alt=""></a>
                                         </div>
                                     </div>
@@ -1429,6 +1390,7 @@
                                 <div class="swiper-slide">
                                     <div class="tpcartitem">
                                         <div class="tpcartitem__thumb mb-15">
+                                            <p>POSB</p>
                                             <a href="#"><img src="partners/defy.png" alt=""></a>
                                         </div>
                                     </div>
@@ -1436,6 +1398,7 @@
                                 <div class="swiper-slide">
                                     <div class="tpcartitem">
                                         <div class="tpcartitem__thumb mb-15">
+                                            <p>Old Mutual Finance</p>
                                             <a href="#"><img src="partners/fastjet.jpeg" alt=""></a>
                                         </div>
                                     </div>
@@ -1443,6 +1406,7 @@
                                 <div class="swiper-slide">
                                     <div class="tpcartitem">
                                         <div class="tpcartitem__thumb mb-15">
+                                            <p>FBC Bank</p>
                                             <a href="#"><img src="partners/hisense.jpeg" alt=""></a>
                                         </div>
                                     </div>
@@ -1525,9 +1489,7 @@
 {{--                                        <img src="shop/assets/img/testimonial/test-avata-1.png" alt="">--}}
                                     </div>
                                     <div class="tptestimonial__content">
-                                        <p>" Also like the fact that I can pick my staples in the brown <br>
-                                            paper packs and glass containers at the zero waste section, with an <br>
-                                            idea to reduce plastic and also more convenient. "
+                                        <p>"I was constantly stressed each time the new term began. Fees,new stationary and uniform needed all at once can be a hustle . With Eshagi now I can  have peace of mind with Learn now pay later. Susan Muzaranda (36)"
                                         </p>
                                         <div class="tptestimonial__rating mb-5">
                                             <a href="#"><i class="icon-star_outline1"></i></a>
@@ -1536,8 +1498,8 @@
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                         </div>
-                                        <h4 class="tptestimonial__title">Algistino Lionel</h4>
-                                        <span class="tptestimonial__avata-position">Web Designer at Blueskytechco</span>
+                                        <h4 class="tptestimonial__title"> Susan Muzaranda (36)</h4>
+                                        <span class="tptestimonial__avata-position">Client</span>
                                     </div>
                                 </div>
                             </div>
@@ -1551,9 +1513,7 @@
 {{--                                        <img src="shop/assets/img/testimonial/test-avata-2.png" alt="">--}}
                                     </div>
                                     <div class="tptestimonial__content">
-                                        <p>" Also like the fact that I can pick my staples in the brown <br>
-                                            paper packs and glass containers at the zero waste section, with an <br>
-                                            idea to reduce plastic and also more convenient. "
+                                        <p>"Walking past TV sales and knowing I could not purchase the sofa set I badly wanted was a regular thing. One day I got the courage to ask the price only to be told I could pay with Eshagi at no interest. The very next week I purchased them. Thank you Eshagi."
                                         </p>
                                         <div class="tptestimonial__rating mb-5">
                                             <a href="#"><i class="icon-star_outline1"></i></a>
@@ -1562,8 +1522,8 @@
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                         </div>
-                                        <h4 class="tptestimonial__title">Jackson Roben</h4>
-                                        <span class="tptestimonial__avata-position">Web Designer at Blueskytechco</span>
+                                        <h4 class="tptestimonial__title">Taridzai Magaramombe (27)</h4>
+                                        <span class="tptestimonial__avata-position">Client</span>
                                     </div>
                                 </div>
                             </div>
@@ -1577,9 +1537,7 @@
 {{--                                        <img src="shop/assets/img/testimonial/test-avata-3.png" alt="">--}}
                                     </div>
                                     <div class="tptestimonial__content">
-                                        <p>" Also like the fact that I can pick my staples in the brown <br>
-                                            paper packs and glass containers at the zero waste section, with an <br>
-                                            idea to reduce plastic and also more convenient. "
+                                        <p>"I applied for a loan over my phone and it was approved in a matter of a few days. Eshagi is fast,simple and very convenient"
                                         </p>
                                         <div class="tptestimonial__rating mb-5">
                                             <a href="#"><i class="icon-star_outline1"></i></a>
@@ -1588,8 +1546,8 @@
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                             <a href="#"><i class="icon-star_outline1"></i></a>
                                         </div>
-                                        <h4 class="tptestimonial__title">Lionel</h4>
-                                        <span class="tptestimonial__avata-position">Web Designer at Blueskytechco</span>
+                                        <h4 class="tptestimonial__title">James Katoro (38)</h4>
+                                        <span class="tptestimonial__avata-position">Client</span>
                                     </div>
                                 </div>
                             </div>

@@ -20,7 +20,6 @@
                                 <li class="">
                                     <a href="about.html">What is Eshagi</a>
                                 </li>
-                                <li><a href="about.html">About Us</a></li>
                                 <li><a href="contact.html">Contact Us</a></li>
                             </ul>
                         </nav>
@@ -40,7 +39,10 @@
                                 <button class="tp-search-toggle"><i class="icon-search"></i></button>
                             </div>
                             <div class="header__info-user tpcolor__yellow ml-10">
-                                <a href="/login" class="btn btn-primary">Join Today</a>
+                                <a href="/login" class="btn btn-primary btn-sm">Join as individual</a>
+                            </div>
+                            <div class="header__info-user tpcolor__yellow ml-10">
+                                <a href="/business" class="btn btn-warning btn-sm">Join as Merchant</a>
                             </div>
                         @endif
                         <div class="header__info-cart tpcolor__oasis ml-10 tp-cart-toggle">

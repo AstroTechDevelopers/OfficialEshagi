@@ -288,12 +288,11 @@
                                     <div class="">
                                         <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
                                             <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
-                                                <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">Instant Merchant onboarding</h2>
+                                                <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">Learn Now Pay Later</h2>
                                                 <div class="styled__StyledRichText-sc-f6u918-3 bKjtOs RichText-richText--1L77z">
                                                     <div>
-                                                        <h3 class="imports-h3--3yLlm imports-h4--1GRDI"><strong class="imports-bold--1wLam">Become a Partner Today</strong></h3>
-                                                    <p>We empower brick-and-mortar retailers to
-                                                        offer BNPL options in their stores, receiving immediate payment for approved customers.</p>
+                                                        <h3 class="imports-h3--3yLlm imports-h4--1GRDI"><strong class="imports-bold--1wLam">Learn on credit and pay later</strong></h3>
+                                                    <p>We offer learning now and paying later.</p>
                                                     </div>
                                                 </div>
                                                 <div class="styled__CtaContainer-sc-f6u918-9 llWheg"><a href="/quick-register" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Register Today</span></a></div>
@@ -316,11 +315,84 @@
                                     <div class="">
                                         <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
                                             <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
-                                                <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">Financial Inclusion</h2>
+                                                <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">Ecard here</h2>
                                                 <div class="styled__StyledRichText-sc-f6u918-3 bKjtOs RichText-richText--1L77z">
                                                     <div>
-                                                        <p>We connect banks to our platform, enabling them to
-                                                            seamlessly extend credit to their customers for purchases within our vast retail network.
+                                                        <p>To get the banner from designer and put it here
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="styled__CtaContainer-sc-f6u918-9 llWheg">
+                                                    <a href="https://affirm.app.link/Ig53hfwykEb" rel="noopener" target="_blank" class="ButtonPrimary-buttonPrimary--1qZwZ"><span>Download the app</span></a>
+                                                    <div class="styled__StyledDownloadApp-sc-f6u918-13 enzwUd">
+                                                        <div class="DownloadApp-ctaWrap--4t74H DownloadApp-mobileOnly--1LTLG">
+                                                            <div class="AppStoreBadges-container--2aUGZ">
+                                                                <div class="AppStoreBadges-item--3TirS">
+                                                                    <a href="https://bnc.lt/mnGl/bP433iKXvw" rel="noopener noreferrer">
+                                                                        <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained AppStoreBadges-badge--7gr2N">
+                                                                            <div style="max-width:288px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;97&#x27; width=&#x27;288&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
+                                                                            <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                                                            <img src="phone.pn?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                                            <noscript>
+                                                                                <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                                            </noscript>
+                                                                            <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                                <div class="AppStoreBadges-item--3TirS">
+                                                                    <a href="https://bnc.lt/mnGl/XLGlcMVXvw" rel="noopener noreferrer">
+                                                                        <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained AppStoreBadges-badge--7gr2N">
+                                                                            <div style="max-width:324px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;97&#x27; width=&#x27;324&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
+                                                                            <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                                                            <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                                            <noscript>
+                                                                                <img src="phone.png?w=600&amp;h=544&amp;q=50&amp;fm=png" alt=""/>
+                                                                            </noscript>
+                                                                            <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="DownloadApp-desktopOnly--7etNQ">
+                                                            <div class="DownloadApp-qrCode--3xbbT">
+                                                                <div><img src="https://images.ctfassets.net/4rc1asww3mw7/7DByX43i2oNKH6nqmNXqHN/3253534f506fdf64227f18748b4f7901/www_homepage_hero_app_slide__Dec_2023__QR-code.svg" alt="Download app QR code" class="DownloadApp-qrCodeImage--74auN"/></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="styled__ColumnImage-sc-f6u918-6 kesodR">
+                                                <div data-gatsby-image-wrapper="" class="gatsby-image-wrapper gatsby-image-wrapper-constrained">
+                                                    <div style="max-width:600px;display:block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg height=&#x27;544&#x27; width=&#x27;600&#x27; xmlns=&#x27;http://www.w3.org/2000/svg&#x27; version=&#x27;1.1&#x27;%3E%3C/svg%3E" style="max-width:100%;display:block;position:static"/></div>
+                                                    <div aria-hidden="true" data-placeholder-image="" style="opacity:1;transition:opacity 500ms linear"></div>
+                                                    <picture>
+                                                        <source type="image/avif" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=avif 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=avif 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=avif 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=avif 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
+                                                        <source type="image/webp" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=webp 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=webp 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=webp 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=webp 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
+                                                        <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 600px) 600px, 100vw" decoding="async" loading="lazy" data-src="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=png" data-srcset="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=png 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=png 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=png 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=png 1200w" alt=""/>
+                                                    </picture>
+                                                    <noscript>
+                                                        <picture>
+                                                            <source type="image/avif" srcSet="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=avif 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=avif 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=avif 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=avif 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
+                                                            <source type="image/webp" srcSet="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=webp 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=webp 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=webp 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=webp 1200w" sizes="(min-width: 600px) 600px, 100vw"/>
+                                                            <img data-gatsby-image-ssr="" data-main-image="" style="opacity:0" sizes="(min-width: 600px) 600px, 100vw" decoding="async" loading="lazy" src="https://astrocred.co.zw/front_img/main-banner3.jpg" srcSet="https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=150&amp;h=136&amp;q=50&amp;fm=png 150w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=300&amp;h=272&amp;q=50&amp;fm=png 300w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=600&amp;h=544&amp;q=50&amp;fm=png 600w,https://images.ctfassets.net/4rc1asww3mw7/4Zvk176rAPCwGgGSTwFIqO/96b3de9b8fbf797bcfb17c5c01577cb2/Affirm-App_carousel-Img_at2x.png?w=1200&amp;h=1088&amp;q=50&amp;fm=png 1200w" alt=""/>
+                                                        </picture>
+                                                    </noscript>
+                                                    <script type="module">const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}</script>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="">
+                                        <div class="Container-container--DIXxP styled__StyledContainer-sc-f6u918-10 bRGQCm">
+                                            <div class="styled__ColumnText-sc-f6u918-5 gDfIfE">
+                                                <h2 class="styled__Heading-sc-f6u918-7 lmjBbM">Emart here</h2>
+                                                <div class="styled__StyledRichText-sc-f6u918-3 bKjtOs RichText-richText--1L77z">
+                                                    <div>
+                                                        <p>To get the banner from designer and put it here
                                                         </p>
                                                     </div>
                                                 </div>
@@ -911,7 +983,8 @@
                         </div>
                         <div class="mainfeature__content">
                             <h4 class="mainfeature__title">Fast Delivery</h4>
-                            <p>Across West & East India</p>
+                            <p>Across Harare within 24hours </p>
+                            <p>Nation wide within 72 hours </p>
                         </div>
                     </div>
                 </div>
@@ -921,8 +994,9 @@
                             <img src="shop/assets/img/icon/feature-icon-2.svg" alt="">
                         </div>
                         <div class="mainfeature__content">
-                            <h4 class="mainfeature__title">safe payment</h4>
-                            <p>100% Secure Payment</p>
+                            <h4 class="mainfeature__title">Safe payment</h4>
+                            <p>Pay with any bank of your choice
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -933,7 +1007,7 @@
                         </div>
                         <div class="mainfeature__content">
                             <h4 class="mainfeature__title">Online Discount</h4>
-                            <p>Add Multi-buy Discount </p>
+                            <p>Get the best deals with us!</p>
                         </div>
                     </div>
                 </div>
@@ -945,17 +1019,6 @@
                         <div class="mainfeature__content">
                             <h4 class="mainfeature__title">Help Center</h4>
                             <p>Dedicated 24/7 Support </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="mainfeature__item text-center mb-30">
-                        <div class="mainfeature__icon">
-                            <img src="shop/assets/img/icon/feature-icon-5.svg" alt="">
-                        </div>
-                        <div class="mainfeature__content">
-                            <h4 class="mainfeature__title">Curated items</h4>
-                            <p>From Handpicked Sellers</p>
                         </div>
                     </div>
                 </div>
