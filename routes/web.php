@@ -316,7 +316,6 @@ Route::group(['middleware' => ['auth','activity','checkblocked']], function () {
     Route::get('umerchant-kyc', [PartnerController::class,'uploadMerchantKyc'])->name('upMerchKyc');
     Route::post('upload-partner-signature', 'App\Http\Controllers\PartnerController@updatePartnerSignature')->name('upPartnerSign');
     Route::post('upload-partner-sign', 'App\Http\Controllers\PartnerController@uploadPartnerSignature')->name('uploadPartnerSign');
-
 });
 
 Route::get('partner-login', 'App\Http\Controllers\PartnerController@partnerLogin')->name('partner-login')->middleware('activity');

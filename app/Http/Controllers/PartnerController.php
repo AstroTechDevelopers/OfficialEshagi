@@ -271,6 +271,7 @@ class PartnerController extends Controller
 
     public function fetchAllMerchants() {
         $merchants = Partner::where('partner_type', 'Merchant')->get();
+         dd($merchants);
 
         return view('partners.merchants', compact('merchants'));
     }
